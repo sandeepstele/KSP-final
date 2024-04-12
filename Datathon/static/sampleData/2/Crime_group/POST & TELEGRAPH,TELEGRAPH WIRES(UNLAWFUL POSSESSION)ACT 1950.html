@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_688c45fed3b25065d2860f3a44f73b3a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_688c45fed3b25065d2860f3a44f73b3a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_688c45fed3b25065d2860f3a44f73b3a = L.map(
+                "map_688c45fed3b25065d2860f3a44f73b3a",
+                {
+                    center: [13.519027545454547, 76.39118345454546],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_53194b74fae9ba10f80dd8eccb22138c = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_688c45fed3b25065d2860f3a44f73b3a);
+        
+    
+            var marker_cluster_08cf3575c691b3fb660cd042ca277aa7 = L.markerClusterGroup(
+                {}
+            );
+            map_688c45fed3b25065d2860f3a44f73b3a.addLayer(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+            var marker_18dc4a59c4f0814c529d47b8af40de83 = L.marker(
+                [16.47447, 75.118949],
+                {}
+            ).addTo(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+        var popup_39a399759d472e21f1cea678e82697da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9cacfc75092fbe7e7b8b454a8e41c3e = $(`<div id="html_c9cacfc75092fbe7e7b8b454a8e41c3e" style="width: 100.0%; height: 100.0%;">Crime Group:  POST & TELEGRAPH,TELEGRAPH WIRES(UNLAWFUL POSSESSION)ACT 1950<br>Crime Head: POST  &  TELEGRAPH, TELEGRAPH WIRES<br>Latitude: 16.47447<br>Longitude: 75.118949</div>`)[0];
+                popup_39a399759d472e21f1cea678e82697da.setContent(html_c9cacfc75092fbe7e7b8b454a8e41c3e);
+            
+        
+
+        marker_18dc4a59c4f0814c529d47b8af40de83.bindPopup(popup_39a399759d472e21f1cea678e82697da)
+        ;
+
+        
+    
+    
+            var marker_87cd894dd868e53f6d82bca839a90159 = L.marker(
+                [13.000666, 77.576073],
+                {}
+            ).addTo(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+        var popup_28beca560c2cd9453f6ad00d1308f7a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66057cef9b8e3669def4a6f2ff1251b4 = $(`<div id="html_66057cef9b8e3669def4a6f2ff1251b4" style="width: 100.0%; height: 100.0%;">Crime Group:  POST & TELEGRAPH,TELEGRAPH WIRES(UNLAWFUL POSSESSION)ACT 1950<br>Crime Head: POST  &  TELEGRAPH, TELEGRAPH WIRES<br>Latitude: 13.000666<br>Longitude: 77.576073</div>`)[0];
+                popup_28beca560c2cd9453f6ad00d1308f7a9.setContent(html_66057cef9b8e3669def4a6f2ff1251b4);
+            
+        
+
+        marker_87cd894dd868e53f6d82bca839a90159.bindPopup(popup_28beca560c2cd9453f6ad00d1308f7a9)
+        ;
+
+        
+    
+    
+            var marker_b3da5b0ffacd8c0cbe8f70229888f13d = L.marker(
+                [13.319228, 77.535709],
+                {}
+            ).addTo(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+        var popup_a295c12c69d48a32e49387e01d563044 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edaba7a23a218db8c0a1a3ab8d65d749 = $(`<div id="html_edaba7a23a218db8c0a1a3ab8d65d749" style="width: 100.0%; height: 100.0%;">Crime Group:  POST & TELEGRAPH,TELEGRAPH WIRES(UNLAWFUL POSSESSION)ACT 1950<br>Crime Head: POST  &  TELEGRAPH, TELEGRAPH WIRES<br>Latitude: 13.319228<br>Longitude: 77.535709</div>`)[0];
+                popup_a295c12c69d48a32e49387e01d563044.setContent(html_edaba7a23a218db8c0a1a3ab8d65d749);
+            
+        
+
+        marker_b3da5b0ffacd8c0cbe8f70229888f13d.bindPopup(popup_a295c12c69d48a32e49387e01d563044)
+        ;
+
+        
+    
+    
+            var marker_c9c3306275ae73694f33442185250cce = L.marker(
+                [13.285554, 77.531414],
+                {}
+            ).addTo(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+        var popup_51fed32368f721ed5448cb4e02f91e19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e19e178e6f7803ba0bd7ab259f6b2b14 = $(`<div id="html_e19e178e6f7803ba0bd7ab259f6b2b14" style="width: 100.0%; height: 100.0%;">Crime Group:  POST & TELEGRAPH,TELEGRAPH WIRES(UNLAWFUL POSSESSION)ACT 1950<br>Crime Head: POST  &  TELEGRAPH, TELEGRAPH WIRES<br>Latitude: 13.285554<br>Longitude: 77.531414</div>`)[0];
+                popup_51fed32368f721ed5448cb4e02f91e19.setContent(html_e19e178e6f7803ba0bd7ab259f6b2b14);
+            
+        
+
+        marker_c9c3306275ae73694f33442185250cce.bindPopup(popup_51fed32368f721ed5448cb4e02f91e19)
+        ;
+
+        
+    
+    
+            var marker_5fe79623fe874083f59d2a474d5a1351 = L.marker(
+                [13.280137, 77.551581],
+                {}
+            ).addTo(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+        var popup_92dc5428f33d8e761d23a4c0f3f28593 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e66249ddba27fd7ac11193aa4a4c91d = $(`<div id="html_8e66249ddba27fd7ac11193aa4a4c91d" style="width: 100.0%; height: 100.0%;">Crime Group:  POST & TELEGRAPH,TELEGRAPH WIRES(UNLAWFUL POSSESSION)ACT 1950<br>Crime Head: POST  &  TELEGRAPH, TELEGRAPH WIRES<br>Latitude: 13.280137<br>Longitude: 77.551581</div>`)[0];
+                popup_92dc5428f33d8e761d23a4c0f3f28593.setContent(html_8e66249ddba27fd7ac11193aa4a4c91d);
+            
+        
+
+        marker_5fe79623fe874083f59d2a474d5a1351.bindPopup(popup_92dc5428f33d8e761d23a4c0f3f28593)
+        ;
+
+        
+    
+    
+            var marker_7d936c5fc9c8839fddd4a30ae8bf02f1 = L.marker(
+                [12.832655, 77.654769],
+                {}
+            ).addTo(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+        var popup_bc027d3f452b4ace9806317b659aac26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66aed05fef397b2f25332439a966cb9b = $(`<div id="html_66aed05fef397b2f25332439a966cb9b" style="width: 100.0%; height: 100.0%;">Crime Group:  POST & TELEGRAPH,TELEGRAPH WIRES(UNLAWFUL POSSESSION)ACT 1950<br>Crime Head: POST  &  TELEGRAPH, TELEGRAPH WIRES<br>Latitude: 12.832655<br>Longitude: 77.654769</div>`)[0];
+                popup_bc027d3f452b4ace9806317b659aac26.setContent(html_66aed05fef397b2f25332439a966cb9b);
+            
+        
+
+        marker_7d936c5fc9c8839fddd4a30ae8bf02f1.bindPopup(popup_bc027d3f452b4ace9806317b659aac26)
+        ;
+
+        
+    
+    
+            var marker_26d510509c1bd480f04a50bfa036e749 = L.marker(
+                [14.218145, 76.416313],
+                {}
+            ).addTo(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+        var popup_f9b46a8f6765c0b8bc2a7f6797d5c36f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62ec0c02554fde36cc5e43542eace80b = $(`<div id="html_62ec0c02554fde36cc5e43542eace80b" style="width: 100.0%; height: 100.0%;">Crime Group:  POST & TELEGRAPH,TELEGRAPH WIRES(UNLAWFUL POSSESSION)ACT 1950<br>Crime Head: POST  &  TELEGRAPH, TELEGRAPH WIRES<br>Latitude: 14.218145<br>Longitude: 76.416313</div>`)[0];
+                popup_f9b46a8f6765c0b8bc2a7f6797d5c36f.setContent(html_62ec0c02554fde36cc5e43542eace80b);
+            
+        
+
+        marker_26d510509c1bd480f04a50bfa036e749.bindPopup(popup_f9b46a8f6765c0b8bc2a7f6797d5c36f)
+        ;
+
+        
+    
+    
+            var marker_1af19f591b0ce14c56298091c91ed145 = L.marker(
+                [12.298017, 76.66319],
+                {}
+            ).addTo(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+        var popup_e0369fff472233c40ab4ee228bb0d603 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38305432fce7df6060968496a5b33eeb = $(`<div id="html_38305432fce7df6060968496a5b33eeb" style="width: 100.0%; height: 100.0%;">Crime Group:  POST & TELEGRAPH,TELEGRAPH WIRES(UNLAWFUL POSSESSION)ACT 1950<br>Crime Head: POST  &  TELEGRAPH, TELEGRAPH WIRES<br>Latitude: 12.298017<br>Longitude: 76.66319</div>`)[0];
+                popup_e0369fff472233c40ab4ee228bb0d603.setContent(html_38305432fce7df6060968496a5b33eeb);
+            
+        
+
+        marker_1af19f591b0ce14c56298091c91ed145.bindPopup(popup_e0369fff472233c40ab4ee228bb0d603)
+        ;
+
+        
+    
+    
+            var marker_9f1b5cd54e2cab3fda2ee028e5797bf4 = L.marker(
+                [13.3321, 74.720115],
+                {}
+            ).addTo(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+        var popup_251fac2db742ca69e6838bc55dfeb461 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bd1e9ebf3aa5429204c9f8bdee9a762 = $(`<div id="html_2bd1e9ebf3aa5429204c9f8bdee9a762" style="width: 100.0%; height: 100.0%;">Crime Group:  POST & TELEGRAPH,TELEGRAPH WIRES(UNLAWFUL POSSESSION)ACT 1950<br>Crime Head: POST  &  TELEGRAPH, TELEGRAPH WIRES<br>Latitude: 13.3321<br>Longitude: 74.720115</div>`)[0];
+                popup_251fac2db742ca69e6838bc55dfeb461.setContent(html_2bd1e9ebf3aa5429204c9f8bdee9a762);
+            
+        
+
+        marker_9f1b5cd54e2cab3fda2ee028e5797bf4.bindPopup(popup_251fac2db742ca69e6838bc55dfeb461)
+        ;
+
+        
+    
+    
+            var marker_628d39db6296f4b5f2be320604d9be24 = L.marker(
+                [13.35278, 74.787279],
+                {}
+            ).addTo(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+        var popup_8bc335970231a75f47614515f8a0022d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc4dd2eb45a21fea03cf4370c668650a = $(`<div id="html_fc4dd2eb45a21fea03cf4370c668650a" style="width: 100.0%; height: 100.0%;">Crime Group:  POST & TELEGRAPH,TELEGRAPH WIRES(UNLAWFUL POSSESSION)ACT 1950<br>Crime Head: POST  &  TELEGRAPH, TELEGRAPH WIRES<br>Latitude: 13.35278<br>Longitude: 74.787279</div>`)[0];
+                popup_8bc335970231a75f47614515f8a0022d.setContent(html_fc4dd2eb45a21fea03cf4370c668650a);
+            
+        
+
+        marker_628d39db6296f4b5f2be320604d9be24.bindPopup(popup_8bc335970231a75f47614515f8a0022d)
+        ;
+
+        
+    
+    
+            var marker_4cfedeef88de3d94813ccd7fc4898987 = L.marker(
+                [13.315551, 74.747626],
+                {}
+            ).addTo(marker_cluster_08cf3575c691b3fb660cd042ca277aa7);
+        
+    
+        var popup_42df09d6d13482c38d51ffc0df491e8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a723fd219f807f070b9c394a510369f5 = $(`<div id="html_a723fd219f807f070b9c394a510369f5" style="width: 100.0%; height: 100.0%;">Crime Group:  POST & TELEGRAPH,TELEGRAPH WIRES(UNLAWFUL POSSESSION)ACT 1950<br>Crime Head: POST  &  TELEGRAPH, TELEGRAPH WIRES<br>Latitude: 13.315551<br>Longitude: 74.747626</div>`)[0];
+                popup_42df09d6d13482c38d51ffc0df491e8f.setContent(html_a723fd219f807f070b9c394a510369f5);
+            
+        
+
+        marker_4cfedeef88de3d94813ccd7fc4898987.bindPopup(popup_42df09d6d13482c38d51ffc0df491e8f)
+        ;
+
+        
+    
+    
+            var layer_control_0a10054c60aba8986c5fb457014eb3b4 = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_53194b74fae9ba10f80dd8eccb22138c,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_0a10054c60aba8986c5fb457014eb3b4.base_layers,
+                layer_control_0a10054c60aba8986c5fb457014eb3b4.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_688c45fed3b25065d2860f3a44f73b3a);
+        
+</script>
+</html>

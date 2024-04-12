@@ -1,0 +1,59 @@
+{% extends 'crimeDetection/layout.html' %}
+{% load static %}
+
+{% block title %}
+Siren Squad | Hotspot
+{% endblock %}
+
+{% block header %}Hotspot{% endblock %}
+
+{% block page %} Hotspot {% endblock %}
+
+{% block page_name %} Crime-Wise Classification {% endblock %}
+
+{% block body %}
+
+<style>
+  .maps{
+    border-radius:10px;
+    box-shadow:0 0 5px grey;
+    margin-top:2rem;
+    margin-bottom:1rem;
+    border:1px solid #5953b8;
+  }
+</style>
+
+<div>
+<label class="mb-3  " style="color:#5953b8;margin-top:4%;">Crime-Wise Classification</label>
+<form action="{% url 'hotspot_crime' %}" method="GET">
+  <div id="crime">
+    <div class="input-group mb-3 mt-1">
+        <label class="input-group-text" for="inputGroupSelect01">Crime</label>
+        <select class="form-select" id="inputGroupSelect01" name="crime_wise_name">
+          <option selected value="">Choose...</option>
+        {% for crime in crime_name %}
+          <option value="{{crime}}">{{crime}}</option>
+        {% endfor %}
+        </select>
+        <button class="btn btn-success" type="submit">Submit</button>
+      </div>
+</div>
+</form>
+</div>
+
+
+<div class="card maps" id="map" style="display:{{display}}">
+                <div class="card-header">
+                  <a href="{% static 'sampleData/2/' %}{{file_name}}/{{ crime }}.html" target="_blank" ><h5 style="color:#5953b8;">{{crime}}</h5></a>
+                    <span class="d-block m-t-5">Map shows places around the Karnataka</span>
+                </div>
+                <div class="card-body">
+                  <iframe src="{% static 'sampleData/2/' %}{{file_name}}/{{ crime }}.html" class="set-map" style="height:650px;width:95%;margin-left:0.5rem;"></iframe>
+                    <div id="basic-map" ></div>
+                </div>
+            </div>
+  <!-- [ Main Content ] end -->
+
+<script>
+</script>
+{% endblock %}

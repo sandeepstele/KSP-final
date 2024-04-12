@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5ae0d6ea19341514dd012da5c48a175e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5ae0d6ea19341514dd012da5c48a175e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5ae0d6ea19341514dd012da5c48a175e = L.map(
+                "map_5ae0d6ea19341514dd012da5c48a175e",
+                {
+                    center: [16.811639785714284, 75.78348556785716],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a839dc4f2076d3eececec8e3cff9830 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5ae0d6ea19341514dd012da5c48a175e);
+        
+    
+            var marker_cluster_78c10e352dfd34df1d6f6da6293fc00e = L.markerClusterGroup(
+                {}
+            );
+            map_5ae0d6ea19341514dd012da5c48a175e.addLayer(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+            var marker_191cd3c7a0a0bfd6c956f629cc3dc33a = L.marker(
+                [17.033319, 75.7000749],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_c3c6b25aeef467cae8c6dac9faf806d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_228212dea5ba88d466ee07aba0e4ec6a = $(`<div id="html_228212dea5ba88d466ee07aba0e4ec6a" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Commercial Places / Establishments<br>Latitude: 17.033319<br>Longitude: 75.7000749</div>`)[0];
+                popup_c3c6b25aeef467cae8c6dac9faf806d5.setContent(html_228212dea5ba88d466ee07aba0e4ec6a);
+            
+        
+
+        marker_191cd3c7a0a0bfd6c956f629cc3dc33a.bindPopup(popup_c3c6b25aeef467cae8c6dac9faf806d5)
+        ;
+
+        
+    
+    
+            var marker_1a87f2243c0f5129f9ba7c553f5a372f = L.marker(
+                [16.929783, 75.381424],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_f3f40a391eea172497648538aa9986b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cf5dc5b95629fbbdc3aaf749202bc69 = $(`<div id="html_5cf5dc5b95629fbbdc3aaf749202bc69" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.929783<br>Longitude: 75.381424</div>`)[0];
+                popup_f3f40a391eea172497648538aa9986b4.setContent(html_5cf5dc5b95629fbbdc3aaf749202bc69);
+            
+        
+
+        marker_1a87f2243c0f5129f9ba7c553f5a372f.bindPopup(popup_f3f40a391eea172497648538aa9986b4)
+        ;
+
+        
+    
+    
+            var marker_c67ebbbe8590ad911ed4a3413324d25f = L.marker(
+                [16.781665, 75.731078],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_a81777e375d06f32e915a8e137c2bdf3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_677b7257e3efb4ee6b66be577240e440 = $(`<div id="html_677b7257e3efb4ee6b66be577240e440" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.781665<br>Longitude: 75.731078</div>`)[0];
+                popup_a81777e375d06f32e915a8e137c2bdf3.setContent(html_677b7257e3efb4ee6b66be577240e440);
+            
+        
+
+        marker_c67ebbbe8590ad911ed4a3413324d25f.bindPopup(popup_a81777e375d06f32e915a8e137c2bdf3)
+        ;
+
+        
+    
+    
+            var marker_b1c53835be40c2ead246e6d9880573e9 = L.marker(
+                [16.840644, 75.710503],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_74d4fb66cd9a2108b45958b8bea3573e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_645a6c6223a735e0c00b0201fa908075 = $(`<div id="html_645a6c6223a735e0c00b0201fa908075" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.840644<br>Longitude: 75.710503</div>`)[0];
+                popup_74d4fb66cd9a2108b45958b8bea3573e.setContent(html_645a6c6223a735e0c00b0201fa908075);
+            
+        
+
+        marker_b1c53835be40c2ead246e6d9880573e9.bindPopup(popup_74d4fb66cd9a2108b45958b8bea3573e)
+        ;
+
+        
+    
+    
+            var marker_c38f4a12970383515ae5e8fb64021fc9 = L.marker(
+                [16.354714, 75.937474],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_4f8799a486b06da4ac8f458e31903674 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae41cafa211a75d17bc737cd78a2ace6 = $(`<div id="html_ae41cafa211a75d17bc737cd78a2ace6" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.354714<br>Longitude: 75.937474</div>`)[0];
+                popup_4f8799a486b06da4ac8f458e31903674.setContent(html_ae41cafa211a75d17bc737cd78a2ace6);
+            
+        
+
+        marker_c38f4a12970383515ae5e8fb64021fc9.bindPopup(popup_4f8799a486b06da4ac8f458e31903674)
+        ;
+
+        
+    
+    
+            var marker_a10c68ed8670cd0cb994e31980a10923 = L.marker(
+                [16.813511, 75.737272],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_1558cd8f9818b3c21e01f52fdcff8014 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8363864ad10845adfb642dfe9bd07db2 = $(`<div id="html_8363864ad10845adfb642dfe9bd07db2" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.813511<br>Longitude: 75.737272</div>`)[0];
+                popup_1558cd8f9818b3c21e01f52fdcff8014.setContent(html_8363864ad10845adfb642dfe9bd07db2);
+            
+        
+
+        marker_a10c68ed8670cd0cb994e31980a10923.bindPopup(popup_1558cd8f9818b3c21e01f52fdcff8014)
+        ;
+
+        
+    
+    
+            var marker_2ae0e077d440c4a30d855b4a6fb9ed5c = L.marker(
+                [16.46917, 75.826086],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_23256871b822a5a814ec17132455a283 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67ef4eb8834f9a227f9be79448b2209d = $(`<div id="html_67ef4eb8834f9a227f9be79448b2209d" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: Temple Theft<br>Latitude: 16.46917<br>Longitude: 75.826086</div>`)[0];
+                popup_23256871b822a5a814ec17132455a283.setContent(html_67ef4eb8834f9a227f9be79448b2209d);
+            
+        
+
+        marker_2ae0e077d440c4a30d855b4a6fb9ed5c.bindPopup(popup_23256871b822a5a814ec17132455a283)
+        ;
+
+        
+    
+    
+            var marker_41bfd142d3bb7e2062668fb8a5eb15ef = L.marker(
+                [16.829236, 75.751573],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_db63f8e6f8d79e00cf5fb235b4fb5932 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1f3667b52ed54ab28e511af661302e7 = $(`<div id="html_a1f3667b52ed54ab28e511af661302e7" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.829236<br>Longitude: 75.751573</div>`)[0];
+                popup_db63f8e6f8d79e00cf5fb235b4fb5932.setContent(html_a1f3667b52ed54ab28e511af661302e7);
+            
+        
+
+        marker_41bfd142d3bb7e2062668fb8a5eb15ef.bindPopup(popup_db63f8e6f8d79e00cf5fb235b4fb5932)
+        ;
+
+        
+    
+    
+            var marker_ea0da59dc561193d5c7121b88dfc848c = L.marker(
+                [16.827319, 75.654359],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_7e242f0ba4a98eaea4661a00811f564c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_482f1522e5f764de8a7ba8434d6adda2 = $(`<div id="html_482f1522e5f764de8a7ba8434d6adda2" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.827319<br>Longitude: 75.654359</div>`)[0];
+                popup_7e242f0ba4a98eaea4661a00811f564c.setContent(html_482f1522e5f764de8a7ba8434d6adda2);
+            
+        
+
+        marker_ea0da59dc561193d5c7121b88dfc848c.bindPopup(popup_7e242f0ba4a98eaea4661a00811f564c)
+        ;
+
+        
+    
+    
+            var marker_299f9f5ad1e3873a9b8f1e970ac909b4 = L.marker(
+                [17.288268, 75.869652],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_0fca0b465d4acab7f3db581f1da811d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d102618aa0cb864a36f0ad7c68bf65f = $(`<div id="html_9d102618aa0cb864a36f0ad7c68bf65f" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Commercial Places / Establishments<br>Latitude: 17.288268<br>Longitude: 75.869652</div>`)[0];
+                popup_0fca0b465d4acab7f3db581f1da811d2.setContent(html_9d102618aa0cb864a36f0ad7c68bf65f);
+            
+        
+
+        marker_299f9f5ad1e3873a9b8f1e970ac909b4.bindPopup(popup_0fca0b465d4acab7f3db581f1da811d2)
+        ;
+
+        
+    
+    
+            var marker_08ac786648ee69c8ba606f505b1c7c5b = L.marker(
+                [16.654298, 75.811806],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_b916eae8c07f6eb3aeb55bd2e1b46d5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bc11d7e57fd37a93777f17ff9b862d1 = $(`<div id="html_1bc11d7e57fd37a93777f17ff9b862d1" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.654298<br>Longitude: 75.811806</div>`)[0];
+                popup_b916eae8c07f6eb3aeb55bd2e1b46d5d.setContent(html_1bc11d7e57fd37a93777f17ff9b862d1);
+            
+        
+
+        marker_08ac786648ee69c8ba606f505b1c7c5b.bindPopup(popup_b916eae8c07f6eb3aeb55bd2e1b46d5d)
+        ;
+
+        
+    
+    
+            var marker_318a5157cfba9d0ba7d6c3433d70cb1d = L.marker(
+                [16.829502, 75.731824],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_a93b21bb96df75554c9915b6f9a7d094 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6c2c951453c93adc669874f5b77157a = $(`<div id="html_a6c2c951453c93adc669874f5b77157a" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.829502<br>Longitude: 75.731824</div>`)[0];
+                popup_a93b21bb96df75554c9915b6f9a7d094.setContent(html_a6c2c951453c93adc669874f5b77157a);
+            
+        
+
+        marker_318a5157cfba9d0ba7d6c3433d70cb1d.bindPopup(popup_a93b21bb96df75554c9915b6f9a7d094)
+        ;
+
+        
+    
+    
+            var marker_6602c057fdbcdf7df6914ed65d1ebc3b = L.marker(
+                [16.842812, 75.521217],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_6003beb8b8b89d97cfe34d3ae709ccc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a6be3248a3835c1ba8ac24e52f85445 = $(`<div id="html_1a6be3248a3835c1ba8ac24e52f85445" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.842812<br>Longitude: 75.521217</div>`)[0];
+                popup_6003beb8b8b89d97cfe34d3ae709ccc4.setContent(html_1a6be3248a3835c1ba8ac24e52f85445);
+            
+        
+
+        marker_6602c057fdbcdf7df6914ed65d1ebc3b.bindPopup(popup_6003beb8b8b89d97cfe34d3ae709ccc4)
+        ;
+
+        
+    
+    
+            var marker_15976d235ec8f32cc83f302dd824c120 = L.marker(
+                [16.799781, 75.725182],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_6b55d034d79d14fb739ed108f569d93e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c76b474ff99436f202e94521042a2846 = $(`<div id="html_c76b474ff99436f202e94521042a2846" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.799781<br>Longitude: 75.725182</div>`)[0];
+                popup_6b55d034d79d14fb739ed108f569d93e.setContent(html_c76b474ff99436f202e94521042a2846);
+            
+        
+
+        marker_15976d235ec8f32cc83f302dd824c120.bindPopup(popup_6b55d034d79d14fb739ed108f569d93e)
+        ;
+
+        
+    
+    
+            var marker_468196c7ddcd7f5ad101d4be0135efba = L.marker(
+                [16.797627, 75.727269],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_8347572b2a1011f785c714e4a2f18b31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_287188be83b2342cbd18e9562f36a3c2 = $(`<div id="html_287188be83b2342cbd18e9562f36a3c2" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.797627<br>Longitude: 75.727269</div>`)[0];
+                popup_8347572b2a1011f785c714e4a2f18b31.setContent(html_287188be83b2342cbd18e9562f36a3c2);
+            
+        
+
+        marker_468196c7ddcd7f5ad101d4be0135efba.bindPopup(popup_8347572b2a1011f785c714e4a2f18b31)
+        ;
+
+        
+    
+    
+            var marker_9ce2f4bb3ddb019abd922f795ae70b63 = L.marker(
+                [16.897811, 75.764125],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_4fbb9217daf7f177d6d5f2a51c3e84a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e2a7968676e3a6de5ff370009bcc555 = $(`<div id="html_6e2a7968676e3a6de5ff370009bcc555" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.897811<br>Longitude: 75.764125</div>`)[0];
+                popup_4fbb9217daf7f177d6d5f2a51c3e84a4.setContent(html_6e2a7968676e3a6de5ff370009bcc555);
+            
+        
+
+        marker_9ce2f4bb3ddb019abd922f795ae70b63.bindPopup(popup_4fbb9217daf7f177d6d5f2a51c3e84a4)
+        ;
+
+        
+    
+    
+            var marker_9fb89a1f0b076d12681e31486a6d44a8 = L.marker(
+                [16.826098, 75.677951],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_f543e54b4949113b381110a72228e51b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43582d9af66ff09728b19fe85d1fc6ff = $(`<div id="html_43582d9af66ff09728b19fe85d1fc6ff" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.826098<br>Longitude: 75.677951</div>`)[0];
+                popup_f543e54b4949113b381110a72228e51b.setContent(html_43582d9af66ff09728b19fe85d1fc6ff);
+            
+        
+
+        marker_9fb89a1f0b076d12681e31486a6d44a8.bindPopup(popup_f543e54b4949113b381110a72228e51b)
+        ;
+
+        
+    
+    
+            var marker_fc99de43f464b6f3468f5db67fc825a3 = L.marker(
+                [17.114353, 75.782504],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_a1db46dd559b82548115554bb7fecd1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cd2176212f28a7f74bfb811c0e1a2f5 = $(`<div id="html_1cd2176212f28a7f74bfb811c0e1a2f5" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 17.114353<br>Longitude: 75.782504</div>`)[0];
+                popup_a1db46dd559b82548115554bb7fecd1b.setContent(html_1cd2176212f28a7f74bfb811c0e1a2f5);
+            
+        
+
+        marker_fc99de43f464b6f3468f5db67fc825a3.bindPopup(popup_a1db46dd559b82548115554bb7fecd1b)
+        ;
+
+        
+    
+    
+            var marker_dc6006a2de4a1ab41cef706de5dc9708 = L.marker(
+                [16.814767, 76.066419],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_29f8dcdb020d8930fa6380fb6e25c1ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0e8dc69e983bb375e5152c6c80bd666 = $(`<div id="html_d0e8dc69e983bb375e5152c6c80bd666" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: Temple Theft<br>Latitude: 16.814767<br>Longitude: 76.066419</div>`)[0];
+                popup_29f8dcdb020d8930fa6380fb6e25c1ea.setContent(html_d0e8dc69e983bb375e5152c6c80bd666);
+            
+        
+
+        marker_dc6006a2de4a1ab41cef706de5dc9708.bindPopup(popup_29f8dcdb020d8930fa6380fb6e25c1ea)
+        ;
+
+        
+    
+    
+            var marker_c473e27f81fcb76c026ad96de8f1e4dc = L.marker(
+                [16.575111, 75.97467],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_07fd18ef2202b034b72cf93383de25ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93728a205cf7ad3520dc736e1a872686 = $(`<div id="html_93728a205cf7ad3520dc736e1a872686" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Commercial Places / Establishments<br>Latitude: 16.575111<br>Longitude: 75.97467</div>`)[0];
+                popup_07fd18ef2202b034b72cf93383de25ec.setContent(html_93728a205cf7ad3520dc736e1a872686);
+            
+        
+
+        marker_c473e27f81fcb76c026ad96de8f1e4dc.bindPopup(popup_07fd18ef2202b034b72cf93383de25ec)
+        ;
+
+        
+    
+    
+            var marker_6325c25c0e51bfb36164ab00c128e028 = L.marker(
+                [16.824012, 75.698269],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_74aa07749f2190ccf5d4452ec75ff27f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c2927e829c4aecaa6dd63c091a1b922 = $(`<div id="html_9c2927e829c4aecaa6dd63c091a1b922" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.824012<br>Longitude: 75.698269</div>`)[0];
+                popup_74aa07749f2190ccf5d4452ec75ff27f.setContent(html_9c2927e829c4aecaa6dd63c091a1b922);
+            
+        
+
+        marker_6325c25c0e51bfb36164ab00c128e028.bindPopup(popup_74aa07749f2190ccf5d4452ec75ff27f)
+        ;
+
+        
+    
+    
+            var marker_523de3e8012b85033c459c09211c84a8 = L.marker(
+                [16.914166, 75.916712],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_d8643cac57d4e4791f697a5a44e476ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f136eface07dbd5778bf655c86b4cce = $(`<div id="html_5f136eface07dbd5778bf655c86b4cce" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.914166<br>Longitude: 75.916712</div>`)[0];
+                popup_d8643cac57d4e4791f697a5a44e476ab.setContent(html_5f136eface07dbd5778bf655c86b4cce);
+            
+        
+
+        marker_523de3e8012b85033c459c09211c84a8.bindPopup(popup_d8643cac57d4e4791f697a5a44e476ab)
+        ;
+
+        
+    
+    
+            var marker_999c9d942820a65403f7b4c3404de053 = L.marker(
+                [16.842476, 75.520805],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_fd103df578a73ba70a4c6693889f0371 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bd858898e9788ac2874f80e05afdd08 = $(`<div id="html_5bd858898e9788ac2874f80e05afdd08" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: In Other Places<br>Latitude: 16.842476<br>Longitude: 75.520805</div>`)[0];
+                popup_fd103df578a73ba70a4c6693889f0371.setContent(html_5bd858898e9788ac2874f80e05afdd08);
+            
+        
+
+        marker_999c9d942820a65403f7b4c3404de053.bindPopup(popup_fd103df578a73ba70a4c6693889f0371)
+        ;
+
+        
+    
+    
+            var marker_2b2f591e22ab3655630c6393251795c7 = L.marker(
+                [16.818477, 76.054495],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_a07492e0628647755c01fb910eaf61d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1f6173f78f0faa72b9ef85447ccc8d1 = $(`<div id="html_a1f6173f78f0faa72b9ef85447ccc8d1" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Commercial Places / Establishments<br>Latitude: 16.818477<br>Longitude: 76.054495</div>`)[0];
+                popup_a07492e0628647755c01fb910eaf61d5.setContent(html_a1f6173f78f0faa72b9ef85447ccc8d1);
+            
+        
+
+        marker_2b2f591e22ab3655630c6393251795c7.bindPopup(popup_a07492e0628647755c01fb910eaf61d5)
+        ;
+
+        
+    
+    
+            var marker_510d9a44094fe938332768bd33f870bc = L.marker(
+                [16.904388, 76.196529],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_7d97c7500e5239633e3c69254bfc55bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98eab06326e1368e78baa599b86fe67f = $(`<div id="html_98eab06326e1368e78baa599b86fe67f" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: In Other Places<br>Latitude: 16.904388<br>Longitude: 76.196529</div>`)[0];
+                popup_7d97c7500e5239633e3c69254bfc55bb.setContent(html_98eab06326e1368e78baa599b86fe67f);
+            
+        
+
+        marker_510d9a44094fe938332768bd33f870bc.bindPopup(popup_7d97c7500e5239633e3c69254bfc55bb)
+        ;
+
+        
+    
+    
+            var marker_0201e41ae821c9887bf75b40c329faa3 = L.marker(
+                [16.936576, 75.615295],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_6bc1103f94ce0ff1f88a3053806babf4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6ebf7d4b54d79b80710ea84aa9859a4 = $(`<div id="html_c6ebf7d4b54d79b80710ea84aa9859a4" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.936576<br>Longitude: 75.615295</div>`)[0];
+                popup_6bc1103f94ce0ff1f88a3053806babf4.setContent(html_c6ebf7d4b54d79b80710ea84aa9859a4);
+            
+        
+
+        marker_0201e41ae821c9887bf75b40c329faa3.bindPopup(popup_6bc1103f94ce0ff1f88a3053806babf4)
+        ;
+
+        
+    
+    
+            var marker_93d84976a3ca2f5a2e5efd0cfa66fbed = L.marker(
+                [16.342153, 76.123358],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_d952dd055cc026e3550af3028c46dafd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0a58d5899f34b28272b7d4c935e6987 = $(`<div id="html_b0a58d5899f34b28272b7d4c935e6987" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: At Residential Premises<br>Latitude: 16.342153<br>Longitude: 76.123358</div>`)[0];
+                popup_d952dd055cc026e3550af3028c46dafd.setContent(html_b0a58d5899f34b28272b7d4c935e6987);
+            
+        
+
+        marker_93d84976a3ca2f5a2e5efd0cfa66fbed.bindPopup(popup_d952dd055cc026e3550af3028c46dafd)
+        ;
+
+        
+    
+    
+            var marker_7f3fb1f8e78ab501c69e61d699e0fa5c = L.marker(
+                [16.823877, 75.72967],
+                {}
+            ).addTo(marker_cluster_78c10e352dfd34df1d6f6da6293fc00e);
+        
+    
+        var popup_497f1c9185765f5ad5d38ffc70e1788c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_808377a76cc10c9560e95f6faa4fb923 = $(`<div id="html_808377a76cc10c9560e95f6faa4fb923" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - NIGHT<br>Crime Head: In Other Places<br>Latitude: 16.823877<br>Longitude: 75.72967</div>`)[0];
+                popup_497f1c9185765f5ad5d38ffc70e1788c.setContent(html_808377a76cc10c9560e95f6faa4fb923);
+            
+        
+
+        marker_7f3fb1f8e78ab501c69e61d699e0fa5c.bindPopup(popup_497f1c9185765f5ad5d38ffc70e1788c)
+        ;
+
+        
+    
+    
+            var layer_control_bb201b2f46453d3a4ca58d1864cb4f40 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0a839dc4f2076d3eececec8e3cff9830,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_bb201b2f46453d3a4ca58d1864cb4f40.base_layers,
+                layer_control_bb201b2f46453d3a4ca58d1864cb4f40.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5ae0d6ea19341514dd012da5c48a175e);
+        
+</script>
+</html>

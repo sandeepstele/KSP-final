@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b8027a149730a251c039f26ba15bf0c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6b8027a149730a251c039f26ba15bf0c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6b8027a149730a251c039f26ba15bf0c = L.map(
+                "map_6b8027a149730a251c039f26ba15bf0c",
+                {
+                    center: [12.961906571968486, 77.60160343550984],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b11fa6650b344754fc3fc616f833c758 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6b8027a149730a251c039f26ba15bf0c);
+        
+    
+            var marker_cluster_329ae91e71d2a4cb0555c664befa7b46 = L.markerClusterGroup(
+                {}
+            );
+            map_6b8027a149730a251c039f26ba15bf0c.addLayer(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+            var marker_9ef6170d7b19236e474ce8ef0737c6d0 = L.marker(
+                [12.9602853260431, 77.5726168164569],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_8c483ea817b683c7c0d28b0805755035 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_897da39d10bf3b3e70d3ab027e8ff103 = $(`<div id="html_897da39d10bf3b3e70d3ab027e8ff103" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.9602853260431<br>Longitude: 77.5726168164569</div>`)[0];
+                popup_8c483ea817b683c7c0d28b0805755035.setContent(html_897da39d10bf3b3e70d3ab027e8ff103);
+            
+        
+
+        marker_9ef6170d7b19236e474ce8ef0737c6d0.bindPopup(popup_8c483ea817b683c7c0d28b0805755035)
+        ;
+
+        
+    
+    
+            var marker_db69eed71854825fe31beafae51ff398 = L.marker(
+                [12.964241, 77.680117],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_3666b6eed033fd1035764cf9c12acbab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4599b8a64146c32a7352777b8be53935 = $(`<div id="html_4599b8a64146c32a7352777b8be53935" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.964241<br>Longitude: 77.680117</div>`)[0];
+                popup_3666b6eed033fd1035764cf9c12acbab.setContent(html_4599b8a64146c32a7352777b8be53935);
+            
+        
+
+        marker_db69eed71854825fe31beafae51ff398.bindPopup(popup_3666b6eed033fd1035764cf9c12acbab)
+        ;
+
+        
+    
+    
+            var marker_a56a6c9a2ce47f00e0c8d10407301f76 = L.marker(
+                [12.895561, 77.559174],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_211a2301ad147bb33ecf72541bb42d03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f821dc675ab2cdcbd203aaff9b5fc3bf = $(`<div id="html_f821dc675ab2cdcbd203aaff9b5fc3bf" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.895561<br>Longitude: 77.559174</div>`)[0];
+                popup_211a2301ad147bb33ecf72541bb42d03.setContent(html_f821dc675ab2cdcbd203aaff9b5fc3bf);
+            
+        
+
+        marker_a56a6c9a2ce47f00e0c8d10407301f76.bindPopup(popup_211a2301ad147bb33ecf72541bb42d03)
+        ;
+
+        
+    
+    
+            var marker_9a5440d92ee3119ca9455ae92b5f1781 = L.marker(
+                [12.949565, 77.616391],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_a76235a5d486fc60392ffc7a21b9d7c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e439180ae4694c71e68c68340e4ee22 = $(`<div id="html_1e439180ae4694c71e68c68340e4ee22" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Factory Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.949565<br>Longitude: 77.616391</div>`)[0];
+                popup_a76235a5d486fc60392ffc7a21b9d7c3.setContent(html_1e439180ae4694c71e68c68340e4ee22);
+            
+        
+
+        marker_9a5440d92ee3119ca9455ae92b5f1781.bindPopup(popup_a76235a5d486fc60392ffc7a21b9d7c3)
+        ;
+
+        
+    
+    
+            var marker_ba3dfa91052b638e72b99c0a2563b51e = L.marker(
+                [12.9595, 77.5806],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_4c71354fb300429eee78a1df0e9a27bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7f864a9aac2f910f8c3737bca239182 = $(`<div id="html_c7f864a9aac2f910f8c3737bca239182" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Factory Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.9595<br>Longitude: 77.5806</div>`)[0];
+                popup_4c71354fb300429eee78a1df0e9a27bd.setContent(html_c7f864a9aac2f910f8c3737bca239182);
+            
+        
+
+        marker_ba3dfa91052b638e72b99c0a2563b51e.bindPopup(popup_4c71354fb300429eee78a1df0e9a27bd)
+        ;
+
+        
+    
+    
+            var marker_fec7a458ca3ad991228429aab785304a = L.marker(
+                [12.897189, 77.623009],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_51436d866130e2a9b74242c7d1f71b15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b482e214db41b851fa16b7eb7394ce0 = $(`<div id="html_7b482e214db41b851fa16b7eb7394ce0" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Factory Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.897189<br>Longitude: 77.623009</div>`)[0];
+                popup_51436d866130e2a9b74242c7d1f71b15.setContent(html_7b482e214db41b851fa16b7eb7394ce0);
+            
+        
+
+        marker_fec7a458ca3ad991228429aab785304a.bindPopup(popup_51436d866130e2a9b74242c7d1f71b15)
+        ;
+
+        
+    
+    
+            var marker_2f5bccf20670aca0c8c942ac8c5f5b6d = L.marker(
+                [13.094611, 77.57704],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_7c410eea0877ce51dc3411f7d2d2916d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d396937a86f8b4aface37b404a0393e5 = $(`<div id="html_d396937a86f8b4aface37b404a0393e5" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 13.094611<br>Longitude: 77.57704</div>`)[0];
+                popup_7c410eea0877ce51dc3411f7d2d2916d.setContent(html_d396937a86f8b4aface37b404a0393e5);
+            
+        
+
+        marker_2f5bccf20670aca0c8c942ac8c5f5b6d.bindPopup(popup_7c410eea0877ce51dc3411f7d2d2916d)
+        ;
+
+        
+    
+    
+            var marker_84e9752162cb5369bd9ea4cec7d5ef7a = L.marker(
+                [12.928699, 77.534182],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_d1ae7f7b158aa0d02a386556926b32ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bcdff6da0e572349102d098cd961076 = $(`<div id="html_5bcdff6da0e572349102d098cd961076" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.928699<br>Longitude: 77.534182</div>`)[0];
+                popup_d1ae7f7b158aa0d02a386556926b32ca.setContent(html_5bcdff6da0e572349102d098cd961076);
+            
+        
+
+        marker_84e9752162cb5369bd9ea4cec7d5ef7a.bindPopup(popup_d1ae7f7b158aa0d02a386556926b32ca)
+        ;
+
+        
+    
+    
+            var marker_674ceccf2ea81969db84e146bfd84b95 = L.marker(
+                [12.93584, 77.93854],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_5cd061c3ad983c07b4b37493b85a5cae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac3dd683e1998bb09ffa3ea3687ffc24 = $(`<div id="html_ac3dd683e1998bb09ffa3ea3687ffc24" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non Prohibited Bore - In Disturbed Area<br>Latitude: 12.93584<br>Longitude: 77.93854</div>`)[0];
+                popup_5cd061c3ad983c07b4b37493b85a5cae.setContent(html_ac3dd683e1998bb09ffa3ea3687ffc24);
+            
+        
+
+        marker_674ceccf2ea81969db84e146bfd84b95.bindPopup(popup_5cd061c3ad983c07b4b37493b85a5cae)
+        ;
+
+        
+    
+    
+            var marker_3f4adf98d771cbf6c8eceb8776ece449 = L.marker(
+                [12.9522398292321, 77.54433320026979],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_3480d14ac08a5a7e28e28a6e246c0868 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e01163347ef58e8483c23eae2fa9964 = $(`<div id="html_7e01163347ef58e8483c23eae2fa9964" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non Prohibited Bore - In Disturbed Area<br>Latitude: 12.9522398292321<br>Longitude: 77.54433320026979</div>`)[0];
+                popup_3480d14ac08a5a7e28e28a6e246c0868.setContent(html_7e01163347ef58e8483c23eae2fa9964);
+            
+        
+
+        marker_3f4adf98d771cbf6c8eceb8776ece449.bindPopup(popup_3480d14ac08a5a7e28e28a6e246c0868)
+        ;
+
+        
+    
+    
+            var marker_0b872a5a07bc49025b6d5f5cde569212 = L.marker(
+                [13.054169, 77.632341],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_244e18787b687b469d13bb1f264eb572 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72f490bf3305db99ee0a548896f48b46 = $(`<div id="html_72f490bf3305db99ee0a548896f48b46" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 13.054169<br>Longitude: 77.632341</div>`)[0];
+                popup_244e18787b687b469d13bb1f264eb572.setContent(html_72f490bf3305db99ee0a548896f48b46);
+            
+        
+
+        marker_0b872a5a07bc49025b6d5f5cde569212.bindPopup(popup_244e18787b687b469d13bb1f264eb572)
+        ;
+
+        
+    
+    
+            var marker_f3c9de0f5cf0511585796636d31924af = L.marker(
+                [13.002371, 77.519186],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_c4a7f342e7bec3ce61b1c6189d957c15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b972b53be82ac9b1374e9d219d3db062 = $(`<div id="html_b972b53be82ac9b1374e9d219d3db062" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non Prohibited Bore - In Disturbed Area<br>Latitude: 13.002371<br>Longitude: 77.519186</div>`)[0];
+                popup_c4a7f342e7bec3ce61b1c6189d957c15.setContent(html_b972b53be82ac9b1374e9d219d3db062);
+            
+        
+
+        marker_f3c9de0f5cf0511585796636d31924af.bindPopup(popup_c4a7f342e7bec3ce61b1c6189d957c15)
+        ;
+
+        
+    
+    
+            var marker_b4a34d14c3f37a0f7a561ec9a85de491 = L.marker(
+                [12.961656, 77.543016],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_79318a0cb56c8ce8ecdf20df276e47b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4dcbb341f2a255ab8620ed40959b6bf = $(`<div id="html_d4dcbb341f2a255ab8620ed40959b6bf" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Prohibited Bore- In Other Area<br>Latitude: 12.961656<br>Longitude: 77.543016</div>`)[0];
+                popup_79318a0cb56c8ce8ecdf20df276e47b3.setContent(html_d4dcbb341f2a255ab8620ed40959b6bf);
+            
+        
+
+        marker_b4a34d14c3f37a0f7a561ec9a85de491.bindPopup(popup_79318a0cb56c8ce8ecdf20df276e47b3)
+        ;
+
+        
+    
+    
+            var marker_f944c198f2832edd9e5df08c687b7844 = L.marker(
+                [12.93168, 77.58016],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_221b3c990ba843eb06fd182cdf3ab302 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_153b1edee403413a3df197cb1def0884 = $(`<div id="html_153b1edee403413a3df197cb1def0884" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.93168<br>Longitude: 77.58016</div>`)[0];
+                popup_221b3c990ba843eb06fd182cdf3ab302.setContent(html_153b1edee403413a3df197cb1def0884);
+            
+        
+
+        marker_f944c198f2832edd9e5df08c687b7844.bindPopup(popup_221b3c990ba843eb06fd182cdf3ab302)
+        ;
+
+        
+    
+    
+            var marker_244895a691570032d68d085878ed7ac2 = L.marker(
+                [13.01037, 77.70276],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_7f13a8accfa0e460668075f8f6b887eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de628c6c982ed328c05044619a70ca4f = $(`<div id="html_de628c6c982ed328c05044619a70ca4f" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 13.01037<br>Longitude: 77.70276</div>`)[0];
+                popup_7f13a8accfa0e460668075f8f6b887eb.setContent(html_de628c6c982ed328c05044619a70ca4f);
+            
+        
+
+        marker_244895a691570032d68d085878ed7ac2.bindPopup(popup_7f13a8accfa0e460668075f8f6b887eb)
+        ;
+
+        
+    
+    
+            var marker_72e1d0ae70de35bcbbebdf2f3fa199fe = L.marker(
+                [12.89332, 77.607026],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_e96e60993712f7576facee6f7d52aba8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_781992c08d5c132553d6853e10281f0d = $(`<div id="html_781992c08d5c132553d6853e10281f0d" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.89332<br>Longitude: 77.607026</div>`)[0];
+                popup_e96e60993712f7576facee6f7d52aba8.setContent(html_781992c08d5c132553d6853e10281f0d);
+            
+        
+
+        marker_72e1d0ae70de35bcbbebdf2f3fa199fe.bindPopup(popup_e96e60993712f7576facee6f7d52aba8)
+        ;
+
+        
+    
+    
+            var marker_48cb22c31d116720e1e03d746ed98ef5 = L.marker(
+                [13.006551, 77.57531],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_9bcefbb71ecdd2b5e19f437e26c362ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6f9749d3585f8a3bf5f6ef36e0c0c2c = $(`<div id="html_c6f9749d3585f8a3bf5f6ef36e0c0c2c" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 13.006551<br>Longitude: 77.57531</div>`)[0];
+                popup_9bcefbb71ecdd2b5e19f437e26c362ab.setContent(html_c6f9749d3585f8a3bf5f6ef36e0c0c2c);
+            
+        
+
+        marker_48cb22c31d116720e1e03d746ed98ef5.bindPopup(popup_9bcefbb71ecdd2b5e19f437e26c362ab)
+        ;
+
+        
+    
+    
+            var marker_06b4a3180cc8e590e94b7f4b01abdcb4 = L.marker(
+                [12.99762, 77.576511],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_e0a462f8829bec9121efdecc75744457 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90ef4b46188a6223095c7534f638f696 = $(`<div id="html_90ef4b46188a6223095c7534f638f696" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.99762<br>Longitude: 77.576511</div>`)[0];
+                popup_e0a462f8829bec9121efdecc75744457.setContent(html_90ef4b46188a6223095c7534f638f696);
+            
+        
+
+        marker_06b4a3180cc8e590e94b7f4b01abdcb4.bindPopup(popup_e0a462f8829bec9121efdecc75744457)
+        ;
+
+        
+    
+    
+            var marker_bdb45be2bba0a708e66ea39ab8e4438c = L.marker(
+                [12.87974, 77.50031],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_58476780e1c1c53a3770d46eb307ec24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e84d90ecaaaf1a5b5d8dd2b70777a88 = $(`<div id="html_1e84d90ecaaaf1a5b5d8dd2b70777a88" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Prohibited Bore- In Other Area<br>Latitude: 12.87974<br>Longitude: 77.50031</div>`)[0];
+                popup_58476780e1c1c53a3770d46eb307ec24.setContent(html_1e84d90ecaaaf1a5b5d8dd2b70777a88);
+            
+        
+
+        marker_bdb45be2bba0a708e66ea39ab8e4438c.bindPopup(popup_58476780e1c1c53a3770d46eb307ec24)
+        ;
+
+        
+    
+    
+            var marker_9b95161ce21d2f25f82c7637dfe9cb70 = L.marker(
+                [12.948352, 77.618709],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_c297d6f98e91bf14fa340c205dad4609 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6499c9708193775c8eb519f454758d04 = $(`<div id="html_6499c9708193775c8eb519f454758d04" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.948352<br>Longitude: 77.618709</div>`)[0];
+                popup_c297d6f98e91bf14fa340c205dad4609.setContent(html_6499c9708193775c8eb519f454758d04);
+            
+        
+
+        marker_9b95161ce21d2f25f82c7637dfe9cb70.bindPopup(popup_c297d6f98e91bf14fa340c205dad4609)
+        ;
+
+        
+    
+    
+            var marker_268397c4e9c718adc41245230c73cd6a = L.marker(
+                [12.917594, 77.569054],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_fc5486084e3d48611184de4a99da6094 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_251c0b9f66ce72640ff983250ad01561 = $(`<div id="html_251c0b9f66ce72640ff983250ad01561" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Prohibited Bore- In Other Area<br>Latitude: 12.917594<br>Longitude: 77.569054</div>`)[0];
+                popup_fc5486084e3d48611184de4a99da6094.setContent(html_251c0b9f66ce72640ff983250ad01561);
+            
+        
+
+        marker_268397c4e9c718adc41245230c73cd6a.bindPopup(popup_fc5486084e3d48611184de4a99da6094)
+        ;
+
+        
+    
+    
+            var marker_42ec303f028be81cd5b3989aba3f6f36 = L.marker(
+                [13.007119, 77.575675],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_cbbf2fd9d66171dbe9293732d2fc55f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccae171fdc07a6723e8cd6a710f78099 = $(`<div id="html_ccae171fdc07a6723e8cd6a710f78099" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 13.007119<br>Longitude: 77.575675</div>`)[0];
+                popup_cbbf2fd9d66171dbe9293732d2fc55f7.setContent(html_ccae171fdc07a6723e8cd6a710f78099);
+            
+        
+
+        marker_42ec303f028be81cd5b3989aba3f6f36.bindPopup(popup_cbbf2fd9d66171dbe9293732d2fc55f7)
+        ;
+
+        
+    
+    
+            var marker_b12c5bf67cb9da7ec2b422742a1b485a = L.marker(
+                [12.975578, 77.610818],
+                {}
+            ).addTo(marker_cluster_329ae91e71d2a4cb0555c664befa7b46);
+        
+    
+        var popup_048e67b785bb0b601c4ca793e5418ae6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c45c569451c0446bf8d6762b39d6360f = $(`<div id="html_c45c569451c0446bf8d6762b39d6360f" style="width: 100.0%; height: 100.0%;">Crime Group: ARMS ACT  1959<br>Crime Head: Country Made - Non-Prohibited Bore - In Other Area<br>Latitude: 12.975578<br>Longitude: 77.610818</div>`)[0];
+                popup_048e67b785bb0b601c4ca793e5418ae6.setContent(html_c45c569451c0446bf8d6762b39d6360f);
+            
+        
+
+        marker_b12c5bf67cb9da7ec2b422742a1b485a.bindPopup(popup_048e67b785bb0b601c4ca793e5418ae6)
+        ;
+
+        
+    
+    
+            var layer_control_ec6429ad5b93bf5e4bf4b3d37ea0fafb = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b11fa6650b344754fc3fc616f833c758,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_ec6429ad5b93bf5e4bf4b3d37ea0fafb.base_layers,
+                layer_control_ec6429ad5b93bf5e4bf4b3d37ea0fafb.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6b8027a149730a251c039f26ba15bf0c);
+        
+</script>
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c573e8d3dca3d7a8a55f334748f16a48 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c573e8d3dca3d7a8a55f334748f16a48" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c573e8d3dca3d7a8a55f334748f16a48 = L.map(
+                "map_c573e8d3dca3d7a8a55f334748f16a48",
+                {
+                    center: [13.953774629629631, 76.25126451851851],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_002a613004b0710259f718fce05777da = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c573e8d3dca3d7a8a55f334748f16a48);
+        
+    
+            var marker_cluster_6969249dd03100d54828d9d631b53f28 = L.markerClusterGroup(
+                {}
+            );
+            map_c573e8d3dca3d7a8a55f334748f16a48.addLayer(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+            var marker_7bda8a1672f174840082992f64905e6e = L.marker(
+                [12.871528, 77.593877],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_072d7fef2d25482d57ae37151ddfa9f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0a62e58b251d4f2f35a646606b2ca6e = $(`<div id="html_c0a62e58b251d4f2f35a646606b2ca6e" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 12.871528<br>Longitude: 77.593877</div>`)[0];
+                popup_072d7fef2d25482d57ae37151ddfa9f0.setContent(html_c0a62e58b251d4f2f35a646606b2ca6e);
+            
+        
+
+        marker_7bda8a1672f174840082992f64905e6e.bindPopup(popup_072d7fef2d25482d57ae37151ddfa9f0)
+        ;
+
+        
+    
+    
+            var marker_eb378618ac2bfc187fe92e06a7d3e9f5 = L.marker(
+                [12.955218, 77.722847],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_9651fb9cd737dcbfc95fde161a792823 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24acd39939c85ee6bc48a788ae8d4cdd = $(`<div id="html_24acd39939c85ee6bc48a788ae8d4cdd" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 12.955218<br>Longitude: 77.722847</div>`)[0];
+                popup_9651fb9cd737dcbfc95fde161a792823.setContent(html_24acd39939c85ee6bc48a788ae8d4cdd);
+            
+        
+
+        marker_eb378618ac2bfc187fe92e06a7d3e9f5.bindPopup(popup_9651fb9cd737dcbfc95fde161a792823)
+        ;
+
+        
+    
+    
+            var marker_e01046342ff1c5019447a57e47770253 = L.marker(
+                [12.960074, 77.844262],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_0686d2d8924d251849543793033b79b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abd26ba6ca9be6133535199628ca4b8b = $(`<div id="html_abd26ba6ca9be6133535199628ca4b8b" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 12.960074<br>Longitude: 77.844262</div>`)[0];
+                popup_0686d2d8924d251849543793033b79b9.setContent(html_abd26ba6ca9be6133535199628ca4b8b);
+            
+        
+
+        marker_e01046342ff1c5019447a57e47770253.bindPopup(popup_0686d2d8924d251849543793033b79b9)
+        ;
+
+        
+    
+    
+            var marker_57dd5c9b7b90d76a7f3d1454467cb956 = L.marker(
+                [12.83599, 77.67883],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_ba0788d0b223ee8384ecfa3c6d353e83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ba7f975cd726c85d3d92c865acb084d = $(`<div id="html_5ba7f975cd726c85d3d92c865acb084d" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 12.83599<br>Longitude: 77.67883</div>`)[0];
+                popup_ba0788d0b223ee8384ecfa3c6d353e83.setContent(html_5ba7f975cd726c85d3d92c865acb084d);
+            
+        
+
+        marker_57dd5c9b7b90d76a7f3d1454467cb956.bindPopup(popup_ba0788d0b223ee8384ecfa3c6d353e83)
+        ;
+
+        
+    
+    
+            var marker_8785cfac1c76db2d853e87d17ac891fc = L.marker(
+                [13.780681, 77.830881],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_68da90e267a9f88e2c6a5a5cfc29cd6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3805bb2d597596c2709cc13d041b52dd = $(`<div id="html_3805bb2d597596c2709cc13d041b52dd" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 13.780681<br>Longitude: 77.830881</div>`)[0];
+                popup_68da90e267a9f88e2c6a5a5cfc29cd6d.setContent(html_3805bb2d597596c2709cc13d041b52dd);
+            
+        
+
+        marker_8785cfac1c76db2d853e87d17ac891fc.bindPopup(popup_68da90e267a9f88e2c6a5a5cfc29cd6d)
+        ;
+
+        
+    
+    
+            var marker_19d9b6799cc9c70741e20dcc0ad3ab27 = L.marker(
+                [13.342263, 75.458388],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_9753e5137289b90f67ac28ec577794d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d9196d930d91ce916825c77ea516fe4 = $(`<div id="html_2d9196d930d91ce916825c77ea516fe4" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 13.342263<br>Longitude: 75.458388</div>`)[0];
+                popup_9753e5137289b90f67ac28ec577794d1.setContent(html_2d9196d930d91ce916825c77ea516fe4);
+            
+        
+
+        marker_19d9b6799cc9c70741e20dcc0ad3ab27.bindPopup(popup_9753e5137289b90f67ac28ec577794d1)
+        ;
+
+        
+    
+    
+            var marker_5810b7c53a3fdf7f6d41db2aef48c817 = L.marker(
+                [13.317402, 75.710556],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_6b894182bae1f603974bf51494fc70cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07d084179dc56bad13a0515f5e36bf6f = $(`<div id="html_07d084179dc56bad13a0515f5e36bf6f" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 13.317402<br>Longitude: 75.710556</div>`)[0];
+                popup_6b894182bae1f603974bf51494fc70cb.setContent(html_07d084179dc56bad13a0515f5e36bf6f);
+            
+        
+
+        marker_5810b7c53a3fdf7f6d41db2aef48c817.bindPopup(popup_6b894182bae1f603974bf51494fc70cb)
+        ;
+
+        
+    
+    
+            var marker_303c471def39b600ac4553735b50f104 = L.marker(
+                [13.329159, 75.809361],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_d16510753e4a6b54d870971ef0972608 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca3f42086e274bbd8cf77731f118c17a = $(`<div id="html_ca3f42086e274bbd8cf77731f118c17a" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 13.329159<br>Longitude: 75.809361</div>`)[0];
+                popup_d16510753e4a6b54d870971ef0972608.setContent(html_ca3f42086e274bbd8cf77731f118c17a);
+            
+        
+
+        marker_303c471def39b600ac4553735b50f104.bindPopup(popup_d16510753e4a6b54d870971ef0972608)
+        ;
+
+        
+    
+    
+            var marker_4243bc4c0c976dc8c862d718f8f57184 = L.marker(
+                [12.990968, 75.36982],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_f52e65fb7cc58cef99cac73281bbf54e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_285f04d8b123450172d4b37bcf72869c = $(`<div id="html_285f04d8b123450172d4b37bcf72869c" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 12.990968<br>Longitude: 75.36982</div>`)[0];
+                popup_f52e65fb7cc58cef99cac73281bbf54e.setContent(html_285f04d8b123450172d4b37bcf72869c);
+            
+        
+
+        marker_4243bc4c0c976dc8c862d718f8f57184.bindPopup(popup_f52e65fb7cc58cef99cac73281bbf54e)
+        ;
+
+        
+    
+    
+            var marker_a7e3fbeaa4eb6fc0461fb6fd1ab0a1b1 = L.marker(
+                [14.071042, 75.929855],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_33938800988c4cb32bcf5bff964db327 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_597f105fedeb3b42162a860246807db4 = $(`<div id="html_597f105fedeb3b42162a860246807db4" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 14.071042<br>Longitude: 75.929855</div>`)[0];
+                popup_33938800988c4cb32bcf5bff964db327.setContent(html_597f105fedeb3b42162a860246807db4);
+            
+        
+
+        marker_a7e3fbeaa4eb6fc0461fb6fd1ab0a1b1.bindPopup(popup_33938800988c4cb32bcf5bff964db327)
+        ;
+
+        
+    
+    
+            var marker_18ccb86867046a38a112880d08c002fc = L.marker(
+                [14.449782, 75.914367],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_29ce08f67d41c69af2e43b31a3edf286 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ee639ebed7059a84e5038ae916a4a96 = $(`<div id="html_2ee639ebed7059a84e5038ae916a4a96" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 14.449782<br>Longitude: 75.914367</div>`)[0];
+                popup_29ce08f67d41c69af2e43b31a3edf286.setContent(html_2ee639ebed7059a84e5038ae916a4a96);
+            
+        
+
+        marker_18ccb86867046a38a112880d08c002fc.bindPopup(popup_29ce08f67d41c69af2e43b31a3edf286)
+        ;
+
+        
+    
+    
+            var marker_ea09638da6ccda9e6a386e896b63d429 = L.marker(
+                [13.011209, 76.10729],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_b50e592dd6e2f1ee548e12641ac7c879 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5da85b77a1883886074e9d3433b7c92f = $(`<div id="html_5da85b77a1883886074e9d3433b7c92f" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 13.011209<br>Longitude: 76.10729</div>`)[0];
+                popup_b50e592dd6e2f1ee548e12641ac7c879.setContent(html_5da85b77a1883886074e9d3433b7c92f);
+            
+        
+
+        marker_ea09638da6ccda9e6a386e896b63d429.bindPopup(popup_b50e592dd6e2f1ee548e12641ac7c879)
+        ;
+
+        
+    
+    
+            var marker_40e8ae1ac3eacde5dc741e1fffc823ca = L.marker(
+                [15.336584, 74.505463],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_7ae044a69d51f90b558a742a51ffb408 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54215ce0c7e40b105ce0977749ef5894 = $(`<div id="html_54215ce0c7e40b105ce0977749ef5894" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 15.336584<br>Longitude: 74.505463</div>`)[0];
+                popup_7ae044a69d51f90b558a742a51ffb408.setContent(html_54215ce0c7e40b105ce0977749ef5894);
+            
+        
+
+        marker_40e8ae1ac3eacde5dc741e1fffc823ca.bindPopup(popup_7ae044a69d51f90b558a742a51ffb408)
+        ;
+
+        
+    
+    
+            var marker_c6dc8f9802e45ba5f750b8b477ae9bbd = L.marker(
+                [17.33896, 76.845086],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_6423e5516a833e141275b5c68ec11f92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65b373dacbf2e924db6ae27a1dd241d6 = $(`<div id="html_65b373dacbf2e924db6ae27a1dd241d6" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 17.33896<br>Longitude: 76.845086</div>`)[0];
+                popup_6423e5516a833e141275b5c68ec11f92.setContent(html_65b373dacbf2e924db6ae27a1dd241d6);
+            
+        
+
+        marker_c6dc8f9802e45ba5f750b8b477ae9bbd.bindPopup(popup_6423e5516a833e141275b5c68ec11f92)
+        ;
+
+        
+    
+    
+            var marker_480eb2457679bf69cc00208e1ed6a97f = L.marker(
+                [12.940022, 74.865327],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_babec0b8a84bf2a78b794b2dd7899588 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04de6ed004533b54993f00b140f23d99 = $(`<div id="html_04de6ed004533b54993f00b140f23d99" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 12.940022<br>Longitude: 74.865327</div>`)[0];
+                popup_babec0b8a84bf2a78b794b2dd7899588.setContent(html_04de6ed004533b54993f00b140f23d99);
+            
+        
+
+        marker_480eb2457679bf69cc00208e1ed6a97f.bindPopup(popup_babec0b8a84bf2a78b794b2dd7899588)
+        ;
+
+        
+    
+    
+            var marker_8a0538444b8807458c533978bb03296e = L.marker(
+                [12.889566, 74.856971],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_498acbe996864ea21da4b5f3af63cdc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81805ca5ac5cad865b7b743745e734c2 = $(`<div id="html_81805ca5ac5cad865b7b743745e734c2" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 12.889566<br>Longitude: 74.856971</div>`)[0];
+                popup_498acbe996864ea21da4b5f3af63cdc4.setContent(html_81805ca5ac5cad865b7b743745e734c2);
+            
+        
+
+        marker_8a0538444b8807458c533978bb03296e.bindPopup(popup_498acbe996864ea21da4b5f3af63cdc4)
+        ;
+
+        
+    
+    
+            var marker_ff709724e5e57819d502983a539c27eb = L.marker(
+                [12.457812, 74.548569],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_023490cd1c436687932e665bfd188855 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62f283a4169bf60dfa3510c9dcbfd4fc = $(`<div id="html_62f283a4169bf60dfa3510c9dcbfd4fc" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 12.457812<br>Longitude: 74.548569</div>`)[0];
+                popup_023490cd1c436687932e665bfd188855.setContent(html_62f283a4169bf60dfa3510c9dcbfd4fc);
+            
+        
+
+        marker_ff709724e5e57819d502983a539c27eb.bindPopup(popup_023490cd1c436687932e665bfd188855)
+        ;
+
+        
+    
+    
+            var marker_6305d1efb731daf64a430bb845572897 = L.marker(
+                [12.254108, 76.638421],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_36102c4bc9b2461f40568c68c787ef72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f73abdf0b1fa17a9fef22648bd777a22 = $(`<div id="html_f73abdf0b1fa17a9fef22648bd777a22" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 12.254108<br>Longitude: 76.638421</div>`)[0];
+                popup_36102c4bc9b2461f40568c68c787ef72.setContent(html_f73abdf0b1fa17a9fef22648bd777a22);
+            
+        
+
+        marker_6305d1efb731daf64a430bb845572897.bindPopup(popup_36102c4bc9b2461f40568c68c787ef72)
+        ;
+
+        
+    
+    
+            var marker_f8281f70d30cd48ba03bd79a68593fcc = L.marker(
+                [12.646666, 77.319414],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_c7a391fd315292a0bb9135009c4f38dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67bd7ca895fe41dd70031f24ddb0e7fc = $(`<div id="html_67bd7ca895fe41dd70031f24ddb0e7fc" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 12.646666<br>Longitude: 77.319414</div>`)[0];
+                popup_c7a391fd315292a0bb9135009c4f38dd.setContent(html_67bd7ca895fe41dd70031f24ddb0e7fc);
+            
+        
+
+        marker_f8281f70d30cd48ba03bd79a68593fcc.bindPopup(popup_c7a391fd315292a0bb9135009c4f38dd)
+        ;
+
+        
+    
+    
+            var marker_147f27c30cce87fecd811fa2a2f24d1a = L.marker(
+                [13.820708, 75.030202],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_1dfcfbc0fc065b2e328444e848424a18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07e76b7ea0d97069aa820e7353a6a403 = $(`<div id="html_07e76b7ea0d97069aa820e7353a6a403" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 13.820708<br>Longitude: 75.030202</div>`)[0];
+                popup_1dfcfbc0fc065b2e328444e848424a18.setContent(html_07e76b7ea0d97069aa820e7353a6a403);
+            
+        
+
+        marker_147f27c30cce87fecd811fa2a2f24d1a.bindPopup(popup_1dfcfbc0fc065b2e328444e848424a18)
+        ;
+
+        
+    
+    
+            var marker_adce07ebba6d4bb8f71c4678f23e1f0d = L.marker(
+                [13.391314, 76.871172],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_3268e86023fec986261c21a23270bb18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_407163155414cda1057bf1ef0da047c4 = $(`<div id="html_407163155414cda1057bf1ef0da047c4" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 13.391314<br>Longitude: 76.871172</div>`)[0];
+                popup_3268e86023fec986261c21a23270bb18.setContent(html_407163155414cda1057bf1ef0da047c4);
+            
+        
+
+        marker_adce07ebba6d4bb8f71c4678f23e1f0d.bindPopup(popup_3268e86023fec986261c21a23270bb18)
+        ;
+
+        
+    
+    
+            var marker_e41d244338af36bf4af9d8f6d844215c = L.marker(
+                [13.813185, 76.835301],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_ce88d65c5b7734cbba11d74c26361a21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c61b02faaf372440f1ce15651921e8e = $(`<div id="html_0c61b02faaf372440f1ce15651921e8e" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 13.813185<br>Longitude: 76.835301</div>`)[0];
+                popup_ce88d65c5b7734cbba11d74c26361a21.setContent(html_0c61b02faaf372440f1ce15651921e8e);
+            
+        
+
+        marker_e41d244338af36bf4af9d8f6d844215c.bindPopup(popup_ce88d65c5b7734cbba11d74c26361a21)
+        ;
+
+        
+    
+    
+            var marker_ad6980a122ae49af28f91adbec7e5fa3 = L.marker(
+                [13.300272, 77.080702],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_b85fc053342ccfcd59cd304117576b01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a22688e32c416a02dac0aa7a271e43bb = $(`<div id="html_a22688e32c416a02dac0aa7a271e43bb" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 13.300272<br>Longitude: 77.080702</div>`)[0];
+                popup_b85fc053342ccfcd59cd304117576b01.setContent(html_a22688e32c416a02dac0aa7a271e43bb);
+            
+        
+
+        marker_ad6980a122ae49af28f91adbec7e5fa3.bindPopup(popup_b85fc053342ccfcd59cd304117576b01)
+        ;
+
+        
+    
+    
+            var marker_255e1f3bf5af3d4210fbf2eec65f594a = L.marker(
+                [16.349098, 76.128857],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_a4fd3b443e3d217d71960b20f36857a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be8df98f6dc841077385e016f2e1b164 = $(`<div id="html_be8df98f6dc841077385e016f2e1b164" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 16.349098<br>Longitude: 76.128857</div>`)[0];
+                popup_a4fd3b443e3d217d71960b20f36857a5.setContent(html_be8df98f6dc841077385e016f2e1b164);
+            
+        
+
+        marker_255e1f3bf5af3d4210fbf2eec65f594a.bindPopup(popup_a4fd3b443e3d217d71960b20f36857a5)
+        ;
+
+        
+    
+    
+            var marker_d460e6d868b8ec1dfbf2ef8442dd02d1 = L.marker(
+                [16.913203, 76.214214],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_448f90686d9dacaa6edb829e4aa5f0b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb8ecbd7819f82a0b6f62da838e14e4b = $(`<div id="html_bb8ecbd7819f82a0b6f62da838e14e4b" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 16.913203<br>Longitude: 76.214214</div>`)[0];
+                popup_448f90686d9dacaa6edb829e4aa5f0b0.setContent(html_bb8ecbd7819f82a0b6f62da838e14e4b);
+            
+        
+
+        marker_d460e6d868b8ec1dfbf2ef8442dd02d1.bindPopup(popup_448f90686d9dacaa6edb829e4aa5f0b0)
+        ;
+
+        
+    
+    
+            var marker_f108a62abbde313ccd989678efe2cf6f = L.marker(
+                [16.470112, 76.310153],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_092b8e1b21e5b26eb41735795310d24d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b997764aca5c701630792cea1332646a = $(`<div id="html_b997764aca5c701630792cea1332646a" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 16.470112<br>Longitude: 76.310153</div>`)[0];
+                popup_092b8e1b21e5b26eb41735795310d24d.setContent(html_b997764aca5c701630792cea1332646a);
+            
+        
+
+        marker_f108a62abbde313ccd989678efe2cf6f.bindPopup(popup_092b8e1b21e5b26eb41735795310d24d)
+        ;
+
+        
+    
+    
+            var marker_8d7e212efb205115a3dd6cb349f983ea = L.marker(
+                [16.914989, 75.763956],
+                {}
+            ).addTo(marker_cluster_6969249dd03100d54828d9d631b53f28);
+        
+    
+        var popup_3dfea9d6cae683e325f3acfcdce9f8d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62057c95f0b41cb827bc22098d2004ba = $(`<div id="html_62057c95f0b41cb827bc22098d2004ba" style="width: 100.0%; height: 100.0%;">Crime Group: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Crime Head: ASSAULT OR USE OF CRIMINAL FORCE TO DISROBE WOMAN<br>Latitude: 16.914989<br>Longitude: 75.763956</div>`)[0];
+                popup_3dfea9d6cae683e325f3acfcdce9f8d9.setContent(html_62057c95f0b41cb827bc22098d2004ba);
+            
+        
+
+        marker_8d7e212efb205115a3dd6cb349f983ea.bindPopup(popup_3dfea9d6cae683e325f3acfcdce9f8d9)
+        ;
+
+        
+    
+    
+            var layer_control_3c2e942c065a4f023f6d0a8cff9730d7 = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_002a613004b0710259f718fce05777da,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_3c2e942c065a4f023f6d0a8cff9730d7.base_layers,
+                layer_control_3c2e942c065a4f023f6d0a8cff9730d7.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c573e8d3dca3d7a8a55f334748f16a48);
+        
+</script>
+</html>

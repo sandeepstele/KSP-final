@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4aa610f9b9843c6759f32ec7c098fac8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4aa610f9b9843c6759f32ec7c098fac8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4aa610f9b9843c6759f32ec7c098fac8 = L.map(
+                "map_4aa610f9b9843c6759f32ec7c098fac8",
+                {
+                    center: [13.231161496351783, 77.2245901093849],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8581f2b11a496055ddd060f05fdcec5a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4aa610f9b9843c6759f32ec7c098fac8);
+        
+    
+            var marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce = L.markerClusterGroup(
+                {}
+            );
+            map_4aa610f9b9843c6759f32ec7c098fac8.addLayer(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+            var marker_92e7ab60f8968bcb111779a5e98f220e = L.marker(
+                [12.9792278087213, 77.50675461775299],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_78789dff089bf20e7df75a842f405198 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b85e8c8e7aec3bbc135511e6c1de7cd0 = $(`<div id="html_b85e8c8e7aec3bbc135511e6c1de7cd0" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 12.9792278087213<br>Longitude: 77.50675461775299</div>`)[0];
+                popup_78789dff089bf20e7df75a842f405198.setContent(html_b85e8c8e7aec3bbc135511e6c1de7cd0);
+            
+        
+
+        marker_92e7ab60f8968bcb111779a5e98f220e.bindPopup(popup_78789dff089bf20e7df75a842f405198)
+        ;
+
+        
+    
+    
+            var marker_c1cb8a73113a288a6d0ad6127a51efc8 = L.marker(
+                [12.942048, 77.574231],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_61c6a761331ffda887f8c27c58d09027 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3a3438d6cf7306a4996cdfd3d92f788 = $(`<div id="html_f3a3438d6cf7306a4996cdfd3d92f788" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 12.942048<br>Longitude: 77.574231</div>`)[0];
+                popup_61c6a761331ffda887f8c27c58d09027.setContent(html_f3a3438d6cf7306a4996cdfd3d92f788);
+            
+        
+
+        marker_c1cb8a73113a288a6d0ad6127a51efc8.bindPopup(popup_61c6a761331ffda887f8c27c58d09027)
+        ;
+
+        
+    
+    
+            var marker_7554c01702ab38641e4c462efd72f22f = L.marker(
+                [12.942146, 77.579348],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_65c3ee77b61861db5f004a60b55db2fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13d7c9b8bceceb7cffa3c217e16f864a = $(`<div id="html_13d7c9b8bceceb7cffa3c217e16f864a" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 12.942146<br>Longitude: 77.579348</div>`)[0];
+                popup_65c3ee77b61861db5f004a60b55db2fe.setContent(html_13d7c9b8bceceb7cffa3c217e16f864a);
+            
+        
+
+        marker_7554c01702ab38641e4c462efd72f22f.bindPopup(popup_65c3ee77b61861db5f004a60b55db2fe)
+        ;
+
+        
+    
+    
+            var marker_08ca45e1580bc656571276772bc01bd2 = L.marker(
+                [12.939003, 77.579209],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_39e4fc604d8484f05351a28e094fa7c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb5122e106296144ba3b17a92dea2318 = $(`<div id="html_eb5122e106296144ba3b17a92dea2318" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 12.939003<br>Longitude: 77.579209</div>`)[0];
+                popup_39e4fc604d8484f05351a28e094fa7c5.setContent(html_eb5122e106296144ba3b17a92dea2318);
+            
+        
+
+        marker_08ca45e1580bc656571276772bc01bd2.bindPopup(popup_39e4fc604d8484f05351a28e094fa7c5)
+        ;
+
+        
+    
+    
+            var marker_ba5e176abea7fa6fac6cf7aadad9ce99 = L.marker(
+                [13.199797, 77.708807],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_4b9bf03bce1c951b253be3b00f3e7f49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f03d69c65f2c0fcc7779f94ff78e8b7 = $(`<div id="html_3f03d69c65f2c0fcc7779f94ff78e8b7" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199797<br>Longitude: 77.708807</div>`)[0];
+                popup_4b9bf03bce1c951b253be3b00f3e7f49.setContent(html_3f03d69c65f2c0fcc7779f94ff78e8b7);
+            
+        
+
+        marker_ba5e176abea7fa6fac6cf7aadad9ce99.bindPopup(popup_4b9bf03bce1c951b253be3b00f3e7f49)
+        ;
+
+        
+    
+    
+            var marker_90687845d0ae9bd0f24f5f4a48682570 = L.marker(
+                [13.200869, 77.710364],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_c4e8e548a83432dc805e68c34d639965 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9397c343a7bc51db1cb05ebb74cdb77 = $(`<div id="html_a9397c343a7bc51db1cb05ebb74cdb77" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.200869<br>Longitude: 77.710364</div>`)[0];
+                popup_c4e8e548a83432dc805e68c34d639965.setContent(html_a9397c343a7bc51db1cb05ebb74cdb77);
+            
+        
+
+        marker_90687845d0ae9bd0f24f5f4a48682570.bindPopup(popup_c4e8e548a83432dc805e68c34d639965)
+        ;
+
+        
+    
+    
+            var marker_daedfd415048aca97f7e0d8721e87800 = L.marker(
+                [13.203103, 77.701237],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_6bc65f62e6ba040806183eb8bfbd1ac7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7933e4ec0742db353a6a255442dee24 = $(`<div id="html_f7933e4ec0742db353a6a255442dee24" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 13.203103<br>Longitude: 77.701237</div>`)[0];
+                popup_6bc65f62e6ba040806183eb8bfbd1ac7.setContent(html_f7933e4ec0742db353a6a255442dee24);
+            
+        
+
+        marker_daedfd415048aca97f7e0d8721e87800.bindPopup(popup_6bc65f62e6ba040806183eb8bfbd1ac7)
+        ;
+
+        
+    
+    
+            var marker_2b5b59d14dd1b9a9e67493eb11875e09 = L.marker(
+                [13.201594, 77.7069689],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_b90572a6a0d43b8beb17a8c3ff0fa31d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df1fa175f525042cff9727262da66b79 = $(`<div id="html_df1fa175f525042cff9727262da66b79" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.201594<br>Longitude: 77.7069689</div>`)[0];
+                popup_b90572a6a0d43b8beb17a8c3ff0fa31d.setContent(html_df1fa175f525042cff9727262da66b79);
+            
+        
+
+        marker_2b5b59d14dd1b9a9e67493eb11875e09.bindPopup(popup_b90572a6a0d43b8beb17a8c3ff0fa31d)
+        ;
+
+        
+    
+    
+            var marker_e6f33737f8eac72b31eee02a17875ba2 = L.marker(
+                [13.19952, 77.706384],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_1fa5d51f3dd5f6c5b33f3dfd7d1b5510 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9af605610079581e87f44d338524ccb = $(`<div id="html_c9af605610079581e87f44d338524ccb" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.19952<br>Longitude: 77.706384</div>`)[0];
+                popup_1fa5d51f3dd5f6c5b33f3dfd7d1b5510.setContent(html_c9af605610079581e87f44d338524ccb);
+            
+        
+
+        marker_e6f33737f8eac72b31eee02a17875ba2.bindPopup(popup_1fa5d51f3dd5f6c5b33f3dfd7d1b5510)
+        ;
+
+        
+    
+    
+            var marker_4b4ea7f641323ebd299b51af918f8770 = L.marker(
+                [13.199453, 77.705812],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_71e01ab8b2ae743124b9d381a037c459 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1353323f462221506a16f93a2fdbb54e = $(`<div id="html_1353323f462221506a16f93a2fdbb54e" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199453<br>Longitude: 77.705812</div>`)[0];
+                popup_71e01ab8b2ae743124b9d381a037c459.setContent(html_1353323f462221506a16f93a2fdbb54e);
+            
+        
+
+        marker_4b4ea7f641323ebd299b51af918f8770.bindPopup(popup_71e01ab8b2ae743124b9d381a037c459)
+        ;
+
+        
+    
+    
+            var marker_f01bc20a35831caeb3994b62a7bd76a7 = L.marker(
+                [13.199193, 77.706359],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_516b42650f0a35536772bca3ed0222dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c743111b4ac7aa16d9cc00ca3dc4c8f7 = $(`<div id="html_c743111b4ac7aa16d9cc00ca3dc4c8f7" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199193<br>Longitude: 77.706359</div>`)[0];
+                popup_516b42650f0a35536772bca3ed0222dc.setContent(html_c743111b4ac7aa16d9cc00ca3dc4c8f7);
+            
+        
+
+        marker_f01bc20a35831caeb3994b62a7bd76a7.bindPopup(popup_516b42650f0a35536772bca3ed0222dc)
+        ;
+
+        
+    
+    
+            var marker_19138677ec0c2a4b54402ae235139b93 = L.marker(
+                [13.198979, 77.706277],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_3388f706437198d24bb7ea5bfde125ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fc68ed5c0a0f811d7fae214573c9cde = $(`<div id="html_6fc68ed5c0a0f811d7fae214573c9cde" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.198979<br>Longitude: 77.706277</div>`)[0];
+                popup_3388f706437198d24bb7ea5bfde125ab.setContent(html_6fc68ed5c0a0f811d7fae214573c9cde);
+            
+        
+
+        marker_19138677ec0c2a4b54402ae235139b93.bindPopup(popup_3388f706437198d24bb7ea5bfde125ab)
+        ;
+
+        
+    
+    
+            var marker_dfb06f63243034cb70b6b3e7b1c40a99 = L.marker(
+                [13.19927, 77.706204],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_d83896a7ffc2621407491ad6865752f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e53d296a3a4e0645a282ad2a87d2a4e = $(`<div id="html_9e53d296a3a4e0645a282ad2a87d2a4e" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.19927<br>Longitude: 77.706204</div>`)[0];
+                popup_d83896a7ffc2621407491ad6865752f2.setContent(html_9e53d296a3a4e0645a282ad2a87d2a4e);
+            
+        
+
+        marker_dfb06f63243034cb70b6b3e7b1c40a99.bindPopup(popup_d83896a7ffc2621407491ad6865752f2)
+        ;
+
+        
+    
+    
+            var marker_59c36d579bdd93552dac62db55f3e195 = L.marker(
+                [13.199567, 77.70622],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_2516f451b3536d264d49ba37a21d274a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7200c289887745e60838153531c75680 = $(`<div id="html_7200c289887745e60838153531c75680" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199567<br>Longitude: 77.70622</div>`)[0];
+                popup_2516f451b3536d264d49ba37a21d274a.setContent(html_7200c289887745e60838153531c75680);
+            
+        
+
+        marker_59c36d579bdd93552dac62db55f3e195.bindPopup(popup_2516f451b3536d264d49ba37a21d274a)
+        ;
+
+        
+    
+    
+            var marker_91eff486ebdee4d6e2f2e4c2b740fba7 = L.marker(
+                [13.199091, 77.706204],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_9701fe21c41b037239efb76defe97ea0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7fc553fefb0e8d6c45b128612466b34 = $(`<div id="html_e7fc553fefb0e8d6c45b128612466b34" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199091<br>Longitude: 77.706204</div>`)[0];
+                popup_9701fe21c41b037239efb76defe97ea0.setContent(html_e7fc553fefb0e8d6c45b128612466b34);
+            
+        
+
+        marker_91eff486ebdee4d6e2f2e4c2b740fba7.bindPopup(popup_9701fe21c41b037239efb76defe97ea0)
+        ;
+
+        
+    
+    
+            var marker_c9c60f4e6bec92787e430d5b064cd167 = L.marker(
+                [13.199343, 77.706601],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_97f18a8fc5840bf2d5e464d2d77b5412 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2c9caff898552922427b74f712c5d8d = $(`<div id="html_f2c9caff898552922427b74f712c5d8d" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199343<br>Longitude: 77.706601</div>`)[0];
+                popup_97f18a8fc5840bf2d5e464d2d77b5412.setContent(html_f2c9caff898552922427b74f712c5d8d);
+            
+        
+
+        marker_c9c60f4e6bec92787e430d5b064cd167.bindPopup(popup_97f18a8fc5840bf2d5e464d2d77b5412)
+        ;
+
+        
+    
+    
+            var marker_c6eba32e29bb5dd90eadf956f90bdcab = L.marker(
+                [13.199503, 77.706261],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_feffe5953ec31c772f063fce61d88ecd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2521ef7aa90973828f2fa01be172b6e1 = $(`<div id="html_2521ef7aa90973828f2fa01be172b6e1" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199503<br>Longitude: 77.706261</div>`)[0];
+                popup_feffe5953ec31c772f063fce61d88ecd.setContent(html_2521ef7aa90973828f2fa01be172b6e1);
+            
+        
+
+        marker_c6eba32e29bb5dd90eadf956f90bdcab.bindPopup(popup_feffe5953ec31c772f063fce61d88ecd)
+        ;
+
+        
+    
+    
+            var marker_200c644a353fc59b4567d1499cc5b831 = L.marker(
+                [13.199742, 77.706553],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_170d15476cfbef801f520a1a471e43a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd6c1b80422bce6d7239e0b271042cf7 = $(`<div id="html_dd6c1b80422bce6d7239e0b271042cf7" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199742<br>Longitude: 77.706553</div>`)[0];
+                popup_170d15476cfbef801f520a1a471e43a7.setContent(html_dd6c1b80422bce6d7239e0b271042cf7);
+            
+        
+
+        marker_200c644a353fc59b4567d1499cc5b831.bindPopup(popup_170d15476cfbef801f520a1a471e43a7)
+        ;
+
+        
+    
+    
+            var marker_a6ef7f857a7dbe085ae7129079401b93 = L.marker(
+                [13.199301, 77.7063319],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_8a79151a60d0ada1e9ec0f612e68aa1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_502f3c349dc12806fee4db81bad9aeed = $(`<div id="html_502f3c349dc12806fee4db81bad9aeed" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199301<br>Longitude: 77.7063319</div>`)[0];
+                popup_8a79151a60d0ada1e9ec0f612e68aa1d.setContent(html_502f3c349dc12806fee4db81bad9aeed);
+            
+        
+
+        marker_a6ef7f857a7dbe085ae7129079401b93.bindPopup(popup_8a79151a60d0ada1e9ec0f612e68aa1d)
+        ;
+
+        
+    
+    
+            var marker_cda2061311e62113612dc136b5b6a25e = L.marker(
+                [13.199047, 77.706792],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_ffeeea479aca11ad499bfd407c407920 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_970fab78edaaf458f086a91df8cd01db = $(`<div id="html_970fab78edaaf458f086a91df8cd01db" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199047<br>Longitude: 77.706792</div>`)[0];
+                popup_ffeeea479aca11ad499bfd407c407920.setContent(html_970fab78edaaf458f086a91df8cd01db);
+            
+        
+
+        marker_cda2061311e62113612dc136b5b6a25e.bindPopup(popup_ffeeea479aca11ad499bfd407c407920)
+        ;
+
+        
+    
+    
+            var marker_053fd264ce346b30ad3971c1b3c95719 = L.marker(
+                [13.199136, 77.70667],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_6fbb1aa6c0cdb36e6da742f902f75ce9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffbf6c938b59b03073b6a3f5003741b8 = $(`<div id="html_ffbf6c938b59b03073b6a3f5003741b8" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199136<br>Longitude: 77.70667</div>`)[0];
+                popup_6fbb1aa6c0cdb36e6da742f902f75ce9.setContent(html_ffbf6c938b59b03073b6a3f5003741b8);
+            
+        
+
+        marker_053fd264ce346b30ad3971c1b3c95719.bindPopup(popup_6fbb1aa6c0cdb36e6da742f902f75ce9)
+        ;
+
+        
+    
+    
+            var marker_a36ac122397ac686c490230dc83552d7 = L.marker(
+                [13.199273, 77.706153],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_4b3c0322fdf59e197290deff0cb308f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22899502d370ea77b51d160674aa70ff = $(`<div id="html_22899502d370ea77b51d160674aa70ff" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199273<br>Longitude: 77.706153</div>`)[0];
+                popup_4b3c0322fdf59e197290deff0cb308f3.setContent(html_22899502d370ea77b51d160674aa70ff);
+            
+        
+
+        marker_a36ac122397ac686c490230dc83552d7.bindPopup(popup_4b3c0322fdf59e197290deff0cb308f3)
+        ;
+
+        
+    
+    
+            var marker_c371cd407113cf975dbe735953eb50f6 = L.marker(
+                [13.199335, 77.706974],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_910fc99f911fe5459a6bff566bc7391f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_751c77be21a33fd02e8f0074b4c20f2f = $(`<div id="html_751c77be21a33fd02e8f0074b4c20f2f" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 13.199335<br>Longitude: 77.706974</div>`)[0];
+                popup_910fc99f911fe5459a6bff566bc7391f.setContent(html_751c77be21a33fd02e8f0074b4c20f2f);
+            
+        
+
+        marker_c371cd407113cf975dbe735953eb50f6.bindPopup(popup_910fc99f911fe5459a6bff566bc7391f)
+        ;
+
+        
+    
+    
+            var marker_1743065a605fc7e12630561fa41297d4 = L.marker(
+                [13.199141, 77.706019],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_10ba792562683ccd6d04469205aa2e26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_377ce9e3fe88aabc990d14015731817b = $(`<div id="html_377ce9e3fe88aabc990d14015731817b" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199141<br>Longitude: 77.706019</div>`)[0];
+                popup_10ba792562683ccd6d04469205aa2e26.setContent(html_377ce9e3fe88aabc990d14015731817b);
+            
+        
+
+        marker_1743065a605fc7e12630561fa41297d4.bindPopup(popup_10ba792562683ccd6d04469205aa2e26)
+        ;
+
+        
+    
+    
+            var marker_4f8c9396f35a4d808db552281cef3435 = L.marker(
+                [13.199308, 77.706097],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_a5394e13b2656b68f7ffd83f7af0bdef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0afb8dddd749a072aa48639aeab318f4 = $(`<div id="html_0afb8dddd749a072aa48639aeab318f4" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199308<br>Longitude: 77.706097</div>`)[0];
+                popup_a5394e13b2656b68f7ffd83f7af0bdef.setContent(html_0afb8dddd749a072aa48639aeab318f4);
+            
+        
+
+        marker_4f8c9396f35a4d808db552281cef3435.bindPopup(popup_a5394e13b2656b68f7ffd83f7af0bdef)
+        ;
+
+        
+    
+    
+            var marker_1733f7acc55cfb8b59fd439076bd4b37 = L.marker(
+                [13.199231, 77.706323],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_06fa9be05b42368528b6397f4e83781d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c7362ea8e76c3e13e5d51d3d165e3f2 = $(`<div id="html_4c7362ea8e76c3e13e5d51d3d165e3f2" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.199231<br>Longitude: 77.706323</div>`)[0];
+                popup_06fa9be05b42368528b6397f4e83781d.setContent(html_4c7362ea8e76c3e13e5d51d3d165e3f2);
+            
+        
+
+        marker_1733f7acc55cfb8b59fd439076bd4b37.bindPopup(popup_06fa9be05b42368528b6397f4e83781d)
+        ;
+
+        
+    
+    
+            var marker_d93082e7ea15c663611203b959c4372b = L.marker(
+                [13.198956, 77.706671],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_af740c07afb06a44d9fb0e7bd9c06818 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eede76246b8b5bc89e2d792ef8a0df7e = $(`<div id="html_eede76246b8b5bc89e2d792ef8a0df7e" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.198956<br>Longitude: 77.706671</div>`)[0];
+                popup_af740c07afb06a44d9fb0e7bd9c06818.setContent(html_eede76246b8b5bc89e2d792ef8a0df7e);
+            
+        
+
+        marker_d93082e7ea15c663611203b959c4372b.bindPopup(popup_af740c07afb06a44d9fb0e7bd9c06818)
+        ;
+
+        
+    
+    
+            var marker_0f08d09d1116152aba0675f42f4537d7 = L.marker(
+                [13.200489, 77.709927],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_b423322dc589bdad9169cbad9fb52b27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bb480926d05a45898fe168c5428fa57 = $(`<div id="html_7bb480926d05a45898fe168c5428fa57" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.200489<br>Longitude: 77.709927</div>`)[0];
+                popup_b423322dc589bdad9169cbad9fb52b27.setContent(html_7bb480926d05a45898fe168c5428fa57);
+            
+        
+
+        marker_0f08d09d1116152aba0675f42f4537d7.bindPopup(popup_b423322dc589bdad9169cbad9fb52b27)
+        ;
+
+        
+    
+    
+            var marker_ca0a68158c87127a8d05722628bd6b2f = L.marker(
+                [13.19917, 77.705742],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_576cc649ad8e607cdf7c3f0de73ebb4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d710542905b02d741e0fd2079bcebe6 = $(`<div id="html_4d710542905b02d741e0fd2079bcebe6" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.19917<br>Longitude: 77.705742</div>`)[0];
+                popup_576cc649ad8e607cdf7c3f0de73ebb4e.setContent(html_4d710542905b02d741e0fd2079bcebe6);
+            
+        
+
+        marker_ca0a68158c87127a8d05722628bd6b2f.bindPopup(popup_576cc649ad8e607cdf7c3f0de73ebb4e)
+        ;
+
+        
+    
+    
+            var marker_7537ae7f6bea5304fa326db2e20d2532 = L.marker(
+                [13.200941, 77.710844],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_84f93b14c6837d33d7782f2d9136b05c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a37144843bda7eb514b529555bdcb070 = $(`<div id="html_a37144843bda7eb514b529555bdcb070" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.200941<br>Longitude: 77.710844</div>`)[0];
+                popup_84f93b14c6837d33d7782f2d9136b05c.setContent(html_a37144843bda7eb514b529555bdcb070);
+            
+        
+
+        marker_7537ae7f6bea5304fa326db2e20d2532.bindPopup(popup_84f93b14c6837d33d7782f2d9136b05c)
+        ;
+
+        
+    
+    
+            var marker_b656f3ccbc39d4a190189ba732797e72 = L.marker(
+                [13.200627, 77.711261],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_103d49d0497d6172980564eae26ed48d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_657aba6db06ad3edfd3f0b4303a71e5e = $(`<div id="html_657aba6db06ad3edfd3f0b4303a71e5e" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.200627<br>Longitude: 77.711261</div>`)[0];
+                popup_103d49d0497d6172980564eae26ed48d.setContent(html_657aba6db06ad3edfd3f0b4303a71e5e);
+            
+        
+
+        marker_b656f3ccbc39d4a190189ba732797e72.bindPopup(popup_103d49d0497d6172980564eae26ed48d)
+        ;
+
+        
+    
+    
+            var marker_fde90e26a7c1f4a85762d173db793e3d = L.marker(
+                [13.0323472815714, 77.6088183902612],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_b2402c06f47fce9b80ef031600e2e40e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a082acb0c549fe3f698eaf524f710b6 = $(`<div id="html_7a082acb0c549fe3f698eaf524f710b6" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 13.0323472815714<br>Longitude: 77.6088183902612</div>`)[0];
+                popup_b2402c06f47fce9b80ef031600e2e40e.setContent(html_7a082acb0c549fe3f698eaf524f710b6);
+            
+        
+
+        marker_fde90e26a7c1f4a85762d173db793e3d.bindPopup(popup_b2402c06f47fce9b80ef031600e2e40e)
+        ;
+
+        
+    
+    
+            var marker_2f38e4ef1fdf7b4806168fd1e65d7cfa = L.marker(
+                [13.056055, 77.532555],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_531462ae03b8e79622db9a1f24c95e57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_351405770ead0a1872031b5a068f663d = $(`<div id="html_351405770ead0a1872031b5a068f663d" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 13.056055<br>Longitude: 77.532555</div>`)[0];
+                popup_531462ae03b8e79622db9a1f24c95e57.setContent(html_351405770ead0a1872031b5a068f663d);
+            
+        
+
+        marker_2f38e4ef1fdf7b4806168fd1e65d7cfa.bindPopup(popup_531462ae03b8e79622db9a1f24c95e57)
+        ;
+
+        
+    
+    
+            var marker_5c7022d4051a0d9856f1863d3feadbb3 = L.marker(
+                [12.943504, 77.551545],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_714c42f43bb49b007027769c4d6c64e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ccf5ad2115a36dc69697497be135c77 = $(`<div id="html_1ccf5ad2115a36dc69697497be135c77" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 12.943504<br>Longitude: 77.551545</div>`)[0];
+                popup_714c42f43bb49b007027769c4d6c64e5.setContent(html_1ccf5ad2115a36dc69697497be135c77);
+            
+        
+
+        marker_5c7022d4051a0d9856f1863d3feadbb3.bindPopup(popup_714c42f43bb49b007027769c4d6c64e5)
+        ;
+
+        
+    
+    
+            var marker_7b49efccf862ddd60c3db90457f97247 = L.marker(
+                [12.971599, 77.594563],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_090739071d6a81459ee62979af6d071f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52d95b205e55d3034593cae1e2f7347c = $(`<div id="html_52d95b205e55d3034593cae1e2f7347c" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 12.971599<br>Longitude: 77.594563</div>`)[0];
+                popup_090739071d6a81459ee62979af6d071f.setContent(html_52d95b205e55d3034593cae1e2f7347c);
+            
+        
+
+        marker_7b49efccf862ddd60c3db90457f97247.bindPopup(popup_090739071d6a81459ee62979af6d071f)
+        ;
+
+        
+    
+    
+            var marker_4d55f2f1dc3321f13797069a4456c8e3 = L.marker(
+                [12.934782, 77.620166],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_45c69424c3e17f8f333509d431139d5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1abd68d8229eac59b1561f4800c6f195 = $(`<div id="html_1abd68d8229eac59b1561f4800c6f195" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 12.934782<br>Longitude: 77.620166</div>`)[0];
+                popup_45c69424c3e17f8f333509d431139d5e.setContent(html_1abd68d8229eac59b1561f4800c6f195);
+            
+        
+
+        marker_4d55f2f1dc3321f13797069a4456c8e3.bindPopup(popup_45c69424c3e17f8f333509d431139d5e)
+        ;
+
+        
+    
+    
+            var marker_7d6e77613eb8ccb6d63d20fc339e70dd = L.marker(
+                [12.91835872, 77.61118988],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_949dea523be3e0a37b1b38a94b2c5eab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66401b579f9a76b857259579dcbc0fef = $(`<div id="html_66401b579f9a76b857259579dcbc0fef" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 12.91835872<br>Longitude: 77.61118988</div>`)[0];
+                popup_949dea523be3e0a37b1b38a94b2c5eab.setContent(html_66401b579f9a76b857259579dcbc0fef);
+            
+        
+
+        marker_7d6e77613eb8ccb6d63d20fc339e70dd.bindPopup(popup_949dea523be3e0a37b1b38a94b2c5eab)
+        ;
+
+        
+    
+    
+            var marker_7268b03753cb0712eb70b937a9e64a2a = L.marker(
+                [13.080185, 77.62676],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_9ab470ca31a89fdbec31ad3ad856505a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_647eb3032be04534dbe730533ddec1c4 = $(`<div id="html_647eb3032be04534dbe730533ddec1c4" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 13.080185<br>Longitude: 77.62676</div>`)[0];
+                popup_9ab470ca31a89fdbec31ad3ad856505a.setContent(html_647eb3032be04534dbe730533ddec1c4);
+            
+        
+
+        marker_7268b03753cb0712eb70b937a9e64a2a.bindPopup(popup_9ab470ca31a89fdbec31ad3ad856505a)
+        ;
+
+        
+    
+    
+            var marker_b635eed15fc02d404d17aded8710e553 = L.marker(
+                [13.042948, 77.570933],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_7a84fd5fec520904c534571034971b99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9348c596bb2759cee35fc66a66a97f37 = $(`<div id="html_9348c596bb2759cee35fc66a66a97f37" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 13.042948<br>Longitude: 77.570933</div>`)[0];
+                popup_7a84fd5fec520904c534571034971b99.setContent(html_9348c596bb2759cee35fc66a66a97f37);
+            
+        
+
+        marker_b635eed15fc02d404d17aded8710e553.bindPopup(popup_7a84fd5fec520904c534571034971b99)
+        ;
+
+        
+    
+    
+            var marker_8b11f4e0b8d5dc83f345e30d382eff61 = L.marker(
+                [12.953426, 77.715826],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_f87b197db7c2d52b662148312205c4f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b861df78efd9ca262ffbaf312782f740 = $(`<div id="html_b861df78efd9ca262ffbaf312782f740" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 12.953426<br>Longitude: 77.715826</div>`)[0];
+                popup_f87b197db7c2d52b662148312205c4f9.setContent(html_b861df78efd9ca262ffbaf312782f740);
+            
+        
+
+        marker_8b11f4e0b8d5dc83f345e30d382eff61.bindPopup(popup_f87b197db7c2d52b662148312205c4f9)
+        ;
+
+        
+    
+    
+            var marker_2374147bca5febe314b8bdf550aea60a = L.marker(
+                [12.935659, 77.633968],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_aceb3acdcb1f0e4e73c68b4a978032ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_054d5eb8d3d2c807a98623cbb6b8e1fe = $(`<div id="html_054d5eb8d3d2c807a98623cbb6b8e1fe" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 12.935659<br>Longitude: 77.633968</div>`)[0];
+                popup_aceb3acdcb1f0e4e73c68b4a978032ed.setContent(html_054d5eb8d3d2c807a98623cbb6b8e1fe);
+            
+        
+
+        marker_2374147bca5febe314b8bdf550aea60a.bindPopup(popup_aceb3acdcb1f0e4e73c68b4a978032ed)
+        ;
+
+        
+    
+    
+            var marker_5213aa56ca5e8ca754947282991fb0c1 = L.marker(
+                [12.881418, 74.958951],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_fec5b48956341ebb6d688c4f11b5ad65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2ea2945c2f6646312bf4e8aa921ffd7 = $(`<div id="html_b2ea2945c2f6646312bf4e8aa921ffd7" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 12.881418<br>Longitude: 74.958951</div>`)[0];
+                popup_fec5b48956341ebb6d688c4f11b5ad65.setContent(html_b2ea2945c2f6646312bf4e8aa921ffd7);
+            
+        
+
+        marker_5213aa56ca5e8ca754947282991fb0c1.bindPopup(popup_fec5b48956341ebb6d688c4f11b5ad65)
+        ;
+
+        
+    
+    
+            var marker_460cd5f62b7a4ccdccce60032aad42b8 = L.marker(
+                [13.005903, 75.046128],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_4c526ef68709878cd03c159b67c93b11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00e623fd002300683e0b26f1a6084404 = $(`<div id="html_00e623fd002300683e0b26f1a6084404" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.005903<br>Longitude: 75.046128</div>`)[0];
+                popup_4c526ef68709878cd03c159b67c93b11.setContent(html_00e623fd002300683e0b26f1a6084404);
+            
+        
+
+        marker_460cd5f62b7a4ccdccce60032aad42b8.bindPopup(popup_4c526ef68709878cd03c159b67c93b11)
+        ;
+
+        
+    
+    
+            var marker_38e560eb5cb751b7390513be8d6460da = L.marker(
+                [14.472504, 75.908867],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_efbf431e0152952fbcc7ff4230ff412b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30b8c7845a973b46b4db7ef49ae22a07 = $(`<div id="html_30b8c7845a973b46b4db7ef49ae22a07" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 14.472504<br>Longitude: 75.908867</div>`)[0];
+                popup_efbf431e0152952fbcc7ff4230ff412b.setContent(html_30b8c7845a973b46b4db7ef49ae22a07);
+            
+        
+
+        marker_38e560eb5cb751b7390513be8d6460da.bindPopup(popup_efbf431e0152952fbcc7ff4230ff412b)
+        ;
+
+        
+    
+    
+            var marker_769bce8d387582e591306564b7f77586 = L.marker(
+                [15.353674, 75.132566],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_ab1d5f7f9d7cda4425d3774a77267664 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83c5371ada62eafed6e397460695c021 = $(`<div id="html_83c5371ada62eafed6e397460695c021" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 15.353674<br>Longitude: 75.132566</div>`)[0];
+                popup_ab1d5f7f9d7cda4425d3774a77267664.setContent(html_83c5371ada62eafed6e397460695c021);
+            
+        
+
+        marker_769bce8d387582e591306564b7f77586.bindPopup(popup_ab1d5f7f9d7cda4425d3774a77267664)
+        ;
+
+        
+    
+    
+            var marker_a5a418ff1ce804889a10b73b5493a294 = L.marker(
+                [12.989285, 78.177677],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_c55ba27b8a11b9fb8eabe5989fca5f64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f4904496ffda94c87be6f234f802869 = $(`<div id="html_3f4904496ffda94c87be6f234f802869" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Foreigner<br>Latitude: 12.989285<br>Longitude: 78.177677</div>`)[0];
+                popup_c55ba27b8a11b9fb8eabe5989fca5f64.setContent(html_3f4904496ffda94c87be6f234f802869);
+            
+        
+
+        marker_a5a418ff1ce804889a10b73b5493a294.bindPopup(popup_c55ba27b8a11b9fb8eabe5989fca5f64)
+        ;
+
+        
+    
+    
+            var marker_be081f91ab23710ae61d470f7b7f6b89 = L.marker(
+                [12.954347, 74.885256],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_e42c4ca825dc7e52cbcbeb11d2cc0495 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_933bc88617c84ae3ada13bb5dc4f4a59 = $(`<div id="html_933bc88617c84ae3ada13bb5dc4f4a59" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 12.954347<br>Longitude: 74.885256</div>`)[0];
+                popup_e42c4ca825dc7e52cbcbeb11d2cc0495.setContent(html_933bc88617c84ae3ada13bb5dc4f4a59);
+            
+        
+
+        marker_be081f91ab23710ae61d470f7b7f6b89.bindPopup(popup_e42c4ca825dc7e52cbcbeb11d2cc0495)
+        ;
+
+        
+    
+    
+            var marker_33378eb3fad24c349b1287172cd9e08d = L.marker(
+                [12.890513, 74.85361],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_1c2d09d3ddfa9be364b45bebe054cffe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74412a2958d52f7a0bd74f8a10810c74 = $(`<div id="html_74412a2958d52f7a0bd74f8a10810c74" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 12.890513<br>Longitude: 74.85361</div>`)[0];
+                popup_1c2d09d3ddfa9be364b45bebe054cffe.setContent(html_74412a2958d52f7a0bd74f8a10810c74);
+            
+        
+
+        marker_33378eb3fad24c349b1287172cd9e08d.bindPopup(popup_1c2d09d3ddfa9be364b45bebe054cffe)
+        ;
+
+        
+    
+    
+            var marker_8b7ae4900c6215a1f5cd7d1b4f16c2d4 = L.marker(
+                [13.694613, 75.241965],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_9d73cc177cc94e269c911f1f3e270fa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50309bd44f2ff343165ec380e2added7 = $(`<div id="html_50309bd44f2ff343165ec380e2added7" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.694613<br>Longitude: 75.241965</div>`)[0];
+                popup_9d73cc177cc94e269c911f1f3e270fa3.setContent(html_50309bd44f2ff343165ec380e2added7);
+            
+        
+
+        marker_8b7ae4900c6215a1f5cd7d1b4f16c2d4.bindPopup(popup_9d73cc177cc94e269c911f1f3e270fa3)
+        ;
+
+        
+    
+    
+            var marker_13346b5aa1dd559f49764beba24c0436 = L.marker(
+                [13.695047, 75.242174],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_8c02b51432e15e145b729a5910e51896 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7cc8a1185ddd6909158f3ed209ab09a = $(`<div id="html_a7cc8a1185ddd6909158f3ed209ab09a" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.695047<br>Longitude: 75.242174</div>`)[0];
+                popup_8c02b51432e15e145b729a5910e51896.setContent(html_a7cc8a1185ddd6909158f3ed209ab09a);
+            
+        
+
+        marker_13346b5aa1dd559f49764beba24c0436.bindPopup(popup_8c02b51432e15e145b729a5910e51896)
+        ;
+
+        
+    
+    
+            var marker_6f35b4fe07022943a3b2ff553846e44c = L.marker(
+                [13.323045, 77.077188],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_a474f23e985bbcea86b189ca1432a4ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5feba4056528137a1ad8121b5c62776 = $(`<div id="html_e5feba4056528137a1ad8121b5c62776" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 13.323045<br>Longitude: 77.077188</div>`)[0];
+                popup_a474f23e985bbcea86b189ca1432a4ed.setContent(html_e5feba4056528137a1ad8121b5c62776);
+            
+        
+
+        marker_6f35b4fe07022943a3b2ff553846e44c.bindPopup(popup_a474f23e985bbcea86b189ca1432a4ed)
+        ;
+
+        
+    
+    
+            var marker_40c95db252872c664f800c32964e4fac = L.marker(
+                [14.695781, 74.76238],
+                {}
+            ).addTo(marker_cluster_2da3ab5fe6cf1d0c5634c2447a6c93ce);
+        
+    
+        var popup_1ec929cf06cf2331ee6de0cfae358f6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65b9cc8ed122689e1cdd40517cf3fa2b = $(`<div id="html_65b9cc8ed122689e1cdd40517cf3fa2b" style="width: 100.0%; height: 100.0%;">Crime Group: PASSPORT ACT<br>Crime Head: Indian<br>Latitude: 14.695781<br>Longitude: 74.76238</div>`)[0];
+                popup_1ec929cf06cf2331ee6de0cfae358f6f.setContent(html_65b9cc8ed122689e1cdd40517cf3fa2b);
+            
+        
+
+        marker_40c95db252872c664f800c32964e4fac.bindPopup(popup_1ec929cf06cf2331ee6de0cfae358f6f)
+        ;
+
+        
+    
+    
+            var layer_control_fd60f7b74d9f1f1ec155c180a9f48605 = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_8581f2b11a496055ddd060f05fdcec5a,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_fd60f7b74d9f1f1ec155c180a9f48605.base_layers,
+                layer_control_fd60f7b74d9f1f1ec155c180a9f48605.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_4aa610f9b9843c6759f32ec7c098fac8);
+        
+</script>
+</html>

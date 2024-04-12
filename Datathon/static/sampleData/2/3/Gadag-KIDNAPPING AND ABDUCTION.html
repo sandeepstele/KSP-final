@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3ccbefa2dbd72b2d33ed9d8dff32fdbd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3ccbefa2dbd72b2d33ed9d8dff32fdbd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3ccbefa2dbd72b2d33ed9d8dff32fdbd = L.map(
+                "map_3ccbefa2dbd72b2d33ed9d8dff32fdbd",
+                {
+                    center: [15.439447166666664, 75.69190438333334],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_925f1ad2c671944a166e86a851f4ec8c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3ccbefa2dbd72b2d33ed9d8dff32fdbd);
+        
+    
+            var marker_cluster_1495431005e1e731afcaa1c0800f7f48 = L.markerClusterGroup(
+                {}
+            );
+            map_3ccbefa2dbd72b2d33ed9d8dff32fdbd.addLayer(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+            var marker_fb79baea45c73a1616350d2a7a665de2 = L.marker(
+                [15.417566, 75.636435],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_c04aeac4c99dc158328845f9ff4a7519 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f77e0c2a46ef63b7075d8f41a4566238 = $(`<div id="html_f77e0c2a46ef63b7075d8f41a4566238" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Missing-Girl<br>Latitude: 15.417566<br>Longitude: 75.636435</div>`)[0];
+                popup_c04aeac4c99dc158328845f9ff4a7519.setContent(html_f77e0c2a46ef63b7075d8f41a4566238);
+            
+        
+
+        marker_fb79baea45c73a1616350d2a7a665de2.bindPopup(popup_c04aeac4c99dc158328845f9ff4a7519)
+        ;
+
+        
+    
+    
+            var marker_9a36dbaf6efd29c8863940f3184be2e9 = L.marker(
+                [15.212245, 75.882624],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_2a7af54d63a07fc798302b9cca416635 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3617c531788331642e355a95d62524b = $(`<div id="html_c3617c531788331642e355a95d62524b" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Others<br>Latitude: 15.212245<br>Longitude: 75.882624</div>`)[0];
+                popup_2a7af54d63a07fc798302b9cca416635.setContent(html_c3617c531788331642e355a95d62524b);
+            
+        
+
+        marker_9a36dbaf6efd29c8863940f3184be2e9.bindPopup(popup_2a7af54d63a07fc798302b9cca416635)
+        ;
+
+        
+    
+    
+            var marker_6e6343a6f92844e4ea02c2b945105c1c = L.marker(
+                [15.420783, 75.6869],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_acda7bce5f8efd8d2fb5d3e0c8e4061a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57acdbd1142f8316e74f82904c573d05 = $(`<div id="html_57acdbd1142f8316e74f82904c573d05" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Others<br>Latitude: 15.420783<br>Longitude: 75.6869</div>`)[0];
+                popup_acda7bce5f8efd8d2fb5d3e0c8e4061a.setContent(html_57acdbd1142f8316e74f82904c573d05);
+            
+        
+
+        marker_6e6343a6f92844e4ea02c2b945105c1c.bindPopup(popup_acda7bce5f8efd8d2fb5d3e0c8e4061a)
+        ;
+
+        
+    
+    
+            var marker_7f08fc0a229d1a9e0e5a8d99b2dca963 = L.marker(
+                [15.3904, 75.7183],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_19d1ce537987ca81d560696541bfc99d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b47818f094ab9feff61eca1fefc4bbfa = $(`<div id="html_b47818f094ab9feff61eca1fefc4bbfa" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Missing-Girl<br>Latitude: 15.3904<br>Longitude: 75.7183</div>`)[0];
+                popup_19d1ce537987ca81d560696541bfc99d.setContent(html_b47818f094ab9feff61eca1fefc4bbfa);
+            
+        
+
+        marker_7f08fc0a229d1a9e0e5a8d99b2dca963.bindPopup(popup_19d1ce537987ca81d560696541bfc99d)
+        ;
+
+        
+    
+    
+            var marker_379d56595eaa36c335f3fe44c34cf286 = L.marker(
+                [14.96589, 75.750363],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_b23f5c50dc5e0f6d29c4923776f21593 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f57b94f5acdc251304ff7189830239f = $(`<div id="html_3f57b94f5acdc251304ff7189830239f" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Others<br>Latitude: 14.96589<br>Longitude: 75.750363</div>`)[0];
+                popup_b23f5c50dc5e0f6d29c4923776f21593.setContent(html_3f57b94f5acdc251304ff7189830239f);
+            
+        
+
+        marker_379d56595eaa36c335f3fe44c34cf286.bindPopup(popup_b23f5c50dc5e0f6d29c4923776f21593)
+        ;
+
+        
+    
+    
+            var marker_31166f696c257a6c912d6537048c0335 = L.marker(
+                [15.4576, 75.7292],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_cf2cc5ccf3f3c7ac2b53d7be7948452a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73934ce27770e5c3ee57cecaa489083b = $(`<div id="html_73934ce27770e5c3ee57cecaa489083b" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Missing-Girl<br>Latitude: 15.4576<br>Longitude: 75.7292</div>`)[0];
+                popup_cf2cc5ccf3f3c7ac2b53d7be7948452a.setContent(html_73934ce27770e5c3ee57cecaa489083b);
+            
+        
+
+        marker_31166f696c257a6c912d6537048c0335.bindPopup(popup_cf2cc5ccf3f3c7ac2b53d7be7948452a)
+        ;
+
+        
+    
+    
+            var marker_24ce8a094dbc1342f442656bcf30d50d = L.marker(
+                [15.368035, 75.520104],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_05d946d3b8e3419a8f4af0b246068e60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ee0e67969aa6c22776bf682e315075e = $(`<div id="html_4ee0e67969aa6c22776bf682e315075e" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Others<br>Latitude: 15.368035<br>Longitude: 75.520104</div>`)[0];
+                popup_05d946d3b8e3419a8f4af0b246068e60.setContent(html_4ee0e67969aa6c22776bf682e315075e);
+            
+        
+
+        marker_24ce8a094dbc1342f442656bcf30d50d.bindPopup(popup_05d946d3b8e3419a8f4af0b246068e60)
+        ;
+
+        
+    
+    
+            var marker_39e1448e86ccd6cb168998f4ed59c4c5 = L.marker(
+                [15.438189, 75.638385],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_0383a35a1bf7ef4c2a983c26c7eaa0a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9c41fca679f0b4f54edcd6ab25eb450 = $(`<div id="html_b9c41fca679f0b4f54edcd6ab25eb450" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Missing-Boy<br>Latitude: 15.438189<br>Longitude: 75.638385</div>`)[0];
+                popup_0383a35a1bf7ef4c2a983c26c7eaa0a4.setContent(html_b9c41fca679f0b4f54edcd6ab25eb450);
+            
+        
+
+        marker_39e1448e86ccd6cb168998f4ed59c4c5.bindPopup(popup_0383a35a1bf7ef4c2a983c26c7eaa0a4)
+        ;
+
+        
+    
+    
+            var marker_82a3871cf1f4557a9e9ccfd2d9dd0f5a = L.marker(
+                [15.188417, 75.49865],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_260b36089124459468fe0e4490304ff2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_faa90c4bcd113eedc944c455ec4bd6f1 = $(`<div id="html_faa90c4bcd113eedc944c455ec4bd6f1" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Missing-Girl<br>Latitude: 15.188417<br>Longitude: 75.49865</div>`)[0];
+                popup_260b36089124459468fe0e4490304ff2.setContent(html_faa90c4bcd113eedc944c455ec4bd6f1);
+            
+        
+
+        marker_82a3871cf1f4557a9e9ccfd2d9dd0f5a.bindPopup(popup_260b36089124459468fe0e4490304ff2)
+        ;
+
+        
+    
+    
+            var marker_11305b3cec29c3b1aa6fdabcd8af2507 = L.marker(
+                [15.72455, 75.385627],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_4225172cc18d67c368f6558f44067076 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4775bac3f7a71e7c31798c1f58d6951 = $(`<div id="html_e4775bac3f7a71e7c31798c1f58d6951" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Others<br>Latitude: 15.72455<br>Longitude: 75.385627</div>`)[0];
+                popup_4225172cc18d67c368f6558f44067076.setContent(html_e4775bac3f7a71e7c31798c1f58d6951);
+            
+        
+
+        marker_11305b3cec29c3b1aa6fdabcd8af2507.bindPopup(popup_4225172cc18d67c368f6558f44067076)
+        ;
+
+        
+    
+    
+            var marker_a38928f086a733f948f269ed656e6b83 = L.marker(
+                [15.576553, 75.8044769],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_60c64998fc1fcdbf645afb5f587a968e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd9e876aa66a2dc87ed451f371bbaaa7 = $(`<div id="html_fd9e876aa66a2dc87ed451f371bbaaa7" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Others<br>Latitude: 15.576553<br>Longitude: 75.8044769</div>`)[0];
+                popup_60c64998fc1fcdbf645afb5f587a968e.setContent(html_fd9e876aa66a2dc87ed451f371bbaaa7);
+            
+        
+
+        marker_a38928f086a733f948f269ed656e6b83.bindPopup(popup_60c64998fc1fcdbf645afb5f587a968e)
+        ;
+
+        
+    
+    
+            var marker_6cc359050c5d2d9f0895a7ee8cc5ca8d = L.marker(
+                [15.702924, 75.811459],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_6876c9ec60509b63cc8dca656cd8d696 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b30e3865e38ca17053f39abb14448a7b = $(`<div id="html_b30e3865e38ca17053f39abb14448a7b" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Missing-Girl<br>Latitude: 15.702924<br>Longitude: 75.811459</div>`)[0];
+                popup_6876c9ec60509b63cc8dca656cd8d696.setContent(html_b30e3865e38ca17053f39abb14448a7b);
+            
+        
+
+        marker_6cc359050c5d2d9f0895a7ee8cc5ca8d.bindPopup(popup_6876c9ec60509b63cc8dca656cd8d696)
+        ;
+
+        
+    
+    
+            var marker_9c4001e8ce44cfa8cb803f79c73cdf68 = L.marker(
+                [15.43823, 75.638782],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_aae952c9e60a9a67dccdc88018829948 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0802b9524e945bd1cce9dac7d9f8c3a = $(`<div id="html_f0802b9524e945bd1cce9dac7d9f8c3a" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Missing-Boy<br>Latitude: 15.43823<br>Longitude: 75.638782</div>`)[0];
+                popup_aae952c9e60a9a67dccdc88018829948.setContent(html_f0802b9524e945bd1cce9dac7d9f8c3a);
+            
+        
+
+        marker_9c4001e8ce44cfa8cb803f79c73cdf68.bindPopup(popup_aae952c9e60a9a67dccdc88018829948)
+        ;
+
+        
+    
+    
+            var marker_8f759fe7ea50b796967dfd19c9085404 = L.marker(
+                [15.235734, 75.581783],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_774a268b13fdecb00e34010ab6f831b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db73b1ed2d3a89f7b890585106cf5637 = $(`<div id="html_db73b1ed2d3a89f7b890585106cf5637" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Missing-Girl<br>Latitude: 15.235734<br>Longitude: 75.581783</div>`)[0];
+                popup_774a268b13fdecb00e34010ab6f831b6.setContent(html_db73b1ed2d3a89f7b890585106cf5637);
+            
+        
+
+        marker_8f759fe7ea50b796967dfd19c9085404.bindPopup(popup_774a268b13fdecb00e34010ab6f831b6)
+        ;
+
+        
+    
+    
+            var marker_db3c80bc9d67822f32a89670cd250b2b = L.marker(
+                [15.729277, 75.865305],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_1a37fed2c1cac322bfa8095fdcfd9a8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a30fdfc47a4e9971beda8ec3696c0c9 = $(`<div id="html_1a30fdfc47a4e9971beda8ec3696c0c9" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Others<br>Latitude: 15.729277<br>Longitude: 75.865305</div>`)[0];
+                popup_1a37fed2c1cac322bfa8095fdcfd9a8d.setContent(html_1a30fdfc47a4e9971beda8ec3696c0c9);
+            
+        
+
+        marker_db3c80bc9d67822f32a89670cd250b2b.bindPopup(popup_1a37fed2c1cac322bfa8095fdcfd9a8d)
+        ;
+
+        
+    
+    
+            var marker_e512cf8317ed638a45ec735a9c305457 = L.marker(
+                [15.688675, 75.893238],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_5c5bcce5856c75fea00604e1a1915761 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1e2b7c1d071cad74943807f40ba3adb = $(`<div id="html_f1e2b7c1d071cad74943807f40ba3adb" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Others<br>Latitude: 15.688675<br>Longitude: 75.893238</div>`)[0];
+                popup_5c5bcce5856c75fea00604e1a1915761.setContent(html_f1e2b7c1d071cad74943807f40ba3adb);
+            
+        
+
+        marker_e512cf8317ed638a45ec735a9c305457.bindPopup(popup_5c5bcce5856c75fea00604e1a1915761)
+        ;
+
+        
+    
+    
+            var marker_a5f3766ae83b026c70347a043e2ae65b = L.marker(
+                [15.417781, 75.636247],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_d3052e6919ed9b13bb3dbb60c101c363 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb1fb1299dc906e90adce3aa8ed6d640 = $(`<div id="html_fb1fb1299dc906e90adce3aa8ed6d640" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Others<br>Latitude: 15.417781<br>Longitude: 75.636247</div>`)[0];
+                popup_d3052e6919ed9b13bb3dbb60c101c363.setContent(html_fb1fb1299dc906e90adce3aa8ed6d640);
+            
+        
+
+        marker_a5f3766ae83b026c70347a043e2ae65b.bindPopup(popup_d3052e6919ed9b13bb3dbb60c101c363)
+        ;
+
+        
+    
+    
+            var marker_d269b985d0c6c60b0b5b9523c5d85fb3 = L.marker(
+                [15.5372, 75.7764],
+                {}
+            ).addTo(marker_cluster_1495431005e1e731afcaa1c0800f7f48);
+        
+    
+        var popup_ddb85c572ba6b8825f18f16656e681f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e7b57adb203aad1951869c718755396 = $(`<div id="html_6e7b57adb203aad1951869c718755396" style="width: 100.0%; height: 100.0%;">Crime Group: KIDNAPPING AND ABDUCTION<br>Crime Head: Missing-Girl<br>Latitude: 15.5372<br>Longitude: 75.7764</div>`)[0];
+                popup_ddb85c572ba6b8825f18f16656e681f8.setContent(html_6e7b57adb203aad1951869c718755396);
+            
+        
+
+        marker_d269b985d0c6c60b0b5b9523c5d85fb3.bindPopup(popup_ddb85c572ba6b8825f18f16656e681f8)
+        ;
+
+        
+    
+    
+            var layer_control_232c04b721ba59b585e4eaed9e6ce5e0 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_925f1ad2c671944a166e86a851f4ec8c,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_232c04b721ba59b585e4eaed9e6ce5e0.base_layers,
+                layer_control_232c04b721ba59b585e4eaed9e6ce5e0.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_3ccbefa2dbd72b2d33ed9d8dff32fdbd);
+        
+</script>
+</html>

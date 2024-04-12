@@ -1,0 +1,122 @@
+{% extends "crimeDetection/layout.html" %}
+{% load static %}
+
+{% block title %}
+Semester TimeTable Scheduler | Profile 
+{% endblock %}
+
+{% block header %}Profile{% endblock %}
+
+{% block page %} Profile {% endblock %}
+
+{% block page_name %} Profile {% endblock %}
+
+{% block body %}
+<style>
+    body {
+        background-color:#dfdfdf;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .small-card {
+        flex: 0 0 20%;
+        margin-bottom: 1rem;
+    }
+
+    .large-card {
+        margin-top:4rem;
+        flex: 0 0 75%; 
+        margin-bottom: 1rem;
+    }
+    .box-shadow{
+        box-shadow:0 0 5px #3A28A7;
+    }
+
+    .profile-image {
+        width: 200px; /* Adjust the size as needed */
+        height: 200px; /* Adjust the size as needed */
+        object-fit: cover;
+        border-radius: 50%;
+    }
+</style>
+
+{% if user.is_authenticated %}
+    {% if user %}
+    <div class="card large-card box-shadow" style="border:1px solid;">
+        <div class="card-body">
+            <h5 class="card-title">Basic Profile settings</h5>
+            {% if error_message %}
+                    <div class="alert alert-danger mt-3" role="alert">
+                    {{ error_message }}
+                    </div>
+            {% endif %}
+            <form action="{% url 'profile' user_id=user.id %}" method="POST">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" disabled id="username" placeholder={{ user.username }} name="username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="email" id="email" disabled class="form-control" placeholder={{ user.email }} name="email_id" aria-label="Gmail ID" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                  </div>
+                  <div class="container">
+                    <div class="col d-flex">
+                    <div class="input-group d-flex justify-content-center mb-3">
+                        <button class="btn btn-secondary mb-3 w-100" id="change_user_emailid" >Change Username & Email ID</button>
+                    </div>
+                    <div class="input-group d-flex justify-content-center mb-3 ms-3">
+                        <button class="btn btn-secondary mb-3 w-100" id="change_password" >Change Password</button>
+                    </div>
+                </div>
+                </div>
+                <div class="input-group mb-3" >
+                    <span class="input-group-text" id="basic-addon1">Password</span>
+                    <input type="password" disabled class="form-control"  id="current_password"  placeholder="Password" name="current_password" arial-label="Password" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Confirm Password</span>
+                    <input type="password" disabled class="form-control"  id="confirm_password" placeholder="Password" name="confirm_password" arial-label="Password" aria-describedby="basic-addon1">
+                  </div>
+                <div class="container">
+                    <div class="col d-flex">
+                    <div class="input-group d-flex justify-content-center mb-3">
+                        <input type="submit" value="Save Changes" class="btn btn-success w-100">
+                    </div>
+                    <div class="input-group d-flex justify-content-center mb-3 ms-3">
+                        <input type="submit" value="Cancel" id="cancel" class="btn btn-secondary w-100">
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const input1 = document.getElementById("current_password");
+        const input2 = document.getElementById("confirm_password");
+        const input3 = document.getElementById("username");
+        const input4 = document.getElementById("email");
+        const button = document.getElementById("change_password");
+        const change = document.getElementById("change_user_emailid");
+        button.addEventListener('click',function(){
+            event.preventDefault();
+            input1.disabled = false;
+            input2.disabled = false; // Corrected line
+        });
+        change.addEventListener('click',function(){
+            event.preventDefault();
+            input3.disabled = false;
+            input4.disabled = false;
+        });
+    });    
+</script>
+    {% endif %}
+{% endif %}
+{% endblock %}

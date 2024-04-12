@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cf4f076505d8874336ff9e94216d845c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cf4f076505d8874336ff9e94216d845c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cf4f076505d8874336ff9e94216d845c = L.map(
+                "map_cf4f076505d8874336ff9e94216d845c",
+                {
+                    center: [14.152492894366196, 76.40839832816903],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_db6a2902381c149086ab47384790f099 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cf4f076505d8874336ff9e94216d845c);
+        
+    
+            var marker_cluster_8a274c8de8d05a5c36645ccc70d733b9 = L.markerClusterGroup(
+                {}
+            );
+            map_cf4f076505d8874336ff9e94216d845c.addLayer(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+            var marker_fa36cacc3a53a8e3435592a52facb99f = L.marker(
+                [14.114337, 76.291837],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_c465b4b444f415398c13552ed44ddbfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e3f6293fcacef1fd9b37d4088d92be2 = $(`<div id="html_4e3f6293fcacef1fd9b37d4088d92be2" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.114337<br>Longitude: 76.291837</div>`)[0];
+                popup_c465b4b444f415398c13552ed44ddbfb.setContent(html_4e3f6293fcacef1fd9b37d4088d92be2);
+            
+        
+
+        marker_fa36cacc3a53a8e3435592a52facb99f.bindPopup(popup_c465b4b444f415398c13552ed44ddbfb)
+        ;
+
+        
+    
+    
+            var marker_c11edb2c342c83758140e4f69c04cb13 = L.marker(
+                [14.080869, 76.897567],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_28120b9ed62cc3a92a0aae22e1e3f935 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0bf9b25f6bdb9764663ad26073e93a0 = $(`<div id="html_a0bf9b25f6bdb9764663ad26073e93a0" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.080869<br>Longitude: 76.897567</div>`)[0];
+                popup_28120b9ed62cc3a92a0aae22e1e3f935.setContent(html_a0bf9b25f6bdb9764663ad26073e93a0);
+            
+        
+
+        marker_c11edb2c342c83758140e4f69c04cb13.bindPopup(popup_28120b9ed62cc3a92a0aae22e1e3f935)
+        ;
+
+        
+    
+    
+            var marker_24f07860f6896e7b2268929d0441896f = L.marker(
+                [13.943821, 76.616074],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_e9a109d81d7b0ba0a708b456b367fa4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d028702fb328de807d3518df3bd0050 = $(`<div id="html_8d028702fb328de807d3518df3bd0050" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 13.943821<br>Longitude: 76.616074</div>`)[0];
+                popup_e9a109d81d7b0ba0a708b456b367fa4b.setContent(html_8d028702fb328de807d3518df3bd0050);
+            
+        
+
+        marker_24f07860f6896e7b2268929d0441896f.bindPopup(popup_e9a109d81d7b0ba0a708b456b367fa4b)
+        ;
+
+        
+    
+    
+            var marker_b982635fd876cad5476e8fb29cd62d5b = L.marker(
+                [13.958999, 76.611246],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_1c0094b1c1add076d57eefed5d4ca31a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26208704b050538d80020a61d265877c = $(`<div id="html_26208704b050538d80020a61d265877c" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 13.958999<br>Longitude: 76.611246</div>`)[0];
+                popup_1c0094b1c1add076d57eefed5d4ca31a.setContent(html_26208704b050538d80020a61d265877c);
+            
+        
+
+        marker_b982635fd876cad5476e8fb29cd62d5b.bindPopup(popup_1c0094b1c1add076d57eefed5d4ca31a)
+        ;
+
+        
+    
+    
+            var marker_7e4c7411addf95f9b4d3e4c715456a3a = L.marker(
+                [13.899102, 76.072225],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_17247dfeda2e234c66bc80f82e73353c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9ee077ca51c8db557465ee01897c539 = $(`<div id="html_b9ee077ca51c8db557465ee01897c539" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Places<br>Latitude: 13.899102<br>Longitude: 76.072225</div>`)[0];
+                popup_17247dfeda2e234c66bc80f82e73353c.setContent(html_b9ee077ca51c8db557465ee01897c539);
+            
+        
+
+        marker_7e4c7411addf95f9b4d3e4c715456a3a.bindPopup(popup_17247dfeda2e234c66bc80f82e73353c)
+        ;
+
+        
+    
+    
+            var marker_42e91fd7de6b5446d7615def80225363 = L.marker(
+                [13.931865, 76.615836],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_5768d05c858a859e056c71f3cc6bd5d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1b9538e1392ef60f708d3fdb862de21 = $(`<div id="html_a1b9538e1392ef60f708d3fdb862de21" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 13.931865<br>Longitude: 76.615836</div>`)[0];
+                popup_5768d05c858a859e056c71f3cc6bd5d1.setContent(html_a1b9538e1392ef60f708d3fdb862de21);
+            
+        
+
+        marker_42e91fd7de6b5446d7615def80225363.bindPopup(popup_5768d05c858a859e056c71f3cc6bd5d1)
+        ;
+
+        
+    
+    
+            var marker_42a0e6ed560aa77defc29a25e3bf7ef7 = L.marker(
+                [13.841272, 76.733837],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_a97c15821a369fbb57b5fee7fd151c32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46b48f04ae4bf3c1fddadd4b237c3b3d = $(`<div id="html_46b48f04ae4bf3c1fddadd4b237c3b3d" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 13.841272<br>Longitude: 76.733837</div>`)[0];
+                popup_a97c15821a369fbb57b5fee7fd151c32.setContent(html_46b48f04ae4bf3c1fddadd4b237c3b3d);
+            
+        
+
+        marker_42a0e6ed560aa77defc29a25e3bf7ef7.bindPopup(popup_a97c15821a369fbb57b5fee7fd151c32)
+        ;
+
+        
+    
+    
+            var marker_0b499ca3b7ca24f4b9ea115afedf761b = L.marker(
+                [14.0439865, 76.5671494],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_c28a266ad5c787eb4794adf298710dbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3e8d3495c6c0d8518a42874c1cb01da = $(`<div id="html_f3e8d3495c6c0d8518a42874c1cb01da" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.0439865<br>Longitude: 76.5671494</div>`)[0];
+                popup_c28a266ad5c787eb4794adf298710dbf.setContent(html_f3e8d3495c6c0d8518a42874c1cb01da);
+            
+        
+
+        marker_0b499ca3b7ca24f4b9ea115afedf761b.bindPopup(popup_c28a266ad5c787eb4794adf298710dbf)
+        ;
+
+        
+    
+    
+            var marker_41e561c853c57d4f7b2ff96977fc5381 = L.marker(
+                [14.598562, 76.711116],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_51dc98495bf5371e3513784f9fe682de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d94b291506a7383e30c22c83a147a59 = $(`<div id="html_8d94b291506a7383e30c22c83a147a59" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.598562<br>Longitude: 76.711116</div>`)[0];
+                popup_51dc98495bf5371e3513784f9fe682de.setContent(html_8d94b291506a7383e30c22c83a147a59);
+            
+        
+
+        marker_41e561c853c57d4f7b2ff96977fc5381.bindPopup(popup_51dc98495bf5371e3513784f9fe682de)
+        ;
+
+        
+    
+    
+            var marker_421af0545aff7e7ecb5232b890bb107f = L.marker(
+                [14.345769, 76.788956],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_f056b1ac2fcebf5f72667ddfad0141cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e7383ebe10311fa79bdf188ceed056e = $(`<div id="html_0e7383ebe10311fa79bdf188ceed056e" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.345769<br>Longitude: 76.788956</div>`)[0];
+                popup_f056b1ac2fcebf5f72667ddfad0141cf.setContent(html_0e7383ebe10311fa79bdf188ceed056e);
+            
+        
+
+        marker_421af0545aff7e7ecb5232b890bb107f.bindPopup(popup_f056b1ac2fcebf5f72667ddfad0141cf)
+        ;
+
+        
+    
+    
+            var marker_e41cac4a40b9d97f96fbd77773dfd1d1 = L.marker(
+                [14.229314, 76.45415],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_0bb9cb8a27c158fd3450828127cd2f5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1a87a3455469f018df2dfc428d3f18f = $(`<div id="html_f1a87a3455469f018df2dfc428d3f18f" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: State Highways<br>Latitude: 14.229314<br>Longitude: 76.45415</div>`)[0];
+                popup_0bb9cb8a27c158fd3450828127cd2f5f.setContent(html_f1a87a3455469f018df2dfc428d3f18f);
+            
+        
+
+        marker_e41cac4a40b9d97f96fbd77773dfd1d1.bindPopup(popup_0bb9cb8a27c158fd3450828127cd2f5f)
+        ;
+
+        
+    
+    
+            var marker_8adf0403ea886f48d46a2c7fa1b0b49c = L.marker(
+                [14.407612, 76.180155],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_d01f992e937d0b6611f6e852f47cb55f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d004d1790e13a6695a6337691fa87317 = $(`<div id="html_d004d1790e13a6695a6337691fa87317" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.407612<br>Longitude: 76.180155</div>`)[0];
+                popup_d01f992e937d0b6611f6e852f47cb55f.setContent(html_d004d1790e13a6695a6337691fa87317);
+            
+        
+
+        marker_8adf0403ea886f48d46a2c7fa1b0b49c.bindPopup(popup_d01f992e937d0b6611f6e852f47cb55f)
+        ;
+
+        
+    
+    
+            var marker_95c2e68baea8c63507ca8dfb6bc649b1 = L.marker(
+                [13.619346, 76.420716],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_35e63b481f53baad55064ad8e1a119e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c34e37e4cb7bb12e3cc7fa1d405dd5fb = $(`<div id="html_c34e37e4cb7bb12e3cc7fa1d405dd5fb" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 13.619346<br>Longitude: 76.420716</div>`)[0];
+                popup_35e63b481f53baad55064ad8e1a119e6.setContent(html_c34e37e4cb7bb12e3cc7fa1d405dd5fb);
+            
+        
+
+        marker_95c2e68baea8c63507ca8dfb6bc649b1.bindPopup(popup_35e63b481f53baad55064ad8e1a119e6)
+        ;
+
+        
+    
+    
+            var marker_5ab343ba95dd9d530a5b833ba90f59b5 = L.marker(
+                [14.0, 76.0],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_171f9d505be9bb1d50b971629c9fa478 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50c9f2353835f563010e847253ab0d59 = $(`<div id="html_50c9f2353835f563010e847253ab0d59" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.0<br>Longitude: 76.0</div>`)[0];
+                popup_171f9d505be9bb1d50b971629c9fa478.setContent(html_50c9f2353835f563010e847253ab0d59);
+            
+        
+
+        marker_5ab343ba95dd9d530a5b833ba90f59b5.bindPopup(popup_171f9d505be9bb1d50b971629c9fa478)
+        ;
+
+        
+    
+    
+            var marker_e15a472f251aff57a8c969aa661a23a5 = L.marker(
+                [14.446089, 76.673199],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_8d172ff5f1281acd677a85603f7cb9ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb73ef8aa802d033cf3bba66cd83bba1 = $(`<div id="html_bb73ef8aa802d033cf3bba66cd83bba1" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.446089<br>Longitude: 76.673199</div>`)[0];
+                popup_8d172ff5f1281acd677a85603f7cb9ae.setContent(html_bb73ef8aa802d033cf3bba66cd83bba1);
+            
+        
+
+        marker_e15a472f251aff57a8c969aa661a23a5.bindPopup(popup_8d172ff5f1281acd677a85603f7cb9ae)
+        ;
+
+        
+    
+    
+            var marker_299820f5b8b35685823668231b1b150d = L.marker(
+                [14.28161, 76.197276],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_eb061d246cebf8914954024b23f1b645 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31442e153e6bc179792f11b188e6b9e0 = $(`<div id="html_31442e153e6bc179792f11b188e6b9e0" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.28161<br>Longitude: 76.197276</div>`)[0];
+                popup_eb061d246cebf8914954024b23f1b645.setContent(html_31442e153e6bc179792f11b188e6b9e0);
+            
+        
+
+        marker_299820f5b8b35685823668231b1b150d.bindPopup(popup_eb061d246cebf8914954024b23f1b645)
+        ;
+
+        
+    
+    
+            var marker_cfb6f6647953f9c55498ec10c082b61b = L.marker(
+                [14.044288, 76.182746],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_a04e77024cbd3eaac197bea3c8528daf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_576ee2a6cf4e74e07d3f77f52fa0cee2 = $(`<div id="html_576ee2a6cf4e74e07d3f77f52fa0cee2" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.044288<br>Longitude: 76.182746</div>`)[0];
+                popup_a04e77024cbd3eaac197bea3c8528daf.setContent(html_576ee2a6cf4e74e07d3f77f52fa0cee2);
+            
+        
+
+        marker_cfb6f6647953f9c55498ec10c082b61b.bindPopup(popup_a04e77024cbd3eaac197bea3c8528daf)
+        ;
+
+        
+    
+    
+            var marker_b25bbe0d9f521eed8a1e88e72324383e = L.marker(
+                [14.195803, 76.439913],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_434e2a04d8db96999d50fc7befeeebce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4872aafd7f0c28dcf13e03ccad42b5d9 = $(`<div id="html_4872aafd7f0c28dcf13e03ccad42b5d9" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.195803<br>Longitude: 76.439913</div>`)[0];
+                popup_434e2a04d8db96999d50fc7befeeebce.setContent(html_4872aafd7f0c28dcf13e03ccad42b5d9);
+            
+        
+
+        marker_b25bbe0d9f521eed8a1e88e72324383e.bindPopup(popup_434e2a04d8db96999d50fc7befeeebce)
+        ;
+
+        
+    
+    
+            var marker_0231d41a603b583ae4ce09e0c9aea86e = L.marker(
+                [14.240742, 76.16659],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_7ec62a7f1c499a226fea4538a02761f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0a0c8f16d86831c7402729e1c66a8b4 = $(`<div id="html_b0a0c8f16d86831c7402729e1c66a8b4" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.240742<br>Longitude: 76.16659</div>`)[0];
+                popup_7ec62a7f1c499a226fea4538a02761f6.setContent(html_b0a0c8f16d86831c7402729e1c66a8b4);
+            
+        
+
+        marker_0231d41a603b583ae4ce09e0c9aea86e.bindPopup(popup_7ec62a7f1c499a226fea4538a02761f6)
+        ;
+
+        
+    
+    
+            var marker_89c974892a2ac854391715a7d4ea863b = L.marker(
+                [13.898158, 76.05943],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_879a09f876743ec2e2af01cbd7e926e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fedbd2ed593687ccf165159832d0bf6 = $(`<div id="html_2fedbd2ed593687ccf165159832d0bf6" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 13.898158<br>Longitude: 76.05943</div>`)[0];
+                popup_879a09f876743ec2e2af01cbd7e926e2.setContent(html_2fedbd2ed593687ccf165159832d0bf6);
+            
+        
+
+        marker_89c974892a2ac854391715a7d4ea863b.bindPopup(popup_879a09f876743ec2e2af01cbd7e926e2)
+        ;
+
+        
+    
+    
+            var marker_6a6804cba8fd6bf59225bafcfb300986 = L.marker(
+                [14.0, 76.0],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_0856f595f1346f65b5c7cd922ac00abf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e35f874911b952698151f263adc41c91 = $(`<div id="html_e35f874911b952698151f263adc41c91" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.0<br>Longitude: 76.0</div>`)[0];
+                popup_0856f595f1346f65b5c7cd922ac00abf.setContent(html_e35f874911b952698151f263adc41c91);
+            
+        
+
+        marker_6a6804cba8fd6bf59225bafcfb300986.bindPopup(popup_0856f595f1346f65b5c7cd922ac00abf)
+        ;
+
+        
+    
+    
+            var marker_c1f7823132aedc7dc1eb89aed793ee33 = L.marker(
+                [14.171542, 76.241209],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_2ab5c01b80ade185c41d88393a64bdaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b1080f837ec1253fb25cefb9c2ba9b6 = $(`<div id="html_2b1080f837ec1253fb25cefb9c2ba9b6" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.171542<br>Longitude: 76.241209</div>`)[0];
+                popup_2ab5c01b80ade185c41d88393a64bdaf.setContent(html_2b1080f837ec1253fb25cefb9c2ba9b6);
+            
+        
+
+        marker_c1f7823132aedc7dc1eb89aed793ee33.bindPopup(popup_2ab5c01b80ade185c41d88393a64bdaf)
+        ;
+
+        
+    
+    
+            var marker_def15befe3da180a684c54791ae4b517 = L.marker(
+                [14.774947, 76.724349],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_764acf6620abd18c103c52860d5f9ae9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a571c9b93d48ed582604803f6bef5089 = $(`<div id="html_a571c9b93d48ed582604803f6bef5089" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.774947<br>Longitude: 76.724349</div>`)[0];
+                popup_764acf6620abd18c103c52860d5f9ae9.setContent(html_a571c9b93d48ed582604803f6bef5089);
+            
+        
+
+        marker_def15befe3da180a684c54791ae4b517.bindPopup(popup_764acf6620abd18c103c52860d5f9ae9)
+        ;
+
+        
+    
+    
+            var marker_01349d225496c8b9330278b58fc5046a = L.marker(
+                [13.956586, 76.078496],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_a3851d2cb749c7d7ce0b0a22799e8636 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_449e792e10865d23453054da869abae9 = $(`<div id="html_449e792e10865d23453054da869abae9" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 13.956586<br>Longitude: 76.078496</div>`)[0];
+                popup_a3851d2cb749c7d7ce0b0a22799e8636.setContent(html_449e792e10865d23453054da869abae9);
+            
+        
+
+        marker_01349d225496c8b9330278b58fc5046a.bindPopup(popup_a3851d2cb749c7d7ce0b0a22799e8636)
+        ;
+
+        
+    
+    
+            var marker_7022b4729164edff0cc3a6af1cb3fd36 = L.marker(
+                [14.176027, 76.273979],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_1943cab15e22c1a0e959ff4745ebe8b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80295ae01a87e4f2d9ca70c6a2ffdc6e = $(`<div id="html_80295ae01a87e4f2d9ca70c6a2ffdc6e" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.176027<br>Longitude: 76.273979</div>`)[0];
+                popup_1943cab15e22c1a0e959ff4745ebe8b7.setContent(html_80295ae01a87e4f2d9ca70c6a2ffdc6e);
+            
+        
+
+        marker_7022b4729164edff0cc3a6af1cb3fd36.bindPopup(popup_1943cab15e22c1a0e959ff4745ebe8b7)
+        ;
+
+        
+    
+    
+            var marker_b23b6e72be0928d87a90ba770d8376b1 = L.marker(
+                [14.03349, 76.185206],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_e8009d5408ee03fbb5eac265a3d46288 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_549b9bd742bdb41524923f6a503ed259 = $(`<div id="html_549b9bd742bdb41524923f6a503ed259" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: State Highways<br>Latitude: 14.03349<br>Longitude: 76.185206</div>`)[0];
+                popup_e8009d5408ee03fbb5eac265a3d46288.setContent(html_549b9bd742bdb41524923f6a503ed259);
+            
+        
+
+        marker_b23b6e72be0928d87a90ba770d8376b1.bindPopup(popup_e8009d5408ee03fbb5eac265a3d46288)
+        ;
+
+        
+    
+    
+            var marker_3028198f77df53b568be699f64df7940 = L.marker(
+                [14.06183, 76.75788],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_cad629a02673c9740786b8456bde7d12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f425a0ec830d29d203ae7b8277bc8c42 = $(`<div id="html_f425a0ec830d29d203ae7b8277bc8c42" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: State Highways<br>Latitude: 14.06183<br>Longitude: 76.75788</div>`)[0];
+                popup_cad629a02673c9740786b8456bde7d12.setContent(html_f425a0ec830d29d203ae7b8277bc8c42);
+            
+        
+
+        marker_3028198f77df53b568be699f64df7940.bindPopup(popup_cad629a02673c9740786b8456bde7d12)
+        ;
+
+        
+    
+    
+            var marker_30efd0d850887e9811a1551548dee87e = L.marker(
+                [13.813943, 76.252174],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_581bbdf6f1e845343196a1616ad0841c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_206277f5663f5eb02481eeb9322ae9f4 = $(`<div id="html_206277f5663f5eb02481eeb9322ae9f4" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 13.813943<br>Longitude: 76.252174</div>`)[0];
+                popup_581bbdf6f1e845343196a1616ad0841c.setContent(html_206277f5663f5eb02481eeb9322ae9f4);
+            
+        
+
+        marker_30efd0d850887e9811a1551548dee87e.bindPopup(popup_581bbdf6f1e845343196a1616ad0841c)
+        ;
+
+        
+    
+    
+            var marker_10b83516cc9f3e5f1aff96f797afb013 = L.marker(
+                [14.26647, 76.379418],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_0b0aac977ef4ca008757316b6edad34a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d693dbf1a97b0864027ab32ec46c04d0 = $(`<div id="html_d693dbf1a97b0864027ab32ec46c04d0" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.26647<br>Longitude: 76.379418</div>`)[0];
+                popup_0b0aac977ef4ca008757316b6edad34a.setContent(html_d693dbf1a97b0864027ab32ec46c04d0);
+            
+        
+
+        marker_10b83516cc9f3e5f1aff96f797afb013.bindPopup(popup_0b0aac977ef4ca008757316b6edad34a)
+        ;
+
+        
+    
+    
+            var marker_fa27d1aaf841326f6bfe88cc18061247 = L.marker(
+                [13.364346, 76.420632],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_60d8b7bc92bd226b2cb398341ffc33f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5751ce3c1c5831cb75922394a9bb34f = $(`<div id="html_b5751ce3c1c5831cb75922394a9bb34f" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 13.364346<br>Longitude: 76.420632</div>`)[0];
+                popup_60d8b7bc92bd226b2cb398341ffc33f5.setContent(html_b5751ce3c1c5831cb75922394a9bb34f);
+            
+        
+
+        marker_fa27d1aaf841326f6bfe88cc18061247.bindPopup(popup_60d8b7bc92bd226b2cb398341ffc33f5)
+        ;
+
+        
+    
+    
+            var marker_a59f3d8fe5318e5d300bdfc099fe490a = L.marker(
+                [14.171542, 76.241209],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_43a83f7d63d19b6ac75fce93b74184b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_499552d91eecb06e7ea761855cfd6af1 = $(`<div id="html_499552d91eecb06e7ea761855cfd6af1" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.171542<br>Longitude: 76.241209</div>`)[0];
+                popup_43a83f7d63d19b6ac75fce93b74184b1.setContent(html_499552d91eecb06e7ea761855cfd6af1);
+            
+        
+
+        marker_a59f3d8fe5318e5d300bdfc099fe490a.bindPopup(popup_43a83f7d63d19b6ac75fce93b74184b1)
+        ;
+
+        
+    
+    
+            var marker_5af9f0516a04ddd26b79ab7846ff4ddd = L.marker(
+                [14.08069, 76.644292],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_977df454fb8767e9f6aad95463af4593 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43f2cc5190798cbc6e762690bc2f669e = $(`<div id="html_43f2cc5190798cbc6e762690bc2f669e" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.08069<br>Longitude: 76.644292</div>`)[0];
+                popup_977df454fb8767e9f6aad95463af4593.setContent(html_43f2cc5190798cbc6e762690bc2f669e);
+            
+        
+
+        marker_5af9f0516a04ddd26b79ab7846ff4ddd.bindPopup(popup_977df454fb8767e9f6aad95463af4593)
+        ;
+
+        
+    
+    
+            var marker_571b25bd1578a6034e519ff9e4400fcd = L.marker(
+                [14.199903, 76.463563],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_0d4523798a94494f055860b0c52144cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cc7db910eb3e6d1bdcf4418a1c34b7d = $(`<div id="html_5cc7db910eb3e6d1bdcf4418a1c34b7d" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.199903<br>Longitude: 76.463563</div>`)[0];
+                popup_0d4523798a94494f055860b0c52144cd.setContent(html_5cc7db910eb3e6d1bdcf4418a1c34b7d);
+            
+        
+
+        marker_571b25bd1578a6034e519ff9e4400fcd.bindPopup(popup_0d4523798a94494f055860b0c52144cd)
+        ;
+
+        
+    
+    
+            var marker_ef7246d0af7bde31dffb68687d5b9408 = L.marker(
+                [13.619332, 76.420632],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_98df3deacc6cf03b0ae933f6ae85610d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b92baa8dd386e63ca0c06b9e458ec33f = $(`<div id="html_b92baa8dd386e63ca0c06b9e458ec33f" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: State Highways<br>Latitude: 13.619332<br>Longitude: 76.420632</div>`)[0];
+                popup_98df3deacc6cf03b0ae933f6ae85610d.setContent(html_b92baa8dd386e63ca0c06b9e458ec33f);
+            
+        
+
+        marker_ef7246d0af7bde31dffb68687d5b9408.bindPopup(popup_98df3deacc6cf03b0ae933f6ae85610d)
+        ;
+
+        
+    
+    
+            var marker_f01de53f165184cc215f88f009732750 = L.marker(
+                [14.369394, 76.192367],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_5bb094476590823ef7ba8e058f5ab3ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a31ed625c4001c0724ff83d281b1001 = $(`<div id="html_6a31ed625c4001c0724ff83d281b1001" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.369394<br>Longitude: 76.192367</div>`)[0];
+                popup_5bb094476590823ef7ba8e058f5ab3ce.setContent(html_6a31ed625c4001c0724ff83d281b1001);
+            
+        
+
+        marker_f01de53f165184cc215f88f009732750.bindPopup(popup_5bb094476590823ef7ba8e058f5ab3ce)
+        ;
+
+        
+    
+    
+            var marker_fd03ce0b83e13d410d2ece8da7a4e5c1 = L.marker(
+                [13.986928, 76.776028],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_3bf9c86db9a69489f744c599564f0e84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26d9d9d6433c36587af7bb64cbb9a0a0 = $(`<div id="html_26d9d9d6433c36587af7bb64cbb9a0a0" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 13.986928<br>Longitude: 76.776028</div>`)[0];
+                popup_3bf9c86db9a69489f744c599564f0e84.setContent(html_26d9d9d6433c36587af7bb64cbb9a0a0);
+            
+        
+
+        marker_fd03ce0b83e13d410d2ece8da7a4e5c1.bindPopup(popup_3bf9c86db9a69489f744c599564f0e84)
+        ;
+
+        
+    
+    
+            var marker_f33719c3d6d2405cb2341d52127fd939 = L.marker(
+                [14.680719, 76.683376],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_3bbcfb795c45c536bc002492ff16b192 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8876bc0de07c93fd8047c5c1176d7ad3 = $(`<div id="html_8876bc0de07c93fd8047c5c1176d7ad3" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.680719<br>Longitude: 76.683376</div>`)[0];
+                popup_3bbcfb795c45c536bc002492ff16b192.setContent(html_8876bc0de07c93fd8047c5c1176d7ad3);
+            
+        
+
+        marker_f33719c3d6d2405cb2341d52127fd939.bindPopup(popup_3bbcfb795c45c536bc002492ff16b192)
+        ;
+
+        
+    
+    
+            var marker_8da5cc1386acda8401660fa590f15f77 = L.marker(
+                [13.870106, 76.704236],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_f85a878336f5050265240dc0224dd8aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba5b848197ea8fc2965149a62dde7bc8 = $(`<div id="html_ba5b848197ea8fc2965149a62dde7bc8" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 13.870106<br>Longitude: 76.704236</div>`)[0];
+                popup_f85a878336f5050265240dc0224dd8aa.setContent(html_ba5b848197ea8fc2965149a62dde7bc8);
+            
+        
+
+        marker_8da5cc1386acda8401660fa590f15f77.bindPopup(popup_f85a878336f5050265240dc0224dd8aa)
+        ;
+
+        
+    
+    
+            var marker_c514f6ced9d4b1426892e383e8e05879 = L.marker(
+                [14.176027, 76.273979],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_bae20e5ef303bdb723c7e685f035b7fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b6b0638660ce0f2d63f2107439cc7cb = $(`<div id="html_3b6b0638660ce0f2d63f2107439cc7cb" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.176027<br>Longitude: 76.273979</div>`)[0];
+                popup_bae20e5ef303bdb723c7e685f035b7fd.setContent(html_3b6b0638660ce0f2d63f2107439cc7cb);
+            
+        
+
+        marker_c514f6ced9d4b1426892e383e8e05879.bindPopup(popup_bae20e5ef303bdb723c7e685f035b7fd)
+        ;
+
+        
+    
+    
+            var marker_afe8d8d9ca6aafce897561a9ed9331f3 = L.marker(
+                [13.765968, 76.420632],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_e92744552ef3b51ccba5d040410fb0f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76040eaedcec345a084bc30443449582 = $(`<div id="html_76040eaedcec345a084bc30443449582" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 13.765968<br>Longitude: 76.420632</div>`)[0];
+                popup_e92744552ef3b51ccba5d040410fb0f4.setContent(html_76040eaedcec345a084bc30443449582);
+            
+        
+
+        marker_afe8d8d9ca6aafce897561a9ed9331f3.bindPopup(popup_e92744552ef3b51ccba5d040410fb0f4)
+        ;
+
+        
+    
+    
+            var marker_776532305b82f374e6732b225e3eae5b = L.marker(
+                [14.88769, 76.7861909],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_e4de46bb0ed2a1673a6c9e151d9efb1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8c52484b8dc641f809cf274566ba402 = $(`<div id="html_a8c52484b8dc641f809cf274566ba402" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.88769<br>Longitude: 76.7861909</div>`)[0];
+                popup_e4de46bb0ed2a1673a6c9e151d9efb1a.setContent(html_a8c52484b8dc641f809cf274566ba402);
+            
+        
+
+        marker_776532305b82f374e6732b225e3eae5b.bindPopup(popup_e4de46bb0ed2a1673a6c9e151d9efb1a)
+        ;
+
+        
+    
+    
+            var marker_a8959513a6387f3979d661b7015ef405 = L.marker(
+                [14.0, 76.0],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_bbe38da70a36ba92df947f21ea92d1a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9abd443d9db94a3a872d2f906c0fa765 = $(`<div id="html_9abd443d9db94a3a872d2f906c0fa765" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.0<br>Longitude: 76.0</div>`)[0];
+                popup_bbe38da70a36ba92df947f21ea92d1a6.setContent(html_9abd443d9db94a3a872d2f906c0fa765);
+            
+        
+
+        marker_a8959513a6387f3979d661b7015ef405.bindPopup(popup_bbe38da70a36ba92df947f21ea92d1a6)
+        ;
+
+        
+    
+    
+            var marker_508ba17a9e6a3519fb47f6accea21d83 = L.marker(
+                [14.042174, 76.183985],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_2ea4b409a705ad3ad64329a87c0d7ecb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc72582d8fd3c888fb84eb8ea563cf81 = $(`<div id="html_cc72582d8fd3c888fb84eb8ea563cf81" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.042174<br>Longitude: 76.183985</div>`)[0];
+                popup_2ea4b409a705ad3ad64329a87c0d7ecb.setContent(html_cc72582d8fd3c888fb84eb8ea563cf81);
+            
+        
+
+        marker_508ba17a9e6a3519fb47f6accea21d83.bindPopup(popup_2ea4b409a705ad3ad64329a87c0d7ecb)
+        ;
+
+        
+    
+    
+            var marker_333b96f03afb9ed4119f6121d4056c4f = L.marker(
+                [14.28161, 76.16659],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_87de29a3d2cc583c24e2e9116bba9fe9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_961da3be6aa51f96cdc11b6c374ffb65 = $(`<div id="html_961da3be6aa51f96cdc11b6c374ffb65" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.28161<br>Longitude: 76.16659</div>`)[0];
+                popup_87de29a3d2cc583c24e2e9116bba9fe9.setContent(html_961da3be6aa51f96cdc11b6c374ffb65);
+            
+        
+
+        marker_333b96f03afb9ed4119f6121d4056c4f.bindPopup(popup_87de29a3d2cc583c24e2e9116bba9fe9)
+        ;
+
+        
+    
+    
+            var marker_a80faf8bbaf29dc1f2ce71d6e532f7b4 = L.marker(
+                [14.083618, 76.155808],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_f163b05811ca23de10b84d19c4c2f9f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c54040daa2fe7da6c5a60e2e1cb840d2 = $(`<div id="html_c54040daa2fe7da6c5a60e2e1cb840d2" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: State Highways<br>Latitude: 14.083618<br>Longitude: 76.155808</div>`)[0];
+                popup_f163b05811ca23de10b84d19c4c2f9f6.setContent(html_c54040daa2fe7da6c5a60e2e1cb840d2);
+            
+        
+
+        marker_a80faf8bbaf29dc1f2ce71d6e532f7b4.bindPopup(popup_f163b05811ca23de10b84d19c4c2f9f6)
+        ;
+
+        
+    
+    
+            var marker_0cbdb0af5cb5f6ed0562aecf22166785 = L.marker(
+                [14.432087, 76.581389],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_0bfcdef9a22d71428f57292f98b36b05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27bd6cd6e64b982707e7dbd7701041a1 = $(`<div id="html_27bd6cd6e64b982707e7dbd7701041a1" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: State Highways<br>Latitude: 14.432087<br>Longitude: 76.581389</div>`)[0];
+                popup_0bfcdef9a22d71428f57292f98b36b05.setContent(html_27bd6cd6e64b982707e7dbd7701041a1);
+            
+        
+
+        marker_0cbdb0af5cb5f6ed0562aecf22166785.bindPopup(popup_0bfcdef9a22d71428f57292f98b36b05)
+        ;
+
+        
+    
+    
+            var marker_ac34bb3e4cf45bb11cb8f050028f4b25 = L.marker(
+                [14.248609, 76.425524],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_ed9a737bfb422689c2e418292d8c860f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62b20fca6a944784a9915721b970d958 = $(`<div id="html_62b20fca6a944784a9915721b970d958" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.248609<br>Longitude: 76.425524</div>`)[0];
+                popup_ed9a737bfb422689c2e418292d8c860f.setContent(html_62b20fca6a944784a9915721b970d958);
+            
+        
+
+        marker_ac34bb3e4cf45bb11cb8f050028f4b25.bindPopup(popup_ed9a737bfb422689c2e418292d8c860f)
+        ;
+
+        
+    
+    
+            var marker_dec80aed276738b6e9881437b0709031 = L.marker(
+                [14.0, 76.0],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_696138d2d6a70d19fb425ca57583e2bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5eae7fa23386208a2bd325c31800602f = $(`<div id="html_5eae7fa23386208a2bd325c31800602f" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.0<br>Longitude: 76.0</div>`)[0];
+                popup_696138d2d6a70d19fb425ca57583e2bf.setContent(html_5eae7fa23386208a2bd325c31800602f);
+            
+        
+
+        marker_dec80aed276738b6e9881437b0709031.bindPopup(popup_696138d2d6a70d19fb425ca57583e2bf)
+        ;
+
+        
+    
+    
+            var marker_d26ad2859f65b02dda0136f015e25c90 = L.marker(
+                [14.754263, 76.718891],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_948e82fdecfc44c4381d94c639028b14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42048f9c8e7911e995b3dce9aae3ba2b = $(`<div id="html_42048f9c8e7911e995b3dce9aae3ba2b" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.754263<br>Longitude: 76.718891</div>`)[0];
+                popup_948e82fdecfc44c4381d94c639028b14.setContent(html_42048f9c8e7911e995b3dce9aae3ba2b);
+            
+        
+
+        marker_d26ad2859f65b02dda0136f015e25c90.bindPopup(popup_948e82fdecfc44c4381d94c639028b14)
+        ;
+
+        
+    
+    
+            var marker_efdb737f0cf5f86a44e40511f3b931a6 = L.marker(
+                [14.518179, 76.545543],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_8e94e1cefb8559751cd046cf8bed38bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bca2c86036628f0a93cf4a485aaa523 = $(`<div id="html_3bca2c86036628f0a93cf4a485aaa523" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.518179<br>Longitude: 76.545543</div>`)[0];
+                popup_8e94e1cefb8559751cd046cf8bed38bc.setContent(html_3bca2c86036628f0a93cf4a485aaa523);
+            
+        
+
+        marker_efdb737f0cf5f86a44e40511f3b931a6.bindPopup(popup_8e94e1cefb8559751cd046cf8bed38bc)
+        ;
+
+        
+    
+    
+            var marker_e8ca7e8ebaf1f6d6c56526ec0fc9acde = L.marker(
+                [14.236002, 76.403335],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_9a44cbb068b85b6eecaf4318c569069c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24d950d532a47597466aed9387b66a6a = $(`<div id="html_24d950d532a47597466aed9387b66a6a" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.236002<br>Longitude: 76.403335</div>`)[0];
+                popup_9a44cbb068b85b6eecaf4318c569069c.setContent(html_24d950d532a47597466aed9387b66a6a);
+            
+        
+
+        marker_e8ca7e8ebaf1f6d6c56526ec0fc9acde.bindPopup(popup_9a44cbb068b85b6eecaf4318c569069c)
+        ;
+
+        
+    
+    
+            var marker_591ef3851aa1c7961ea84b56901ff34c = L.marker(
+                [14.0, 76.0],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_769ad92233172a7ae3616f0c1ba98f08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9ea79e7d41c86a968ce87c89fd4f424 = $(`<div id="html_f9ea79e7d41c86a968ce87c89fd4f424" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.0<br>Longitude: 76.0</div>`)[0];
+                popup_769ad92233172a7ae3616f0c1ba98f08.setContent(html_f9ea79e7d41c86a968ce87c89fd4f424);
+            
+        
+
+        marker_591ef3851aa1c7961ea84b56901ff34c.bindPopup(popup_769ad92233172a7ae3616f0c1ba98f08)
+        ;
+
+        
+    
+    
+            var marker_e3ecf5407fc90c413ed54d85dbbeafe6 = L.marker(
+                [14.279202, 76.400447],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_43623190e778040ea12e99454d3a784d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf5a994ada5d8b5c8d0376d3282032b9 = $(`<div id="html_cf5a994ada5d8b5c8d0376d3282032b9" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.279202<br>Longitude: 76.400447</div>`)[0];
+                popup_43623190e778040ea12e99454d3a784d.setContent(html_cf5a994ada5d8b5c8d0376d3282032b9);
+            
+        
+
+        marker_e3ecf5407fc90c413ed54d85dbbeafe6.bindPopup(popup_43623190e778040ea12e99454d3a784d)
+        ;
+
+        
+    
+    
+            var marker_075057a76762602a16c7c105c2771716 = L.marker(
+                [14.31451, 76.65257],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_b18e1f0601463c88242a462e4751b13d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_826e68826a17dcbc289e4f75335a3d0b = $(`<div id="html_826e68826a17dcbc289e4f75335a3d0b" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.31451<br>Longitude: 76.65257</div>`)[0];
+                popup_b18e1f0601463c88242a462e4751b13d.setContent(html_826e68826a17dcbc289e4f75335a3d0b);
+            
+        
+
+        marker_075057a76762602a16c7c105c2771716.bindPopup(popup_b18e1f0601463c88242a462e4751b13d)
+        ;
+
+        
+    
+    
+            var marker_564dbeda7bccd29c1969d482adba43a2 = L.marker(
+                [14.142428, 76.490549],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_64a95895bebfbf135b6e8c85393a1948 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cc32e92678f620bde2ec48880c8a976 = $(`<div id="html_8cc32e92678f620bde2ec48880c8a976" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.142428<br>Longitude: 76.490549</div>`)[0];
+                popup_64a95895bebfbf135b6e8c85393a1948.setContent(html_8cc32e92678f620bde2ec48880c8a976);
+            
+        
+
+        marker_564dbeda7bccd29c1969d482adba43a2.bindPopup(popup_64a95895bebfbf135b6e8c85393a1948)
+        ;
+
+        
+    
+    
+            var marker_ebc0df2b0afeaf1bd88cae8d2ab8cc13 = L.marker(
+                [14.042174, 76.183985],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_a205517dff80a68984498b100fe88135 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_814d7caa163e7e0ab04d38bbbd70b095 = $(`<div id="html_814d7caa163e7e0ab04d38bbbd70b095" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.042174<br>Longitude: 76.183985</div>`)[0];
+                popup_a205517dff80a68984498b100fe88135.setContent(html_814d7caa163e7e0ab04d38bbbd70b095);
+            
+        
+
+        marker_ebc0df2b0afeaf1bd88cae8d2ab8cc13.bindPopup(popup_a205517dff80a68984498b100fe88135)
+        ;
+
+        
+    
+    
+            var marker_e2b6c6af72501a4216692bbcdacbe64a = L.marker(
+                [14.322962, 76.16659],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_52582ab6858e2d063a07dd561046192e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_858dcdb2bfefbf0a44d71d757e73415c = $(`<div id="html_858dcdb2bfefbf0a44d71d757e73415c" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.322962<br>Longitude: 76.16659</div>`)[0];
+                popup_52582ab6858e2d063a07dd561046192e.setContent(html_858dcdb2bfefbf0a44d71d757e73415c);
+            
+        
+
+        marker_e2b6c6af72501a4216692bbcdacbe64a.bindPopup(popup_52582ab6858e2d063a07dd561046192e)
+        ;
+
+        
+    
+    
+            var marker_4fba56d0f5642f0b838ed9140feb0737 = L.marker(
+                [14.328185, 76.708714],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_4c5bdfe66e68cfba13bce22571f72f84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f7c544b8d98b4b53ce43512bf48ee88 = $(`<div id="html_8f7c544b8d98b4b53ce43512bf48ee88" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.328185<br>Longitude: 76.708714</div>`)[0];
+                popup_4c5bdfe66e68cfba13bce22571f72f84.setContent(html_8f7c544b8d98b4b53ce43512bf48ee88);
+            
+        
+
+        marker_4fba56d0f5642f0b838ed9140feb0737.bindPopup(popup_4c5bdfe66e68cfba13bce22571f72f84)
+        ;
+
+        
+    
+    
+            var marker_aaedb13db38929cdfc57b2b2181ec8ab = L.marker(
+                [14.06183, 76.7904],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_dc8c8684dfb83749ef59a31bae2d05b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b1e8d9ae86da89f759d255e6a28db3d = $(`<div id="html_8b1e8d9ae86da89f759d255e6a28db3d" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: State Highways<br>Latitude: 14.06183<br>Longitude: 76.7904</div>`)[0];
+                popup_dc8c8684dfb83749ef59a31bae2d05b7.setContent(html_8b1e8d9ae86da89f759d255e6a28db3d);
+            
+        
+
+        marker_aaedb13db38929cdfc57b2b2181ec8ab.bindPopup(popup_dc8c8684dfb83749ef59a31bae2d05b7)
+        ;
+
+        
+    
+    
+            var marker_bd79641c559868136380154fe97f7c88 = L.marker(
+                [14.0, 76.0],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_77c7b54479861ca7a23108165c26fe6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a75369afc34cafd7d851b76c382a36f = $(`<div id="html_0a75369afc34cafd7d851b76c382a36f" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.0<br>Longitude: 76.0</div>`)[0];
+                popup_77c7b54479861ca7a23108165c26fe6d.setContent(html_0a75369afc34cafd7d851b76c382a36f);
+            
+        
+
+        marker_bd79641c559868136380154fe97f7c88.bindPopup(popup_77c7b54479861ca7a23108165c26fe6d)
+        ;
+
+        
+    
+    
+            var marker_f46fe8ac52c9280e7b2ceebd83541005 = L.marker(
+                [13.813563, 76.492524],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_87761a766154b593e6d1b16fab5e97cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2aadfb54a80aa2daa8bb5c05243662c = $(`<div id="html_e2aadfb54a80aa2daa8bb5c05243662c" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 13.813563<br>Longitude: 76.492524</div>`)[0];
+                popup_87761a766154b593e6d1b16fab5e97cd.setContent(html_e2aadfb54a80aa2daa8bb5c05243662c);
+            
+        
+
+        marker_f46fe8ac52c9280e7b2ceebd83541005.bindPopup(popup_87761a766154b593e6d1b16fab5e97cd)
+        ;
+
+        
+    
+    
+            var marker_70e240be1512c166cfae3a1eb9cd4749 = L.marker(
+                [14.007004, 76.05251],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_0560695b33bb4ba85291058c15a4eef7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f1ac77e5e00166765839c0ea04febf6 = $(`<div id="html_5f1ac77e5e00166765839c0ea04febf6" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: State Highways<br>Latitude: 14.007004<br>Longitude: 76.05251</div>`)[0];
+                popup_0560695b33bb4ba85291058c15a4eef7.setContent(html_5f1ac77e5e00166765839c0ea04febf6);
+            
+        
+
+        marker_70e240be1512c166cfae3a1eb9cd4749.bindPopup(popup_0560695b33bb4ba85291058c15a4eef7)
+        ;
+
+        
+    
+    
+            var marker_873b8ce41d191e000536cce12959976a = L.marker(
+                [14.865618, 76.778213],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_84c0698bcc0825af653a226ccc0eb86c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7852d4b80d002f8c438542a0bce7341 = $(`<div id="html_b7852d4b80d002f8c438542a0bce7341" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.865618<br>Longitude: 76.778213</div>`)[0];
+                popup_84c0698bcc0825af653a226ccc0eb86c.setContent(html_b7852d4b80d002f8c438542a0bce7341);
+            
+        
+
+        marker_873b8ce41d191e000536cce12959976a.bindPopup(popup_84c0698bcc0825af653a226ccc0eb86c)
+        ;
+
+        
+    
+    
+            var marker_60a75010bda2cd042f04616f0ae83253 = L.marker(
+                [14.764444, 76.1428],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_d34969c17f817561c1d1c98178330e89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53f90770b674a77bbad8108fbce89020 = $(`<div id="html_53f90770b674a77bbad8108fbce89020" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.764444<br>Longitude: 76.1428</div>`)[0];
+                popup_d34969c17f817561c1d1c98178330e89.setContent(html_53f90770b674a77bbad8108fbce89020);
+            
+        
+
+        marker_60a75010bda2cd042f04616f0ae83253.bindPopup(popup_d34969c17f817561c1d1c98178330e89)
+        ;
+
+        
+    
+    
+            var marker_55457b11e3ed454cd97838342a0148bb = L.marker(
+                [13.943821, 76.616074],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_6f60eb4a255316deca0d095bc0152731 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb6010a0be91c070dc9c222dc6022ff3 = $(`<div id="html_fb6010a0be91c070dc9c222dc6022ff3" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 13.943821<br>Longitude: 76.616074</div>`)[0];
+                popup_6f60eb4a255316deca0d095bc0152731.setContent(html_fb6010a0be91c070dc9c222dc6022ff3);
+            
+        
+
+        marker_55457b11e3ed454cd97838342a0148bb.bindPopup(popup_6f60eb4a255316deca0d095bc0152731)
+        ;
+
+        
+    
+    
+            var marker_659c856ac90bee9fe2ffa1fea1ff9b0a = L.marker(
+                [14.0, 76.0],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_90f3a90caf96120fcebad0b95e8ca2c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03736dcf9cde875e531c497abefce5b5 = $(`<div id="html_03736dcf9cde875e531c497abefce5b5" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.0<br>Longitude: 76.0</div>`)[0];
+                popup_90f3a90caf96120fcebad0b95e8ca2c2.setContent(html_03736dcf9cde875e531c497abefce5b5);
+            
+        
+
+        marker_659c856ac90bee9fe2ffa1fea1ff9b0a.bindPopup(popup_90f3a90caf96120fcebad0b95e8ca2c2)
+        ;
+
+        
+    
+    
+            var marker_382cf3b0e095597c3e97555059f53e07 = L.marker(
+                [14.281147, 76.854613],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_99cb1b841a78309ccbcfa388ba06ca49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_923475594c1d4fe126f39072bf75ffa6 = $(`<div id="html_923475594c1d4fe126f39072bf75ffa6" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: State Highways<br>Latitude: 14.281147<br>Longitude: 76.854613</div>`)[0];
+                popup_99cb1b841a78309ccbcfa388ba06ca49.setContent(html_923475594c1d4fe126f39072bf75ffa6);
+            
+        
+
+        marker_382cf3b0e095597c3e97555059f53e07.bindPopup(popup_99cb1b841a78309ccbcfa388ba06ca49)
+        ;
+
+        
+    
+    
+            var marker_797eb1e991f036bfabe89c7e72e6eafb = L.marker(
+                [13.865311, 76.322956],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_7c3e9bb4fea3e15816692ebf120795ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3cd3d3df72e9ddefacbaed98a7f478b = $(`<div id="html_e3cd3d3df72e9ddefacbaed98a7f478b" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: State Highways<br>Latitude: 13.865311<br>Longitude: 76.322956</div>`)[0];
+                popup_7c3e9bb4fea3e15816692ebf120795ff.setContent(html_e3cd3d3df72e9ddefacbaed98a7f478b);
+            
+        
+
+        marker_797eb1e991f036bfabe89c7e72e6eafb.bindPopup(popup_7c3e9bb4fea3e15816692ebf120795ff)
+        ;
+
+        
+    
+    
+            var marker_830a82d6dab81651c8d0fdc009b22857 = L.marker(
+                [14.083597, 76.505796],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_3c5d64ab938e2c7bf4016525d39c7d71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbf3fc23c79b70324fb5f4c20bc5b686 = $(`<div id="html_cbf3fc23c79b70324fb5f4c20bc5b686" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: Other Roads<br>Latitude: 14.083597<br>Longitude: 76.505796</div>`)[0];
+                popup_3c5d64ab938e2c7bf4016525d39c7d71.setContent(html_cbf3fc23c79b70324fb5f4c20bc5b686);
+            
+        
+
+        marker_830a82d6dab81651c8d0fdc009b22857.bindPopup(popup_3c5d64ab938e2c7bf4016525d39c7d71)
+        ;
+
+        
+    
+    
+            var marker_aa72460584f855dba690acda29ea9cd0 = L.marker(
+                [14.236002, 76.403335],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_06397c4b438d615a40993fbd286c994e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2c2b08352d736f93a869a22af8c2a14 = $(`<div id="html_d2c2b08352d736f93a869a22af8c2a14" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.236002<br>Longitude: 76.403335</div>`)[0];
+                popup_06397c4b438d615a40993fbd286c994e.setContent(html_d2c2b08352d736f93a869a22af8c2a14);
+            
+        
+
+        marker_aa72460584f855dba690acda29ea9cd0.bindPopup(popup_06397c4b438d615a40993fbd286c994e)
+        ;
+
+        
+    
+    
+            var marker_544de9bd872ca36c9c036cced2f2d871 = L.marker(
+                [14.329631, 76.653274],
+                {}
+            ).addTo(marker_cluster_8a274c8de8d05a5c36645ccc70d733b9);
+        
+    
+        var popup_2315dbdfa1cf7cbf9feb0726bc32b441 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb740cacaf35bd6036f02aaba9898272 = $(`<div id="html_fb740cacaf35bd6036f02aaba9898272" style="width: 100.0%; height: 100.0%;">Crime Group: MOTOR VEHICLE ACCIDENTS NON-FATAL<br>Crime Head: National Highways<br>Latitude: 14.329631<br>Longitude: 76.653274</div>`)[0];
+                popup_2315dbdfa1cf7cbf9feb0726bc32b441.setContent(html_fb740cacaf35bd6036f02aaba9898272);
+            
+        
+
+        marker_544de9bd872ca36c9c036cced2f2d871.bindPopup(popup_2315dbdfa1cf7cbf9feb0726bc32b441)
+        ;
+
+        
+    
+    
+            var layer_control_2dd351596717a0edd276398a0dc5795f = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_db6a2902381c149086ab47384790f099,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_2dd351596717a0edd276398a0dc5795f.base_layers,
+                layer_control_2dd351596717a0edd276398a0dc5795f.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_cf4f076505d8874336ff9e94216d845c);
+        
+</script>
+</html>

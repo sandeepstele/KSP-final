@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_55177b88a449181165ad00345f7967c9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_55177b88a449181165ad00345f7967c9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_55177b88a449181165ad00345f7967c9 = L.map(
+                "map_55177b88a449181165ad00345f7967c9",
+                {
+                    center: [13.003811071428569, 76.177381],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e86503835ff967512a2ee7841ef9268 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_55177b88a449181165ad00345f7967c9);
+        
+    
+            var marker_cluster_f441990fed8b249ac9a935acba632e39 = L.markerClusterGroup(
+                {}
+            );
+            map_55177b88a449181165ad00345f7967c9.addLayer(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+            var marker_a51530b0129465bd13c80ab4121a54c1 = L.marker(
+                [12.981778, 76.213969],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_692c7e8e2785714808bc55a831e70a8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_faa6d1707a345f7fe1b706a0de748c04 = $(`<div id="html_faa6d1707a345f7fe1b706a0de748c04" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Other Local Acts<br>Latitude: 12.981778<br>Longitude: 76.213969</div>`)[0];
+                popup_692c7e8e2785714808bc55a831e70a8a.setContent(html_faa6d1707a345f7fe1b706a0de748c04);
+            
+        
+
+        marker_a51530b0129465bd13c80ab4121a54c1.bindPopup(popup_692c7e8e2785714808bc55a831e70a8a)
+        ;
+
+        
+    
+    
+            var marker_dc583e95c7b2cca48ace4478b9959475 = L.marker(
+                [12.996035, 76.080809],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_024e147ef26a06d5d072f5574a52b431 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14752e97e46ca829913ce31be1d1d1f8 = $(`<div id="html_14752e97e46ca829913ce31be1d1d1f8" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.996035<br>Longitude: 76.080809</div>`)[0];
+                popup_024e147ef26a06d5d072f5574a52b431.setContent(html_14752e97e46ca829913ce31be1d1d1f8);
+            
+        
+
+        marker_dc583e95c7b2cca48ace4478b9959475.bindPopup(popup_024e147ef26a06d5d072f5574a52b431)
+        ;
+
+        
+    
+    
+            var marker_07c4f7d68d1d43ca45ef17aea4701b3b = L.marker(
+                [13.020809, 76.383519],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_ee5f7b1986e5a2bb54eb908b2ee25e3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ff368ca36baa32f1217a94e7f032d55 = $(`<div id="html_0ff368ca36baa32f1217a94e7f032d55" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.020809<br>Longitude: 76.383519</div>`)[0];
+                popup_ee5f7b1986e5a2bb54eb908b2ee25e3a.setContent(html_0ff368ca36baa32f1217a94e7f032d55);
+            
+        
+
+        marker_07c4f7d68d1d43ca45ef17aea4701b3b.bindPopup(popup_ee5f7b1986e5a2bb54eb908b2ee25e3a)
+        ;
+
+        
+    
+    
+            var marker_b57768934289c9bebea868422a25785c = L.marker(
+                [12.859329, 76.081653],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_6d93ae6c675a9e5f5320e80cd402f5ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a44d75bc3a5864192e1268ea8a91a4b = $(`<div id="html_3a44d75bc3a5864192e1268ea8a91a4b" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.859329<br>Longitude: 76.081653</div>`)[0];
+                popup_6d93ae6c675a9e5f5320e80cd402f5ab.setContent(html_3a44d75bc3a5864192e1268ea8a91a4b);
+            
+        
+
+        marker_b57768934289c9bebea868422a25785c.bindPopup(popup_6d93ae6c675a9e5f5320e80cd402f5ab)
+        ;
+
+        
+    
+    
+            var marker_0dc457d3c8e9aa8dc69f0d041c9977ed = L.marker(
+                [12.951721, 76.253579],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_603f3cb0bb730db65eff2ab59c21830c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c305cf518780b12239cfb0445c46fa8b = $(`<div id="html_c305cf518780b12239cfb0445c46fa8b" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.951721<br>Longitude: 76.253579</div>`)[0];
+                popup_603f3cb0bb730db65eff2ab59c21830c.setContent(html_c305cf518780b12239cfb0445c46fa8b);
+            
+        
+
+        marker_0dc457d3c8e9aa8dc69f0d041c9977ed.bindPopup(popup_603f3cb0bb730db65eff2ab59c21830c)
+        ;
+
+        
+    
+    
+            var marker_18f81c0f5579e34b91a51194fdab6965 = L.marker(
+                [13.087714, 76.458714],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_c3cad3218111d6bd3990a80400022c62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88163bfc4f234e631f78c8e8d52ac51f = $(`<div id="html_88163bfc4f234e631f78c8e8d52ac51f" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.087714<br>Longitude: 76.458714</div>`)[0];
+                popup_c3cad3218111d6bd3990a80400022c62.setContent(html_88163bfc4f234e631f78c8e8d52ac51f);
+            
+        
+
+        marker_18f81c0f5579e34b91a51194fdab6965.bindPopup(popup_c3cad3218111d6bd3990a80400022c62)
+        ;
+
+        
+    
+    
+            var marker_3ef156e341e95a1c31c14f1a04789923 = L.marker(
+                [12.94684, 76.204769],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_b7e2530706254e931419bfa912fa54bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d01c9448c342250996a1dd3070d48313 = $(`<div id="html_d01c9448c342250996a1dd3070d48313" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.94684<br>Longitude: 76.204769</div>`)[0];
+                popup_b7e2530706254e931419bfa912fa54bd.setContent(html_d01c9448c342250996a1dd3070d48313);
+            
+        
+
+        marker_3ef156e341e95a1c31c14f1a04789923.bindPopup(popup_b7e2530706254e931419bfa912fa54bd)
+        ;
+
+        
+    
+    
+            var marker_999e39415bab314921d7f1892af3106b = L.marker(
+                [13.08549, 75.802529],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_063a24c130c7251e35eb2bd61095a6e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4634bac052d26299cb47b22f116d02b5 = $(`<div id="html_4634bac052d26299cb47b22f116d02b5" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.08549<br>Longitude: 75.802529</div>`)[0];
+                popup_063a24c130c7251e35eb2bd61095a6e4.setContent(html_4634bac052d26299cb47b22f116d02b5);
+            
+        
+
+        marker_999e39415bab314921d7f1892af3106b.bindPopup(popup_063a24c130c7251e35eb2bd61095a6e4)
+        ;
+
+        
+    
+    
+            var marker_3c1448137c1f0adaffddc25150fdead2 = L.marker(
+                [13.059379, 76.218986],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_2093891138dbb4c88e8a2ac85f5702c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e63c74c7ce44de1ca5c64a7c58212026 = $(`<div id="html_e63c74c7ce44de1ca5c64a7c58212026" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.059379<br>Longitude: 76.218986</div>`)[0];
+                popup_2093891138dbb4c88e8a2ac85f5702c4.setContent(html_e63c74c7ce44de1ca5c64a7c58212026);
+            
+        
+
+        marker_3c1448137c1f0adaffddc25150fdead2.bindPopup(popup_2093891138dbb4c88e8a2ac85f5702c4)
+        ;
+
+        
+    
+    
+            var marker_935bca1a879b03e092a98a21701e41c6 = L.marker(
+                [12.873361, 76.038394],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_1f2063ef7160fe202b36ac3f72e2c500 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44da5bd9342c7cf3b5d60f672bc3bccd = $(`<div id="html_44da5bd9342c7cf3b5d60f672bc3bccd" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.873361<br>Longitude: 76.038394</div>`)[0];
+                popup_1f2063ef7160fe202b36ac3f72e2c500.setContent(html_44da5bd9342c7cf3b5d60f672bc3bccd);
+            
+        
+
+        marker_935bca1a879b03e092a98a21701e41c6.bindPopup(popup_1f2063ef7160fe202b36ac3f72e2c500)
+        ;
+
+        
+    
+    
+            var marker_3813546befe8f40b872f18ce80c820e5 = L.marker(
+                [13.046528, 76.47151],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_425bce3eaeb8afd2f5d574d3d7e9195f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdf9d46a41830efd1264bb5da3d841b6 = $(`<div id="html_cdf9d46a41830efd1264bb5da3d841b6" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.046528<br>Longitude: 76.47151</div>`)[0];
+                popup_425bce3eaeb8afd2f5d574d3d7e9195f.setContent(html_cdf9d46a41830efd1264bb5da3d841b6);
+            
+        
+
+        marker_3813546befe8f40b872f18ce80c820e5.bindPopup(popup_425bce3eaeb8afd2f5d574d3d7e9195f)
+        ;
+
+        
+    
+    
+            var marker_1f4a72cab546887c365377780d627f03 = L.marker(
+                [13.005995, 76.102922],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_341a1e173195e1b7c988491b210092d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c078230120d393d381cf060f312312b4 = $(`<div id="html_c078230120d393d381cf060f312312b4" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Prevention of violence against Doctors, Medical professionals and Medical institutions<br>Latitude: 13.005995<br>Longitude: 76.102922</div>`)[0];
+                popup_341a1e173195e1b7c988491b210092d3.setContent(html_c078230120d393d381cf060f312312b4);
+            
+        
+
+        marker_1f4a72cab546887c365377780d627f03.bindPopup(popup_341a1e173195e1b7c988491b210092d3)
+        ;
+
+        
+    
+    
+            var marker_3196146a6a9826bc822ddaae962dfc45 = L.marker(
+                [13.085884, 75.914189],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_f2de525524a40c7117e18d70bd812174 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b61b433028d3935faf9c4f4bbfb2196 = $(`<div id="html_7b61b433028d3935faf9c4f4bbfb2196" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.085884<br>Longitude: 75.914189</div>`)[0];
+                popup_f2de525524a40c7117e18d70bd812174.setContent(html_7b61b433028d3935faf9c4f4bbfb2196);
+            
+        
+
+        marker_3196146a6a9826bc822ddaae962dfc45.bindPopup(popup_f2de525524a40c7117e18d70bd812174)
+        ;
+
+        
+    
+    
+            var marker_e3f9d2057aa5253408f367cd69b08158 = L.marker(
+                [13.040921, 76.176202],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_864560b18fd924be099e58e3b842ca18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76c4af1eda87d0b48eec5c3f09da46af = $(`<div id="html_76c4af1eda87d0b48eec5c3f09da46af" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.040921<br>Longitude: 76.176202</div>`)[0];
+                popup_864560b18fd924be099e58e3b842ca18.setContent(html_76c4af1eda87d0b48eec5c3f09da46af);
+            
+        
+
+        marker_e3f9d2057aa5253408f367cd69b08158.bindPopup(popup_864560b18fd924be099e58e3b842ca18)
+        ;
+
+        
+    
+    
+            var marker_a1531d12f6ccfd24a5660994efa50255 = L.marker(
+                [13.046659, 76.471445],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_074f7344c6a6465687fdff291be32d33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_782d1458ba8d781f99ae2a3b56611317 = $(`<div id="html_782d1458ba8d781f99ae2a3b56611317" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.046659<br>Longitude: 76.471445</div>`)[0];
+                popup_074f7344c6a6465687fdff291be32d33.setContent(html_782d1458ba8d781f99ae2a3b56611317);
+            
+        
+
+        marker_a1531d12f6ccfd24a5660994efa50255.bindPopup(popup_074f7344c6a6465687fdff291be32d33)
+        ;
+
+        
+    
+    
+            var marker_0eedb7c899aeb44be1a3763e7cb8ad3c = L.marker(
+                [12.952568, 76.156837],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_dba0309927578b94c1ae1a956148bd59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3feb1b4e157664e6bcb54682d173aab = $(`<div id="html_d3feb1b4e157664e6bcb54682d173aab" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.952568<br>Longitude: 76.156837</div>`)[0];
+                popup_dba0309927578b94c1ae1a956148bd59.setContent(html_d3feb1b4e157664e6bcb54682d173aab);
+            
+        
+
+        marker_0eedb7c899aeb44be1a3763e7cb8ad3c.bindPopup(popup_dba0309927578b94c1ae1a956148bd59)
+        ;
+
+        
+    
+    
+            var marker_b2f57890f67e53f8925e29b794f9ee18 = L.marker(
+                [12.782173, 76.221845],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_a155f780759b6f41ba06337308ed1938 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ac7f877d31d0ed73a517746f5e476f8 = $(`<div id="html_9ac7f877d31d0ed73a517746f5e476f8" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.782173<br>Longitude: 76.221845</div>`)[0];
+                popup_a155f780759b6f41ba06337308ed1938.setContent(html_9ac7f877d31d0ed73a517746f5e476f8);
+            
+        
+
+        marker_b2f57890f67e53f8925e29b794f9ee18.bindPopup(popup_a155f780759b6f41ba06337308ed1938)
+        ;
+
+        
+    
+    
+            var marker_8e75cff4c2d57cc2b9ffb40a91be0a1e = L.marker(
+                [12.957294, 75.980711],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_7d32692084d4e93265fb1c52b90f85af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2db803e9cde68b57d687065670734c18 = $(`<div id="html_2db803e9cde68b57d687065670734c18" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.957294<br>Longitude: 75.980711</div>`)[0];
+                popup_7d32692084d4e93265fb1c52b90f85af.setContent(html_2db803e9cde68b57d687065670734c18);
+            
+        
+
+        marker_8e75cff4c2d57cc2b9ffb40a91be0a1e.bindPopup(popup_7d32692084d4e93265fb1c52b90f85af)
+        ;
+
+        
+    
+    
+            var marker_d3f022b65cfb327c9ad2f151ebf1924e = L.marker(
+                [12.703335, 76.291661],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_6bc361187be4eaefd5691d98e74cdf2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc46b9258789c8b6f7f5d45d05ed0a78 = $(`<div id="html_cc46b9258789c8b6f7f5d45d05ed0a78" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.703335<br>Longitude: 76.291661</div>`)[0];
+                popup_6bc361187be4eaefd5691d98e74cdf2d.setContent(html_cc46b9258789c8b6f7f5d45d05ed0a78);
+            
+        
+
+        marker_d3f022b65cfb327c9ad2f151ebf1924e.bindPopup(popup_6bc361187be4eaefd5691d98e74cdf2d)
+        ;
+
+        
+    
+    
+            var marker_001eda3551c6e12146c6c1eeec4151ea = L.marker(
+                [12.930806, 76.2434],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_d40455c1bfb4ceb0b45313f11a40506f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc908a9006ccfee917a0a8e333654920 = $(`<div id="html_dc908a9006ccfee917a0a8e333654920" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.930806<br>Longitude: 76.2434</div>`)[0];
+                popup_d40455c1bfb4ceb0b45313f11a40506f.setContent(html_dc908a9006ccfee917a0a8e333654920);
+            
+        
+
+        marker_001eda3551c6e12146c6c1eeec4151ea.bindPopup(popup_d40455c1bfb4ceb0b45313f11a40506f)
+        ;
+
+        
+    
+    
+            var marker_a294288d025bc54955a8d9bd2b426172 = L.marker(
+                [13.049002, 75.983998],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_8ed4b6c411659bf7dca7517a53760167 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3b8e46ab682f12c12b3f9b648aa54fd = $(`<div id="html_e3b8e46ab682f12c12b3f9b648aa54fd" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.049002<br>Longitude: 75.983998</div>`)[0];
+                popup_8ed4b6c411659bf7dca7517a53760167.setContent(html_e3b8e46ab682f12c12b3f9b648aa54fd);
+            
+        
+
+        marker_a294288d025bc54955a8d9bd2b426172.bindPopup(popup_8ed4b6c411659bf7dca7517a53760167)
+        ;
+
+        
+    
+    
+            var marker_6f5d9b5259f91f2ad3f17ce1a2900553 = L.marker(
+                [12.936821, 76.200175],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_b4da3e715e42c64f96d9366c2092a6a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06d5db73cb13f11f634061f46b145c26 = $(`<div id="html_06d5db73cb13f11f634061f46b145c26" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.936821<br>Longitude: 76.200175</div>`)[0];
+                popup_b4da3e715e42c64f96d9366c2092a6a9.setContent(html_06d5db73cb13f11f634061f46b145c26);
+            
+        
+
+        marker_6f5d9b5259f91f2ad3f17ce1a2900553.bindPopup(popup_b4da3e715e42c64f96d9366c2092a6a9)
+        ;
+
+        
+    
+    
+            var marker_3fce16815beafc7060bde5b04be548d5 = L.marker(
+                [13.206149, 76.366334],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_d993b6a3e8e009062ae1dfdcd1bbbabd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_830fa539e466df4011bb685c639455d8 = $(`<div id="html_830fa539e466df4011bb685c639455d8" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.206149<br>Longitude: 76.366334</div>`)[0];
+                popup_d993b6a3e8e009062ae1dfdcd1bbbabd.setContent(html_830fa539e466df4011bb685c639455d8);
+            
+        
+
+        marker_3fce16815beafc7060bde5b04be548d5.bindPopup(popup_d993b6a3e8e009062ae1dfdcd1bbbabd)
+        ;
+
+        
+    
+    
+            var marker_fd92cc8c100bf29cce51db2e481dc782 = L.marker(
+                [12.762656, 76.201802],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_abbc04fda16762bbdf9f8ea62db4508b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_428885f971f8622962be655b919f1eb5 = $(`<div id="html_428885f971f8622962be655b919f1eb5" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.762656<br>Longitude: 76.201802</div>`)[0];
+                popup_abbc04fda16762bbdf9f8ea62db4508b.setContent(html_428885f971f8622962be655b919f1eb5);
+            
+        
+
+        marker_fd92cc8c100bf29cce51db2e481dc782.bindPopup(popup_abbc04fda16762bbdf9f8ea62db4508b)
+        ;
+
+        
+    
+    
+            var marker_09a8206983dcdfa6400fd3f25988b08b = L.marker(
+                [12.755727, 75.966505],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_de88315cb93f01243f95f326225d28e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc42f1f8fbaa6b59196fcdab60314ee6 = $(`<div id="html_cc42f1f8fbaa6b59196fcdab60314ee6" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.755727<br>Longitude: 75.966505</div>`)[0];
+                popup_de88315cb93f01243f95f326225d28e8.setContent(html_cc42f1f8fbaa6b59196fcdab60314ee6);
+            
+        
+
+        marker_09a8206983dcdfa6400fd3f25988b08b.bindPopup(popup_de88315cb93f01243f95f326225d28e8)
+        ;
+
+        
+    
+    
+            var marker_905e91bb7ff671ff250d8a14091f0aaa = L.marker(
+                [12.962934, 76.422703],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_b4db2f3fbfb1f86ddb553a93e43fd869 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c81ebcf71178f249386421c71c5308f4 = $(`<div id="html_c81ebcf71178f249386421c71c5308f4" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.962934<br>Longitude: 76.422703</div>`)[0];
+                popup_b4db2f3fbfb1f86ddb553a93e43fd869.setContent(html_c81ebcf71178f249386421c71c5308f4);
+            
+        
+
+        marker_905e91bb7ff671ff250d8a14091f0aaa.bindPopup(popup_b4db2f3fbfb1f86ddb553a93e43fd869)
+        ;
+
+        
+    
+    
+            var marker_a0f9e7387ca064ff8969954e24eb3eb6 = L.marker(
+                [12.761073, 76.262774],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_51c2f4daff100031137609ad79ddb3cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4af4092670b9c73d64b275c80310501 = $(`<div id="html_a4af4092670b9c73d64b275c80310501" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.761073<br>Longitude: 76.262774</div>`)[0];
+                popup_51c2f4daff100031137609ad79ddb3cf.setContent(html_a4af4092670b9c73d64b275c80310501);
+            
+        
+
+        marker_a0f9e7387ca064ff8969954e24eb3eb6.bindPopup(popup_51c2f4daff100031137609ad79ddb3cf)
+        ;
+
+        
+    
+    
+            var marker_4302e07558ae86c6eeb6b92830c9afaf = L.marker(
+                [12.930808, 76.196875],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_5636083eba7a31d56725ee6a3cbece80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a0cb9ed337c2e198aa8fe48a1ff33c3 = $(`<div id="html_2a0cb9ed337c2e198aa8fe48a1ff33c3" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.930808<br>Longitude: 76.196875</div>`)[0];
+                popup_5636083eba7a31d56725ee6a3cbece80.setContent(html_2a0cb9ed337c2e198aa8fe48a1ff33c3);
+            
+        
+
+        marker_4302e07558ae86c6eeb6b92830c9afaf.bindPopup(popup_5636083eba7a31d56725ee6a3cbece80)
+        ;
+
+        
+    
+    
+            var marker_1257825d57af1001d483a6cd2186f651 = L.marker(
+                [13.012302, 75.757184],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_8e943095f210b3ab1350b10226e36a76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f008810128933ad033aa078e03b161a5 = $(`<div id="html_f008810128933ad033aa078e03b161a5" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.012302<br>Longitude: 75.757184</div>`)[0];
+                popup_8e943095f210b3ab1350b10226e36a76.setContent(html_f008810128933ad033aa078e03b161a5);
+            
+        
+
+        marker_1257825d57af1001d483a6cd2186f651.bindPopup(popup_8e943095f210b3ab1350b10226e36a76)
+        ;
+
+        
+    
+    
+            var marker_7423d4d3f3deb805b9906f26c0558d0b = L.marker(
+                [12.979278, 76.217474],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_c07a6a46b836b23c53c11c5cc2bae794 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1062d284dafc536241c7d4736d5b48ef = $(`<div id="html_1062d284dafc536241c7d4736d5b48ef" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.979278<br>Longitude: 76.217474</div>`)[0];
+                popup_c07a6a46b836b23c53c11c5cc2bae794.setContent(html_1062d284dafc536241c7d4736d5b48ef);
+            
+        
+
+        marker_7423d4d3f3deb805b9906f26c0558d0b.bindPopup(popup_c07a6a46b836b23c53c11c5cc2bae794)
+        ;
+
+        
+    
+    
+            var marker_8297512fe7eaf49b7fed218745d4d168 = L.marker(
+                [13.393548, 76.149538],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_7e7e3a194833322f0dba10813b2d7c8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40722cb99e2c1013ce8a32f7db79cb80 = $(`<div id="html_40722cb99e2c1013ce8a32f7db79cb80" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.393548<br>Longitude: 76.149538</div>`)[0];
+                popup_7e7e3a194833322f0dba10813b2d7c8a.setContent(html_40722cb99e2c1013ce8a32f7db79cb80);
+            
+        
+
+        marker_8297512fe7eaf49b7fed218745d4d168.bindPopup(popup_7e7e3a194833322f0dba10813b2d7c8a)
+        ;
+
+        
+    
+    
+            var marker_cac6455f48ebfa5488d5cb2ba231a0a2 = L.marker(
+                [13.415676, 76.211409],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_1e34131a95014756cd9811ec381efe95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c1bf45f676776f0f5a2e901ca41f9e5 = $(`<div id="html_2c1bf45f676776f0f5a2e901ca41f9e5" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.415676<br>Longitude: 76.211409</div>`)[0];
+                popup_1e34131a95014756cd9811ec381efe95.setContent(html_2c1bf45f676776f0f5a2e901ca41f9e5);
+            
+        
+
+        marker_cac6455f48ebfa5488d5cb2ba231a0a2.bindPopup(popup_1e34131a95014756cd9811ec381efe95)
+        ;
+
+        
+    
+    
+            var marker_6e3fe8cfcf8299c168969d1942c93afb = L.marker(
+                [13.496991, 76.331631],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_af1b2f1444a701a20b9fce9b4b03536f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cdaebe65cb97967ce6f2988685fa55d = $(`<div id="html_1cdaebe65cb97967ce6f2988685fa55d" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.496991<br>Longitude: 76.331631</div>`)[0];
+                popup_af1b2f1444a701a20b9fce9b4b03536f.setContent(html_1cdaebe65cb97967ce6f2988685fa55d);
+            
+        
+
+        marker_6e3fe8cfcf8299c168969d1942c93afb.bindPopup(popup_af1b2f1444a701a20b9fce9b4b03536f)
+        ;
+
+        
+    
+    
+            var marker_7313886bde7125064ac621c05f8f2ee7 = L.marker(
+                [13.305753, 76.255667],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_54b26d9cef526fec3f916b2ff2163dd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4032c2dbabd730801ee248006a1b9284 = $(`<div id="html_4032c2dbabd730801ee248006a1b9284" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.305753<br>Longitude: 76.255667</div>`)[0];
+                popup_54b26d9cef526fec3f916b2ff2163dd0.setContent(html_4032c2dbabd730801ee248006a1b9284);
+            
+        
+
+        marker_7313886bde7125064ac621c05f8f2ee7.bindPopup(popup_54b26d9cef526fec3f916b2ff2163dd0)
+        ;
+
+        
+    
+    
+            var marker_877728f086b917574dd98f194fe85b61 = L.marker(
+                [13.087348, 76.190997],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_d3a563c0ddf87babe2ba2a342edc9ee8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41f98870da25be2e3248f33b0face409 = $(`<div id="html_41f98870da25be2e3248f33b0face409" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.087348<br>Longitude: 76.190997</div>`)[0];
+                popup_d3a563c0ddf87babe2ba2a342edc9ee8.setContent(html_41f98870da25be2e3248f33b0face409);
+            
+        
+
+        marker_877728f086b917574dd98f194fe85b61.bindPopup(popup_d3a563c0ddf87babe2ba2a342edc9ee8)
+        ;
+
+        
+    
+    
+            var marker_fc8cc1ef120e1ddac7a62fdfed898ceb = L.marker(
+                [12.754775, 75.963053],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_c24d51a13eda8a3c5dd989613a5291ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9bb81e9097b3423f3085c6723cf2c74 = $(`<div id="html_f9bb81e9097b3423f3085c6723cf2c74" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.754775<br>Longitude: 75.963053</div>`)[0];
+                popup_c24d51a13eda8a3c5dd989613a5291ca.setContent(html_f9bb81e9097b3423f3085c6723cf2c74);
+            
+        
+
+        marker_fc8cc1ef120e1ddac7a62fdfed898ceb.bindPopup(popup_c24d51a13eda8a3c5dd989613a5291ca)
+        ;
+
+        
+    
+    
+            var marker_d3791915ae39ec3dd9c33c3cee0aa845 = L.marker(
+                [12.889546, 76.369354],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_ee59fa6bf5ae4234628b63f654e1466e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a353ca99120f461a46f23a2f70addf4a = $(`<div id="html_a353ca99120f461a46f23a2f70addf4a" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.889546<br>Longitude: 76.369354</div>`)[0];
+                popup_ee59fa6bf5ae4234628b63f654e1466e.setContent(html_a353ca99120f461a46f23a2f70addf4a);
+            
+        
+
+        marker_d3791915ae39ec3dd9c33c3cee0aa845.bindPopup(popup_ee59fa6bf5ae4234628b63f654e1466e)
+        ;
+
+        
+    
+    
+            var marker_f3f195aa951fa86d76a263c07add0b18 = L.marker(
+                [13.127619, 75.973559],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_92a59bc90f894a542055464eeab4871f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c042597d39452d39bc3873fd2f0a8982 = $(`<div id="html_c042597d39452d39bc3873fd2f0a8982" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.127619<br>Longitude: 75.973559</div>`)[0];
+                popup_92a59bc90f894a542055464eeab4871f.setContent(html_c042597d39452d39bc3873fd2f0a8982);
+            
+        
+
+        marker_f3f195aa951fa86d76a263c07add0b18.bindPopup(popup_92a59bc90f894a542055464eeab4871f)
+        ;
+
+        
+    
+    
+            var marker_4b0679d53a74383a529f7faac5455863 = L.marker(
+                [12.809125, 76.156449],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_8386772a937b0e5faca6e66e65a44ded = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b9801978bd963aed585d25cb33ed084 = $(`<div id="html_1b9801978bd963aed585d25cb33ed084" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 12.809125<br>Longitude: 76.156449</div>`)[0];
+                popup_8386772a937b0e5faca6e66e65a44ded.setContent(html_1b9801978bd963aed585d25cb33ed084);
+            
+        
+
+        marker_4b0679d53a74383a529f7faac5455863.bindPopup(popup_8386772a937b0e5faca6e66e65a44ded)
+        ;
+
+        
+    
+    
+            var marker_9da366848635441bdb2835ea6e2908ec = L.marker(
+                [13.035802, 76.063873],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_e4de0a5d618eb5111bea000fb473472c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7fa78168aa88e34dbf7cb66d813ee6c = $(`<div id="html_e7fa78168aa88e34dbf7cb66d813ee6c" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.035802<br>Longitude: 76.063873</div>`)[0];
+                popup_e4de0a5d618eb5111bea000fb473472c.setContent(html_e7fa78168aa88e34dbf7cb66d813ee6c);
+            
+        
+
+        marker_9da366848635441bdb2835ea6e2908ec.bindPopup(popup_e4de0a5d618eb5111bea000fb473472c)
+        ;
+
+        
+    
+    
+            var marker_659a354aa2374d2236df63e47ff605f2 = L.marker(
+                [13.017469, 76.22242],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_60508a5e0f26709999c36e46cfc5e8f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_212eac33b575401667f569ba64e25605 = $(`<div id="html_212eac33b575401667f569ba64e25605" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.017469<br>Longitude: 76.22242</div>`)[0];
+                popup_60508a5e0f26709999c36e46cfc5e8f8.setContent(html_212eac33b575401667f569ba64e25605);
+            
+        
+
+        marker_659a354aa2374d2236df63e47ff605f2.bindPopup(popup_60508a5e0f26709999c36e46cfc5e8f8)
+        ;
+
+        
+    
+    
+            var marker_f1f3e9970dc96458ba8c19cd77ab46ee = L.marker(
+                [13.055044, 76.218585],
+                {}
+            ).addTo(marker_cluster_f441990fed8b249ac9a935acba632e39);
+        
+    
+        var popup_1a77ca337e56d2d8a35eee10234eb6e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdd419b7669196cdc55f0b39202e381b = $(`<div id="html_fdd419b7669196cdc55f0b39202e381b" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.055044<br>Longitude: 76.218585</div>`)[0];
+                popup_1a77ca337e56d2d8a35eee10234eb6e5.setContent(html_fdd419b7669196cdc55f0b39202e381b);
+            
+        
+
+        marker_f1f3e9970dc96458ba8c19cd77ab46ee.bindPopup(popup_1a77ca337e56d2d8a35eee10234eb6e5)
+        ;
+
+        
+    
+    
+            var layer_control_667921b3badaf813a796154f70bbbb20 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3e86503835ff967512a2ee7841ef9268,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_667921b3badaf813a796154f70bbbb20.base_layers,
+                layer_control_667921b3badaf813a796154f70bbbb20.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_55177b88a449181165ad00345f7967c9);
+        
+</script>
+</html>

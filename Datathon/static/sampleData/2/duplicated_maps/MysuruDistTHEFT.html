@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f2c2c4a8ba962209379f9cc288c8bbf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5f2c2c4a8ba962209379f9cc288c8bbf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5f2c2c4a8ba962209379f9cc288c8bbf = L.map(
+                "map_5f2c2c4a8ba962209379f9cc288c8bbf",
+                {
+                    center: [12.291576983050849, 76.47587297966103],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1825e0c889b965f5ac43d08fff90fd4f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5f2c2c4a8ba962209379f9cc288c8bbf);
+        
+    
+            var marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0 = L.markerClusterGroup(
+                {}
+            );
+            map_5f2c2c4a8ba962209379f9cc288c8bbf.addLayer(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+            var marker_f76ab0b607a17514f31161be75088075 = L.marker(
+                [12.325364, 76.785511],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_375df93e00c18a667abb9ff840e25796 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0925cd355607114089a2ae8c63549451 = $(`<div id="html_0925cd355607114089a2ae8c63549451" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Sand<br>Latitude: 12.325364<br>Longitude: 76.785511</div>`)[0];
+                popup_375df93e00c18a667abb9ff840e25796.setContent(html_0925cd355607114089a2ae8c63549451);
+            
+        
+
+        marker_f76ab0b607a17514f31161be75088075.bindPopup(popup_375df93e00c18a667abb9ff840e25796)
+        ;
+
+        
+    
+    
+            var marker_3a53f98737617a5f2e1c63e211a1ec66 = L.marker(
+                [12.416992, 76.192765],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_f62e3ba81536fb748e3f80a709a9bdd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85fdb14d95d6995786b27e297bcd2362 = $(`<div id="html_85fdb14d95d6995786b27e297bcd2362" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Other Items Not Included Above<br>Latitude: 12.416992<br>Longitude: 76.192765</div>`)[0];
+                popup_f62e3ba81536fb748e3f80a709a9bdd7.setContent(html_85fdb14d95d6995786b27e297bcd2362);
+            
+        
+
+        marker_3a53f98737617a5f2e1c63e211a1ec66.bindPopup(popup_f62e3ba81536fb748e3f80a709a9bdd7)
+        ;
+
+        
+    
+    
+            var marker_72aeac0cc6cef961c3e9539a6a8527bb = L.marker(
+                [12.099009, 76.556261],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_d0bd4dd66e3732212f0002af2beed6c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_269d8d8e1a2d38a7a62f81c7182b16a6 = $(`<div id="html_269d8d8e1a2d38a7a62f81c7182b16a6" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Cattle<br>Latitude: 12.099009<br>Longitude: 76.556261</div>`)[0];
+                popup_d0bd4dd66e3732212f0002af2beed6c8.setContent(html_269d8d8e1a2d38a7a62f81c7182b16a6);
+            
+        
+
+        marker_72aeac0cc6cef961c3e9539a6a8527bb.bindPopup(popup_d0bd4dd66e3732212f0002af2beed6c8)
+        ;
+
+        
+    
+    
+            var marker_6274ba023bd97e0b4799790b43a92cb5 = L.marker(
+                [12.083431, 76.334757],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_e5bef17633d7ebc1ce67a2ac163c60cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ec05f5960201c84845fe66b412fecc1 = $(`<div id="html_4ec05f5960201c84845fe66b412fecc1" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Other Items Not Included Above<br>Latitude: 12.083431<br>Longitude: 76.334757</div>`)[0];
+                popup_e5bef17633d7ebc1ce67a2ac163c60cc.setContent(html_4ec05f5960201c84845fe66b412fecc1);
+            
+        
+
+        marker_6274ba023bd97e0b4799790b43a92cb5.bindPopup(popup_e5bef17633d7ebc1ce67a2ac163c60cc)
+        ;
+
+        
+    
+    
+            var marker_a833ed962a548ebe97352bf8cb476655 = L.marker(
+                [12.090211, 76.33171],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_225ed4fd6cb30b283c190d9f13815cce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93502e84dea045ed7aa954c93c3f5b14 = $(`<div id="html_93502e84dea045ed7aa954c93c3f5b14" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Cultural - Others<br>Latitude: 12.090211<br>Longitude: 76.33171</div>`)[0];
+                popup_225ed4fd6cb30b283c190d9f13815cce.setContent(html_93502e84dea045ed7aa954c93c3f5b14);
+            
+        
+
+        marker_a833ed962a548ebe97352bf8cb476655.bindPopup(popup_225ed4fd6cb30b283c190d9f13815cce)
+        ;
+
+        
+    
+    
+            var marker_368c66d16000890b8910a05861386171 = L.marker(
+                [12.313204, 76.276142],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_502b078a2aa7d17be9892aeae0e4fe4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a78e2a3e04fa02cd6899a4bd490c0a61 = $(`<div id="html_a78e2a3e04fa02cd6899a4bd490c0a61" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: House Theft<br>Latitude: 12.313204<br>Longitude: 76.276142</div>`)[0];
+                popup_502b078a2aa7d17be9892aeae0e4fe4c.setContent(html_a78e2a3e04fa02cd6899a4bd490c0a61);
+            
+        
+
+        marker_368c66d16000890b8910a05861386171.bindPopup(popup_502b078a2aa7d17be9892aeae0e4fe4c)
+        ;
+
+        
+    
+    
+            var marker_5a8f565eccfa151a2d0303a7319f873e = L.marker(
+                [11.95843, 76.519466],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_0e9dfd4765719911a2001b911e6bf9fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1dbc5a973b97c5f87bf7a5ab29f6776b = $(`<div id="html_1dbc5a973b97c5f87bf7a5ab29f6776b" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Cultural - Others<br>Latitude: 11.95843<br>Longitude: 76.519466</div>`)[0];
+                popup_0e9dfd4765719911a2001b911e6bf9fc.setContent(html_1dbc5a973b97c5f87bf7a5ab29f6776b);
+            
+        
+
+        marker_5a8f565eccfa151a2d0303a7319f873e.bindPopup(popup_0e9dfd4765719911a2001b911e6bf9fc)
+        ;
+
+        
+    
+    
+            var marker_fc92c6e37e87ccff1f2a062259938a00 = L.marker(
+                [12.123456, 76.123456],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_70dd3371d43c67705a0a51ecf22a96ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdc218b0b4cbe73d9eb41c291003598c = $(`<div id="html_bdc218b0b4cbe73d9eb41c291003598c" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: House Theft<br>Latitude: 12.123456<br>Longitude: 76.123456</div>`)[0];
+                popup_70dd3371d43c67705a0a51ecf22a96ce.setContent(html_bdc218b0b4cbe73d9eb41c291003598c);
+            
+        
+
+        marker_fc92c6e37e87ccff1f2a062259938a00.bindPopup(popup_70dd3371d43c67705a0a51ecf22a96ce)
+        ;
+
+        
+    
+    
+            var marker_4fea63051a099f45b53e716c67295020 = L.marker(
+                [12.12, 76.16],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_ef60aa625e0404fda4aab1a9f77e87d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf0ead001fae1543b58a698c4a5b2a4f = $(`<div id="html_bf0ead001fae1543b58a698c4a5b2a4f" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.12<br>Longitude: 76.16</div>`)[0];
+                popup_ef60aa625e0404fda4aab1a9f77e87d0.setContent(html_bf0ead001fae1543b58a698c4a5b2a4f);
+            
+        
+
+        marker_4fea63051a099f45b53e716c67295020.bindPopup(popup_ef60aa625e0404fda4aab1a9f77e87d0)
+        ;
+
+        
+    
+    
+            var marker_50acf5b3b6c65e198143e32b057f007c = L.marker(
+                [12.559644, 76.265225],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_8912d5e7e56c04a4e4a44a2378e25cb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a0e861a02703253096cf35a542b7cc1 = $(`<div id="html_6a0e861a02703253096cf35a542b7cc1" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.559644<br>Longitude: 76.265225</div>`)[0];
+                popup_8912d5e7e56c04a4e4a44a2378e25cb3.setContent(html_6a0e861a02703253096cf35a542b7cc1);
+            
+        
+
+        marker_50acf5b3b6c65e198143e32b057f007c.bindPopup(popup_8912d5e7e56c04a4e4a44a2378e25cb3)
+        ;
+
+        
+    
+    
+            var marker_802ec51154bdde72fda52de549de60a9 = L.marker(
+                [12.190121, 76.36598],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_4d95d52202afa053b5ee9e651a665e7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2399774a2309daeed7192b55fbf8b95d = $(`<div id="html_2399774a2309daeed7192b55fbf8b95d" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Other Items Not Included Above<br>Latitude: 12.190121<br>Longitude: 76.36598</div>`)[0];
+                popup_4d95d52202afa053b5ee9e651a665e7a.setContent(html_2399774a2309daeed7192b55fbf8b95d);
+            
+        
+
+        marker_802ec51154bdde72fda52de549de60a9.bindPopup(popup_4d95d52202afa053b5ee9e651a665e7a)
+        ;
+
+        
+    
+    
+            var marker_082d808c6c64a47ecdab7af62bd51985 = L.marker(
+                [12.299364, 76.938676],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_5eda1d385deda25854cbc1394470c785 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba86e51f3862bcdfd23688cab4fbd95c = $(`<div id="html_ba86e51f3862bcdfd23688cab4fbd95c" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.299364<br>Longitude: 76.938676</div>`)[0];
+                popup_5eda1d385deda25854cbc1394470c785.setContent(html_ba86e51f3862bcdfd23688cab4fbd95c);
+            
+        
+
+        marker_082d808c6c64a47ecdab7af62bd51985.bindPopup(popup_5eda1d385deda25854cbc1394470c785)
+        ;
+
+        
+    
+    
+            var marker_d87a812a689e136f171fc51bc91a0d5d = L.marker(
+                [12.897202, 76.89714],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_2713cf85f33d9b916e3ec3dbdd8934b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6d1801f89ed4c2b389f7ce5d8a0e6bc = $(`<div id="html_e6d1801f89ed4c2b389f7ce5d8a0e6bc" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.897202<br>Longitude: 76.89714</div>`)[0];
+                popup_2713cf85f33d9b916e3ec3dbdd8934b3.setContent(html_e6d1801f89ed4c2b389f7ce5d8a0e6bc);
+            
+        
+
+        marker_d87a812a689e136f171fc51bc91a0d5d.bindPopup(popup_2713cf85f33d9b916e3ec3dbdd8934b3)
+        ;
+
+        
+    
+    
+            var marker_65154a445f0150d9ccfcabb09e34997a = L.marker(
+                [12.346058, 76.433286],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_760fc04f0319fa4c77ed28b5d0062774 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76e85a477c6ce66c70668fcfe8189191 = $(`<div id="html_76e85a477c6ce66c70668fcfe8189191" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.346058<br>Longitude: 76.433286</div>`)[0];
+                popup_760fc04f0319fa4c77ed28b5d0062774.setContent(html_76e85a477c6ce66c70668fcfe8189191);
+            
+        
+
+        marker_65154a445f0150d9ccfcabb09e34997a.bindPopup(popup_760fc04f0319fa4c77ed28b5d0062774)
+        ;
+
+        
+    
+    
+            var marker_571843658ec2b71d65821e10c1c4d2b4 = L.marker(
+                [12.123456, 76.123456],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_efc01ddb292e53c40bf2016aa3de17d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f5309fae3f661777f47635fb396ae76 = $(`<div id="html_1f5309fae3f661777f47635fb396ae76" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.123456<br>Longitude: 76.123456</div>`)[0];
+                popup_efc01ddb292e53c40bf2016aa3de17d0.setContent(html_1f5309fae3f661777f47635fb396ae76);
+            
+        
+
+        marker_571843658ec2b71d65821e10c1c4d2b4.bindPopup(popup_efc01ddb292e53c40bf2016aa3de17d0)
+        ;
+
+        
+    
+    
+            var marker_a5cc226568a74cf88bc6891147036f04 = L.marker(
+                [12.162052, 76.793129],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_f41f85aae75da34fd5ae2adce53b3d17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57b53ec75fc09844c48da3e2cffb6245 = $(`<div id="html_57b53ec75fc09844c48da3e2cffb6245" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.162052<br>Longitude: 76.793129</div>`)[0];
+                popup_f41f85aae75da34fd5ae2adce53b3d17.setContent(html_57b53ec75fc09844c48da3e2cffb6245);
+            
+        
+
+        marker_a5cc226568a74cf88bc6891147036f04.bindPopup(popup_f41f85aae75da34fd5ae2adce53b3d17)
+        ;
+
+        
+    
+    
+            var marker_59eeb70a8bd643bf8539d50cc0b5d997 = L.marker(
+                [12.579348, 76.368411],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_56af8369ac49d7a46d55ed94e965af02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8979af21a19cd6c7ac47460a57997594 = $(`<div id="html_8979af21a19cd6c7ac47460a57997594" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Communication And Elec.Wire<br>Latitude: 12.579348<br>Longitude: 76.368411</div>`)[0];
+                popup_56af8369ac49d7a46d55ed94e965af02.setContent(html_8979af21a19cd6c7ac47460a57997594);
+            
+        
+
+        marker_59eeb70a8bd643bf8539d50cc0b5d997.bindPopup(popup_56af8369ac49d7a46d55ed94e965af02)
+        ;
+
+        
+    
+    
+            var marker_0ca12fdea28de4cb94a8a082f8ca4686 = L.marker(
+                [12.514867, 76.414197],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_3f1e9a5721e50e7f5d79a77228d377b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f36f771754fe24eccfcc97921530488 = $(`<div id="html_7f36f771754fe24eccfcc97921530488" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Sand<br>Latitude: 12.514867<br>Longitude: 76.414197</div>`)[0];
+                popup_3f1e9a5721e50e7f5d79a77228d377b9.setContent(html_7f36f771754fe24eccfcc97921530488);
+            
+        
+
+        marker_0ca12fdea28de4cb94a8a082f8ca4686.bindPopup(popup_3f1e9a5721e50e7f5d79a77228d377b9)
+        ;
+
+        
+    
+    
+            var marker_1f7e8e76a59a3b290e894726c0a582fd = L.marker(
+                [12.133274, 76.308152],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_ab5c4292d08f2f7705d9d633c7e12a15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a2726251172286fffe14ea39787677a = $(`<div id="html_2a2726251172286fffe14ea39787677a" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Cattle<br>Latitude: 12.133274<br>Longitude: 76.308152</div>`)[0];
+                popup_ab5c4292d08f2f7705d9d633c7e12a15.setContent(html_2a2726251172286fffe14ea39787677a);
+            
+        
+
+        marker_1f7e8e76a59a3b290e894726c0a582fd.bindPopup(popup_ab5c4292d08f2f7705d9d633c7e12a15)
+        ;
+
+        
+    
+    
+            var marker_590f9c5f78aa8c4c63188a989d35d2e2 = L.marker(
+                [12.299555, 76.889132],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_0a6a1a266a175cee13ff896c7eaccf6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6887bd02d8542bff77ce972c4a1cf6f = $(`<div id="html_d6887bd02d8542bff77ce972c4a1cf6f" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.299555<br>Longitude: 76.889132</div>`)[0];
+                popup_0a6a1a266a175cee13ff896c7eaccf6b.setContent(html_d6887bd02d8542bff77ce972c4a1cf6f);
+            
+        
+
+        marker_590f9c5f78aa8c4c63188a989d35d2e2.bindPopup(popup_0a6a1a266a175cee13ff896c7eaccf6b)
+        ;
+
+        
+    
+    
+            var marker_a5c288a10c38c303607303ef31c21ada = L.marker(
+                [12.30812, 76.30983],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_582fe195632f44ed84f84b4bee837f38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c70c43c534bfc500e7fd84824aee65b = $(`<div id="html_5c70c43c534bfc500e7fd84824aee65b" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Jewellery<br>Latitude: 12.30812<br>Longitude: 76.30983</div>`)[0];
+                popup_582fe195632f44ed84f84b4bee837f38.setContent(html_5c70c43c534bfc500e7fd84824aee65b);
+            
+        
+
+        marker_a5c288a10c38c303607303ef31c21ada.bindPopup(popup_582fe195632f44ed84f84b4bee837f38)
+        ;
+
+        
+    
+    
+            var marker_0c788f1f20ac590baf0876b184d6acbb = L.marker(
+                [12.438455, 76.381511],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_da5fc6c784da169c3cafeff3e9237f4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d700640cf4879a9812831e6d922987c3 = $(`<div id="html_d700640cf4879a9812831e6d922987c3" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Jewellery<br>Latitude: 12.438455<br>Longitude: 76.381511</div>`)[0];
+                popup_da5fc6c784da169c3cafeff3e9237f4a.setContent(html_d700640cf4879a9812831e6d922987c3);
+            
+        
+
+        marker_0c788f1f20ac590baf0876b184d6acbb.bindPopup(popup_da5fc6c784da169c3cafeff3e9237f4a)
+        ;
+
+        
+    
+    
+            var marker_fbbf15709de9b6c230b62266d50cdb39 = L.marker(
+                [12.560522, 76.362306],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_51b11f72a7474986cd32c6791bc266a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0f0e77cb2040475980c0e2bf637ba6e = $(`<div id="html_c0f0e77cb2040475980c0e2bf637ba6e" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Other Items Not Included Above<br>Latitude: 12.560522<br>Longitude: 76.362306</div>`)[0];
+                popup_51b11f72a7474986cd32c6791bc266a6.setContent(html_c0f0e77cb2040475980c0e2bf637ba6e);
+            
+        
+
+        marker_fbbf15709de9b6c230b62266d50cdb39.bindPopup(popup_51b11f72a7474986cd32c6791bc266a6)
+        ;
+
+        
+    
+    
+            var marker_6801b31ba3123c2926b2846b6d724fe2 = L.marker(
+                [12.123456, 76.123456],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_af097aefe61a6f04167db28c79deda43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c2b7ea483474c0056861809680877c9 = $(`<div id="html_9c2b7ea483474c0056861809680877c9" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.123456<br>Longitude: 76.123456</div>`)[0];
+                popup_af097aefe61a6f04167db28c79deda43.setContent(html_9c2b7ea483474c0056861809680877c9);
+            
+        
+
+        marker_6801b31ba3123c2926b2846b6d724fe2.bindPopup(popup_af097aefe61a6f04167db28c79deda43)
+        ;
+
+        
+    
+    
+            var marker_05b529a9ae48994bd8361e5d581f4c33 = L.marker(
+                [12.512324, 76.403073],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_e4d6f9d4e678a3f53e8100276ba912de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b1d2a91b9a49f50ea43dea2d41c35ea = $(`<div id="html_6b1d2a91b9a49f50ea43dea2d41c35ea" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Sand<br>Latitude: 12.512324<br>Longitude: 76.403073</div>`)[0];
+                popup_e4d6f9d4e678a3f53e8100276ba912de.setContent(html_6b1d2a91b9a49f50ea43dea2d41c35ea);
+            
+        
+
+        marker_05b529a9ae48994bd8361e5d581f4c33.bindPopup(popup_e4d6f9d4e678a3f53e8100276ba912de)
+        ;
+
+        
+    
+    
+            var marker_bb1afe8f7815a91dc15d30174e9a5f9a = L.marker(
+                [12.488785, 76.39665],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_fec430d4a0e7d7e709a54b1797300481 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdcc4356473fe1dcf853398ac30eb78b = $(`<div id="html_cdcc4356473fe1dcf853398ac30eb78b" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Sand<br>Latitude: 12.488785<br>Longitude: 76.39665</div>`)[0];
+                popup_fec430d4a0e7d7e709a54b1797300481.setContent(html_cdcc4356473fe1dcf853398ac30eb78b);
+            
+        
+
+        marker_bb1afe8f7815a91dc15d30174e9a5f9a.bindPopup(popup_fec430d4a0e7d7e709a54b1797300481)
+        ;
+
+        
+    
+    
+            var marker_cf582cd0b8bdc40599849517ddd649bf = L.marker(
+                [12.352557, 76.47082],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_d65ffe728f458e8a980f69618d4f5cdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4e1d0a6b736d2f0a30388485c6c6749 = $(`<div id="html_b4e1d0a6b736d2f0a30388485c6c6749" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.352557<br>Longitude: 76.47082</div>`)[0];
+                popup_d65ffe728f458e8a980f69618d4f5cdc.setContent(html_b4e1d0a6b736d2f0a30388485c6c6749);
+            
+        
+
+        marker_cf582cd0b8bdc40599849517ddd649bf.bindPopup(popup_d65ffe728f458e8a980f69618d4f5cdc)
+        ;
+
+        
+    
+    
+            var marker_d80e24149b03270db0b63d4ca378908c = L.marker(
+                [12.13659, 76.739601],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_773ebff649a5117e195bdeb7371b6707 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cf5536460ff79e05008169e265a5166 = $(`<div id="html_9cf5536460ff79e05008169e265a5166" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Sand<br>Latitude: 12.13659<br>Longitude: 76.739601</div>`)[0];
+                popup_773ebff649a5117e195bdeb7371b6707.setContent(html_9cf5536460ff79e05008169e265a5166);
+            
+        
+
+        marker_d80e24149b03270db0b63d4ca378908c.bindPopup(popup_773ebff649a5117e195bdeb7371b6707)
+        ;
+
+        
+    
+    
+            var marker_b04fe4143e19920a33f55c603819f840 = L.marker(
+                [12.123456, 76.123456],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_4a6f81a793c94d51b7593994a5aed82d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35728be24e8ee3e6504b0d48c47e0e16 = $(`<div id="html_35728be24e8ee3e6504b0d48c47e0e16" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.123456<br>Longitude: 76.123456</div>`)[0];
+                popup_4a6f81a793c94d51b7593994a5aed82d.setContent(html_35728be24e8ee3e6504b0d48c47e0e16);
+            
+        
+
+        marker_b04fe4143e19920a33f55c603819f840.bindPopup(popup_4a6f81a793c94d51b7593994a5aed82d)
+        ;
+
+        
+    
+    
+            var marker_d6ab79eb660ae9a8c95d403584be4d15 = L.marker(
+                [12.21257, 76.897298],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_061ab6b4c23e556e450b67f9546678f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35a94f63d1b977387604e911918f4de2 = $(`<div id="html_35a94f63d1b977387604e911918f4de2" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.21257<br>Longitude: 76.897298</div>`)[0];
+                popup_061ab6b4c23e556e450b67f9546678f0.setContent(html_35a94f63d1b977387604e911918f4de2);
+            
+        
+
+        marker_d6ab79eb660ae9a8c95d403584be4d15.bindPopup(popup_061ab6b4c23e556e450b67f9546678f0)
+        ;
+
+        
+    
+    
+            var marker_36edd707ae891de8d6503c6adf0bd560 = L.marker(
+                [12.209102, 76.910617],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_e6b97d53786124bb14d3433707237365 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fc03d09f6feb806296aba67c5183c3c = $(`<div id="html_9fc03d09f6feb806296aba67c5183c3c" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.209102<br>Longitude: 76.910617</div>`)[0];
+                popup_e6b97d53786124bb14d3433707237365.setContent(html_9fc03d09f6feb806296aba67c5183c3c);
+            
+        
+
+        marker_36edd707ae891de8d6503c6adf0bd560.bindPopup(popup_e6b97d53786124bb14d3433707237365)
+        ;
+
+        
+    
+    
+            var marker_26f2f730b4f269aef08ebd3316028ab9 = L.marker(
+                [12.159882, 76.7736629],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_2426b2ee10fb3b5e08af9a30a36e9c26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3b3eeef285da76f3e7cea90149abfc3 = $(`<div id="html_b3b3eeef285da76f3e7cea90149abfc3" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Sand<br>Latitude: 12.159882<br>Longitude: 76.7736629</div>`)[0];
+                popup_2426b2ee10fb3b5e08af9a30a36e9c26.setContent(html_b3b3eeef285da76f3e7cea90149abfc3);
+            
+        
+
+        marker_26f2f730b4f269aef08ebd3316028ab9.bindPopup(popup_2426b2ee10fb3b5e08af9a30a36e9c26)
+        ;
+
+        
+    
+    
+            var marker_57c42bc909b61e47ad7553adf08b3ac1 = L.marker(
+                [12.057255, 76.553249],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_fda3ec7e16b2739538cce64103c3c84e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5475c3c308f84ae30906c90f5c3e3982 = $(`<div id="html_5475c3c308f84ae30906c90f5c3e3982" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: House Theft<br>Latitude: 12.057255<br>Longitude: 76.553249</div>`)[0];
+                popup_fda3ec7e16b2739538cce64103c3c84e.setContent(html_5475c3c308f84ae30906c90f5c3e3982);
+            
+        
+
+        marker_57c42bc909b61e47ad7553adf08b3ac1.bindPopup(popup_fda3ec7e16b2739538cce64103c3c84e)
+        ;
+
+        
+    
+    
+            var marker_7c902a9ba9cb2e2fb596df5c916a9841 = L.marker(
+                [12.332948, 76.866509],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_fe46c379d377aca12bb20c35c04d477b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee800c09f6d5bff5b5793fb92cb44f50 = $(`<div id="html_ee800c09f6d5bff5b5793fb92cb44f50" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Other Items Not Included Above<br>Latitude: 12.332948<br>Longitude: 76.866509</div>`)[0];
+                popup_fe46c379d377aca12bb20c35c04d477b.setContent(html_ee800c09f6d5bff5b5793fb92cb44f50);
+            
+        
+
+        marker_7c902a9ba9cb2e2fb596df5c916a9841.bindPopup(popup_fe46c379d377aca12bb20c35c04d477b)
+        ;
+
+        
+    
+    
+            var marker_13c068f82b8e0aec5752e846217b6c23 = L.marker(
+                [12.338179, 76.687823],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_dc459da66ba058f1f81b8d45c773db31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c591c59f472203faea161a60d2dced32 = $(`<div id="html_c591c59f472203faea161a60d2dced32" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.338179<br>Longitude: 76.687823</div>`)[0];
+                popup_dc459da66ba058f1f81b8d45c773db31.setContent(html_c591c59f472203faea161a60d2dced32);
+            
+        
+
+        marker_13c068f82b8e0aec5752e846217b6c23.bindPopup(popup_dc459da66ba058f1f81b8d45c773db31)
+        ;
+
+        
+    
+    
+            var marker_732c44b5d78f0b781871e44b1eb564ad = L.marker(
+                [12.12, 76.16],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_06dd3152023eb0da62155831e6af1868 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12c75d92152c9ec897480ead797584c6 = $(`<div id="html_12c75d92152c9ec897480ead797584c6" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.12<br>Longitude: 76.16</div>`)[0];
+                popup_06dd3152023eb0da62155831e6af1868.setContent(html_12c75d92152c9ec897480ead797584c6);
+            
+        
+
+        marker_732c44b5d78f0b781871e44b1eb564ad.bindPopup(popup_06dd3152023eb0da62155831e6af1868)
+        ;
+
+        
+    
+    
+            var marker_04e4911951fca1bb3362162f5782ed31 = L.marker(
+                [12.514241, 76.398149],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_b5731cbabb3738a3cda9fafe545df1e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1977c7a32c8b327cc80278c870a50b2 = $(`<div id="html_e1977c7a32c8b327cc80278c870a50b2" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Sand<br>Latitude: 12.514241<br>Longitude: 76.398149</div>`)[0];
+                popup_b5731cbabb3738a3cda9fafe545df1e0.setContent(html_e1977c7a32c8b327cc80278c870a50b2);
+            
+        
+
+        marker_04e4911951fca1bb3362162f5782ed31.bindPopup(popup_b5731cbabb3738a3cda9fafe545df1e0)
+        ;
+
+        
+    
+    
+            var marker_5fef1efce45695301420c2e38908c37e = L.marker(
+                [12.215874, 76.906962],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_f512b1514cd290e3d53adf50ea254213 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_069db850bbc12568a639b6da76e603e9 = $(`<div id="html_069db850bbc12568a639b6da76e603e9" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.215874<br>Longitude: 76.906962</div>`)[0];
+                popup_f512b1514cd290e3d53adf50ea254213.setContent(html_069db850bbc12568a639b6da76e603e9);
+            
+        
+
+        marker_5fef1efce45695301420c2e38908c37e.bindPopup(popup_f512b1514cd290e3d53adf50ea254213)
+        ;
+
+        
+    
+    
+            var marker_44a871679354090560edd404fae37411 = L.marker(
+                [12.201522, 76.818241],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_70759204923a704fba3e4cde31e45f6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c1349f95754d41daa3cd28372bcc57c = $(`<div id="html_8c1349f95754d41daa3cd28372bcc57c" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Cultural - Others<br>Latitude: 12.201522<br>Longitude: 76.818241</div>`)[0];
+                popup_70759204923a704fba3e4cde31e45f6e.setContent(html_8c1349f95754d41daa3cd28372bcc57c);
+            
+        
+
+        marker_44a871679354090560edd404fae37411.bindPopup(popup_70759204923a704fba3e4cde31e45f6e)
+        ;
+
+        
+    
+    
+            var marker_94067bd24b68953cfd05b485ea54e83b = L.marker(
+                [12.537411, 76.3296],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_3328d065125f8a3a097a19aff3e4375f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fc6b8672c0dbc6ae35b550cd14371fc = $(`<div id="html_8fc6b8672c0dbc6ae35b550cd14371fc" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Cultural - Others<br>Latitude: 12.537411<br>Longitude: 76.3296</div>`)[0];
+                popup_3328d065125f8a3a097a19aff3e4375f.setContent(html_8fc6b8672c0dbc6ae35b550cd14371fc);
+            
+        
+
+        marker_94067bd24b68953cfd05b485ea54e83b.bindPopup(popup_3328d065125f8a3a097a19aff3e4375f)
+        ;
+
+        
+    
+    
+            var marker_4d8c83b65809cf6b4c0aabd6b4b0a22c = L.marker(
+                [12.123458, 76.123456],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_54a8ca98a2d372ec803178e1e1418870 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2abd3a7996fb7e0e0c79be2d9e9f3072 = $(`<div id="html_2abd3a7996fb7e0e0c79be2d9e9f3072" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.123458<br>Longitude: 76.123456</div>`)[0];
+                popup_54a8ca98a2d372ec803178e1e1418870.setContent(html_2abd3a7996fb7e0e0c79be2d9e9f3072);
+            
+        
+
+        marker_4d8c83b65809cf6b4c0aabd6b4b0a22c.bindPopup(popup_54a8ca98a2d372ec803178e1e1418870)
+        ;
+
+        
+    
+    
+            var marker_3b2415d257a2c333ff878c802ff9195a = L.marker(
+                [12.307944, 76.831964],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_5662b53cba9f2e50f8918ab37f96a04b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9196c8bbea025b5a417fa36a6e908886 = $(`<div id="html_9196c8bbea025b5a417fa36a6e908886" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Communication And Elec.Wire<br>Latitude: 12.307944<br>Longitude: 76.831964</div>`)[0];
+                popup_5662b53cba9f2e50f8918ab37f96a04b.setContent(html_9196c8bbea025b5a417fa36a6e908886);
+            
+        
+
+        marker_3b2415d257a2c333ff878c802ff9195a.bindPopup(popup_5662b53cba9f2e50f8918ab37f96a04b)
+        ;
+
+        
+    
+    
+            var marker_7bd0a03dd88b01b259f0224d01b971ad = L.marker(
+                [12.42885, 76.390686],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_660fe7d500865cad960b30a687910c5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a890af8d082ac01d3b8d6f9dcac5ca64 = $(`<div id="html_a890af8d082ac01d3b8d6f9dcac5ca64" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.42885<br>Longitude: 76.390686</div>`)[0];
+                popup_660fe7d500865cad960b30a687910c5f.setContent(html_a890af8d082ac01d3b8d6f9dcac5ca64);
+            
+        
+
+        marker_7bd0a03dd88b01b259f0224d01b971ad.bindPopup(popup_660fe7d500865cad960b30a687910c5f)
+        ;
+
+        
+    
+    
+            var marker_89d204c21ecfd4645601d34f01290c71 = L.marker(
+                [12.484834, 76.313969],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_83778f547eb146c64bfcfb33581f2031 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_111cc3bc171b22851d88e9c6ca505713 = $(`<div id="html_111cc3bc171b22851d88e9c6ca505713" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Other Items Not Included Above<br>Latitude: 12.484834<br>Longitude: 76.313969</div>`)[0];
+                popup_83778f547eb146c64bfcfb33581f2031.setContent(html_111cc3bc171b22851d88e9c6ca505713);
+            
+        
+
+        marker_89d204c21ecfd4645601d34f01290c71.bindPopup(popup_83778f547eb146c64bfcfb33581f2031)
+        ;
+
+        
+    
+    
+            var marker_54c70d11879b5597f28b8a63b5988e07 = L.marker(
+                [12.542037, 76.201229],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_8c283c1347b59b9c655e9423ccd8455c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b25134d5b03f2226b3a94d11af449f9a = $(`<div id="html_b25134d5b03f2226b3a94d11af449f9a" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Other Items Not Included Above<br>Latitude: 12.542037<br>Longitude: 76.201229</div>`)[0];
+                popup_8c283c1347b59b9c655e9423ccd8455c.setContent(html_b25134d5b03f2226b3a94d11af449f9a);
+            
+        
+
+        marker_54c70d11879b5597f28b8a63b5988e07.bindPopup(popup_8c283c1347b59b9c655e9423ccd8455c)
+        ;
+
+        
+    
+    
+            var marker_3fae33e04da7cc59ef2f1c6a1dc60d3a = L.marker(
+                [12.273302, 76.856626],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_8e2b56a265f6baebf4ee9d90aef13c96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_606d2602facf639a7da17483a05a7fce = $(`<div id="html_606d2602facf639a7da17483a05a7fce" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Other Items Not Included Above<br>Latitude: 12.273302<br>Longitude: 76.856626</div>`)[0];
+                popup_8e2b56a265f6baebf4ee9d90aef13c96.setContent(html_606d2602facf639a7da17483a05a7fce);
+            
+        
+
+        marker_3fae33e04da7cc59ef2f1c6a1dc60d3a.bindPopup(popup_8e2b56a265f6baebf4ee9d90aef13c96)
+        ;
+
+        
+    
+    
+            var marker_e5a31475d8043cf0ca690eeca2535970 = L.marker(
+                [12.050478, 75.021245],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_eaa39087c7a0e1e86b4cbe48f801d28d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dcf1453913c9d6e1d9ebda108aa6ec7 = $(`<div id="html_7dcf1453913c9d6e1d9ebda108aa6ec7" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.050478<br>Longitude: 75.021245</div>`)[0];
+                popup_eaa39087c7a0e1e86b4cbe48f801d28d.setContent(html_7dcf1453913c9d6e1d9ebda108aa6ec7);
+            
+        
+
+        marker_e5a31475d8043cf0ca690eeca2535970.bindPopup(popup_eaa39087c7a0e1e86b4cbe48f801d28d)
+        ;
+
+        
+    
+    
+            var marker_739d5d05a2887da92cc9fa1ebf3e8a1c = L.marker(
+                [12.559783, 76.362683],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_4b530731d2890da335a577aa9601f206 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_567d13d1f54fbcf0805f22bca0eaa3c1 = $(`<div id="html_567d13d1f54fbcf0805f22bca0eaa3c1" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Cultural - Others<br>Latitude: 12.559783<br>Longitude: 76.362683</div>`)[0];
+                popup_4b530731d2890da335a577aa9601f206.setContent(html_567d13d1f54fbcf0805f22bca0eaa3c1);
+            
+        
+
+        marker_739d5d05a2887da92cc9fa1ebf3e8a1c.bindPopup(popup_4b530731d2890da335a577aa9601f206)
+        ;
+
+        
+    
+    
+            var marker_c01cfd0ab3fe6358515915d941ce2cb5 = L.marker(
+                [12.224447, 76.93305],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_ca568b06132370cafc67e190b3684f97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_642e147081020442580da27262fd1dff = $(`<div id="html_642e147081020442580da27262fd1dff" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Sand<br>Latitude: 12.224447<br>Longitude: 76.93305</div>`)[0];
+                popup_ca568b06132370cafc67e190b3684f97.setContent(html_642e147081020442580da27262fd1dff);
+            
+        
+
+        marker_c01cfd0ab3fe6358515915d941ce2cb5.bindPopup(popup_ca568b06132370cafc67e190b3684f97)
+        ;
+
+        
+    
+    
+            var marker_b62397a8d681e5a54569a8139399cea1 = L.marker(
+                [12.465885, 76.390682],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_578f9471c9931bcf3272c7e4e4f6c51b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_023baf598deb0f81eba132396b4b935c = $(`<div id="html_023baf598deb0f81eba132396b4b935c" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Other Items Not Included Above<br>Latitude: 12.465885<br>Longitude: 76.390682</div>`)[0];
+                popup_578f9471c9931bcf3272c7e4e4f6c51b.setContent(html_023baf598deb0f81eba132396b4b935c);
+            
+        
+
+        marker_b62397a8d681e5a54569a8139399cea1.bindPopup(popup_578f9471c9931bcf3272c7e4e4f6c51b)
+        ;
+
+        
+    
+    
+            var marker_f6cc42df5b3ca36b7775ab626b97dab0 = L.marker(
+                [12.224039, 76.923752],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_d541c6f6fdb5e829fbb3229ba95cccc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_209a83c301b56d843eea843da3b3ec0b = $(`<div id="html_209a83c301b56d843eea843da3b3ec0b" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Sand<br>Latitude: 12.224039<br>Longitude: 76.923752</div>`)[0];
+                popup_d541c6f6fdb5e829fbb3229ba95cccc8.setContent(html_209a83c301b56d843eea843da3b3ec0b);
+            
+        
+
+        marker_f6cc42df5b3ca36b7775ab626b97dab0.bindPopup(popup_d541c6f6fdb5e829fbb3229ba95cccc8)
+        ;
+
+        
+    
+    
+            var marker_19f4629743b995c31bb83ad023077275 = L.marker(
+                [12.1654, 76.2951],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_1cb3de779588f716475eeb722768df40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60467b3c9113378ec342daf1be92ae39 = $(`<div id="html_60467b3c9113378ec342daf1be92ae39" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.1654<br>Longitude: 76.2951</div>`)[0];
+                popup_1cb3de779588f716475eeb722768df40.setContent(html_60467b3c9113378ec342daf1be92ae39);
+            
+        
+
+        marker_19f4629743b995c31bb83ad023077275.bindPopup(popup_1cb3de779588f716475eeb722768df40)
+        ;
+
+        
+    
+    
+            var marker_b0927cd73238d2fd0161e5ab31403694 = L.marker(
+                [12.20971, 76.9145219],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_d84053279a9a1dbe0eba7e0c1f1b9d86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d662dc965821c8eb15ac9356b937c1a9 = $(`<div id="html_d662dc965821c8eb15ac9356b937c1a9" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Sand<br>Latitude: 12.20971<br>Longitude: 76.9145219</div>`)[0];
+                popup_d84053279a9a1dbe0eba7e0c1f1b9d86.setContent(html_d662dc965821c8eb15ac9356b937c1a9);
+            
+        
+
+        marker_b0927cd73238d2fd0161e5ab31403694.bindPopup(popup_d84053279a9a1dbe0eba7e0c1f1b9d86)
+        ;
+
+        
+    
+    
+            var marker_58503ff79f47cb87337fb770d675cfec = L.marker(
+                [12.444109, 76.393577],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_f420a4febe65bfb3033ffc237ed54377 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a22911ef0c594e6cc9f8c31a8fdf330 = $(`<div id="html_1a22911ef0c594e6cc9f8c31a8fdf330" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Cattle<br>Latitude: 12.444109<br>Longitude: 76.393577</div>`)[0];
+                popup_f420a4febe65bfb3033ffc237ed54377.setContent(html_1a22911ef0c594e6cc9f8c31a8fdf330);
+            
+        
+
+        marker_58503ff79f47cb87337fb770d675cfec.bindPopup(popup_f420a4febe65bfb3033ffc237ed54377)
+        ;
+
+        
+    
+    
+            var marker_05e9d4eef8293c1f29e4d52c5f58319f = L.marker(
+                [12.30558, 76.302578],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_a0ec63aee899ff8cd1db5db9d39d0b77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e33630615bd9ec95d41827c408f59b26 = $(`<div id="html_e33630615bd9ec95d41827c408f59b26" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.30558<br>Longitude: 76.302578</div>`)[0];
+                popup_a0ec63aee899ff8cd1db5db9d39d0b77.setContent(html_e33630615bd9ec95d41827c408f59b26);
+            
+        
+
+        marker_05e9d4eef8293c1f29e4d52c5f58319f.bindPopup(popup_a0ec63aee899ff8cd1db5db9d39d0b77)
+        ;
+
+        
+    
+    
+            var marker_2ea41d1ff098db0752f75af48b1b17c5 = L.marker(
+                [12.440322, 76.381599],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_3dfb94a8167639fe4c97930bd9bb1193 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3ca71a1fa3dbfebf7ebbbab4e2f0337 = $(`<div id="html_e3ca71a1fa3dbfebf7ebbbab4e2f0337" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Automobiles - Of Two Wheelers<br>Latitude: 12.440322<br>Longitude: 76.381599</div>`)[0];
+                popup_3dfb94a8167639fe4c97930bd9bb1193.setContent(html_e3ca71a1fa3dbfebf7ebbbab4e2f0337);
+            
+        
+
+        marker_2ea41d1ff098db0752f75af48b1b17c5.bindPopup(popup_3dfb94a8167639fe4c97930bd9bb1193)
+        ;
+
+        
+    
+    
+            var marker_bc3e01bb7945a02097bf97742ee011ac = L.marker(
+                [12.240357, 76.340547],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_6c9767fa7ab372fa298fffbee67c9d19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f96d2279153be86fbf963690a9252e7e = $(`<div id="html_f96d2279153be86fbf963690a9252e7e" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Of Cultural - Others<br>Latitude: 12.240357<br>Longitude: 76.340547</div>`)[0];
+                popup_6c9767fa7ab372fa298fffbee67c9d19.setContent(html_f96d2279153be86fbf963690a9252e7e);
+            
+        
+
+        marker_bc3e01bb7945a02097bf97742ee011ac.bindPopup(popup_6c9767fa7ab372fa298fffbee67c9d19)
+        ;
+
+        
+    
+    
+            var marker_08d09f89a4aa35d6795989a81e0599db = L.marker(
+                [12.115666, 76.628574],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_f6039bfff3ae23fad012d8ebc9cd6893 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1c69a35addf06ac533ab8ca285a045a = $(`<div id="html_d1c69a35addf06ac533ab8ca285a045a" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: Other Items Not Included Above<br>Latitude: 12.115666<br>Longitude: 76.628574</div>`)[0];
+                popup_f6039bfff3ae23fad012d8ebc9cd6893.setContent(html_d1c69a35addf06ac533ab8ca285a045a);
+            
+        
+
+        marker_08d09f89a4aa35d6795989a81e0599db.bindPopup(popup_f6039bfff3ae23fad012d8ebc9cd6893)
+        ;
+
+        
+    
+    
+            var marker_59d2bda0842d4361a4591e6f4c202d61 = L.marker(
+                [12.018554, 76.781001],
+                {}
+            ).addTo(marker_cluster_ef75ab7d9e7a71e1bca4ea3ed36f58a0);
+        
+    
+        var popup_b16638b7c05f6a6cafc95cbf06e340f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fb560b170627484c1ee44d4db69b5d0 = $(`<div id="html_6fb560b170627484c1ee44d4db69b5d0" style="width: 100.0%; height: 100.0%;">Crime Group: THEFT<br>Crime Head: House Theft<br>Latitude: 12.018554<br>Longitude: 76.781001</div>`)[0];
+                popup_b16638b7c05f6a6cafc95cbf06e340f4.setContent(html_6fb560b170627484c1ee44d4db69b5d0);
+            
+        
+
+        marker_59d2bda0842d4361a4591e6f4c202d61.bindPopup(popup_b16638b7c05f6a6cafc95cbf06e340f4)
+        ;
+
+        
+    
+    
+            var layer_control_8dc66b32e2545d9f798e2a881d987c0d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1825e0c889b965f5ac43d08fff90fd4f,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_8dc66b32e2545d9f798e2a881d987c0d.base_layers,
+                layer_control_8dc66b32e2545d9f798e2a881d987c0d.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5f2c2c4a8ba962209379f9cc288c8bbf);
+        
+</script>
+</html>

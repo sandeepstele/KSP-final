@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2dd813acf59e824925d45325451215b5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2dd813acf59e824925d45325451215b5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2dd813acf59e824925d45325451215b5 = L.map(
+                "map_2dd813acf59e824925d45325451215b5",
+                {
+                    center: [12.966071941176471, 74.82776732352943],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2bbfae3833a2e7926ec63c1b0cf4218f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2dd813acf59e824925d45325451215b5);
+        
+    
+            var marker_cluster_d465b4c6ed7836f79f8091954ebc844f = L.markerClusterGroup(
+                {}
+            );
+            map_2dd813acf59e824925d45325451215b5.addLayer(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+            var marker_ee99921735e122704a4057bade251335 = L.marker(
+                [12.867686, 74.845247],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_f6ed62559a1f300557da89298e740fb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ecabfd35e1eeaa6f69b213495cc1e1e = $(`<div id="html_5ecabfd35e1eeaa6f69b213495cc1e1e" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: others <br>Latitude: 12.867686<br>Longitude: 74.845247</div>`)[0];
+                popup_f6ed62559a1f300557da89298e740fb6.setContent(html_5ecabfd35e1eeaa6f69b213495cc1e1e);
+            
+        
+
+        marker_ee99921735e122704a4057bade251335.bindPopup(popup_f6ed62559a1f300557da89298e740fb6)
+        ;
+
+        
+    
+    
+            var marker_4dca8ec725180a65c9cb92142ec01d5a = L.marker(
+                [13.085781, 74.794553],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_3650c7a8f1abf123463968eaafaa1fc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a63a2fb22ba0a96c09d5b4e55994eda5 = $(`<div id="html_a63a2fb22ba0a96c09d5b4e55994eda5" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Gambling - Matka (78 Class C)<br>Latitude: 13.085781<br>Longitude: 74.794553</div>`)[0];
+                popup_3650c7a8f1abf123463968eaafaa1fc8.setContent(html_a63a2fb22ba0a96c09d5b4e55994eda5);
+            
+        
+
+        marker_4dca8ec725180a65c9cb92142ec01d5a.bindPopup(popup_3650c7a8f1abf123463968eaafaa1fc8)
+        ;
+
+        
+    
+    
+            var marker_0414648d4eeb6dfa157ab1e627d20560 = L.marker(
+                [12.975529, 74.948014],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_b1eee4417d8d8b782d9bad9e5d5ff77b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4aaab6303f5cb21992fbc1c18cf5a962 = $(`<div id="html_4aaab6303f5cb21992fbc1c18cf5a962" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Street Gambling (87)<br>Latitude: 12.975529<br>Longitude: 74.948014</div>`)[0];
+                popup_b1eee4417d8d8b782d9bad9e5d5ff77b.setContent(html_4aaab6303f5cb21992fbc1c18cf5a962);
+            
+        
+
+        marker_0414648d4eeb6dfa157ab1e627d20560.bindPopup(popup_b1eee4417d8d8b782d9bad9e5d5ff77b)
+        ;
+
+        
+    
+    
+            var marker_96243aa774a34a39d7dae85fbbf68200 = L.marker(
+                [13.08776, 75.08266],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_e72ab2d3f0f79abe047cf99501dc5c70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0511bea775828f2e329dbf6d0636fe3f = $(`<div id="html_0511bea775828f2e329dbf6d0636fe3f" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Street Gambling (87)<br>Latitude: 13.08776<br>Longitude: 75.08266</div>`)[0];
+                popup_e72ab2d3f0f79abe047cf99501dc5c70.setContent(html_0511bea775828f2e329dbf6d0636fe3f);
+            
+        
+
+        marker_96243aa774a34a39d7dae85fbbf68200.bindPopup(popup_e72ab2d3f0f79abe047cf99501dc5c70)
+        ;
+
+        
+    
+    
+            var marker_e499324ca2b7817880a4f99dd4fc2d80 = L.marker(
+                [12.935333, 74.85921],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_e3e23ce3068424fd64ffebbccdde4afe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a077fed044fb3e673ab284fa1ecf9c8 = $(`<div id="html_4a077fed044fb3e673ab284fa1ecf9c8" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: others <br>Latitude: 12.935333<br>Longitude: 74.85921</div>`)[0];
+                popup_e3e23ce3068424fd64ffebbccdde4afe.setContent(html_4a077fed044fb3e673ab284fa1ecf9c8);
+            
+        
+
+        marker_e499324ca2b7817880a4f99dd4fc2d80.bindPopup(popup_e3e23ce3068424fd64ffebbccdde4afe)
+        ;
+
+        
+    
+    
+            var marker_d4c0a31f07265f1cde14b128e43b21b0 = L.marker(
+                [12.86634, 74.838626],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_64710880595486436cd7800dfc2aa1f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86d76965fe8edcb488fbd098f46c80d3 = $(`<div id="html_86d76965fe8edcb488fbd098f46c80d3" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: others <br>Latitude: 12.86634<br>Longitude: 74.838626</div>`)[0];
+                popup_64710880595486436cd7800dfc2aa1f1.setContent(html_86d76965fe8edcb488fbd098f46c80d3);
+            
+        
+
+        marker_d4c0a31f07265f1cde14b128e43b21b0.bindPopup(popup_64710880595486436cd7800dfc2aa1f1)
+        ;
+
+        
+    
+    
+            var marker_6803c0dc94e4aaaae1d3091341d6a040 = L.marker(
+                [12.923899, 74.856712],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_45f5d3fbdba823d8e526fed483aa22f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cef020b27a0dcfb87be40a7e73e6878a = $(`<div id="html_cef020b27a0dcfb87be40a7e73e6878a" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Street Gambling (87)<br>Latitude: 12.923899<br>Longitude: 74.856712</div>`)[0];
+                popup_45f5d3fbdba823d8e526fed483aa22f7.setContent(html_cef020b27a0dcfb87be40a7e73e6878a);
+            
+        
+
+        marker_6803c0dc94e4aaaae1d3091341d6a040.bindPopup(popup_45f5d3fbdba823d8e526fed483aa22f7)
+        ;
+
+        
+    
+    
+            var marker_141efe8a48cb50f3791533f514506772 = L.marker(
+                [12.869151, 74.867966],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_43e292e6f35203497bdd6e3abd0b667f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ec13900265914ac489bd3e5c12d8b93 = $(`<div id="html_1ec13900265914ac489bd3e5c12d8b93" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Betting<br>Latitude: 12.869151<br>Longitude: 74.867966</div>`)[0];
+                popup_43e292e6f35203497bdd6e3abd0b667f.setContent(html_1ec13900265914ac489bd3e5c12d8b93);
+            
+        
+
+        marker_141efe8a48cb50f3791533f514506772.bindPopup(popup_43e292e6f35203497bdd6e3abd0b667f)
+        ;
+
+        
+    
+    
+            var marker_15ca7d4028f8bf6db499e0024d921c10 = L.marker(
+                [12.939195, 74.852007],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_ed574e83fdd2b5e03be48fa63714cb19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_887dd84e578315abd6349f076fa73bfc = $(`<div id="html_887dd84e578315abd6349f076fa73bfc" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Gambling - Matka (78 Class C)<br>Latitude: 12.939195<br>Longitude: 74.852007</div>`)[0];
+                popup_ed574e83fdd2b5e03be48fa63714cb19.setContent(html_887dd84e578315abd6349f076fa73bfc);
+            
+        
+
+        marker_15ca7d4028f8bf6db499e0024d921c10.bindPopup(popup_ed574e83fdd2b5e03be48fa63714cb19)
+        ;
+
+        
+    
+    
+            var marker_1f57afefc87e35c0e4379b36c51f06bc = L.marker(
+                [12.934675, 74.820081],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_b6eda1db39a858fcfdcda4060d2f8163 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b644bcb6182be7ec808435ec7f02a498 = $(`<div id="html_b644bcb6182be7ec808435ec7f02a498" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: others <br>Latitude: 12.934675<br>Longitude: 74.820081</div>`)[0];
+                popup_b6eda1db39a858fcfdcda4060d2f8163.setContent(html_b644bcb6182be7ec808435ec7f02a498);
+            
+        
+
+        marker_1f57afefc87e35c0e4379b36c51f06bc.bindPopup(popup_b6eda1db39a858fcfdcda4060d2f8163)
+        ;
+
+        
+    
+    
+            var marker_16ded0c75d1de337d79d3197eee09439 = L.marker(
+                [13.008825, 74.968106],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_09d101dc636a4892a7df83debc1fe662 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_707efb9c1e7283dfc340362258744305 = $(`<div id="html_707efb9c1e7283dfc340362258744305" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Street Gambling (87)<br>Latitude: 13.008825<br>Longitude: 74.968106</div>`)[0];
+                popup_09d101dc636a4892a7df83debc1fe662.setContent(html_707efb9c1e7283dfc340362258744305);
+            
+        
+
+        marker_16ded0c75d1de337d79d3197eee09439.bindPopup(popup_09d101dc636a4892a7df83debc1fe662)
+        ;
+
+        
+    
+    
+            var marker_0d30eb78daa6cbd2fe68f6fa37fffab3 = L.marker(
+                [13.046295, 74.797392],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_2aa9ad5d01243364b9c3bde0a26b90ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2a3f59c3d6792f066307c4e96eea4a1 = $(`<div id="html_d2a3f59c3d6792f066307c4e96eea4a1" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Gambling - Matka (78 Class C)<br>Latitude: 13.046295<br>Longitude: 74.797392</div>`)[0];
+                popup_2aa9ad5d01243364b9c3bde0a26b90ac.setContent(html_d2a3f59c3d6792f066307c4e96eea4a1);
+            
+        
+
+        marker_0d30eb78daa6cbd2fe68f6fa37fffab3.bindPopup(popup_2aa9ad5d01243364b9c3bde0a26b90ac)
+        ;
+
+        
+    
+    
+            var marker_570e22fb1d1c02f4ec5f0fb568290a6a = L.marker(
+                [12.989003, 74.830706],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_1dd5ea4c1975055a8c541ba6d1e78064 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b39e4aa2c4f440e5f84969836487477c = $(`<div id="html_b39e4aa2c4f440e5f84969836487477c" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: House Gambling  (79 & 80)<br>Latitude: 12.989003<br>Longitude: 74.830706</div>`)[0];
+                popup_1dd5ea4c1975055a8c541ba6d1e78064.setContent(html_b39e4aa2c4f440e5f84969836487477c);
+            
+        
+
+        marker_570e22fb1d1c02f4ec5f0fb568290a6a.bindPopup(popup_1dd5ea4c1975055a8c541ba6d1e78064)
+        ;
+
+        
+    
+    
+            var marker_2fccbafdb16057c4b892332c0dd5342d = L.marker(
+                [13.094345, 74.789243],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_b5cbb61486d0f53876716b4cba28629b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17db825ba4b950d7a33e632be513699c = $(`<div id="html_17db825ba4b950d7a33e632be513699c" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Gambling - Matka (78 Class C)<br>Latitude: 13.094345<br>Longitude: 74.789243</div>`)[0];
+                popup_b5cbb61486d0f53876716b4cba28629b.setContent(html_17db825ba4b950d7a33e632be513699c);
+            
+        
+
+        marker_2fccbafdb16057c4b892332c0dd5342d.bindPopup(popup_b5cbb61486d0f53876716b4cba28629b)
+        ;
+
+        
+    
+    
+            var marker_a710f4e30bcdc04b089ad55231ae8c2b = L.marker(
+                [13.073223, 74.80154],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_db3e348e5e3b56567dcf79c886b145a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b05d9500699669f588e5cc589a81248e = $(`<div id="html_b05d9500699669f588e5cc589a81248e" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Street Gambling (87)<br>Latitude: 13.073223<br>Longitude: 74.80154</div>`)[0];
+                popup_db3e348e5e3b56567dcf79c886b145a9.setContent(html_b05d9500699669f588e5cc589a81248e);
+            
+        
+
+        marker_a710f4e30bcdc04b089ad55231ae8c2b.bindPopup(popup_db3e348e5e3b56567dcf79c886b145a9)
+        ;
+
+        
+    
+    
+            var marker_99de8c39678941b26cbb5e353f19f7fd = L.marker(
+                [13.002332, 74.833075],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_b0dc82caf3232242f3355b8ca89eca6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_185192466d41e75dc94e487ed8af85d9 = $(`<div id="html_185192466d41e75dc94e487ed8af85d9" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Street Gambling (87)<br>Latitude: 13.002332<br>Longitude: 74.833075</div>`)[0];
+                popup_b0dc82caf3232242f3355b8ca89eca6e.setContent(html_185192466d41e75dc94e487ed8af85d9);
+            
+        
+
+        marker_99de8c39678941b26cbb5e353f19f7fd.bindPopup(popup_b0dc82caf3232242f3355b8ca89eca6e)
+        ;
+
+        
+    
+    
+            var marker_84ddc4ac31af6185c579d60c2e418830 = L.marker(
+                [12.913912, 74.085627],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_267b389baa2593c03164c4720b9d82e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b74734f9e16344463261b56623f7cc8 = $(`<div id="html_4b74734f9e16344463261b56623f7cc8" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Betting<br>Latitude: 12.913912<br>Longitude: 74.085627</div>`)[0];
+                popup_267b389baa2593c03164c4720b9d82e3.setContent(html_4b74734f9e16344463261b56623f7cc8);
+            
+        
+
+        marker_84ddc4ac31af6185c579d60c2e418830.bindPopup(popup_267b389baa2593c03164c4720b9d82e3)
+        ;
+
+        
+    
+    
+            var marker_1091f7bcc1990c17b0298ea80c54b539 = L.marker(
+                [13.046806, 74.797791],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_91478010db771d7e7b3b7d97266886ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c85ad35d27fd42a831e4e4b3459b96c = $(`<div id="html_5c85ad35d27fd42a831e4e4b3459b96c" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Betting<br>Latitude: 13.046806<br>Longitude: 74.797791</div>`)[0];
+                popup_91478010db771d7e7b3b7d97266886ff.setContent(html_5c85ad35d27fd42a831e4e4b3459b96c);
+            
+        
+
+        marker_1091f7bcc1990c17b0298ea80c54b539.bindPopup(popup_91478010db771d7e7b3b7d97266886ff)
+        ;
+
+        
+    
+    
+            var marker_7f62f31962bbcf35f4774d04e5953e3d = L.marker(
+                [12.865152, 74.835512],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_dcb7bed8c43c49330196338d3e374c20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e03148258cc0c4257b438727fd2a6b7 = $(`<div id="html_2e03148258cc0c4257b438727fd2a6b7" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: others <br>Latitude: 12.865152<br>Longitude: 74.835512</div>`)[0];
+                popup_dcb7bed8c43c49330196338d3e374c20.setContent(html_2e03148258cc0c4257b438727fd2a6b7);
+            
+        
+
+        marker_7f62f31962bbcf35f4774d04e5953e3d.bindPopup(popup_dcb7bed8c43c49330196338d3e374c20)
+        ;
+
+        
+    
+    
+            var marker_d6dd10cd51b3f477bbf65cc8306dd97e = L.marker(
+                [13.090192, 74.788545],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_6fc320a5c5bf3d3665d4bf8b1c55ef73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fc3a621b1908f54a6a04fa2f000d7db = $(`<div id="html_0fc3a621b1908f54a6a04fa2f000d7db" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Gambling - Matka (78 Class C)<br>Latitude: 13.090192<br>Longitude: 74.788545</div>`)[0];
+                popup_6fc320a5c5bf3d3665d4bf8b1c55ef73.setContent(html_0fc3a621b1908f54a6a04fa2f000d7db);
+            
+        
+
+        marker_d6dd10cd51b3f477bbf65cc8306dd97e.bindPopup(popup_6fc320a5c5bf3d3665d4bf8b1c55ef73)
+        ;
+
+        
+    
+    
+            var marker_ed934da2762ed45aec5a74596ea78e95 = L.marker(
+                [12.925235, 74.853151],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_5e14960f49ee14278d477bfc1ea01d6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34890e5680b914735cbfbc948574e105 = $(`<div id="html_34890e5680b914735cbfbc948574e105" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Betting<br>Latitude: 12.925235<br>Longitude: 74.853151</div>`)[0];
+                popup_5e14960f49ee14278d477bfc1ea01d6b.setContent(html_34890e5680b914735cbfbc948574e105);
+            
+        
+
+        marker_ed934da2762ed45aec5a74596ea78e95.bindPopup(popup_5e14960f49ee14278d477bfc1ea01d6b)
+        ;
+
+        
+    
+    
+            var marker_e7da2d1fd40271f81cc013f039306bcc = L.marker(
+                [12.900626, 74.835386],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_e071067bd1363e0f21fe88b9d94bb99d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_869b911f766d305cb87092be25b3839e = $(`<div id="html_869b911f766d305cb87092be25b3839e" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Gambling - Matka (78 Class C)<br>Latitude: 12.900626<br>Longitude: 74.835386</div>`)[0];
+                popup_e071067bd1363e0f21fe88b9d94bb99d.setContent(html_869b911f766d305cb87092be25b3839e);
+            
+        
+
+        marker_e7da2d1fd40271f81cc013f039306bcc.bindPopup(popup_e071067bd1363e0f21fe88b9d94bb99d)
+        ;
+
+        
+    
+    
+            var marker_859ff43fdd8a36366d9e46dcc01c77f4 = L.marker(
+                [12.932153, 74.856536],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_317797dc26d05c56b654422671248060 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc19484b0941fd4f0029fd91fd67c92b = $(`<div id="html_fc19484b0941fd4f0029fd91fd67c92b" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Street Gambling (87)<br>Latitude: 12.932153<br>Longitude: 74.856536</div>`)[0];
+                popup_317797dc26d05c56b654422671248060.setContent(html_fc19484b0941fd4f0029fd91fd67c92b);
+            
+        
+
+        marker_859ff43fdd8a36366d9e46dcc01c77f4.bindPopup(popup_317797dc26d05c56b654422671248060)
+        ;
+
+        
+    
+    
+            var marker_1d6e84696818810fed6d89ee0fc4e233 = L.marker(
+                [12.854702, 74.833281],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_9ac30199a6aa3edc1ef788391821d4f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26fee05dc7708671e7cdd5339f9932e2 = $(`<div id="html_26fee05dc7708671e7cdd5339f9932e2" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Street Gambling (87)<br>Latitude: 12.854702<br>Longitude: 74.833281</div>`)[0];
+                popup_9ac30199a6aa3edc1ef788391821d4f1.setContent(html_26fee05dc7708671e7cdd5339f9932e2);
+            
+        
+
+        marker_1d6e84696818810fed6d89ee0fc4e233.bindPopup(popup_9ac30199a6aa3edc1ef788391821d4f1)
+        ;
+
+        
+    
+    
+            var marker_1e39e1d6f1fe332dfb7b560505351944 = L.marker(
+                [13.073704, 74.803486],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_05025d727b4180228f932dd695576a06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_019f0d99ce9de4b69970a5710fc8b315 = $(`<div id="html_019f0d99ce9de4b69970a5710fc8b315" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Gambling - Matka (78 Class C)<br>Latitude: 13.073704<br>Longitude: 74.803486</div>`)[0];
+                popup_05025d727b4180228f932dd695576a06.setContent(html_019f0d99ce9de4b69970a5710fc8b315);
+            
+        
+
+        marker_1e39e1d6f1fe332dfb7b560505351944.bindPopup(popup_05025d727b4180228f932dd695576a06)
+        ;
+
+        
+    
+    
+            var marker_2e0a767024a8d2de63c9af095a5c31a8 = L.marker(
+                [13.069834, 74.996277],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_101e0c18472c971d9ffd06479637819c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e06ed7ed35eb12c5a552c227460fc150 = $(`<div id="html_e06ed7ed35eb12c5a552c227460fc150" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: others <br>Latitude: 13.069834<br>Longitude: 74.996277</div>`)[0];
+                popup_101e0c18472c971d9ffd06479637819c.setContent(html_e06ed7ed35eb12c5a552c227460fc150);
+            
+        
+
+        marker_2e0a767024a8d2de63c9af095a5c31a8.bindPopup(popup_101e0c18472c971d9ffd06479637819c)
+        ;
+
+        
+    
+    
+            var marker_567a244988f527336b0f0822a5475155 = L.marker(
+                [12.886248, 74.841453],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_0a4a051c136da074caad7c9505af5921 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27258de8b0653e7a0c0661e1a99f1a99 = $(`<div id="html_27258de8b0653e7a0c0661e1a99f1a99" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Gambling - Matka (78 Class C)<br>Latitude: 12.886248<br>Longitude: 74.841453</div>`)[0];
+                popup_0a4a051c136da074caad7c9505af5921.setContent(html_27258de8b0653e7a0c0661e1a99f1a99);
+            
+        
+
+        marker_567a244988f527336b0f0822a5475155.bindPopup(popup_0a4a051c136da074caad7c9505af5921)
+        ;
+
+        
+    
+    
+            var marker_f38f44dc8510b968adc4386e078f18b3 = L.marker(
+                [12.875022, 74.829715],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_95a3ccab4215ef8ac6f72ad9685b8cb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5231a050875c25d37a2b0504f5a4f848 = $(`<div id="html_5231a050875c25d37a2b0504f5a4f848" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Street Gambling (87)<br>Latitude: 12.875022<br>Longitude: 74.829715</div>`)[0];
+                popup_95a3ccab4215ef8ac6f72ad9685b8cb4.setContent(html_5231a050875c25d37a2b0504f5a4f848);
+            
+        
+
+        marker_f38f44dc8510b968adc4386e078f18b3.bindPopup(popup_95a3ccab4215ef8ac6f72ad9685b8cb4)
+        ;
+
+        
+    
+    
+            var marker_77fe1a681970d5cb9546a53dc2789780 = L.marker(
+                [12.98809, 74.803036],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_62cfaf0490ad4d6873db41d4c9fa5719 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7a0e2b303a62183eb38574acac7e9e6 = $(`<div id="html_a7a0e2b303a62183eb38574acac7e9e6" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Betting<br>Latitude: 12.98809<br>Longitude: 74.803036</div>`)[0];
+                popup_62cfaf0490ad4d6873db41d4c9fa5719.setContent(html_a7a0e2b303a62183eb38574acac7e9e6);
+            
+        
+
+        marker_77fe1a681970d5cb9546a53dc2789780.bindPopup(popup_62cfaf0490ad4d6873db41d4c9fa5719)
+        ;
+
+        
+    
+    
+            var marker_8e2f4a786529d9933a7f769806f000e5 = L.marker(
+                [12.917925, 74.895363],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_272a671f7eaa905494550c426edaea71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e99891147c250cdc831e185ac2e5193 = $(`<div id="html_7e99891147c250cdc831e185ac2e5193" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Betting<br>Latitude: 12.917925<br>Longitude: 74.895363</div>`)[0];
+                popup_272a671f7eaa905494550c426edaea71.setContent(html_7e99891147c250cdc831e185ac2e5193);
+            
+        
+
+        marker_8e2f4a786529d9933a7f769806f000e5.bindPopup(popup_272a671f7eaa905494550c426edaea71)
+        ;
+
+        
+    
+    
+            var marker_3c7284062e61b0eb199efc6c75751fca = L.marker(
+                [13.087409, 74.792167],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_fb8baabaf69a963dfa646f35f90d2681 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a12e684cdb99ab3ffe73243a8232a273 = $(`<div id="html_a12e684cdb99ab3ffe73243a8232a273" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Gambling - Matka (78 Class C)<br>Latitude: 13.087409<br>Longitude: 74.792167</div>`)[0];
+                popup_fb8baabaf69a963dfa646f35f90d2681.setContent(html_a12e684cdb99ab3ffe73243a8232a273);
+            
+        
+
+        marker_3c7284062e61b0eb199efc6c75751fca.bindPopup(popup_fb8baabaf69a963dfa646f35f90d2681)
+        ;
+
+        
+    
+    
+            var marker_79deeab04e5b5aada82d561947d617a7 = L.marker(
+                [12.777346, 74.869979],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_fd0abafbe5ad03d311b7aa79e2caa92d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96bf412f2c8e66cacaf9226b4ff905bb = $(`<div id="html_96bf412f2c8e66cacaf9226b4ff905bb" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Gambling - Matka (78 Class C)<br>Latitude: 12.777346<br>Longitude: 74.869979</div>`)[0];
+                popup_fd0abafbe5ad03d311b7aa79e2caa92d.setContent(html_96bf412f2c8e66cacaf9226b4ff905bb);
+            
+        
+
+        marker_79deeab04e5b5aada82d561947d617a7.bindPopup(popup_fd0abafbe5ad03d311b7aa79e2caa92d)
+        ;
+
+        
+    
+    
+            var marker_552c19026b60a452b00305160702f370 = L.marker(
+                [13.075697, 74.8009],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_5ee4b93870168ced29c2f2fcef775e0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cde01299e573ecde3d929da8ca8b3c32 = $(`<div id="html_cde01299e573ecde3d929da8ca8b3c32" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: Gambling - Matka (78 Class C)<br>Latitude: 13.075697<br>Longitude: 74.8009</div>`)[0];
+                popup_5ee4b93870168ced29c2f2fcef775e0e.setContent(html_cde01299e573ecde3d929da8ca8b3c32);
+            
+        
+
+        marker_552c19026b60a452b00305160702f370.bindPopup(popup_5ee4b93870168ced29c2f2fcef775e0e)
+        ;
+
+        
+    
+    
+            var marker_77bfae4fa293624d9bd020b5363c9f47 = L.marker(
+                [12.867021, 74.840746],
+                {}
+            ).addTo(marker_cluster_d465b4c6ed7836f79f8091954ebc844f);
+        
+    
+        var popup_c74e2274ad29b599efdc6af4d5da6135 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9392c1337b50637e9c117a85fe46e4a4 = $(`<div id="html_9392c1337b50637e9c117a85fe46e4a4" style="width: 100.0%; height: 100.0%;">Crime Group: KARNATAKA POLICE ACT 1963<br>Crime Head: others <br>Latitude: 12.867021<br>Longitude: 74.840746</div>`)[0];
+                popup_c74e2274ad29b599efdc6af4d5da6135.setContent(html_9392c1337b50637e9c117a85fe46e4a4);
+            
+        
+
+        marker_77bfae4fa293624d9bd020b5363c9f47.bindPopup(popup_c74e2274ad29b599efdc6af4d5da6135)
+        ;
+
+        
+    
+    
+            var layer_control_d6752d1c6e2d5a0de14f8aae382cde57 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_2bbfae3833a2e7926ec63c1b0cf4218f,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_d6752d1c6e2d5a0de14f8aae382cde57.base_layers,
+                layer_control_d6752d1c6e2d5a0de14f8aae382cde57.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2dd813acf59e824925d45325451215b5);
+        
+</script>
+</html>

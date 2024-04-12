@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e3ec9036ada652c1a2cb01d7ac4fa18c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e3ec9036ada652c1a2cb01d7ac4fa18c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e3ec9036ada652c1a2cb01d7ac4fa18c = L.map(
+                "map_e3ec9036ada652c1a2cb01d7ac4fa18c",
+                {
+                    center: [14.079668035714283, 75.35468732142856],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dd09f4e9725e34cfce6173e99d6ffac0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e3ec9036ada652c1a2cb01d7ac4fa18c);
+        
+    
+            var marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f = L.markerClusterGroup(
+                {}
+            );
+            map_e3ec9036ada652c1a2cb01d7ac4fa18c.addLayer(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+            var marker_8a4d7fed69eb52b89ad3ec3b816ec6eb = L.marker(
+                [13.765432, 75.887654],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_2e1bb4ffc1d1a8594dfe3a586cf40850 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b037f4ae0d311955a1573360dfe4a12e = $(`<div id="html_b037f4ae0d311955a1573360dfe4a12e" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Land Disputes<br>Latitude: 13.765432<br>Longitude: 75.887654</div>`)[0];
+                popup_2e1bb4ffc1d1a8594dfe3a586cf40850.setContent(html_b037f4ae0d311955a1573360dfe4a12e);
+            
+        
+
+        marker_8a4d7fed69eb52b89ad3ec3b816ec6eb.bindPopup(popup_2e1bb4ffc1d1a8594dfe3a586cf40850)
+        ;
+
+        
+    
+    
+            var marker_88bb571d22847a0e03be102a43569b69 = L.marker(
+                [14.156066, 75.434546],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_d0444233a8d7ff6e9221d0ebae2da8e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28599ba2b0ec9ca22e710cbc8032b304 = $(`<div id="html_28599ba2b0ec9ca22e710cbc8032b304" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 14.156066<br>Longitude: 75.434546</div>`)[0];
+                popup_d0444233a8d7ff6e9221d0ebae2da8e2.setContent(html_28599ba2b0ec9ca22e710cbc8032b304);
+            
+        
+
+        marker_88bb571d22847a0e03be102a43569b69.bindPopup(popup_d0444233a8d7ff6e9221d0ebae2da8e2)
+        ;
+
+        
+    
+    
+            var marker_2620753a235fc577fd425b8c9bbb84b5 = L.marker(
+                [14.05895, 75.504601],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_68930128402be1d87cf15fc65f7ca826 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25759fc129d007537030c1abd3f04d7a = $(`<div id="html_25759fc129d007537030c1abd3f04d7a" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Land Disputes<br>Latitude: 14.05895<br>Longitude: 75.504601</div>`)[0];
+                popup_68930128402be1d87cf15fc65f7ca826.setContent(html_25759fc129d007537030c1abd3f04d7a);
+            
+        
+
+        marker_2620753a235fc577fd425b8c9bbb84b5.bindPopup(popup_68930128402be1d87cf15fc65f7ca826)
+        ;
+
+        
+    
+    
+            var marker_0d7637671e8c05195320218779f53e31 = L.marker(
+                [14.163332, 75.031312],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_157fbf06500033f1e5f63c34eb96becb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac2b141a95deceb503b149674c090fea = $(`<div id="html_ac2b141a95deceb503b149674c090fea" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 14.163332<br>Longitude: 75.031312</div>`)[0];
+                popup_157fbf06500033f1e5f63c34eb96becb.setContent(html_ac2b141a95deceb503b149674c090fea);
+            
+        
+
+        marker_0d7637671e8c05195320218779f53e31.bindPopup(popup_157fbf06500033f1e5f63c34eb96becb)
+        ;
+
+        
+    
+    
+            var marker_3adb6764f861fe4709dfbaa0026c1e49 = L.marker(
+                [14.377342, 75.092191],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_a14863a59a4d70891dcab71e86fae26d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4570a8299b3105ba295277385303868 = $(`<div id="html_f4570a8299b3105ba295277385303868" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Regional<br>Latitude: 14.377342<br>Longitude: 75.092191</div>`)[0];
+                popup_a14863a59a4d70891dcab71e86fae26d.setContent(html_f4570a8299b3105ba295277385303868);
+            
+        
+
+        marker_3adb6764f861fe4709dfbaa0026c1e49.bindPopup(popup_a14863a59a4d70891dcab71e86fae26d)
+        ;
+
+        
+    
+    
+            var marker_0ea5c9b36d36939f23ee32332fe6d439 = L.marker(
+                [14.510986, 75.05446],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_380dc536bf24ed029c35e9cb936b6ab4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a1fa3f03f70b6d0754799a26867b623 = $(`<div id="html_6a1fa3f03f70b6d0754799a26867b623" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Land Disputes<br>Latitude: 14.510986<br>Longitude: 75.05446</div>`)[0];
+                popup_380dc536bf24ed029c35e9cb936b6ab4.setContent(html_6a1fa3f03f70b6d0754799a26867b623);
+            
+        
+
+        marker_0ea5c9b36d36939f23ee32332fe6d439.bindPopup(popup_380dc536bf24ed029c35e9cb936b6ab4)
+        ;
+
+        
+    
+    
+            var marker_ec8e5eabc498dc71335c4b791c570f4c = L.marker(
+                [14.497227, 75.28093],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_94f35c959c3999162b0354f8b04f85b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee03d803a72fe03d639e2b73067d0d6c = $(`<div id="html_ee03d803a72fe03d639e2b73067d0d6c" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 14.497227<br>Longitude: 75.28093</div>`)[0];
+                popup_94f35c959c3999162b0354f8b04f85b0.setContent(html_ee03d803a72fe03d639e2b73067d0d6c);
+            
+        
+
+        marker_ec8e5eabc498dc71335c4b791c570f4c.bindPopup(popup_94f35c959c3999162b0354f8b04f85b0)
+        ;
+
+        
+    
+    
+            var marker_d2093af28ebb7342422b1eff394230e4 = L.marker(
+                [13.891447, 75.750531],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_ac9126c53a9e5409455a8de7387dfdc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_262293bf5f658e4ca411af0dcd375281 = $(`<div id="html_262293bf5f658e4ca411af0dcd375281" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 13.891447<br>Longitude: 75.750531</div>`)[0];
+                popup_ac9126c53a9e5409455a8de7387dfdc2.setContent(html_262293bf5f658e4ca411af0dcd375281);
+            
+        
+
+        marker_d2093af28ebb7342422b1eff394230e4.bindPopup(popup_ac9126c53a9e5409455a8de7387dfdc2)
+        ;
+
+        
+    
+    
+            var marker_bb982698400d77bffb6a9e880f6983ea = L.marker(
+                [14.334747, 75.260881],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_75555f841d6e954f26da47dc4a755d3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d51a04651cd2845992ace7a76703879 = $(`<div id="html_2d51a04651cd2845992ace7a76703879" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Land Disputes<br>Latitude: 14.334747<br>Longitude: 75.260881</div>`)[0];
+                popup_75555f841d6e954f26da47dc4a755d3d.setContent(html_2d51a04651cd2845992ace7a76703879);
+            
+        
+
+        marker_bb982698400d77bffb6a9e880f6983ea.bindPopup(popup_75555f841d6e954f26da47dc4a755d3d)
+        ;
+
+        
+    
+    
+            var marker_3528cbcf6c30e9b87df9bf5d5e4aa466 = L.marker(
+                [13.891394, 75.600371],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_0458a497e8bb6789c5304d18962bb969 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b3368a3377f43fba24fa95f0d5f2d91 = $(`<div id="html_4b3368a3377f43fba24fa95f0d5f2d91" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Students<br>Latitude: 13.891394<br>Longitude: 75.600371</div>`)[0];
+                popup_0458a497e8bb6789c5304d18962bb969.setContent(html_4b3368a3377f43fba24fa95f0d5f2d91);
+            
+        
+
+        marker_3528cbcf6c30e9b87df9bf5d5e4aa466.bindPopup(popup_0458a497e8bb6789c5304d18962bb969)
+        ;
+
+        
+    
+    
+            var marker_a568230fe70d532db2780bdcb417a2d0 = L.marker(
+                [13.644663, 75.179863],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_be9a9a269a576a736ec0fdad1bb83820 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4b2bcf829db395d8bc58a6c0753ca01 = $(`<div id="html_a4b2bcf829db395d8bc58a6c0753ca01" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 13.644663<br>Longitude: 75.179863</div>`)[0];
+                popup_be9a9a269a576a736ec0fdad1bb83820.setContent(html_a4b2bcf829db395d8bc58a6c0753ca01);
+            
+        
+
+        marker_a568230fe70d532db2780bdcb417a2d0.bindPopup(popup_be9a9a269a576a736ec0fdad1bb83820)
+        ;
+
+        
+    
+    
+            var marker_57a2b4eeb94d8532610ce7acc638eced = L.marker(
+                [13.964947, 75.647074],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_79615effb07d5e96d5326ec677d74c7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c834fc41e10a3008d9960b1326844d1 = $(`<div id="html_2c834fc41e10a3008d9960b1326844d1" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Land Disputes<br>Latitude: 13.964947<br>Longitude: 75.647074</div>`)[0];
+                popup_79615effb07d5e96d5326ec677d74c7c.setContent(html_2c834fc41e10a3008d9960b1326844d1);
+            
+        
+
+        marker_57a2b4eeb94d8532610ce7acc638eced.bindPopup(popup_79615effb07d5e96d5326ec677d74c7c)
+        ;
+
+        
+    
+    
+            var marker_c56a8d700cceedeb99f74d4531a2b1cd = L.marker(
+                [14.159412, 75.278529],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_96b7ee241b0cef81b1cc2ed59db1e316 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4a22b754fc878d47ac9baf7a7a93b03 = $(`<div id="html_e4a22b754fc878d47ac9baf7a7a93b03" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 14.159412<br>Longitude: 75.278529</div>`)[0];
+                popup_96b7ee241b0cef81b1cc2ed59db1e316.setContent(html_e4a22b754fc878d47ac9baf7a7a93b03);
+            
+        
+
+        marker_c56a8d700cceedeb99f74d4531a2b1cd.bindPopup(popup_96b7ee241b0cef81b1cc2ed59db1e316)
+        ;
+
+        
+    
+    
+            var marker_668a0482da90f9ea810e3f13739d8616 = L.marker(
+                [14.381552, 75.099193],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_9d0123f52153fad7243c218b0606ba14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33b15a2aa2b8dfa8c517b1e56a6f01b1 = $(`<div id="html_33b15a2aa2b8dfa8c517b1e56a6f01b1" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Land Disputes<br>Latitude: 14.381552<br>Longitude: 75.099193</div>`)[0];
+                popup_9d0123f52153fad7243c218b0606ba14.setContent(html_33b15a2aa2b8dfa8c517b1e56a6f01b1);
+            
+        
+
+        marker_668a0482da90f9ea810e3f13739d8616.bindPopup(popup_9d0123f52153fad7243c218b0606ba14)
+        ;
+
+        
+    
+    
+            var marker_9e81ca59edfa9ed9f1fe4eb54afaba2b = L.marker(
+                [14.296122, 75.328282],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_0f44854c23c50edfc7ec7ce840704530 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96199b0f0bab76325f4fb3008dcb6aba = $(`<div id="html_96199b0f0bab76325f4fb3008dcb6aba" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 14.296122<br>Longitude: 75.328282</div>`)[0];
+                popup_0f44854c23c50edfc7ec7ce840704530.setContent(html_96199b0f0bab76325f4fb3008dcb6aba);
+            
+        
+
+        marker_9e81ca59edfa9ed9f1fe4eb54afaba2b.bindPopup(popup_0f44854c23c50edfc7ec7ce840704530)
+        ;
+
+        
+    
+    
+            var marker_b315906eff11e73430721664345ec295 = L.marker(
+                [14.286195, 75.056781],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_fc0d65aa75a704127894fa23f4206e7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ae49f4d12159f48c4cd06ee689b567d = $(`<div id="html_8ae49f4d12159f48c4cd06ee689b567d" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 14.286195<br>Longitude: 75.056781</div>`)[0];
+                popup_fc0d65aa75a704127894fa23f4206e7c.setContent(html_8ae49f4d12159f48c4cd06ee689b567d);
+            
+        
+
+        marker_b315906eff11e73430721664345ec295.bindPopup(popup_fc0d65aa75a704127894fa23f4206e7c)
+        ;
+
+        
+    
+    
+            var marker_ce5937395d2187dfa1b67654c6429417 = L.marker(
+                [13.926913, 75.57839],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_45e4d72ac4c138f88163c12aabe00238 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da3220832b6229db9b3f107b67a9e57f = $(`<div id="html_da3220832b6229db9b3f107b67a9e57f" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 13.926913<br>Longitude: 75.57839</div>`)[0];
+                popup_45e4d72ac4c138f88163c12aabe00238.setContent(html_da3220832b6229db9b3f107b67a9e57f);
+            
+        
+
+        marker_ce5937395d2187dfa1b67654c6429417.bindPopup(popup_45e4d72ac4c138f88163c12aabe00238)
+        ;
+
+        
+    
+    
+            var marker_8afa40e9b758cb3298930a1dfe883c37 = L.marker(
+                [14.451422, 75.014722],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_5cf0887ac4649604db095e839c78b9fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4eb9a6a32de4e6419e66a934c10eb8e1 = $(`<div id="html_4eb9a6a32de4e6419e66a934c10eb8e1" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 14.451422<br>Longitude: 75.014722</div>`)[0];
+                popup_5cf0887ac4649604db095e839c78b9fc.setContent(html_4eb9a6a32de4e6419e66a934c10eb8e1);
+            
+        
+
+        marker_8afa40e9b758cb3298930a1dfe883c37.bindPopup(popup_5cf0887ac4649604db095e839c78b9fc)
+        ;
+
+        
+    
+    
+            var marker_00ccf120e13ca29054c81b2a79f9092e = L.marker(
+                [14.096377, 75.210334],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_9edf72882a612b9c5e1ea3f462e1e527 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13ad7676fc5e39ec6c673cc876902c96 = $(`<div id="html_13ad7676fc5e39ec6c673cc876902c96" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Agrarian<br>Latitude: 14.096377<br>Longitude: 75.210334</div>`)[0];
+                popup_9edf72882a612b9c5e1ea3f462e1e527.setContent(html_13ad7676fc5e39ec6c673cc876902c96);
+            
+        
+
+        marker_00ccf120e13ca29054c81b2a79f9092e.bindPopup(popup_9edf72882a612b9c5e1ea3f462e1e527)
+        ;
+
+        
+    
+    
+            var marker_f33afdd2c0d0f8ff398e1621b309d7f0 = L.marker(
+                [13.929545, 75.575057],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_fe9181a91de26cc6b8a5097f675628d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f8d51ffac96b8de691ccaa23939d041 = $(`<div id="html_8f8d51ffac96b8de691ccaa23939d041" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 13.929545<br>Longitude: 75.575057</div>`)[0];
+                popup_fe9181a91de26cc6b8a5097f675628d8.setContent(html_8f8d51ffac96b8de691ccaa23939d041);
+            
+        
+
+        marker_f33afdd2c0d0f8ff398e1621b309d7f0.bindPopup(popup_fe9181a91de26cc6b8a5097f675628d8)
+        ;
+
+        
+    
+    
+            var marker_ec8634cc5e4e2d8ba676d3e669c58a26 = L.marker(
+                [14.019078, 75.400668],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_ed033b06bc30dbf1a4c167f47ea91d54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_456f46c8cfdd6a16c466ced290eb6bae = $(`<div id="html_456f46c8cfdd6a16c466ced290eb6bae" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 14.019078<br>Longitude: 75.400668</div>`)[0];
+                popup_ed033b06bc30dbf1a4c167f47ea91d54.setContent(html_456f46c8cfdd6a16c466ced290eb6bae);
+            
+        
+
+        marker_ec8634cc5e4e2d8ba676d3e669c58a26.bindPopup(popup_ed033b06bc30dbf1a4c167f47ea91d54)
+        ;
+
+        
+    
+    
+            var marker_ea7070dc64a64d1981251c8254f4cf78 = L.marker(
+                [14.162739, 75.026036],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_29e3502365ff54f2b72772d12ed4b93a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e415f64f8770c59b476cdb23db8bc3e9 = $(`<div id="html_e415f64f8770c59b476cdb23db8bc3e9" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 14.162739<br>Longitude: 75.026036</div>`)[0];
+                popup_29e3502365ff54f2b72772d12ed4b93a.setContent(html_e415f64f8770c59b476cdb23db8bc3e9);
+            
+        
+
+        marker_ea7070dc64a64d1981251c8254f4cf78.bindPopup(popup_29e3502365ff54f2b72772d12ed4b93a)
+        ;
+
+        
+    
+    
+            var marker_b3c3d901908e9f13494351b1e768a803 = L.marker(
+                [13.92971, 75.574848],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_7dd41613c36f6e5c0a913d37c3e1a1e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_380a57330604973fa44a0ce6d4d05372 = $(`<div id="html_380a57330604973fa44a0ce6d4d05372" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 13.92971<br>Longitude: 75.574848</div>`)[0];
+                popup_7dd41613c36f6e5c0a913d37c3e1a1e8.setContent(html_380a57330604973fa44a0ce6d4d05372);
+            
+        
+
+        marker_b3c3d901908e9f13494351b1e768a803.bindPopup(popup_7dd41613c36f6e5c0a913d37c3e1a1e8)
+        ;
+
+        
+    
+    
+            var marker_01cd0009a76a90878327d4e36bdf8fb7 = L.marker(
+                [13.935064, 75.562484],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_4a87853b63efb57db0f3bc3516cafd14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8948cb3e826aa268f716c96a953ce2f = $(`<div id="html_f8948cb3e826aa268f716c96a953ce2f" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 13.935064<br>Longitude: 75.562484</div>`)[0];
+                popup_4a87853b63efb57db0f3bc3516cafd14.setContent(html_f8948cb3e826aa268f716c96a953ce2f);
+            
+        
+
+        marker_01cd0009a76a90878327d4e36bdf8fb7.bindPopup(popup_4a87853b63efb57db0f3bc3516cafd14)
+        ;
+
+        
+    
+    
+            var marker_b12fc465af40e6d6de36f14b2ccda422 = L.marker(
+                [13.975406, 75.75258],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_bcd6d35db46b07b8983ea5cfa1f6a4d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2eb16f51190b245dc65649fb311c0e2c = $(`<div id="html_2eb16f51190b245dc65649fb311c0e2c" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 13.975406<br>Longitude: 75.75258</div>`)[0];
+                popup_bcd6d35db46b07b8983ea5cfa1f6a4d3.setContent(html_2eb16f51190b245dc65649fb311c0e2c);
+            
+        
+
+        marker_b12fc465af40e6d6de36f14b2ccda422.bindPopup(popup_bcd6d35db46b07b8983ea5cfa1f6a4d3)
+        ;
+
+        
+    
+    
+            var marker_3df5db9e661e90246944e08022dfbe98 = L.marker(
+                [13.5713, 75.3525],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_879255d82f3ee6bdc8c733f6a40c4a0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68bec83390dac875b75dced8a3c081e7 = $(`<div id="html_68bec83390dac875b75dced8a3c081e7" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 13.5713<br>Longitude: 75.3525</div>`)[0];
+                popup_879255d82f3ee6bdc8c733f6a40c4a0d.setContent(html_68bec83390dac875b75dced8a3c081e7);
+            
+        
+
+        marker_3df5db9e661e90246944e08022dfbe98.bindPopup(popup_879255d82f3ee6bdc8c733f6a40c4a0d)
+        ;
+
+        
+    
+    
+            var marker_9241b7429ab57c2e8f5f45f7eff2a42d = L.marker(
+                [14.008317, 74.710367],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_efc3ce4ed92d3621fd1d25ac0d82f05d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c19d1a21b6e6b814ed923893056b0463 = $(`<div id="html_c19d1a21b6e6b814ed923893056b0463" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Land Disputes<br>Latitude: 14.008317<br>Longitude: 74.710367</div>`)[0];
+                popup_efc3ce4ed92d3621fd1d25ac0d82f05d.setContent(html_c19d1a21b6e6b814ed923893056b0463);
+            
+        
+
+        marker_9241b7429ab57c2e8f5f45f7eff2a42d.bindPopup(popup_efc3ce4ed92d3621fd1d25ac0d82f05d)
+        ;
+
+        
+    
+    
+            var marker_a383193c273923d6346c9a4ea46a0103 = L.marker(
+                [13.84502, 75.68606],
+                {}
+            ).addTo(marker_cluster_73ea9a1a2b49fdad1b7e0409dd29414f);
+        
+    
+        var popup_e57fa9d64b895f5b2dd97e65500b0cb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50d8ffc6c540aa2a8fe0cf12bf14f00b = $(`<div id="html_50d8ffc6c540aa2a8fe0cf12bf14f00b" style="width: 100.0%; height: 100.0%;">Crime Group: RIOTS<br>Crime Head: Others<br>Latitude: 13.84502<br>Longitude: 75.68606</div>`)[0];
+                popup_e57fa9d64b895f5b2dd97e65500b0cb9.setContent(html_50d8ffc6c540aa2a8fe0cf12bf14f00b);
+            
+        
+
+        marker_a383193c273923d6346c9a4ea46a0103.bindPopup(popup_e57fa9d64b895f5b2dd97e65500b0cb9)
+        ;
+
+        
+    
+    
+            var layer_control_07e661a7befa19ec2788e8ab3869ae07 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_dd09f4e9725e34cfce6173e99d6ffac0,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_07e661a7befa19ec2788e8ab3869ae07.base_layers,
+                layer_control_07e661a7befa19ec2788e8ab3869ae07.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_e3ec9036ada652c1a2cb01d7ac4fa18c);
+        
+</script>
+</html>

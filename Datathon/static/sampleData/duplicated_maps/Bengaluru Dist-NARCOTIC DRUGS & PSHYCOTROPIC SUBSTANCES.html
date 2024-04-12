@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_043fa4998a6d8d8214d48a493cbd9e0b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_043fa4998a6d8d8214d48a493cbd9e0b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_043fa4998a6d8d8214d48a493cbd9e0b = L.map(
+                "map_043fa4998a6d8d8214d48a493cbd9e0b",
+                {
+                    center: [12.981934411764707, 77.66253485],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a3c80ed666950dc41e2c4eec7f00b0de = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_043fa4998a6d8d8214d48a493cbd9e0b);
+        
+    
+            var marker_cluster_1401b174d8c89b828a8e4c84807c1d1d = L.markerClusterGroup(
+                {}
+            );
+            map_043fa4998a6d8d8214d48a493cbd9e0b.addLayer(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+            var marker_42f3ac8fffd299c02d5aaca649079f74 = L.marker(
+                [13.073049, 77.435093],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_4dfc48131e7c7fd64f755e93f65a05e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9f686c0e1b938e5c392ac55aaa80812 = $(`<div id="html_e9f686c0e1b938e5c392ac55aaa80812" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 13.073049<br>Longitude: 77.435093</div>`)[0];
+                popup_4dfc48131e7c7fd64f755e93f65a05e8.setContent(html_e9f686c0e1b938e5c392ac55aaa80812);
+            
+        
+
+        marker_42f3ac8fffd299c02d5aaca649079f74.bindPopup(popup_4dfc48131e7c7fd64f755e93f65a05e8)
+        ;
+
+        
+    
+    
+            var marker_dbbb2d7ea9d682a2d823c7e6278e0101 = L.marker(
+                [12.817565, 77.668442],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_0dfdabbd8148b4b8e739165ec749f981 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f4b72e4ac898d2bc23ceb2ece44e6a0 = $(`<div id="html_7f4b72e4ac898d2bc23ceb2ece44e6a0" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 12.817565<br>Longitude: 77.668442</div>`)[0];
+                popup_0dfdabbd8148b4b8e739165ec749f981.setContent(html_7f4b72e4ac898d2bc23ceb2ece44e6a0);
+            
+        
+
+        marker_dbbb2d7ea9d682a2d823c7e6278e0101.bindPopup(popup_0dfdabbd8148b4b8e739165ec749f981)
+        ;
+
+        
+    
+    
+            var marker_1f163af93fce20710a10a9f8e4542bed = L.marker(
+                [13.20304, 77.902636],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_0859dd3ab42253a17d868bd32af261f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7da34f86a827c871d797ff2e2d581796 = $(`<div id="html_7da34f86a827c871d797ff2e2d581796" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 13.20304<br>Longitude: 77.902636</div>`)[0];
+                popup_0859dd3ab42253a17d868bd32af261f8.setContent(html_7da34f86a827c871d797ff2e2d581796);
+            
+        
+
+        marker_1f163af93fce20710a10a9f8e4542bed.bindPopup(popup_0859dd3ab42253a17d868bd32af261f8)
+        ;
+
+        
+    
+    
+            var marker_4100b6914e7ec46d0dac7dbb2d7b5758 = L.marker(
+                [13.065748, 77.800732],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_843c76132d8743194dee54d9e8494b61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a1867d1ab50d6a49bb22b963939968e = $(`<div id="html_4a1867d1ab50d6a49bb22b963939968e" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 13.065748<br>Longitude: 77.800732</div>`)[0];
+                popup_843c76132d8743194dee54d9e8494b61.setContent(html_4a1867d1ab50d6a49bb22b963939968e);
+            
+        
+
+        marker_4100b6914e7ec46d0dac7dbb2d7b5758.bindPopup(popup_843c76132d8743194dee54d9e8494b61)
+        ;
+
+        
+    
+    
+            var marker_733badaafa6b6b8dbc565d8defc0e9de = L.marker(
+                [12.781997, 77.771945],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_59e72875f29b194364dbb0a0cd1603cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b14f7d84d09d334ca6090387f7b3125d = $(`<div id="html_b14f7d84d09d334ca6090387f7b3125d" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 12.781997<br>Longitude: 77.771945</div>`)[0];
+                popup_59e72875f29b194364dbb0a0cd1603cd.setContent(html_b14f7d84d09d334ca6090387f7b3125d);
+            
+        
+
+        marker_733badaafa6b6b8dbc565d8defc0e9de.bindPopup(popup_59e72875f29b194364dbb0a0cd1603cd)
+        ;
+
+        
+    
+    
+            var marker_fcba6b86ed8f144df39e1cf4bf04a8fd = L.marker(
+                [13.099468, 77.391075],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_c1a5efe828151c30821529291f3d228b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f5697a9d187ba3819893aa67825fbea = $(`<div id="html_7f5697a9d187ba3819893aa67825fbea" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 13.099468<br>Longitude: 77.391075</div>`)[0];
+                popup_c1a5efe828151c30821529291f3d228b.setContent(html_7f5697a9d187ba3819893aa67825fbea);
+            
+        
+
+        marker_fcba6b86ed8f144df39e1cf4bf04a8fd.bindPopup(popup_c1a5efe828151c30821529291f3d228b)
+        ;
+
+        
+    
+    
+            var marker_3dbbc32380bd288e74aca5ad0ae16617 = L.marker(
+                [13.16751, 77.311556],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_6146ce47f09c9d797c391642e801acf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d32aa722245566f7516d2177cf68d53a = $(`<div id="html_d32aa722245566f7516d2177cf68d53a" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 13.16751<br>Longitude: 77.311556</div>`)[0];
+                popup_6146ce47f09c9d797c391642e801acf5.setContent(html_d32aa722245566f7516d2177cf68d53a);
+            
+        
+
+        marker_3dbbc32380bd288e74aca5ad0ae16617.bindPopup(popup_6146ce47f09c9d797c391642e801acf5)
+        ;
+
+        
+    
+    
+            var marker_4d69a850e984ec2b3fef64f0ce1591e4 = L.marker(
+                [12.84167, 77.770156],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_6f45e0327fa152a6d3b8a6e535a4765e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81eb78447b4e6c2b419fb136c2a3cd90 = $(`<div id="html_81eb78447b4e6c2b419fb136c2a3cd90" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 12.84167<br>Longitude: 77.770156</div>`)[0];
+                popup_6f45e0327fa152a6d3b8a6e535a4765e.setContent(html_81eb78447b4e6c2b419fb136c2a3cd90);
+            
+        
+
+        marker_4d69a850e984ec2b3fef64f0ce1591e4.bindPopup(popup_6f45e0327fa152a6d3b8a6e535a4765e)
+        ;
+
+        
+    
+    
+            var marker_a6c8050f4b3d4d4f9108a37d6f3bf81b = L.marker(
+                [12.990798, 77.790449],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_3f594963fc19643df889e6c2c6c6ba6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f03062e96d2f0ac1f5c7365b1f1388e = $(`<div id="html_0f03062e96d2f0ac1f5c7365b1f1388e" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 12.990798<br>Longitude: 77.790449</div>`)[0];
+                popup_3f594963fc19643df889e6c2c6c6ba6f.setContent(html_0f03062e96d2f0ac1f5c7365b1f1388e);
+            
+        
+
+        marker_a6c8050f4b3d4d4f9108a37d6f3bf81b.bindPopup(popup_3f594963fc19643df889e6c2c6c6ba6f)
+        ;
+
+        
+    
+    
+            var marker_69fb2d195c868d88b724082eb759de7b = L.marker(
+                [12.730711, 77.706092],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_f4d200b673a7e9773056a2ec1316c153 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b069187f0804a3551099ee5955869f3 = $(`<div id="html_1b069187f0804a3551099ee5955869f3" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 12.730711<br>Longitude: 77.706092</div>`)[0];
+                popup_f4d200b673a7e9773056a2ec1316c153.setContent(html_1b069187f0804a3551099ee5955869f3);
+            
+        
+
+        marker_69fb2d195c868d88b724082eb759de7b.bindPopup(popup_f4d200b673a7e9773056a2ec1316c153)
+        ;
+
+        
+    
+    
+            var marker_b9ed71849eb42830cdadb9659c476667 = L.marker(
+                [12.812393, 77.785488],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_6c375e06a4d9396d84d9015ca38b731c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e305b7b459f7056ea6a3083ab3b8798b = $(`<div id="html_e305b7b459f7056ea6a3083ab3b8798b" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 12.812393<br>Longitude: 77.785488</div>`)[0];
+                popup_6c375e06a4d9396d84d9015ca38b731c.setContent(html_e305b7b459f7056ea6a3083ab3b8798b);
+            
+        
+
+        marker_b9ed71849eb42830cdadb9659c476667.bindPopup(popup_6c375e06a4d9396d84d9015ca38b731c)
+        ;
+
+        
+    
+    
+            var marker_d8b23b3ad78cf68b02856ec1b3bc3219 = L.marker(
+                [12.792175, 77.642737],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_8cbbad42a56ddb369c5705d4007885fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bda13b74b11740fcda6f74d26de06d9 = $(`<div id="html_9bda13b74b11740fcda6f74d26de06d9" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 12.792175<br>Longitude: 77.642737</div>`)[0];
+                popup_8cbbad42a56ddb369c5705d4007885fd.setContent(html_9bda13b74b11740fcda6f74d26de06d9);
+            
+        
+
+        marker_d8b23b3ad78cf68b02856ec1b3bc3219.bindPopup(popup_8cbbad42a56ddb369c5705d4007885fd)
+        ;
+
+        
+    
+    
+            var marker_6259d4a9fa3f18a5c5c971e152e5a557 = L.marker(
+                [12.992354, 77.454428],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_14b611a2214bee94b4c1bc6b1e491bcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c467ed8f372d71aff0d35d0dc260f77 = $(`<div id="html_6c467ed8f372d71aff0d35d0dc260f77" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 12.992354<br>Longitude: 77.454428</div>`)[0];
+                popup_14b611a2214bee94b4c1bc6b1e491bcb.setContent(html_6c467ed8f372d71aff0d35d0dc260f77);
+            
+        
+
+        marker_6259d4a9fa3f18a5c5c971e152e5a557.bindPopup(popup_14b611a2214bee94b4c1bc6b1e491bcb)
+        ;
+
+        
+    
+    
+            var marker_6f11cddb0e7a21ea89ccc2dc91c5c177 = L.marker(
+                [13.306643, 77.530648],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_c1d44d1f532c955c47d2cf9ddf007680 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bc80b8998978bcd3eed8eee6b0872e0 = $(`<div id="html_7bc80b8998978bcd3eed8eee6b0872e0" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 13.306643<br>Longitude: 77.530648</div>`)[0];
+                popup_c1d44d1f532c955c47d2cf9ddf007680.setContent(html_7bc80b8998978bcd3eed8eee6b0872e0);
+            
+        
+
+        marker_6f11cddb0e7a21ea89ccc2dc91c5c177.bindPopup(popup_c1d44d1f532c955c47d2cf9ddf007680)
+        ;
+
+        
+    
+    
+            var marker_1c7cfbb41872db440f51e113c6598633 = L.marker(
+                [13.087094, 77.714049],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_76a80aec383c9cb1ff104121b447b637 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1858753e0d4114c75b6861e688b5803 = $(`<div id="html_c1858753e0d4114c75b6861e688b5803" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 13.087094<br>Longitude: 77.714049</div>`)[0];
+                popup_76a80aec383c9cb1ff104121b447b637.setContent(html_c1858753e0d4114c75b6861e688b5803);
+            
+        
+
+        marker_1c7cfbb41872db440f51e113c6598633.bindPopup(popup_76a80aec383c9cb1ff104121b447b637)
+        ;
+
+        
+    
+    
+            var marker_4bad2109159b315d31dd26bfe958dddf = L.marker(
+                [12.846731, 77.76635],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_829e747b9eccc979c173549d862ee119 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed6da9f59426f47424fffda62677d633 = $(`<div id="html_ed6da9f59426f47424fffda62677d633" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 12.846731<br>Longitude: 77.76635</div>`)[0];
+                popup_829e747b9eccc979c173549d862ee119.setContent(html_ed6da9f59426f47424fffda62677d633);
+            
+        
+
+        marker_4bad2109159b315d31dd26bfe958dddf.bindPopup(popup_829e747b9eccc979c173549d862ee119)
+        ;
+
+        
+    
+    
+            var marker_ef44d85c6bb70853ba3686fdc76ac304 = L.marker(
+                [13.310234, 77.545864],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_dd200bb437a664d14ff326cfe37b26a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ead622fc19f5e25e84a84617b593a94 = $(`<div id="html_7ead622fc19f5e25e84a84617b593a94" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 13.310234<br>Longitude: 77.545864</div>`)[0];
+                popup_dd200bb437a664d14ff326cfe37b26a2.setContent(html_7ead622fc19f5e25e84a84617b593a94);
+            
+        
+
+        marker_ef44d85c6bb70853ba3686fdc76ac304.bindPopup(popup_dd200bb437a664d14ff326cfe37b26a2)
+        ;
+
+        
+    
+    
+            var marker_f9513f6e0e098fe9e1a5fbf748f15003 = L.marker(
+                [13.286903, 77.793533],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_27a4bfe0a9ece866d9cd68edd58a4cdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc84291d89054aa792375a9f6385163a = $(`<div id="html_dc84291d89054aa792375a9f6385163a" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 13.286903<br>Longitude: 77.793533</div>`)[0];
+                popup_27a4bfe0a9ece866d9cd68edd58a4cdf.setContent(html_dc84291d89054aa792375a9f6385163a);
+            
+        
+
+        marker_f9513f6e0e098fe9e1a5fbf748f15003.bindPopup(popup_27a4bfe0a9ece866d9cd68edd58a4cdf)
+        ;
+
+        
+    
+    
+            var marker_b4461436333c32bf23654df8e9f60103 = L.marker(
+                [12.803754, 77.638048],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_c5c2121ed62040d46bdf9391ecbda80f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39b68ee46dba795880fa679f7b27d111 = $(`<div id="html_39b68ee46dba795880fa679f7b27d111" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 12.803754<br>Longitude: 77.638048</div>`)[0];
+                popup_c5c2121ed62040d46bdf9391ecbda80f.setContent(html_39b68ee46dba795880fa679f7b27d111);
+            
+        
+
+        marker_b4461436333c32bf23654df8e9f60103.bindPopup(popup_c5c2121ed62040d46bdf9391ecbda80f)
+        ;
+
+        
+    
+    
+            var marker_ef1314f7faa589f9e750dd0b27076dd6 = L.marker(
+                [12.959479, 77.82378],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_152daf3d33f3cecd38da38c203c002bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b86968888573a0bab33b7a4224f294ba = $(`<div id="html_b86968888573a0bab33b7a4224f294ba" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 12.959479<br>Longitude: 77.82378</div>`)[0];
+                popup_152daf3d33f3cecd38da38c203c002bb.setContent(html_b86968888573a0bab33b7a4224f294ba);
+            
+        
+
+        marker_ef1314f7faa589f9e750dd0b27076dd6.bindPopup(popup_152daf3d33f3cecd38da38c203c002bb)
+        ;
+
+        
+    
+    
+            var marker_08bf0a292e7d01b7b347274a49e9b0ad = L.marker(
+                [13.29218, 77.534237],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_827ec9d684089583290d3f3811d3eb3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76093a4927e9f639d6957f8dcbbeb7e7 = $(`<div id="html_76093a4927e9f639d6957f8dcbbeb7e7" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 13.29218<br>Longitude: 77.534237</div>`)[0];
+                popup_827ec9d684089583290d3f3811d3eb3f.setContent(html_76093a4927e9f639d6957f8dcbbeb7e7);
+            
+        
+
+        marker_08bf0a292e7d01b7b347274a49e9b0ad.bindPopup(popup_827ec9d684089583290d3f3811d3eb3f)
+        ;
+
+        
+    
+    
+            var marker_a3492fbf6f9c5b3c821425460b242e66 = L.marker(
+                [13.04933, 77.771617],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_d4fe9487d6e4ec59d0e577bb7ce0a17f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de0298a7d823572a0815b5b09064a7db = $(`<div id="html_de0298a7d823572a0815b5b09064a7db" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 13.04933<br>Longitude: 77.771617</div>`)[0];
+                popup_d4fe9487d6e4ec59d0e577bb7ce0a17f.setContent(html_de0298a7d823572a0815b5b09064a7db);
+            
+        
+
+        marker_a3492fbf6f9c5b3c821425460b242e66.bindPopup(popup_d4fe9487d6e4ec59d0e577bb7ce0a17f)
+        ;
+
+        
+    
+    
+            var marker_6f04e838242c530cdb92883dd7c6ed8e = L.marker(
+                [12.819346, 77.6393],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_e95236f6c87b2796b36b0e067d5b25b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9002327496d661219bd1e063d149e407 = $(`<div id="html_9002327496d661219bd1e063d149e407" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 12.819346<br>Longitude: 77.6393</div>`)[0];
+                popup_e95236f6c87b2796b36b0e067d5b25b8.setContent(html_9002327496d661219bd1e063d149e407);
+            
+        
+
+        marker_6f04e838242c530cdb92883dd7c6ed8e.bindPopup(popup_e95236f6c87b2796b36b0e067d5b25b8)
+        ;
+
+        
+    
+    
+            var marker_3784b62c08035d710a20826ffef45129 = L.marker(
+                [12.763865, 77.650905],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_c154568fdbea91ced664da62d31a5ca8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87cf0ed62bee6da4639845b94c95833c = $(`<div id="html_87cf0ed62bee6da4639845b94c95833c" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 12.763865<br>Longitude: 77.650905</div>`)[0];
+                popup_c154568fdbea91ced664da62d31a5ca8.setContent(html_87cf0ed62bee6da4639845b94c95833c);
+            
+        
+
+        marker_3784b62c08035d710a20826ffef45129.bindPopup(popup_c154568fdbea91ced664da62d31a5ca8)
+        ;
+
+        
+    
+    
+            var marker_de8093e0b6fbbde0916d566efe2d6f5c = L.marker(
+                [13.135837, 77.570863],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_c4b3f0df31a9c1f12da0fbb07ca06892 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98b6a96d22fdb407847cc9130acb2ac0 = $(`<div id="html_98b6a96d22fdb407847cc9130acb2ac0" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 13.135837<br>Longitude: 77.570863</div>`)[0];
+                popup_c4b3f0df31a9c1f12da0fbb07ca06892.setContent(html_98b6a96d22fdb407847cc9130acb2ac0);
+            
+        
+
+        marker_de8093e0b6fbbde0916d566efe2d6f5c.bindPopup(popup_c4b3f0df31a9c1f12da0fbb07ca06892)
+        ;
+
+        
+    
+    
+            var marker_f466d3691e20cfb5f1475a2acb4cf5af = L.marker(
+                [13.050314, 77.737514],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_1dfb69b7e98d9ed5337e9a10e664b2c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a977cef14569bcab6d044fbd24878f9 = $(`<div id="html_7a977cef14569bcab6d044fbd24878f9" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 13.050314<br>Longitude: 77.737514</div>`)[0];
+                popup_1dfb69b7e98d9ed5337e9a10e664b2c0.setContent(html_7a977cef14569bcab6d044fbd24878f9);
+            
+        
+
+        marker_f466d3691e20cfb5f1475a2acb4cf5af.bindPopup(popup_1dfb69b7e98d9ed5337e9a10e664b2c0)
+        ;
+
+        
+    
+    
+            var marker_0002b748005ac64a4e815956eea7950f = L.marker(
+                [13.087904, 77.8296279],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_a8656e290db005c01537165ecd5a67ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_573617fd318a003fbda9d7a20002a698 = $(`<div id="html_573617fd318a003fbda9d7a20002a698" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 13.087904<br>Longitude: 77.8296279</div>`)[0];
+                popup_a8656e290db005c01537165ecd5a67ca.setContent(html_573617fd318a003fbda9d7a20002a698);
+            
+        
+
+        marker_0002b748005ac64a4e815956eea7950f.bindPopup(popup_a8656e290db005c01537165ecd5a67ca)
+        ;
+
+        
+    
+    
+            var marker_7f4e4591f32f6c889169cb6ed492ea2a = L.marker(
+                [12.829772, 77.706126],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_b33885c977ab6c4923a2e156788f7c54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3e7215bfb1da9088ace43a0b80d4685 = $(`<div id="html_f3e7215bfb1da9088ace43a0b80d4685" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 12.829772<br>Longitude: 77.706126</div>`)[0];
+                popup_b33885c977ab6c4923a2e156788f7c54.setContent(html_f3e7215bfb1da9088ace43a0b80d4685);
+            
+        
+
+        marker_7f4e4591f32f6c889169cb6ed492ea2a.bindPopup(popup_b33885c977ab6c4923a2e156788f7c54)
+        ;
+
+        
+    
+    
+            var marker_0773f16469f74b16b2ca9801f5f10a18 = L.marker(
+                [12.76898, 77.64713],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_3c1f65c33c372a908d1a8a2050ea2f03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fbcc545c32938c0e5b0c4b72d1d6f44 = $(`<div id="html_2fbcc545c32938c0e5b0c4b72d1d6f44" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 12.76898<br>Longitude: 77.64713</div>`)[0];
+                popup_3c1f65c33c372a908d1a8a2050ea2f03.setContent(html_2fbcc545c32938c0e5b0c4b72d1d6f44);
+            
+        
+
+        marker_0773f16469f74b16b2ca9801f5f10a18.bindPopup(popup_3c1f65c33c372a908d1a8a2050ea2f03)
+        ;
+
+        
+    
+    
+            var marker_900e4a3be751bf90f19db70852728cf2 = L.marker(
+                [13.260544, 77.543009],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_c2581467bbc9961c9367b1456056be47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82831fef0330ec3c693879444bfbb1e1 = $(`<div id="html_82831fef0330ec3c693879444bfbb1e1" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 13.260544<br>Longitude: 77.543009</div>`)[0];
+                popup_c2581467bbc9961c9367b1456056be47.setContent(html_82831fef0330ec3c693879444bfbb1e1);
+            
+        
+
+        marker_900e4a3be751bf90f19db70852728cf2.bindPopup(popup_c2581467bbc9961c9367b1456056be47)
+        ;
+
+        
+    
+    
+            var marker_cd85c50e654844bb841995017b9d199d = L.marker(
+                [12.872652, 77.721558],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_d45b5b85c217f9043f80ab0631b12cae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba4148bfaff8c4e2ed8b60285591fe77 = $(`<div id="html_ba4148bfaff8c4e2ed8b60285591fe77" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 12.872652<br>Longitude: 77.721558</div>`)[0];
+                popup_d45b5b85c217f9043f80ab0631b12cae.setContent(html_ba4148bfaff8c4e2ed8b60285591fe77);
+            
+        
+
+        marker_cd85c50e654844bb841995017b9d199d.bindPopup(popup_d45b5b85c217f9043f80ab0631b12cae)
+        ;
+
+        
+    
+    
+            var marker_34bbb7b1c2acc62352501977f61dea60 = L.marker(
+                [12.778826, 77.769808],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_b76331e95d40b4af566af4e1b41cf3ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20f5aa4c6e355218aefd4786b6da0de9 = $(`<div id="html_20f5aa4c6e355218aefd4786b6da0de9" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 12.778826<br>Longitude: 77.769808</div>`)[0];
+                popup_b76331e95d40b4af566af4e1b41cf3ce.setContent(html_20f5aa4c6e355218aefd4786b6da0de9);
+            
+        
+
+        marker_34bbb7b1c2acc62352501977f61dea60.bindPopup(popup_b76331e95d40b4af566af4e1b41cf3ce)
+        ;
+
+        
+    
+    
+            var marker_738ae514d5b86886982738b44027c019 = L.marker(
+                [12.99221, 77.464793],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_0dfe4697f7ffb2d4df04e59e0ea72af5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9767ea2dd9c749be5dbc462136e2f273 = $(`<div id="html_9767ea2dd9c749be5dbc462136e2f273" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 12.99221<br>Longitude: 77.464793</div>`)[0];
+                popup_0dfe4697f7ffb2d4df04e59e0ea72af5.setContent(html_9767ea2dd9c749be5dbc462136e2f273);
+            
+        
+
+        marker_738ae514d5b86886982738b44027c019.bindPopup(popup_0dfe4697f7ffb2d4df04e59e0ea72af5)
+        ;
+
+        
+    
+    
+            var marker_5a1aa8e4e3bbb3d35d45c1ff9f3741a1 = L.marker(
+                [12.714694, 77.696596],
+                {}
+            ).addTo(marker_cluster_1401b174d8c89b828a8e4c84807c1d1d);
+        
+    
+        var popup_9785a1611998516c8a96d2a443a55a9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17797bd809ec90bce2e2c0ffa5b4e831 = $(`<div id="html_17797bd809ec90bce2e2c0ffa5b4e831" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 12.714694<br>Longitude: 77.696596</div>`)[0];
+                popup_9785a1611998516c8a96d2a443a55a9f.setContent(html_17797bd809ec90bce2e2c0ffa5b4e831);
+            
+        
+
+        marker_5a1aa8e4e3bbb3d35d45c1ff9f3741a1.bindPopup(popup_9785a1611998516c8a96d2a443a55a9f)
+        ;
+
+        
+    
+    
+            var layer_control_10ec22a170874c65fad1303285b37e81 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a3c80ed666950dc41e2c4eec7f00b0de,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_10ec22a170874c65fad1303285b37e81.base_layers,
+                layer_control_10ec22a170874c65fad1303285b37e81.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_043fa4998a6d8d8214d48a493cbd9e0b);
+        
+</script>
+</html>

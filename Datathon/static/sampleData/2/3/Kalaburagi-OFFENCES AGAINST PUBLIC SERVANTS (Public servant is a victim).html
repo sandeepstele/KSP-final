@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_401b57c477cef9c332fb4c10992d43c1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_401b57c477cef9c332fb4c10992d43c1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_401b57c477cef9c332fb4c10992d43c1 = L.map(
+                "map_401b57c477cef9c332fb4c10992d43c1",
+                {
+                    center: [17.193129666666668, 77.19870366666667],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6b51a183ca5cf94aaa5f7ab906dc9c01 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_401b57c477cef9c332fb4c10992d43c1);
+        
+    
+            var marker_cluster_734fa8b749c32d287aa4cc9729a0d357 = L.markerClusterGroup(
+                {}
+            );
+            map_401b57c477cef9c332fb4c10992d43c1.addLayer(marker_cluster_734fa8b749c32d287aa4cc9729a0d357);
+        
+    
+            var marker_5794e2210a9ae5ed5052ddf031efeeb8 = L.marker(
+                [17.259328, 77.350865],
+                {}
+            ).addTo(marker_cluster_734fa8b749c32d287aa4cc9729a0d357);
+        
+    
+        var popup_181a9235daeed19221b933c04fffaa3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5632e6ec6881f91782fc3ca2aef8837 = $(`<div id="html_d5632e6ec6881f91782fc3ca2aef8837" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES AGAINST PUBLIC SERVANTS (Public servant is a victim)<br>Crime Head: Other Govt Official<br>Latitude: 17.259328<br>Longitude: 77.350865</div>`)[0];
+                popup_181a9235daeed19221b933c04fffaa3a.setContent(html_d5632e6ec6881f91782fc3ca2aef8837);
+            
+        
+
+        marker_5794e2210a9ae5ed5052ddf031efeeb8.bindPopup(popup_181a9235daeed19221b933c04fffaa3a)
+        ;
+
+        
+    
+    
+            var marker_5d1e5d5e7c1441744343c705b26baa36 = L.marker(
+                [17.195252, 77.161078],
+                {}
+            ).addTo(marker_cluster_734fa8b749c32d287aa4cc9729a0d357);
+        
+    
+        var popup_1a2682cbb01773b7ab06cbb0dd1753d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9aa166a5ef9442a34af57724ca312f2c = $(`<div id="html_9aa166a5ef9442a34af57724ca312f2c" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES AGAINST PUBLIC SERVANTS (Public servant is a victim)<br>Crime Head: Other Govt Official<br>Latitude: 17.195252<br>Longitude: 77.161078</div>`)[0];
+                popup_1a2682cbb01773b7ab06cbb0dd1753d7.setContent(html_9aa166a5ef9442a34af57724ca312f2c);
+            
+        
+
+        marker_5d1e5d5e7c1441744343c705b26baa36.bindPopup(popup_1a2682cbb01773b7ab06cbb0dd1753d7)
+        ;
+
+        
+    
+    
+            var marker_cd50bf1056ad4ecd8aeeb61faa8ecc3f = L.marker(
+                [17.124809, 77.084168],
+                {}
+            ).addTo(marker_cluster_734fa8b749c32d287aa4cc9729a0d357);
+        
+    
+        var popup_59e9718446fa06c69196de8e0e0b1ecb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b82924d97252b3fd97cef6aae3d9924 = $(`<div id="html_2b82924d97252b3fd97cef6aae3d9924" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES AGAINST PUBLIC SERVANTS (Public servant is a victim)<br>Crime Head: Public Sector Undertaking Official<br>Latitude: 17.124809<br>Longitude: 77.084168</div>`)[0];
+                popup_59e9718446fa06c69196de8e0e0b1ecb.setContent(html_2b82924d97252b3fd97cef6aae3d9924);
+            
+        
+
+        marker_cd50bf1056ad4ecd8aeeb61faa8ecc3f.bindPopup(popup_59e9718446fa06c69196de8e0e0b1ecb)
+        ;
+
+        
+    
+    
+            var layer_control_88b49f3577388b23683a315a01dc025e = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6b51a183ca5cf94aaa5f7ab906dc9c01,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_88b49f3577388b23683a315a01dc025e.base_layers,
+                layer_control_88b49f3577388b23683a315a01dc025e.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_401b57c477cef9c332fb4c10992d43c1);
+        
+</script>
+</html>

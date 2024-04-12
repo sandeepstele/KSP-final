@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f2c9fc14636695c84dbf9ef4cd61abd9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f2c9fc14636695c84dbf9ef4cd61abd9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f2c9fc14636695c84dbf9ef4cd61abd9 = L.map(
+                "map_f2c9fc14636695c84dbf9ef4cd61abd9",
+                {
+                    center: [12.977387714285715, 76.14871657142855],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c2d39047457d17d922b5c45a7f910c32 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f2c9fc14636695c84dbf9ef4cd61abd9);
+        
+    
+            var marker_cluster_207c60e5c5f2353e28faf89428869b2b = L.markerClusterGroup(
+                {}
+            );
+            map_f2c9fc14636695c84dbf9ef4cd61abd9.addLayer(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+            var marker_4d9c5aea7cb4d95e6f4c20c3107b74f6 = L.marker(
+                [12.650986, 76.1562],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_d711a4bc8cca08647557a6d5f7cb99dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dc8d23bb6f0f9be2a989ec76913c38a = $(`<div id="html_2dc8d23bb6f0f9be2a989ec76913c38a" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 12.650986<br>Longitude: 76.1562</div>`)[0];
+                popup_d711a4bc8cca08647557a6d5f7cb99dd.setContent(html_2dc8d23bb6f0f9be2a989ec76913c38a);
+            
+        
+
+        marker_4d9c5aea7cb4d95e6f4c20c3107b74f6.bindPopup(popup_d711a4bc8cca08647557a6d5f7cb99dd)
+        ;
+
+        
+    
+    
+            var marker_8cb1003211db6cc4de1bc327a6967ba9 = L.marker(
+                [13.404769, 76.163224],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_cb5c7e24e714be1113681f5b7d2b0bf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68297da73108f424648a8c2a42e69ae3 = $(`<div id="html_68297da73108f424648a8c2a42e69ae3" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 13.404769<br>Longitude: 76.163224</div>`)[0];
+                popup_cb5c7e24e714be1113681f5b7d2b0bf9.setContent(html_68297da73108f424648a8c2a42e69ae3);
+            
+        
+
+        marker_8cb1003211db6cc4de1bc327a6967ba9.bindPopup(popup_cb5c7e24e714be1113681f5b7d2b0bf9)
+        ;
+
+        
+    
+    
+            var marker_b7990f8ae23c15691ef0977cece57827 = L.marker(
+                [12.823395, 76.161696],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_d47be077fc4ec4ba0061f37a6e700dda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6de8bfcc7aa6718c599de91d4ab8fa55 = $(`<div id="html_6de8bfcc7aa6718c599de91d4ab8fa55" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 12.823395<br>Longitude: 76.161696</div>`)[0];
+                popup_d47be077fc4ec4ba0061f37a6e700dda.setContent(html_6de8bfcc7aa6718c599de91d4ab8fa55);
+            
+        
+
+        marker_b7990f8ae23c15691ef0977cece57827.bindPopup(popup_d47be077fc4ec4ba0061f37a6e700dda)
+        ;
+
+        
+    
+    
+            var marker_fe27b86b31d0db5e912bcfc4698d4274 = L.marker(
+                [12.943527, 75.790441],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_52528225053acbca0b660774d88054cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2228b9daf8c4582ea9d4114862cae1ea = $(`<div id="html_2228b9daf8c4582ea9d4114862cae1ea" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 12.943527<br>Longitude: 75.790441</div>`)[0];
+                popup_52528225053acbca0b660774d88054cd.setContent(html_2228b9daf8c4582ea9d4114862cae1ea);
+            
+        
+
+        marker_fe27b86b31d0db5e912bcfc4698d4274.bindPopup(popup_52528225053acbca0b660774d88054cd)
+        ;
+
+        
+    
+    
+            var marker_809e0e34e910acee2dc947fa1b66288a = L.marker(
+                [12.78953, 76.245225],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_eb8ed506444288c9444328b25a5d6d22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_493774fde4fec0f59197bfe8a4f24145 = $(`<div id="html_493774fde4fec0f59197bfe8a4f24145" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 12.78953<br>Longitude: 76.245225</div>`)[0];
+                popup_eb8ed506444288c9444328b25a5d6d22.setContent(html_493774fde4fec0f59197bfe8a4f24145);
+            
+        
+
+        marker_809e0e34e910acee2dc947fa1b66288a.bindPopup(popup_eb8ed506444288c9444328b25a5d6d22)
+        ;
+
+        
+    
+    
+            var marker_92fdaca81cdca3886ca1bb381fcf859f = L.marker(
+                [12.999611, 76.197133],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_890a3a3cfaf0dfdba03262b868de0ff1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b79f52298f525f9eca45c1db6c771171 = $(`<div id="html_b79f52298f525f9eca45c1db6c771171" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 12.999611<br>Longitude: 76.197133</div>`)[0];
+                popup_890a3a3cfaf0dfdba03262b868de0ff1.setContent(html_b79f52298f525f9eca45c1db6c771171);
+            
+        
+
+        marker_92fdaca81cdca3886ca1bb381fcf859f.bindPopup(popup_890a3a3cfaf0dfdba03262b868de0ff1)
+        ;
+
+        
+    
+    
+            var marker_c72c4cba4829698e5b0fd279a1b087e8 = L.marker(
+                [13.002767, 76.01712],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_ecf7f19040222efeaee438b39a79cc6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b06e1856eddcbaba22724bd044c64f1e = $(`<div id="html_b06e1856eddcbaba22724bd044c64f1e" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 13.002767<br>Longitude: 76.01712</div>`)[0];
+                popup_ecf7f19040222efeaee438b39a79cc6c.setContent(html_b06e1856eddcbaba22724bd044c64f1e);
+            
+        
+
+        marker_c72c4cba4829698e5b0fd279a1b087e8.bindPopup(popup_ecf7f19040222efeaee438b39a79cc6c)
+        ;
+
+        
+    
+    
+            var marker_651348f88f3157e631cd71f76483c79c = L.marker(
+                [12.720884, 76.008285],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_3ceb10f27be767136ba60456677dfaf7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73d91c96cd76b67ca07a4dd9f3d05ee2 = $(`<div id="html_73d91c96cd76b67ca07a4dd9f3d05ee2" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 12.720884<br>Longitude: 76.008285</div>`)[0];
+                popup_3ceb10f27be767136ba60456677dfaf7.setContent(html_73d91c96cd76b67ca07a4dd9f3d05ee2);
+            
+        
+
+        marker_651348f88f3157e631cd71f76483c79c.bindPopup(popup_3ceb10f27be767136ba60456677dfaf7)
+        ;
+
+        
+    
+    
+            var marker_e7c3a7b6322891804ff3812125014146 = L.marker(
+                [13.002767, 76.107567],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_debe29854740e45baeeb2b24571ed77c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_597c2caa34b9b6418830171780239a93 = $(`<div id="html_597c2caa34b9b6418830171780239a93" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 13.002767<br>Longitude: 76.107567</div>`)[0];
+                popup_debe29854740e45baeeb2b24571ed77c.setContent(html_597c2caa34b9b6418830171780239a93);
+            
+        
+
+        marker_e7c3a7b6322891804ff3812125014146.bindPopup(popup_debe29854740e45baeeb2b24571ed77c)
+        ;
+
+        
+    
+    
+            var marker_1baf77e427083346156f27a979b24f85 = L.marker(
+                [13.311682, 76.247491],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_8c39ef3f1e74c014f5e3dfcb38b27dae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7893ab4772582473f253b8adeb4ba80d = $(`<div id="html_7893ab4772582473f253b8adeb4ba80d" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 13.311682<br>Longitude: 76.247491</div>`)[0];
+                popup_8c39ef3f1e74c014f5e3dfcb38b27dae.setContent(html_7893ab4772582473f253b8adeb4ba80d);
+            
+        
+
+        marker_1baf77e427083346156f27a979b24f85.bindPopup(popup_8c39ef3f1e74c014f5e3dfcb38b27dae)
+        ;
+
+        
+    
+    
+            var marker_c02f4d939754830bd00861ad381e5721 = L.marker(
+                [13.613752, 76.537306],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_7ea7f0894ce451a6872e3439faae636f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccae5c11a009f3253ba03b3a16434272 = $(`<div id="html_ccae5c11a009f3253ba03b3a16434272" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 13.613752<br>Longitude: 76.537306</div>`)[0];
+                popup_7ea7f0894ce451a6872e3439faae636f.setContent(html_ccae5c11a009f3253ba03b3a16434272);
+            
+        
+
+        marker_c02f4d939754830bd00861ad381e5721.bindPopup(popup_7ea7f0894ce451a6872e3439faae636f)
+        ;
+
+        
+    
+    
+            var marker_76868245ea6961182d1c5cd296c01dbb = L.marker(
+                [12.984999, 76.217762],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_78c6f06b2f33b5292342e864a7555a70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bab4e15381db5590b81da516fe76409 = $(`<div id="html_0bab4e15381db5590b81da516fe76409" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 12.984999<br>Longitude: 76.217762</div>`)[0];
+                popup_78c6f06b2f33b5292342e864a7555a70.setContent(html_0bab4e15381db5590b81da516fe76409);
+            
+        
+
+        marker_76868245ea6961182d1c5cd296c01dbb.bindPopup(popup_78c6f06b2f33b5292342e864a7555a70)
+        ;
+
+        
+    
+    
+            var marker_e9e841f2ab4e061d9c161fd301ca4334 = L.marker(
+                [12.975997, 75.989426],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_09687f7795053608022ed407324dd9a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41b10aa1eba1bc06b538c59dd077296f = $(`<div id="html_41b10aa1eba1bc06b538c59dd077296f" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 12.975997<br>Longitude: 75.989426</div>`)[0];
+                popup_09687f7795053608022ed407324dd9a5.setContent(html_41b10aa1eba1bc06b538c59dd077296f);
+            
+        
+
+        marker_e9e841f2ab4e061d9c161fd301ca4334.bindPopup(popup_09687f7795053608022ed407324dd9a5)
+        ;
+
+        
+    
+    
+            var marker_773c697283d59fa1e80a2d8c519162e2 = L.marker(
+                [12.458762, 76.243156],
+                {}
+            ).addTo(marker_cluster_207c60e5c5f2353e28faf89428869b2b);
+        
+    
+        var popup_ce1f5210a38f7243ac1060dc5d524a34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e80d338bec3a143fd77ebc0037e78385 = $(`<div id="html_e80d338bec3a143fd77ebc0037e78385" style="width: 100.0%; height: 100.0%;">Crime Group: CRIMES RELATED TO WOMEN<br>Crime Head: Dowry Prohibition<br>Latitude: 12.458762<br>Longitude: 76.243156</div>`)[0];
+                popup_ce1f5210a38f7243ac1060dc5d524a34.setContent(html_e80d338bec3a143fd77ebc0037e78385);
+            
+        
+
+        marker_773c697283d59fa1e80a2d8c519162e2.bindPopup(popup_ce1f5210a38f7243ac1060dc5d524a34)
+        ;
+
+        
+    
+    
+            var layer_control_7824a01e54dd5495d82a88d9b512b43c = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c2d39047457d17d922b5c45a7f910c32,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_7824a01e54dd5495d82a88d9b512b43c.base_layers,
+                layer_control_7824a01e54dd5495d82a88d9b512b43c.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f2c9fc14636695c84dbf9ef4cd61abd9);
+        
+</script>
+</html>

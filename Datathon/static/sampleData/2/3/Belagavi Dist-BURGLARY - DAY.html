@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9d5213de85e4ad225ba47d7ed9713f3d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9d5213de85e4ad225ba47d7ed9713f3d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9d5213de85e4ad225ba47d7ed9713f3d = L.map(
+                "map_9d5213de85e4ad225ba47d7ed9713f3d",
+                {
+                    center: [16.21774511111111, 74.75383555555555],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e35620db8a75dcf66948856837b2e16f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9d5213de85e4ad225ba47d7ed9713f3d);
+        
+    
+            var marker_cluster_8d5b03f98085f1bb1575f2ef239bee9c = L.markerClusterGroup(
+                {}
+            );
+            map_9d5213de85e4ad225ba47d7ed9713f3d.addLayer(marker_cluster_8d5b03f98085f1bb1575f2ef239bee9c);
+        
+    
+            var marker_39319723d3136d726e7b694be7c5eaec = L.marker(
+                [16.366393, 74.618414],
+                {}
+            ).addTo(marker_cluster_8d5b03f98085f1bb1575f2ef239bee9c);
+        
+    
+        var popup_bab98e86901634dfa60e928f6c4e26db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0becf72f6b2555a853fc606d777b6997 = $(`<div id="html_0becf72f6b2555a853fc606d777b6997" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - DAY<br>Crime Head: At Residential Premises<br>Latitude: 16.366393<br>Longitude: 74.618414</div>`)[0];
+                popup_bab98e86901634dfa60e928f6c4e26db.setContent(html_0becf72f6b2555a853fc606d777b6997);
+            
+        
+
+        marker_39319723d3136d726e7b694be7c5eaec.bindPopup(popup_bab98e86901634dfa60e928f6c4e26db)
+        ;
+
+        
+    
+    
+            var marker_db9d089b7dd1c9842d86b2cdd913f58c = L.marker(
+                [16.45822, 74.601544],
+                {}
+            ).addTo(marker_cluster_8d5b03f98085f1bb1575f2ef239bee9c);
+        
+    
+        var popup_477432ab54fa46663b0b377bf5c0c1ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb2403971c5cfbb1a4171fb19af2fd6f = $(`<div id="html_fb2403971c5cfbb1a4171fb19af2fd6f" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - DAY<br>Crime Head: At Residential Premises<br>Latitude: 16.45822<br>Longitude: 74.601544</div>`)[0];
+                popup_477432ab54fa46663b0b377bf5c0c1ba.setContent(html_fb2403971c5cfbb1a4171fb19af2fd6f);
+            
+        
+
+        marker_db9d089b7dd1c9842d86b2cdd913f58c.bindPopup(popup_477432ab54fa46663b0b377bf5c0c1ba)
+        ;
+
+        
+    
+    
+            var marker_ed332483d7749d7979f6b5efbcf9af58 = L.marker(
+                [15.81767, 74.867217],
+                {}
+            ).addTo(marker_cluster_8d5b03f98085f1bb1575f2ef239bee9c);
+        
+    
+        var popup_24e0f4a4720ec36df39ef4a1cda08eee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e71cb828fc53eae95964e6a677e04451 = $(`<div id="html_e71cb828fc53eae95964e6a677e04451" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - DAY<br>Crime Head: At Residential Premises<br>Latitude: 15.81767<br>Longitude: 74.867217</div>`)[0];
+                popup_24e0f4a4720ec36df39ef4a1cda08eee.setContent(html_e71cb828fc53eae95964e6a677e04451);
+            
+        
+
+        marker_ed332483d7749d7979f6b5efbcf9af58.bindPopup(popup_24e0f4a4720ec36df39ef4a1cda08eee)
+        ;
+
+        
+    
+    
+            var marker_a7e7e9c8ac212bd2ec85d2305587ee2d = L.marker(
+                [15.71861, 74.918579],
+                {}
+            ).addTo(marker_cluster_8d5b03f98085f1bb1575f2ef239bee9c);
+        
+    
+        var popup_b61e4a1f6397ee28c2c99f5165b90921 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a40cabcb1d40dd28987079ab8eddacd5 = $(`<div id="html_a40cabcb1d40dd28987079ab8eddacd5" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - DAY<br>Crime Head: At Residential Premises<br>Latitude: 15.71861<br>Longitude: 74.918579</div>`)[0];
+                popup_b61e4a1f6397ee28c2c99f5165b90921.setContent(html_a40cabcb1d40dd28987079ab8eddacd5);
+            
+        
+
+        marker_a7e7e9c8ac212bd2ec85d2305587ee2d.bindPopup(popup_b61e4a1f6397ee28c2c99f5165b90921)
+        ;
+
+        
+    
+    
+            var marker_77880b0da3fdb135372782fc91f93fdb = L.marker(
+                [16.244634, 75.046413],
+                {}
+            ).addTo(marker_cluster_8d5b03f98085f1bb1575f2ef239bee9c);
+        
+    
+        var popup_c42742054027f6fd378bba0ace1c13da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e4fc1af35e45ea49238724e9e8340a4 = $(`<div id="html_4e4fc1af35e45ea49238724e9e8340a4" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - DAY<br>Crime Head: At Residential Premises<br>Latitude: 16.244634<br>Longitude: 75.046413</div>`)[0];
+                popup_c42742054027f6fd378bba0ace1c13da.setContent(html_4e4fc1af35e45ea49238724e9e8340a4);
+            
+        
+
+        marker_77880b0da3fdb135372782fc91f93fdb.bindPopup(popup_c42742054027f6fd378bba0ace1c13da)
+        ;
+
+        
+    
+    
+            var marker_9fcf7b8752d5a4ba1ab6a1c42628c2d7 = L.marker(
+                [16.681474, 74.717244],
+                {}
+            ).addTo(marker_cluster_8d5b03f98085f1bb1575f2ef239bee9c);
+        
+    
+        var popup_6a8842953eb6ca7c3298ce3bbb4be0d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1c61bfd4c518c80ce99f397b7010878 = $(`<div id="html_f1c61bfd4c518c80ce99f397b7010878" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - DAY<br>Crime Head: At Residential Premises<br>Latitude: 16.681474<br>Longitude: 74.717244</div>`)[0];
+                popup_6a8842953eb6ca7c3298ce3bbb4be0d3.setContent(html_f1c61bfd4c518c80ce99f397b7010878);
+            
+        
+
+        marker_9fcf7b8752d5a4ba1ab6a1c42628c2d7.bindPopup(popup_6a8842953eb6ca7c3298ce3bbb4be0d3)
+        ;
+
+        
+    
+    
+            var marker_4a9dfed7c64593d81a7e8be92b26c916 = L.marker(
+                [16.427496, 74.582974],
+                {}
+            ).addTo(marker_cluster_8d5b03f98085f1bb1575f2ef239bee9c);
+        
+    
+        var popup_daf2bff5a6fca30546cd222a46f5ec6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cd5410bb0c0607a1bbf5af322e1eb1c = $(`<div id="html_5cd5410bb0c0607a1bbf5af322e1eb1c" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - DAY<br>Crime Head: At Residential Premises<br>Latitude: 16.427496<br>Longitude: 74.582974</div>`)[0];
+                popup_daf2bff5a6fca30546cd222a46f5ec6f.setContent(html_5cd5410bb0c0607a1bbf5af322e1eb1c);
+            
+        
+
+        marker_4a9dfed7c64593d81a7e8be92b26c916.bindPopup(popup_daf2bff5a6fca30546cd222a46f5ec6f)
+        ;
+
+        
+    
+    
+            var marker_42ff5fb155644d9aca98963573157e07 = L.marker(
+                [16.428054, 74.58268],
+                {}
+            ).addTo(marker_cluster_8d5b03f98085f1bb1575f2ef239bee9c);
+        
+    
+        var popup_815e32e69901974cd7ba2daaebede2ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d78f92adebada75ee1c233267c0ab30 = $(`<div id="html_2d78f92adebada75ee1c233267c0ab30" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - DAY<br>Crime Head: At Residential Premises<br>Latitude: 16.428054<br>Longitude: 74.58268</div>`)[0];
+                popup_815e32e69901974cd7ba2daaebede2ab.setContent(html_2d78f92adebada75ee1c233267c0ab30);
+            
+        
+
+        marker_42ff5fb155644d9aca98963573157e07.bindPopup(popup_815e32e69901974cd7ba2daaebede2ab)
+        ;
+
+        
+    
+    
+            var marker_2dcc9858d160c4a6cffbbbea78015509 = L.marker(
+                [15.817155, 74.849455],
+                {}
+            ).addTo(marker_cluster_8d5b03f98085f1bb1575f2ef239bee9c);
+        
+    
+        var popup_005501bc1eb3199a67dccc3e4581f8d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0708359c5a60f495f3dcd3cd18436a6a = $(`<div id="html_0708359c5a60f495f3dcd3cd18436a6a" style="width: 100.0%; height: 100.0%;">Crime Group: BURGLARY - DAY<br>Crime Head: At Residential Premises<br>Latitude: 15.817155<br>Longitude: 74.849455</div>`)[0];
+                popup_005501bc1eb3199a67dccc3e4581f8d3.setContent(html_0708359c5a60f495f3dcd3cd18436a6a);
+            
+        
+
+        marker_2dcc9858d160c4a6cffbbbea78015509.bindPopup(popup_005501bc1eb3199a67dccc3e4581f8d3)
+        ;
+
+        
+    
+    
+            var layer_control_d95ff05413cea985624a99735b1f923c = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e35620db8a75dcf66948856837b2e16f,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_d95ff05413cea985624a99735b1f923c.base_layers,
+                layer_control_d95ff05413cea985624a99735b1f923c.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_9d5213de85e4ad225ba47d7ed9713f3d);
+        
+</script>
+</html>

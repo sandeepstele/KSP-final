@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ad38de35b5609b4498e722a3b5ce7ba2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ad38de35b5609b4498e722a3b5ce7ba2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ad38de35b5609b4498e722a3b5ce7ba2 = L.map(
+                "map_ad38de35b5609b4498e722a3b5ce7ba2",
+                {
+                    center: [16.306315743589742, 74.83274035897436],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_600ba3b9663191e8334520159bd7ce6c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ad38de35b5609b4498e722a3b5ce7ba2);
+        
+    
+            var marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c = L.markerClusterGroup(
+                {}
+            );
+            map_ad38de35b5609b4498e722a3b5ce7ba2.addLayer(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+            var marker_8fbad13d43ed6e2e0189c3cd9f36d684 = L.marker(
+                [16.38061, 74.995291],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_6f7366d4ca5c7ecce2b0260e769c984b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38cede7e95d681c2451e75161d2eeeda = $(`<div id="html_38cede7e95d681c2451e75161d2eeeda" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.38061<br>Longitude: 74.995291</div>`)[0];
+                popup_6f7366d4ca5c7ecce2b0260e769c984b.setContent(html_38cede7e95d681c2451e75161d2eeeda);
+            
+        
+
+        marker_8fbad13d43ed6e2e0189c3cd9f36d684.bindPopup(popup_6f7366d4ca5c7ecce2b0260e769c984b)
+        ;
+
+        
+    
+    
+            var marker_18b05d90dd3cecfa5808edb84c522390 = L.marker(
+                [15.485547, 74.717048],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_fba84fa0ec417241df76ec15b220c3a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9808f8d7dc247d1e71923214f429658 = $(`<div id="html_b9808f8d7dc247d1e71923214f429658" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 15.485547<br>Longitude: 74.717048</div>`)[0];
+                popup_fba84fa0ec417241df76ec15b220c3a2.setContent(html_b9808f8d7dc247d1e71923214f429658);
+            
+        
+
+        marker_18b05d90dd3cecfa5808edb84c522390.bindPopup(popup_fba84fa0ec417241df76ec15b220c3a2)
+        ;
+
+        
+    
+    
+            var marker_2ada0a3ec7d577f19ae5e91e0dab73c2 = L.marker(
+                [16.341535, 74.846546],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_1ad7ae2f670252593c3b14df5009f1bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ddaa1f9907a0c445dc2b4b414c8fd5a = $(`<div id="html_0ddaa1f9907a0c445dc2b4b414c8fd5a" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.341535<br>Longitude: 74.846546</div>`)[0];
+                popup_1ad7ae2f670252593c3b14df5009f1bf.setContent(html_0ddaa1f9907a0c445dc2b4b414c8fd5a);
+            
+        
+
+        marker_2ada0a3ec7d577f19ae5e91e0dab73c2.bindPopup(popup_1ad7ae2f670252593c3b14df5009f1bf)
+        ;
+
+        
+    
+    
+            var marker_4afb71db16aede40c31079eecf7c5dee = L.marker(
+                [16.201083, 75.064854],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_d44ea994fd9b988023c1f7b44eca4894 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e0e410de3b34adbf1e20c5e826f5fb5 = $(`<div id="html_4e0e410de3b34adbf1e20c5e826f5fb5" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.201083<br>Longitude: 75.064854</div>`)[0];
+                popup_d44ea994fd9b988023c1f7b44eca4894.setContent(html_4e0e410de3b34adbf1e20c5e826f5fb5);
+            
+        
+
+        marker_4afb71db16aede40c31079eecf7c5dee.bindPopup(popup_d44ea994fd9b988023c1f7b44eca4894)
+        ;
+
+        
+    
+    
+            var marker_893a104dbf281b8fb767d74ee8b73386 = L.marker(
+                [15.938675, 75.202787],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_18f702d48182154df095a79fde827a74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f1b1c4447350317da3a0e1fdd580d30 = $(`<div id="html_5f1b1c4447350317da3a0e1fdd580d30" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 15.938675<br>Longitude: 75.202787</div>`)[0];
+                popup_18f702d48182154df095a79fde827a74.setContent(html_5f1b1c4447350317da3a0e1fdd580d30);
+            
+        
+
+        marker_893a104dbf281b8fb767d74ee8b73386.bindPopup(popup_18f702d48182154df095a79fde827a74)
+        ;
+
+        
+    
+    
+            var marker_9bb98cc5df12642e10ecfaf4f4001644 = L.marker(
+                [15.951507, 75.292488],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_ee2b126215dd9a939ad11c7c0868c18e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05cf38050fb6cab5c7107a64786d4cbc = $(`<div id="html_05cf38050fb6cab5c7107a64786d4cbc" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 15.951507<br>Longitude: 75.292488</div>`)[0];
+                popup_ee2b126215dd9a939ad11c7c0868c18e.setContent(html_05cf38050fb6cab5c7107a64786d4cbc);
+            
+        
+
+        marker_9bb98cc5df12642e10ecfaf4f4001644.bindPopup(popup_ee2b126215dd9a939ad11c7c0868c18e)
+        ;
+
+        
+    
+    
+            var marker_f75703208710f989b9f6c8026a62caef = L.marker(
+                [16.234478, 74.602461],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_9df69f3d66fa42eedf607a25a01c9170 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a99f0936f23061ed3e112edcb10107cc = $(`<div id="html_a99f0936f23061ed3e112edcb10107cc" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.234478<br>Longitude: 74.602461</div>`)[0];
+                popup_9df69f3d66fa42eedf607a25a01c9170.setContent(html_a99f0936f23061ed3e112edcb10107cc);
+            
+        
+
+        marker_f75703208710f989b9f6c8026a62caef.bindPopup(popup_9df69f3d66fa42eedf607a25a01c9170)
+        ;
+
+        
+    
+    
+            var marker_25d1865df2e210c254d9bd03674c1f99 = L.marker(
+                [16.799869, 75.193521],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_41a607b7815b7f33da38584546c80810 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_292d3b851c64d2004c4b59d8f651a1f5 = $(`<div id="html_292d3b851c64d2004c4b59d8f651a1f5" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.799869<br>Longitude: 75.193521</div>`)[0];
+                popup_41a607b7815b7f33da38584546c80810.setContent(html_292d3b851c64d2004c4b59d8f651a1f5);
+            
+        
+
+        marker_25d1865df2e210c254d9bd03674c1f99.bindPopup(popup_41a607b7815b7f33da38584546c80810)
+        ;
+
+        
+    
+    
+            var marker_aed004b1e0bf50affe91215cb7b9378b = L.marker(
+                [16.244387, 75.046942],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_a3c6041489d549482c87754064258dff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd7c6d428a80bb5262019f5f9c16ebe0 = $(`<div id="html_dd7c6d428a80bb5262019f5f9c16ebe0" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.244387<br>Longitude: 75.046942</div>`)[0];
+                popup_a3c6041489d549482c87754064258dff.setContent(html_dd7c6d428a80bb5262019f5f9c16ebe0);
+            
+        
+
+        marker_aed004b1e0bf50affe91215cb7b9378b.bindPopup(popup_a3c6041489d549482c87754064258dff)
+        ;
+
+        
+    
+    
+            var marker_b363e8d81d0d85a704b07a54f0b5081e = L.marker(
+                [15.818896, 74.856021],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_6d7de977184bdc2124be2c63f1320b66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a2649e54b31feecbb3afffde55b7faa = $(`<div id="html_3a2649e54b31feecbb3afffde55b7faa" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 15.818896<br>Longitude: 74.856021</div>`)[0];
+                popup_6d7de977184bdc2124be2c63f1320b66.setContent(html_3a2649e54b31feecbb3afffde55b7faa);
+            
+        
+
+        marker_b363e8d81d0d85a704b07a54f0b5081e.bindPopup(popup_6d7de977184bdc2124be2c63f1320b66)
+        ;
+
+        
+    
+    
+            var marker_2579b24ee55504e4f463a9ff559d5714 = L.marker(
+                [16.47904, 74.780647],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_0a5fe9b727f953419df7a7bb1cd163c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6e8c72c776977382924c24714f7ef6c = $(`<div id="html_a6e8c72c776977382924c24714f7ef6c" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.47904<br>Longitude: 74.780647</div>`)[0];
+                popup_0a5fe9b727f953419df7a7bb1cd163c1.setContent(html_a6e8c72c776977382924c24714f7ef6c);
+            
+        
+
+        marker_2579b24ee55504e4f463a9ff559d5714.bindPopup(popup_0a5fe9b727f953419df7a7bb1cd163c1)
+        ;
+
+        
+    
+    
+            var marker_22aa9fb0770a4346d295b89453c6016b = L.marker(
+                [16.161922, 74.81748],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_b828479632ffd9b7ac0c483d3635a7bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ee7b08debdec3dd375b1b76516028e1 = $(`<div id="html_6ee7b08debdec3dd375b1b76516028e1" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.161922<br>Longitude: 74.81748</div>`)[0];
+                popup_b828479632ffd9b7ac0c483d3635a7bc.setContent(html_6ee7b08debdec3dd375b1b76516028e1);
+            
+        
+
+        marker_22aa9fb0770a4346d295b89453c6016b.bindPopup(popup_b828479632ffd9b7ac0c483d3635a7bc)
+        ;
+
+        
+    
+    
+            var marker_6cf2a969f01caa9f7109a302151de41b = L.marker(
+                [16.81744, 75.095089],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_add302023d62251741fd52579aa9014d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_615c99f31998f32bcf75cf0234cbb258 = $(`<div id="html_615c99f31998f32bcf75cf0234cbb258" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.81744<br>Longitude: 75.095089</div>`)[0];
+                popup_add302023d62251741fd52579aa9014d.setContent(html_615c99f31998f32bcf75cf0234cbb258);
+            
+        
+
+        marker_6cf2a969f01caa9f7109a302151de41b.bindPopup(popup_add302023d62251741fd52579aa9014d)
+        ;
+
+        
+    
+    
+            var marker_4ee5dc5ce513fbfc6598427f6853f35f = L.marker(
+                [16.516009, 74.949562],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_afa87a8105854f40a16e379cfe814341 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbfaa954e735ad45bfa365de8c3bdf07 = $(`<div id="html_cbfaa954e735ad45bfa365de8c3bdf07" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.516009<br>Longitude: 74.949562</div>`)[0];
+                popup_afa87a8105854f40a16e379cfe814341.setContent(html_cbfaa954e735ad45bfa365de8c3bdf07);
+            
+        
+
+        marker_4ee5dc5ce513fbfc6598427f6853f35f.bindPopup(popup_afa87a8105854f40a16e379cfe814341)
+        ;
+
+        
+    
+    
+            var marker_a6f7ceb2d139e0d3ec6cce45522800f8 = L.marker(
+                [16.726055, 75.070606],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_0888a6b0cadffea004cd18b748934c20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d8ddb705a58fbd173a99cb66cd95945 = $(`<div id="html_1d8ddb705a58fbd173a99cb66cd95945" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.726055<br>Longitude: 75.070606</div>`)[0];
+                popup_0888a6b0cadffea004cd18b748934c20.setContent(html_1d8ddb705a58fbd173a99cb66cd95945);
+            
+        
+
+        marker_a6f7ceb2d139e0d3ec6cce45522800f8.bindPopup(popup_0888a6b0cadffea004cd18b748934c20)
+        ;
+
+        
+    
+    
+            var marker_3110bb83c5787c9305796d9dffc6977f = L.marker(
+                [16.366785, 75.002916],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_f86dfb2ed00f39a7f78bfc07e98b8cdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f84fdba88b70a2f9c50c361e638babb = $(`<div id="html_9f84fdba88b70a2f9c50c361e638babb" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.366785<br>Longitude: 75.002916</div>`)[0];
+                popup_f86dfb2ed00f39a7f78bfc07e98b8cdc.setContent(html_9f84fdba88b70a2f9c50c361e638babb);
+            
+        
+
+        marker_3110bb83c5787c9305796d9dffc6977f.bindPopup(popup_f86dfb2ed00f39a7f78bfc07e98b8cdc)
+        ;
+
+        
+    
+    
+            var marker_f91760a24731aacefb335dfe70417417 = L.marker(
+                [16.426482, 74.58758],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_e7a76be98b1687cdceff0a0938bd5453 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72fff108c1600f4c4f011b8da1409f52 = $(`<div id="html_72fff108c1600f4c4f011b8da1409f52" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.426482<br>Longitude: 74.58758</div>`)[0];
+                popup_e7a76be98b1687cdceff0a0938bd5453.setContent(html_72fff108c1600f4c4f011b8da1409f52);
+            
+        
+
+        marker_f91760a24731aacefb335dfe70417417.bindPopup(popup_e7a76be98b1687cdceff0a0938bd5453)
+        ;
+
+        
+    
+    
+            var marker_06bc846a067436e7c4ee06d3b41d0f1d = L.marker(
+                [15.766311, 75.112263],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_9161d32c267bd43fb33feb2fd549454e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_253755bf1deaa62ddc9125e71a2d0d62 = $(`<div id="html_253755bf1deaa62ddc9125e71a2d0d62" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 15.766311<br>Longitude: 75.112263</div>`)[0];
+                popup_9161d32c267bd43fb33feb2fd549454e.setContent(html_253755bf1deaa62ddc9125e71a2d0d62);
+            
+        
+
+        marker_06bc846a067436e7c4ee06d3b41d0f1d.bindPopup(popup_9161d32c267bd43fb33feb2fd549454e)
+        ;
+
+        
+    
+    
+            var marker_0fc80fed010b5abb116f4c20cc405dac = L.marker(
+                [16.609603, 75.039614],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_4b913d0bc7706a3efd33ee3bb6db959b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee0590850ab56cab0767228592238108 = $(`<div id="html_ee0590850ab56cab0767228592238108" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.609603<br>Longitude: 75.039614</div>`)[0];
+                popup_4b913d0bc7706a3efd33ee3bb6db959b.setContent(html_ee0590850ab56cab0767228592238108);
+            
+        
+
+        marker_0fc80fed010b5abb116f4c20cc405dac.bindPopup(popup_4b913d0bc7706a3efd33ee3bb6db959b)
+        ;
+
+        
+    
+    
+            var marker_74ff7c08927bb15c99a6cad4fe831ed9 = L.marker(
+                [16.338893, 74.970127],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_dd40a655f79c411884771c6dd9559075 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8288a8235be1b3c81369a5ab8063530 = $(`<div id="html_a8288a8235be1b3c81369a5ab8063530" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.338893<br>Longitude: 74.970127</div>`)[0];
+                popup_dd40a655f79c411884771c6dd9559075.setContent(html_a8288a8235be1b3c81369a5ab8063530);
+            
+        
+
+        marker_74ff7c08927bb15c99a6cad4fe831ed9.bindPopup(popup_dd40a655f79c411884771c6dd9559075)
+        ;
+
+        
+    
+    
+            var marker_7595537a0d8235c0279b1580a83c8cad = L.marker(
+                [16.427987, 74.58899],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_e4489eda1117011ccca4b94e3e4d6c5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89afa5518816840ce64225e06b73371f = $(`<div id="html_89afa5518816840ce64225e06b73371f" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.427987<br>Longitude: 74.58899</div>`)[0];
+                popup_e4489eda1117011ccca4b94e3e4d6c5e.setContent(html_89afa5518816840ce64225e06b73371f);
+            
+        
+
+        marker_7595537a0d8235c0279b1580a83c8cad.bindPopup(popup_e4489eda1117011ccca4b94e3e4d6c5e)
+        ;
+
+        
+    
+    
+            var marker_d9cefad2fecf8c3c23d8318807909a8b = L.marker(
+                [16.538402, 74.441356],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_8360708b3e341cdcfe30aa57d24b4436 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1bf6cb1adbbeae76ac39f77b6d2a31b = $(`<div id="html_b1bf6cb1adbbeae76ac39f77b6d2a31b" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.538402<br>Longitude: 74.441356</div>`)[0];
+                popup_8360708b3e341cdcfe30aa57d24b4436.setContent(html_b1bf6cb1adbbeae76ac39f77b6d2a31b);
+            
+        
+
+        marker_d9cefad2fecf8c3c23d8318807909a8b.bindPopup(popup_8360708b3e341cdcfe30aa57d24b4436)
+        ;
+
+        
+    
+    
+            var marker_fa22ba93809b10b16af3837a50a9aace = L.marker(
+                [16.511591, 74.388919],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_fa3c0f411924b858c6acd5983675f96c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb0ed21b48df40e7efcb214800636237 = $(`<div id="html_bb0ed21b48df40e7efcb214800636237" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.511591<br>Longitude: 74.388919</div>`)[0];
+                popup_fa3c0f411924b858c6acd5983675f96c.setContent(html_bb0ed21b48df40e7efcb214800636237);
+            
+        
+
+        marker_fa22ba93809b10b16af3837a50a9aace.bindPopup(popup_fa3c0f411924b858c6acd5983675f96c)
+        ;
+
+        
+    
+    
+            var marker_c3339ad1b2a405e03f7d3cc9cc811259 = L.marker(
+                [16.600333, 74.508849],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_8e801e839507bdadac6348f5259479c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5fd99f0c7acc6d5fcdb2a0aa16f1da3 = $(`<div id="html_a5fd99f0c7acc6d5fcdb2a0aa16f1da3" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.600333<br>Longitude: 74.508849</div>`)[0];
+                popup_8e801e839507bdadac6348f5259479c6.setContent(html_a5fd99f0c7acc6d5fcdb2a0aa16f1da3);
+            
+        
+
+        marker_c3339ad1b2a405e03f7d3cc9cc811259.bindPopup(popup_8e801e839507bdadac6348f5259479c6)
+        ;
+
+        
+    
+    
+            var marker_d9908ec318bb35e5a9346cfbab333df6 = L.marker(
+                [16.592933, 74.868664],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_767a1c7871bc81641808f4e47d8f0612 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f93c9cd7853b430be16a170ebebb4cb = $(`<div id="html_1f93c9cd7853b430be16a170ebebb4cb" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.592933<br>Longitude: 74.868664</div>`)[0];
+                popup_767a1c7871bc81641808f4e47d8f0612.setContent(html_1f93c9cd7853b430be16a170ebebb4cb);
+            
+        
+
+        marker_d9908ec318bb35e5a9346cfbab333df6.bindPopup(popup_767a1c7871bc81641808f4e47d8f0612)
+        ;
+
+        
+    
+    
+            var marker_0dc047c996103307337f819dc5a63fb1 = L.marker(
+                [16.790724, 75.337304],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_ef29d35964db5363fc237b08f56e5e78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e4e613818c5321c858ef50c3065b312 = $(`<div id="html_0e4e613818c5321c858ef50c3065b312" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.790724<br>Longitude: 75.337304</div>`)[0];
+                popup_ef29d35964db5363fc237b08f56e5e78.setContent(html_0e4e613818c5321c858ef50c3065b312);
+            
+        
+
+        marker_0dc047c996103307337f819dc5a63fb1.bindPopup(popup_ef29d35964db5363fc237b08f56e5e78)
+        ;
+
+        
+    
+    
+            var marker_cf85714b1bbf6590482dd5db72404bee = L.marker(
+                [16.549463, 74.800637],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_0bb58ac8799dc022ab04b9cba7a692c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1f4d13fe19b6dd60a430e741500c810 = $(`<div id="html_a1f4d13fe19b6dd60a430e741500c810" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.549463<br>Longitude: 74.800637</div>`)[0];
+                popup_0bb58ac8799dc022ab04b9cba7a692c6.setContent(html_a1f4d13fe19b6dd60a430e741500c810);
+            
+        
+
+        marker_cf85714b1bbf6590482dd5db72404bee.bindPopup(popup_0bb58ac8799dc022ab04b9cba7a692c6)
+        ;
+
+        
+    
+    
+            var marker_f541ef6abc5e0900cbecf2ff8df28505 = L.marker(
+                [16.31768, 74.426286],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_19e3520c9166deca2b2a14222f02f203 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a68c618ea5ccbd308700ac4141864d77 = $(`<div id="html_a68c618ea5ccbd308700ac4141864d77" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.31768<br>Longitude: 74.426286</div>`)[0];
+                popup_19e3520c9166deca2b2a14222f02f203.setContent(html_a68c618ea5ccbd308700ac4141864d77);
+            
+        
+
+        marker_f541ef6abc5e0900cbecf2ff8df28505.bindPopup(popup_19e3520c9166deca2b2a14222f02f203)
+        ;
+
+        
+    
+    
+            var marker_5ab0692287df8b5bb1bf429f6ef67fe6 = L.marker(
+                [16.377401, 74.369683],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_df68b5265f7afe3559ae4dc3eb707edf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed8d4c0c01c872b856390eae5ba27c3b = $(`<div id="html_ed8d4c0c01c872b856390eae5ba27c3b" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.377401<br>Longitude: 74.369683</div>`)[0];
+                popup_df68b5265f7afe3559ae4dc3eb707edf.setContent(html_ed8d4c0c01c872b856390eae5ba27c3b);
+            
+        
+
+        marker_5ab0692287df8b5bb1bf429f6ef67fe6.bindPopup(popup_df68b5265f7afe3559ae4dc3eb707edf)
+        ;
+
+        
+    
+    
+            var marker_9b1cea814e274ca8777d741a5d34d3bb = L.marker(
+                [16.725069, 75.065403],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_8dd3072991e731089b7d5dae1d853af3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_489a5f5665d1aaa954736808c07e7867 = $(`<div id="html_489a5f5665d1aaa954736808c07e7867" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.725069<br>Longitude: 75.065403</div>`)[0];
+                popup_8dd3072991e731089b7d5dae1d853af3.setContent(html_489a5f5665d1aaa954736808c07e7867);
+            
+        
+
+        marker_9b1cea814e274ca8777d741a5d34d3bb.bindPopup(popup_8dd3072991e731089b7d5dae1d853af3)
+        ;
+
+        
+    
+    
+            var marker_9b54a65ed2ea3116824c4bb19e666b18 = L.marker(
+                [16.558863, 74.532093],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_be8cb40214ea3a404a0f8a579b0d4f31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c832686ed76e7711238922cc234f7c0c = $(`<div id="html_c832686ed76e7711238922cc234f7c0c" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.558863<br>Longitude: 74.532093</div>`)[0];
+                popup_be8cb40214ea3a404a0f8a579b0d4f31.setContent(html_c832686ed76e7711238922cc234f7c0c);
+            
+        
+
+        marker_9b54a65ed2ea3116824c4bb19e666b18.bindPopup(popup_be8cb40214ea3a404a0f8a579b0d4f31)
+        ;
+
+        
+    
+    
+            var marker_1b73cdec9c5d36b609767be7a2d82982 = L.marker(
+                [15.844827, 74.713694],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_2277537cc58b891f546e4c02d303674c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1b939335ae8d9ca2929bffe62f9d965 = $(`<div id="html_a1b939335ae8d9ca2929bffe62f9d965" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 15.844827<br>Longitude: 74.713694</div>`)[0];
+                popup_2277537cc58b891f546e4c02d303674c.setContent(html_a1b939335ae8d9ca2929bffe62f9d965);
+            
+        
+
+        marker_1b73cdec9c5d36b609767be7a2d82982.bindPopup(popup_2277537cc58b891f546e4c02d303674c)
+        ;
+
+        
+    
+    
+            var marker_3dcbd9dfbb3952d61c11a321590cdd9b = L.marker(
+                [16.30165, 74.905497],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_64d74de0ce4499f519dcbfe27f200110 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b3019483fdb4ad2596494028a2105a7 = $(`<div id="html_4b3019483fdb4ad2596494028a2105a7" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.30165<br>Longitude: 74.905497</div>`)[0];
+                popup_64d74de0ce4499f519dcbfe27f200110.setContent(html_4b3019483fdb4ad2596494028a2105a7);
+            
+        
+
+        marker_3dcbd9dfbb3952d61c11a321590cdd9b.bindPopup(popup_64d74de0ce4499f519dcbfe27f200110)
+        ;
+
+        
+    
+    
+            var marker_c5c61c190724af49d1760d9b4c5bc8ce = L.marker(
+                [16.303238, 74.796813],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_fc44205feceaba29f480cf0142c19a62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbc65c504329aaf0a7135e6e1236d623 = $(`<div id="html_dbc65c504329aaf0a7135e6e1236d623" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.303238<br>Longitude: 74.796813</div>`)[0];
+                popup_fc44205feceaba29f480cf0142c19a62.setContent(html_dbc65c504329aaf0a7135e6e1236d623);
+            
+        
+
+        marker_c5c61c190724af49d1760d9b4c5bc8ce.bindPopup(popup_fc44205feceaba29f480cf0142c19a62)
+        ;
+
+        
+    
+    
+            var marker_d6f55065a943b8ab186398d2260dc0df = L.marker(
+                [15.463749, 74.731594],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_15dd366259d492a438de2b8b068e93d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_375b8fc99bad3633aad31fc8671dcef8 = $(`<div id="html_375b8fc99bad3633aad31fc8671dcef8" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 15.463749<br>Longitude: 74.731594</div>`)[0];
+                popup_15dd366259d492a438de2b8b068e93d4.setContent(html_375b8fc99bad3633aad31fc8671dcef8);
+            
+        
+
+        marker_d6f55065a943b8ab186398d2260dc0df.bindPopup(popup_15dd366259d492a438de2b8b068e93d4)
+        ;
+
+        
+    
+    
+            var marker_3855b0dfd01a23480890449e204efa78 = L.marker(
+                [16.428569, 74.588621],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_44effbfa465e5a4cc78c1a75347e31d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f5f2eb0843bb878a8294dbea06d3075 = $(`<div id="html_5f5f2eb0843bb878a8294dbea06d3075" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.428569<br>Longitude: 74.588621</div>`)[0];
+                popup_44effbfa465e5a4cc78c1a75347e31d4.setContent(html_5f5f2eb0843bb878a8294dbea06d3075);
+            
+        
+
+        marker_3855b0dfd01a23480890449e204efa78.bindPopup(popup_44effbfa465e5a4cc78c1a75347e31d4)
+        ;
+
+        
+    
+    
+            var marker_c3b9c11c764b1ee096a777641cc30f5c = L.marker(
+                [15.636752, 74.505086],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_59bc8c796a7523bd4aacb1267cb689e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_788820a0fca13cebe38e764e96b46336 = $(`<div id="html_788820a0fca13cebe38e764e96b46336" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 15.636752<br>Longitude: 74.505086</div>`)[0];
+                popup_59bc8c796a7523bd4aacb1267cb689e8.setContent(html_788820a0fca13cebe38e764e96b46336);
+            
+        
+
+        marker_c3b9c11c764b1ee096a777641cc30f5c.bindPopup(popup_59bc8c796a7523bd4aacb1267cb689e8)
+        ;
+
+        
+    
+    
+            var marker_9684110b91f2043c1ec0f7ef56fdb9fb = L.marker(
+                [16.41163, 74.377155],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_f6e56289bae84c12b53acd44f8281112 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cee26981ced358098e1be6beec6e59c7 = $(`<div id="html_cee26981ced358098e1be6beec6e59c7" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 16.41163<br>Longitude: 74.377155</div>`)[0];
+                popup_f6e56289bae84c12b53acd44f8281112.setContent(html_cee26981ced358098e1be6beec6e59c7);
+            
+        
+
+        marker_9684110b91f2043c1ec0f7ef56fdb9fb.bindPopup(popup_f6e56289bae84c12b53acd44f8281112)
+        ;
+
+        
+    
+    
+            var marker_b413910e0f09b28df4057f61fe3d176f = L.marker(
+                [15.960326, 75.286387],
+                {}
+            ).addTo(marker_cluster_d055b9c9a2c093c25c83423d15f7ec9c);
+        
+    
+        var popup_92db12a8753424d8f54dea90ab245bf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b85a1f2f6519194e311909fe3fc9b2f0 = $(`<div id="html_b85a1f2f6519194e311909fe3fc9b2f0" style="width: 100.0%; height: 100.0%;">Crime Group: CHEATING<br>Crime Head: CHEATING<br>Latitude: 15.960326<br>Longitude: 75.286387</div>`)[0];
+                popup_92db12a8753424d8f54dea90ab245bf9.setContent(html_b85a1f2f6519194e311909fe3fc9b2f0);
+            
+        
+
+        marker_b413910e0f09b28df4057f61fe3d176f.bindPopup(popup_92db12a8753424d8f54dea90ab245bf9)
+        ;
+
+        
+    
+    
+            var layer_control_2838f4c5e83180b049f29d89df393e05 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_600ba3b9663191e8334520159bd7ce6c,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_2838f4c5e83180b049f29d89df393e05.base_layers,
+                layer_control_2838f4c5e83180b049f29d89df393e05.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ad38de35b5609b4498e722a3b5ce7ba2);
+        
+</script>
+</html>

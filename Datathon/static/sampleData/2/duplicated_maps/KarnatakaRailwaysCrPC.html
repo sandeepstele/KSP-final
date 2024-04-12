@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0ffae39b64c80445750d5c3c828885bc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0ffae39b64c80445750d5c3c828885bc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0ffae39b64c80445750d5c3c828885bc = L.map(
+                "map_0ffae39b64c80445750d5c3c828885bc",
+                {
+                    center: [13.460532866666666, 77.00763803333332],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c48b9c084d3ad16f5b9aeb907d9c088e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0ffae39b64c80445750d5c3c828885bc);
+        
+    
+            var marker_cluster_76d1205f6c2447ed91ec3703873c6282 = L.markerClusterGroup(
+                {}
+            );
+            map_0ffae39b64c80445750d5c3c828885bc.addLayer(marker_cluster_76d1205f6c2447ed91ec3703873c6282);
+        
+    
+            var marker_a45da6c685218eb5a6209886c54fb8ee = L.marker(
+                [12.962624, 77.573575],
+                {}
+            ).addTo(marker_cluster_76d1205f6c2447ed91ec3703873c6282);
+        
+    
+        var popup_fbaac9fb60e697615aa1d3d44ba43bfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0123d4d9c490d336c368851525bc0f4 = $(`<div id="html_e0123d4d9c490d336c368851525bc0f4" style="width: 100.0%; height: 100.0%;">Crime Group: CrPC<br>Crime Head: Preventive Arrest (Sec 41 Class D,102)<br>Latitude: 12.962624<br>Longitude: 77.573575</div>`)[0];
+                popup_fbaac9fb60e697615aa1d3d44ba43bfa.setContent(html_e0123d4d9c490d336c368851525bc0f4);
+            
+        
+
+        marker_a45da6c685218eb5a6209886c54fb8ee.bindPopup(popup_fbaac9fb60e697615aa1d3d44ba43bfa)
+        ;
+
+        
+    
+    
+            var marker_ae17375265057faa9262c5e3e5604cc6 = L.marker(
+                [12.95099, 77.529811],
+                {}
+            ).addTo(marker_cluster_76d1205f6c2447ed91ec3703873c6282);
+        
+    
+        var popup_0a6fe5d7022e63f34cb0da4789b4df9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f0756d612f674c4b19a51a2f3f05bdd = $(`<div id="html_6f0756d612f674c4b19a51a2f3f05bdd" style="width: 100.0%; height: 100.0%;">Crime Group: CrPC<br>Crime Head: Preventive Arrest (Sec 41 Class D,102)<br>Latitude: 12.95099<br>Longitude: 77.529811</div>`)[0];
+                popup_0a6fe5d7022e63f34cb0da4789b4df9f.setContent(html_6f0756d612f674c4b19a51a2f3f05bdd);
+            
+        
+
+        marker_ae17375265057faa9262c5e3e5604cc6.bindPopup(popup_0a6fe5d7022e63f34cb0da4789b4df9f)
+        ;
+
+        
+    
+    
+            var marker_60536f7ae8cd16bcba9898249c91fba9 = L.marker(
+                [14.4679846, 75.9195281],
+                {}
+            ).addTo(marker_cluster_76d1205f6c2447ed91ec3703873c6282);
+        
+    
+        var popup_c701f0483791bc5d2f1c0405a23c2659 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5075024904607b960c1561a622d9000e = $(`<div id="html_5075024904607b960c1561a622d9000e" style="width: 100.0%; height: 100.0%;">Crime Group: CrPC<br>Crime Head: Security For Good Behaviour (Sec 109)<br>Latitude: 14.4679846<br>Longitude: 75.9195281</div>`)[0];
+                popup_c701f0483791bc5d2f1c0405a23c2659.setContent(html_5075024904607b960c1561a622d9000e);
+            
+        
+
+        marker_60536f7ae8cd16bcba9898249c91fba9.bindPopup(popup_c701f0483791bc5d2f1c0405a23c2659)
+        ;
+
+        
+    
+    
+            var layer_control_817d09599d4194f340d80edef4876a67 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c48b9c084d3ad16f5b9aeb907d9c088e,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_817d09599d4194f340d80edef4876a67.base_layers,
+                layer_control_817d09599d4194f340d80edef4876a67.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_0ffae39b64c80445750d5c3c828885bc);
+        
+</script>
+</html>

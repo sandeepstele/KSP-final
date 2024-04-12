@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_563f42f1c741d3b938c448850b89698d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_563f42f1c741d3b938c448850b89698d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_563f42f1c741d3b938c448850b89698d = L.map(
+                "map_563f42f1c741d3b938c448850b89698d",
+                {
+                    center: [13.40167196969697, 74.76629306060605],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_42ac1ac89cb4aa62555c5e50743ca822 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_563f42f1c741d3b938c448850b89698d);
+        
+    
+            var marker_cluster_4a6f91328f1f856ae21598c3a2f4a155 = L.markerClusterGroup(
+                {}
+            );
+            map_563f42f1c741d3b938c448850b89698d.addLayer(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+            var marker_2f01d069b5e13d0d32ed8aed46a8b51f = L.marker(
+                [13.571133, 74.699813],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_5bb1759aa4176c9349403c29be3dcb97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30fa4cb5f67fd56b90c68a9eb8fc9c1d = $(`<div id="html_30fa4cb5f67fd56b90c68a9eb8fc9c1d" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.571133<br>Longitude: 74.699813</div>`)[0];
+                popup_5bb1759aa4176c9349403c29be3dcb97.setContent(html_30fa4cb5f67fd56b90c68a9eb8fc9c1d);
+            
+        
+
+        marker_2f01d069b5e13d0d32ed8aed46a8b51f.bindPopup(popup_5bb1759aa4176c9349403c29be3dcb97)
+        ;
+
+        
+    
+    
+            var marker_2e8f1278f40cca4849f14de6d53d9615 = L.marker(
+                [13.341518, 74.731563],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_9073964b9e6be11ece4a697a1251ab09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7645178ac4106fcd89c5e967acc20f9 = $(`<div id="html_b7645178ac4106fcd89c5e967acc20f9" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.341518<br>Longitude: 74.731563</div>`)[0];
+                popup_9073964b9e6be11ece4a697a1251ab09.setContent(html_b7645178ac4106fcd89c5e967acc20f9);
+            
+        
+
+        marker_2e8f1278f40cca4849f14de6d53d9615.bindPopup(popup_9073964b9e6be11ece4a697a1251ab09)
+        ;
+
+        
+    
+    
+            var marker_43d920f9fb7b9bac9304a60c0c35d066 = L.marker(
+                [13.349169, 74.786074],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_04d217e99f1c4f7d142ca5f350d3899a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed425d0ad4e9af6970b9ab589216c722 = $(`<div id="html_ed425d0ad4e9af6970b9ab589216c722" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.349169<br>Longitude: 74.786074</div>`)[0];
+                popup_04d217e99f1c4f7d142ca5f350d3899a.setContent(html_ed425d0ad4e9af6970b9ab589216c722);
+            
+        
+
+        marker_43d920f9fb7b9bac9304a60c0c35d066.bindPopup(popup_04d217e99f1c4f7d142ca5f350d3899a)
+        ;
+
+        
+    
+    
+            var marker_4fd4c992f1ad000a89a4eedf8b7900fc = L.marker(
+                [13.48046, 74.706931],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_5b1a1cf5e745b41203055cc184343d52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fccfebf4bbfdb87bab367bb5b4cf423c = $(`<div id="html_fccfebf4bbfdb87bab367bb5b4cf423c" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.48046<br>Longitude: 74.706931</div>`)[0];
+                popup_5b1a1cf5e745b41203055cc184343d52.setContent(html_fccfebf4bbfdb87bab367bb5b4cf423c);
+            
+        
+
+        marker_4fd4c992f1ad000a89a4eedf8b7900fc.bindPopup(popup_5b1a1cf5e745b41203055cc184343d52)
+        ;
+
+        
+    
+    
+            var marker_4a92adb9593f71a09e6987442c22b022 = L.marker(
+                [13.32104, 74.74715],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_95b7f08ff8412321d8e625b4d7c5c811 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_349c5c748870fc8e8762ccb78f3f0472 = $(`<div id="html_349c5c748870fc8e8762ccb78f3f0472" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.32104<br>Longitude: 74.74715</div>`)[0];
+                popup_95b7f08ff8412321d8e625b4d7c5c811.setContent(html_349c5c748870fc8e8762ccb78f3f0472);
+            
+        
+
+        marker_4a92adb9593f71a09e6987442c22b022.bindPopup(popup_95b7f08ff8412321d8e625b4d7c5c811)
+        ;
+
+        
+    
+    
+            var marker_8b45956c6749cafa6a39885cc03b0f91 = L.marker(
+                [13.350589, 74.730675],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_dc1045d7206be8583665683695f1ac73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f62c9e343044ce48f3d019735d92a7e0 = $(`<div id="html_f62c9e343044ce48f3d019735d92a7e0" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.350589<br>Longitude: 74.730675</div>`)[0];
+                popup_dc1045d7206be8583665683695f1ac73.setContent(html_f62c9e343044ce48f3d019735d92a7e0);
+            
+        
+
+        marker_8b45956c6749cafa6a39885cc03b0f91.bindPopup(popup_dc1045d7206be8583665683695f1ac73)
+        ;
+
+        
+    
+    
+            var marker_de2fb2e4568a6b16cc5ad8a567c21f66 = L.marker(
+                [13.237186, 74.977066],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_a54c11447551811e5aaf75cc54b63e83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2b49704b4fa4fb804593581702ef50b = $(`<div id="html_e2b49704b4fa4fb804593581702ef50b" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.237186<br>Longitude: 74.977066</div>`)[0];
+                popup_a54c11447551811e5aaf75cc54b63e83.setContent(html_e2b49704b4fa4fb804593581702ef50b);
+            
+        
+
+        marker_de2fb2e4568a6b16cc5ad8a567c21f66.bindPopup(popup_a54c11447551811e5aaf75cc54b63e83)
+        ;
+
+        
+    
+    
+            var marker_a50644eb868e20d56aac28f8fc6cff21 = L.marker(
+                [13.349167, 74.785957],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_932ddffab8966630666eb122f861eb9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25fa16f26f57d023c971ce26ca050ece = $(`<div id="html_25fa16f26f57d023c971ce26ca050ece" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.349167<br>Longitude: 74.785957</div>`)[0];
+                popup_932ddffab8966630666eb122f861eb9e.setContent(html_25fa16f26f57d023c971ce26ca050ece);
+            
+        
+
+        marker_a50644eb868e20d56aac28f8fc6cff21.bindPopup(popup_932ddffab8966630666eb122f861eb9e)
+        ;
+
+        
+    
+    
+            var marker_b166aa7257b156e2ce4a5b0887c7d167 = L.marker(
+                [13.293104, 74.728175],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_90524fa28c4584c21ce1386135d0de2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75643e7db481d072393f6f41172c0cae = $(`<div id="html_75643e7db481d072393f6f41172c0cae" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.293104<br>Longitude: 74.728175</div>`)[0];
+                popup_90524fa28c4584c21ce1386135d0de2c.setContent(html_75643e7db481d072393f6f41172c0cae);
+            
+        
+
+        marker_b166aa7257b156e2ce4a5b0887c7d167.bindPopup(popup_90524fa28c4584c21ce1386135d0de2c)
+        ;
+
+        
+    
+    
+            var marker_0d9d9426cb4baea1710d1e29f689b903 = L.marker(
+                [13.61498, 74.994325],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_9572a8630ce228365a9dc210027fdaf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97c23c3a02eccfdec20d1cd3a92d064c = $(`<div id="html_97c23c3a02eccfdec20d1cd3a92d064c" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.61498<br>Longitude: 74.994325</div>`)[0];
+                popup_9572a8630ce228365a9dc210027fdaf8.setContent(html_97c23c3a02eccfdec20d1cd3a92d064c);
+            
+        
+
+        marker_0d9d9426cb4baea1710d1e29f689b903.bindPopup(popup_9572a8630ce228365a9dc210027fdaf8)
+        ;
+
+        
+    
+    
+            var marker_730d5f2a3749e754800bee9a5ba1d1be = L.marker(
+                [13.31368, 74.738779],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_804ec640983f97d5dd4827999adcb53d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5f7bb37ab9bdd5a45b1898d1b267d64 = $(`<div id="html_f5f7bb37ab9bdd5a45b1898d1b267d64" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.31368<br>Longitude: 74.738779</div>`)[0];
+                popup_804ec640983f97d5dd4827999adcb53d.setContent(html_f5f7bb37ab9bdd5a45b1898d1b267d64);
+            
+        
+
+        marker_730d5f2a3749e754800bee9a5ba1d1be.bindPopup(popup_804ec640983f97d5dd4827999adcb53d)
+        ;
+
+        
+    
+    
+            var marker_144597f95e7c1c284f7ab0b481a89fc0 = L.marker(
+                [13.215942, 74.818334],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_cc5adedb885e866f8e3034939b8b6d7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaec606e057b5e4f511c194a2169bfc3 = $(`<div id="html_eaec606e057b5e4f511c194a2169bfc3" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.215942<br>Longitude: 74.818334</div>`)[0];
+                popup_cc5adedb885e866f8e3034939b8b6d7b.setContent(html_eaec606e057b5e4f511c194a2169bfc3);
+            
+        
+
+        marker_144597f95e7c1c284f7ab0b481a89fc0.bindPopup(popup_cc5adedb885e866f8e3034939b8b6d7b)
+        ;
+
+        
+    
+    
+            var marker_df3b9cf62649f931cf50c394293c081f = L.marker(
+                [13.867653, 74.628324],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_9e0f02484e8cbbe63957daccaaa13fe0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4e9934cfbc346fe8fc0a9034b6d8da2 = $(`<div id="html_d4e9934cfbc346fe8fc0a9034b6d8da2" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.867653<br>Longitude: 74.628324</div>`)[0];
+                popup_9e0f02484e8cbbe63957daccaaa13fe0.setContent(html_d4e9934cfbc346fe8fc0a9034b6d8da2);
+            
+        
+
+        marker_df3b9cf62649f931cf50c394293c081f.bindPopup(popup_9e0f02484e8cbbe63957daccaaa13fe0)
+        ;
+
+        
+    
+    
+            var marker_5f08ddbde421eeb945bc97d72cb01510 = L.marker(
+                [13.867625, 74.628412],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_240dcdc6df7f381bf9e09185b1be3598 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d953efc20cbfe6af4f5e9f836469ef7 = $(`<div id="html_4d953efc20cbfe6af4f5e9f836469ef7" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.867625<br>Longitude: 74.628412</div>`)[0];
+                popup_240dcdc6df7f381bf9e09185b1be3598.setContent(html_4d953efc20cbfe6af4f5e9f836469ef7);
+            
+        
+
+        marker_5f08ddbde421eeb945bc97d72cb01510.bindPopup(popup_240dcdc6df7f381bf9e09185b1be3598)
+        ;
+
+        
+    
+    
+            var marker_f55b8651e044944c731e7505e9d0bf65 = L.marker(
+                [13.345035, 74.73826],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_142952735341c60254b52a2e47556ebd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4571e3c6347ac59e2a674dfc6d5bc041 = $(`<div id="html_4571e3c6347ac59e2a674dfc6d5bc041" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.345035<br>Longitude: 74.73826</div>`)[0];
+                popup_142952735341c60254b52a2e47556ebd.setContent(html_4571e3c6347ac59e2a674dfc6d5bc041);
+            
+        
+
+        marker_f55b8651e044944c731e7505e9d0bf65.bindPopup(popup_142952735341c60254b52a2e47556ebd)
+        ;
+
+        
+    
+    
+            var marker_7ffd3e49bcc326145adfa1e667df30c8 = L.marker(
+                [13.332545, 74.748281],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_6c0bbc33008f1fa85712eeeb6f4c744f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f117240f1e96e5df2db0ec9b5888edef = $(`<div id="html_f117240f1e96e5df2db0ec9b5888edef" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.332545<br>Longitude: 74.748281</div>`)[0];
+                popup_6c0bbc33008f1fa85712eeeb6f4c744f.setContent(html_f117240f1e96e5df2db0ec9b5888edef);
+            
+        
+
+        marker_7ffd3e49bcc326145adfa1e667df30c8.bindPopup(popup_6c0bbc33008f1fa85712eeeb6f4c744f)
+        ;
+
+        
+    
+    
+            var marker_d5f92dbbe8464f04d698281d800e55f8 = L.marker(
+                [13.416531, 74.743123],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_1956b4f3dda367639736fd8ddbd66fc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68b2e48aad3ff327480e7989b128258c = $(`<div id="html_68b2e48aad3ff327480e7989b128258c" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.416531<br>Longitude: 74.743123</div>`)[0];
+                popup_1956b4f3dda367639736fd8ddbd66fc6.setContent(html_68b2e48aad3ff327480e7989b128258c);
+            
+        
+
+        marker_d5f92dbbe8464f04d698281d800e55f8.bindPopup(popup_1956b4f3dda367639736fd8ddbd66fc6)
+        ;
+
+        
+    
+    
+            var marker_b29f5f8e6af56c717e99a11b052cee14 = L.marker(
+                [13.359731, 74.705948],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_f0b1a8ac0cc4ae95c083a985a8c156be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e2aee0c82128a10f0242717901c993b = $(`<div id="html_4e2aee0c82128a10f0242717901c993b" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.359731<br>Longitude: 74.705948</div>`)[0];
+                popup_f0b1a8ac0cc4ae95c083a985a8c156be.setContent(html_4e2aee0c82128a10f0242717901c993b);
+            
+        
+
+        marker_b29f5f8e6af56c717e99a11b052cee14.bindPopup(popup_f0b1a8ac0cc4ae95c083a985a8c156be)
+        ;
+
+        
+    
+    
+            var marker_75bd987636d5a7c3a6c4083364e1e547 = L.marker(
+                [13.330592, 74.751665],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_a7d0b499400d2b3ebed6d48538c49053 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfedde14e3330411a8f8f77275908988 = $(`<div id="html_cfedde14e3330411a8f8f77275908988" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.330592<br>Longitude: 74.751665</div>`)[0];
+                popup_a7d0b499400d2b3ebed6d48538c49053.setContent(html_cfedde14e3330411a8f8f77275908988);
+            
+        
+
+        marker_75bd987636d5a7c3a6c4083364e1e547.bindPopup(popup_a7d0b499400d2b3ebed6d48538c49053)
+        ;
+
+        
+    
+    
+            var marker_4f36ed1d8161acb862f7b104b557a800 = L.marker(
+                [13.8447, 74.626898],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_dc5b672e853efeb741a68f55ba592bfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7199328e1e5a396acd463d0cce4a15bb = $(`<div id="html_7199328e1e5a396acd463d0cce4a15bb" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.8447<br>Longitude: 74.626898</div>`)[0];
+                popup_dc5b672e853efeb741a68f55ba592bfb.setContent(html_7199328e1e5a396acd463d0cce4a15bb);
+            
+        
+
+        marker_4f36ed1d8161acb862f7b104b557a800.bindPopup(popup_dc5b672e853efeb741a68f55ba592bfb)
+        ;
+
+        
+    
+    
+            var marker_f1df536816e5429b6eaf4d5ae5971fec = L.marker(
+                [13.115935, 74.783137],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_024a94b4bd848d8631fc700183031ec1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db7e6bcbe8ce3b92a35ebc476d72d3e1 = $(`<div id="html_db7e6bcbe8ce3b92a35ebc476d72d3e1" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.115935<br>Longitude: 74.783137</div>`)[0];
+                popup_024a94b4bd848d8631fc700183031ec1.setContent(html_db7e6bcbe8ce3b92a35ebc476d72d3e1);
+            
+        
+
+        marker_f1df536816e5429b6eaf4d5ae5971fec.bindPopup(popup_024a94b4bd848d8631fc700183031ec1)
+        ;
+
+        
+    
+    
+            var marker_3df50bd12dc7a75dd17b4cadce22b19f = L.marker(
+                [13.352414, 74.784798],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_25e1b4f4f5c0a1e4a9959b06594d4ae0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78f6aa071c287ad513d3a7da888b9e0f = $(`<div id="html_78f6aa071c287ad513d3a7da888b9e0f" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.352414<br>Longitude: 74.784798</div>`)[0];
+                popup_25e1b4f4f5c0a1e4a9959b06594d4ae0.setContent(html_78f6aa071c287ad513d3a7da888b9e0f);
+            
+        
+
+        marker_3df50bd12dc7a75dd17b4cadce22b19f.bindPopup(popup_25e1b4f4f5c0a1e4a9959b06594d4ae0)
+        ;
+
+        
+    
+    
+            var marker_5c26651e191ba11091e0e2170a726e27 = L.marker(
+                [13.254844, 74.245544],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_c6ca178d1b1bfdabaf0a95ef66c35c41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38974152f0ea71e960a7427c12816ed1 = $(`<div id="html_38974152f0ea71e960a7427c12816ed1" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.254844<br>Longitude: 74.245544</div>`)[0];
+                popup_c6ca178d1b1bfdabaf0a95ef66c35c41.setContent(html_38974152f0ea71e960a7427c12816ed1);
+            
+        
+
+        marker_5c26651e191ba11091e0e2170a726e27.bindPopup(popup_c6ca178d1b1bfdabaf0a95ef66c35c41)
+        ;
+
+        
+    
+    
+            var marker_c8443f493b5132187333c994ca2b3610 = L.marker(
+                [13.350074, 74.785681],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_ff98217219555a37be99b80a4e4470d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62449fd1c4d2ad539b29fb235d8f14cb = $(`<div id="html_62449fd1c4d2ad539b29fb235d8f14cb" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.350074<br>Longitude: 74.785681</div>`)[0];
+                popup_ff98217219555a37be99b80a4e4470d7.setContent(html_62449fd1c4d2ad539b29fb235d8f14cb);
+            
+        
+
+        marker_c8443f493b5132187333c994ca2b3610.bindPopup(popup_ff98217219555a37be99b80a4e4470d7)
+        ;
+
+        
+    
+    
+            var marker_2d37f0c4dee1269b68aba2e47b6e0d34 = L.marker(
+                [13.651364, 74.705291],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_c40054b493159ca8f4de5a11ee3277fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73d869c7c424c6f8c4209109359f4929 = $(`<div id="html_73d869c7c424c6f8c4209109359f4929" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.651364<br>Longitude: 74.705291</div>`)[0];
+                popup_c40054b493159ca8f4de5a11ee3277fa.setContent(html_73d869c7c424c6f8c4209109359f4929);
+            
+        
+
+        marker_2d37f0c4dee1269b68aba2e47b6e0d34.bindPopup(popup_c40054b493159ca8f4de5a11ee3277fa)
+        ;
+
+        
+    
+    
+            var marker_59d3cca8265a21f4e972250eddee431c = L.marker(
+                [13.358135, 74.785115],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_4ad3afca2e16b9d69e828d8be4895703 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57062b3296780b0f23e34ab8f98797f6 = $(`<div id="html_57062b3296780b0f23e34ab8f98797f6" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.358135<br>Longitude: 74.785115</div>`)[0];
+                popup_4ad3afca2e16b9d69e828d8be4895703.setContent(html_57062b3296780b0f23e34ab8f98797f6);
+            
+        
+
+        marker_59d3cca8265a21f4e972250eddee431c.bindPopup(popup_4ad3afca2e16b9d69e828d8be4895703)
+        ;
+
+        
+    
+    
+            var marker_c8c0827236c5d735cdc35cbdef44aa1e = L.marker(
+                [13.222553, 74.979855],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_792094a8e84825f55d0384bfa924feb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0b2abef845622023279902d9effd989 = $(`<div id="html_c0b2abef845622023279902d9effd989" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.222553<br>Longitude: 74.979855</div>`)[0];
+                popup_792094a8e84825f55d0384bfa924feb1.setContent(html_c0b2abef845622023279902d9effd989);
+            
+        
+
+        marker_c8c0827236c5d735cdc35cbdef44aa1e.bindPopup(popup_792094a8e84825f55d0384bfa924feb1)
+        ;
+
+        
+    
+    
+            var marker_c7949e0bd5fabb22c1ce35c2eef3f259 = L.marker(
+                [13.366692, 74.744512],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_13c6f5f67aab3e2a7b476dc34e86571a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b11cf8b384ed34c5388d3d8cc37ecdb9 = $(`<div id="html_b11cf8b384ed34c5388d3d8cc37ecdb9" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.366692<br>Longitude: 74.744512</div>`)[0];
+                popup_13c6f5f67aab3e2a7b476dc34e86571a.setContent(html_b11cf8b384ed34c5388d3d8cc37ecdb9);
+            
+        
+
+        marker_c7949e0bd5fabb22c1ce35c2eef3f259.bindPopup(popup_13c6f5f67aab3e2a7b476dc34e86571a)
+        ;
+
+        
+    
+    
+            var marker_cdce52e3dd84aeecfdaefb88f7b59db5 = L.marker(
+                [13.46043, 74.990227],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_9612401ad4db21a72a617ed23de82518 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2452d6b50579eceaf24d968739518a3d = $(`<div id="html_2452d6b50579eceaf24d968739518a3d" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.46043<br>Longitude: 74.990227</div>`)[0];
+                popup_9612401ad4db21a72a617ed23de82518.setContent(html_2452d6b50579eceaf24d968739518a3d);
+            
+        
+
+        marker_cdce52e3dd84aeecfdaefb88f7b59db5.bindPopup(popup_9612401ad4db21a72a617ed23de82518)
+        ;
+
+        
+    
+    
+            var marker_cd9824f948d974a9b6cc74fb2819895a = L.marker(
+                [13.021039, 75.08542],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_a1d89f31c91a34fa12573e2ec7f93238 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_376f1881ff6f7c1aef4bc18ccad479dd = $(`<div id="html_376f1881ff6f7c1aef4bc18ccad479dd" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.021039<br>Longitude: 75.08542</div>`)[0];
+                popup_a1d89f31c91a34fa12573e2ec7f93238.setContent(html_376f1881ff6f7c1aef4bc18ccad479dd);
+            
+        
+
+        marker_cd9824f948d974a9b6cc74fb2819895a.bindPopup(popup_a1d89f31c91a34fa12573e2ec7f93238)
+        ;
+
+        
+    
+    
+            var marker_1f90d41a48e5dd2d9be4a32a6c1d6daf = L.marker(
+                [13.2154, 74.835187],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_f075dfca61635d5f79015bb738d4ab22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0addc999643e714ad1de79de25b351b9 = $(`<div id="html_0addc999643e714ad1de79de25b351b9" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.2154<br>Longitude: 74.835187</div>`)[0];
+                popup_f075dfca61635d5f79015bb738d4ab22.setContent(html_0addc999643e714ad1de79de25b351b9);
+            
+        
+
+        marker_1f90d41a48e5dd2d9be4a32a6c1d6daf.bindPopup(popup_f075dfca61635d5f79015bb738d4ab22)
+        ;
+
+        
+    
+    
+            var marker_c0fdc52616efadc1300ae1da9ea39c81 = L.marker(
+                [13.727513, 74.763267],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_173ad403283085a2593962c789010517 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dc35a6c0c1b2a505087efdb1f143842 = $(`<div id="html_2dc35a6c0c1b2a505087efdb1f143842" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.727513<br>Longitude: 74.763267</div>`)[0];
+                popup_173ad403283085a2593962c789010517.setContent(html_2dc35a6c0c1b2a505087efdb1f143842);
+            
+        
+
+        marker_c0fdc52616efadc1300ae1da9ea39c81.bindPopup(popup_173ad403283085a2593962c789010517)
+        ;
+
+        
+    
+    
+            var marker_fbc3f687f50970b36911805ad9c1b08b = L.marker(
+                [13.356402, 74.783884],
+                {}
+            ).addTo(marker_cluster_4a6f91328f1f856ae21598c3a2f4a155);
+        
+    
+        var popup_f529155e94a84e5eecfd917fafcaa65d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_474a1569eab0d4cfdb756ddcc48e3cc0 = $(`<div id="html_474a1569eab0d4cfdb756ddcc48e3cc0" style="width: 100.0%; height: 100.0%;">Crime Group:  CYBER CRIME<br>Crime Head: Information Technology Act 2000, 2009<br>Latitude: 13.356402<br>Longitude: 74.783884</div>`)[0];
+                popup_f529155e94a84e5eecfd917fafcaa65d.setContent(html_474a1569eab0d4cfdb756ddcc48e3cc0);
+            
+        
+
+        marker_fbc3f687f50970b36911805ad9c1b08b.bindPopup(popup_f529155e94a84e5eecfd917fafcaa65d)
+        ;
+
+        
+    
+    
+            var layer_control_bf2143ca20166415797994be05de1162 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_42ac1ac89cb4aa62555c5e50743ca822,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_bf2143ca20166415797994be05de1162.base_layers,
+                layer_control_bf2143ca20166415797994be05de1162.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_563f42f1c741d3b938c448850b89698d);
+        
+</script>
+</html>

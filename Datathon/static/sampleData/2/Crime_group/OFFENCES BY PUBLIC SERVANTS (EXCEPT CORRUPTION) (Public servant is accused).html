@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2c5bfa14f7367315ed649af03612dd54 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2c5bfa14f7367315ed649af03612dd54" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2c5bfa14f7367315ed649af03612dd54 = L.map(
+                "map_2c5bfa14f7367315ed649af03612dd54",
+                {
+                    center: [14.445874439999997, 76.29824128],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8d0496afc9c6763c7f76185fe8d22d7c = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2c5bfa14f7367315ed649af03612dd54);
+        
+    
+            var marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475 = L.markerClusterGroup(
+                {}
+            );
+            map_2c5bfa14f7367315ed649af03612dd54.addLayer(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+            var marker_0e9abb8e21775ace7d33a99ae6ded849 = L.marker(
+                [16.42822, 74.338069],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_46ad08d6a285b81906990111c7ab9b4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95fb9d4ead9e93e16d59718b34ded106 = $(`<div id="html_95fb9d4ead9e93e16d59718b34ded106" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Elected Member<br>Latitude: 16.42822<br>Longitude: 74.338069</div>`)[0];
+                popup_46ad08d6a285b81906990111c7ab9b4f.setContent(html_95fb9d4ead9e93e16d59718b34ded106);
+            
+        
+
+        marker_0e9abb8e21775ace7d33a99ae6ded849.bindPopup(popup_46ad08d6a285b81906990111c7ab9b4f)
+        ;
+
+        
+    
+    
+            var marker_aa5e9635f6a0b589aee52adc52de8032 = L.marker(
+                [12.967496, 77.572865],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_855431d52776e27f7f451fa9fafe2a19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11d7033c22bb8846b186817766d46143 = $(`<div id="html_11d7033c22bb8846b186817766d46143" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Police Personnel<br>Latitude: 12.967496<br>Longitude: 77.572865</div>`)[0];
+                popup_855431d52776e27f7f451fa9fafe2a19.setContent(html_11d7033c22bb8846b186817766d46143);
+            
+        
+
+        marker_aa5e9635f6a0b589aee52adc52de8032.bindPopup(popup_855431d52776e27f7f451fa9fafe2a19)
+        ;
+
+        
+    
+    
+            var marker_664993bedb87585c46dbf609d5c0404f = L.marker(
+                [12.28645, 76.63327],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_156579894e9fda5f1fbb5b8c051cd686 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d805b1ab09e307ac35206740e124a6a = $(`<div id="html_6d805b1ab09e307ac35206740e124a6a" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Others<br>Latitude: 12.28645<br>Longitude: 76.63327</div>`)[0];
+                popup_156579894e9fda5f1fbb5b8c051cd686.setContent(html_6d805b1ab09e307ac35206740e124a6a);
+            
+        
+
+        marker_664993bedb87585c46dbf609d5c0404f.bindPopup(popup_156579894e9fda5f1fbb5b8c051cd686)
+        ;
+
+        
+    
+    
+            var marker_e07ad18950ff67db4b4c98dd8a1b59ef = L.marker(
+                [12.914701, 77.481939],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_28b8c04797de93c0cca72d38f2f1eb0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3cdf027544b3e59407bcd5e15f84cb3 = $(`<div id="html_c3cdf027544b3e59407bcd5e15f84cb3" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 12.914701<br>Longitude: 77.481939</div>`)[0];
+                popup_28b8c04797de93c0cca72d38f2f1eb0e.setContent(html_c3cdf027544b3e59407bcd5e15f84cb3);
+            
+        
+
+        marker_e07ad18950ff67db4b4c98dd8a1b59ef.bindPopup(popup_28b8c04797de93c0cca72d38f2f1eb0e)
+        ;
+
+        
+    
+    
+            var marker_fe6f724bd9a5cdc0271941247c4d7f62 = L.marker(
+                [13.037415, 77.519353],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_87f627f3a8f083f7d183639cf55a28f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af427dea9bbd6f7693b80d3488c795d1 = $(`<div id="html_af427dea9bbd6f7693b80d3488c795d1" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 13.037415<br>Longitude: 77.519353</div>`)[0];
+                popup_87f627f3a8f083f7d183639cf55a28f8.setContent(html_af427dea9bbd6f7693b80d3488c795d1);
+            
+        
+
+        marker_fe6f724bd9a5cdc0271941247c4d7f62.bindPopup(popup_87f627f3a8f083f7d183639cf55a28f8)
+        ;
+
+        
+    
+    
+            var marker_2e4d3773d975f80624957ad16fa8686e = L.marker(
+                [12.93629, 77.594178],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_8fb826009b53b3994c261a91ba2e2db1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fda577b09f44cac7d04a958bb41f4ffe = $(`<div id="html_fda577b09f44cac7d04a958bb41f4ffe" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Others<br>Latitude: 12.93629<br>Longitude: 77.594178</div>`)[0];
+                popup_8fb826009b53b3994c261a91ba2e2db1.setContent(html_fda577b09f44cac7d04a958bb41f4ffe);
+            
+        
+
+        marker_2e4d3773d975f80624957ad16fa8686e.bindPopup(popup_8fb826009b53b3994c261a91ba2e2db1)
+        ;
+
+        
+    
+    
+            var marker_fc54351c9812b5090ff83567d1d0cae5 = L.marker(
+                [12.951459, 77.59542],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_ef684c4a1fdd1d061b53a7a97ce5c6f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96bc067f78a577c4568f642a2f88e364 = $(`<div id="html_96bc067f78a577c4568f642a2f88e364" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Public Sector Undertaking Official<br>Latitude: 12.951459<br>Longitude: 77.59542</div>`)[0];
+                popup_ef684c4a1fdd1d061b53a7a97ce5c6f3.setContent(html_96bc067f78a577c4568f642a2f88e364);
+            
+        
+
+        marker_fc54351c9812b5090ff83567d1d0cae5.bindPopup(popup_ef684c4a1fdd1d061b53a7a97ce5c6f3)
+        ;
+
+        
+    
+    
+            var marker_036a095f94a2a5e503bd5866d57c3214 = L.marker(
+                [12.948252, 77.594037],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_d5ff6a26c313e0d5ebfe9a2502d5e102 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f8d9e503ce663499b650da162f3c42a = $(`<div id="html_2f8d9e503ce663499b650da162f3c42a" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Others<br>Latitude: 12.948252<br>Longitude: 77.594037</div>`)[0];
+                popup_d5ff6a26c313e0d5ebfe9a2502d5e102.setContent(html_2f8d9e503ce663499b650da162f3c42a);
+            
+        
+
+        marker_036a095f94a2a5e503bd5866d57c3214.bindPopup(popup_d5ff6a26c313e0d5ebfe9a2502d5e102)
+        ;
+
+        
+    
+    
+            var marker_ca6792350996b628279ffcad526ef434 = L.marker(
+                [13.306955, 77.537814],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_aaaf4e25b3d834e488c7280191694198 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb478136f4f2b457b57b741afb7aece0 = $(`<div id="html_bb478136f4f2b457b57b741afb7aece0" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Others<br>Latitude: 13.306955<br>Longitude: 77.537814</div>`)[0];
+                popup_aaaf4e25b3d834e488c7280191694198.setContent(html_bb478136f4f2b457b57b741afb7aece0);
+            
+        
+
+        marker_ca6792350996b628279ffcad526ef434.bindPopup(popup_aaaf4e25b3d834e488c7280191694198)
+        ;
+
+        
+    
+    
+            var marker_772e81aa0e98da7c3906630a67912e84 = L.marker(
+                [13.151733, 77.338111],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_f01f0e9b097dfd0f2887653f073d5874 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f6eba6772a8a66d8ccc930be81e0230 = $(`<div id="html_7f6eba6772a8a66d8ccc930be81e0230" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Others<br>Latitude: 13.151733<br>Longitude: 77.338111</div>`)[0];
+                popup_f01f0e9b097dfd0f2887653f073d5874.setContent(html_7f6eba6772a8a66d8ccc930be81e0230);
+            
+        
+
+        marker_772e81aa0e98da7c3906630a67912e84.bindPopup(popup_f01f0e9b097dfd0f2887653f073d5874)
+        ;
+
+        
+    
+    
+            var marker_d9b1aac26f476819926b669fc77dc40e = L.marker(
+                [17.914097, 77.515534],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_9d102a0a7c546b6b6cca699d8959f8ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fd759c905597e0eb22ca3fff3cd7c32 = $(`<div id="html_7fd759c905597e0eb22ca3fff3cd7c32" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 17.914097<br>Longitude: 77.515534</div>`)[0];
+                popup_9d102a0a7c546b6b6cca699d8959f8ce.setContent(html_7fd759c905597e0eb22ca3fff3cd7c32);
+            
+        
+
+        marker_d9b1aac26f476819926b669fc77dc40e.bindPopup(popup_9d102a0a7c546b6b6cca699d8959f8ce)
+        ;
+
+        
+    
+    
+            var marker_905acc1bf80b849b60f759b0b9a18797 = L.marker(
+                [14.472725, 75.928688],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_53f2bd19292a4f524d0589f521fd8b3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_258357741d68aefbc57709b1eec31419 = $(`<div id="html_258357741d68aefbc57709b1eec31419" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Jail Personnel<br>Latitude: 14.472725<br>Longitude: 75.928688</div>`)[0];
+                popup_53f2bd19292a4f524d0589f521fd8b3c.setContent(html_258357741d68aefbc57709b1eec31419);
+            
+        
+
+        marker_905acc1bf80b849b60f759b0b9a18797.bindPopup(popup_53f2bd19292a4f524d0589f521fd8b3c)
+        ;
+
+        
+    
+    
+            var marker_019c2dc576662fbb568811309d9b3b3e = L.marker(
+                [14.46054, 75.931846],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_e395ecd31852b5c33466216bcc538ee2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdf9294335020c7fe8a90048819641cc = $(`<div id="html_fdf9294335020c7fe8a90048819641cc" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 14.46054<br>Longitude: 75.931846</div>`)[0];
+                popup_e395ecd31852b5c33466216bcc538ee2.setContent(html_fdf9294335020c7fe8a90048819641cc);
+            
+        
+
+        marker_019c2dc576662fbb568811309d9b3b3e.bindPopup(popup_e395ecd31852b5c33466216bcc538ee2)
+        ;
+
+        
+    
+    
+            var marker_989b38bb0166be6274dd55f271752b0e = L.marker(
+                [15.707217, 75.379518],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_9731286a737c51e614d69302af531bf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fb6c8d7a3fe5ef168b0092c6b0dd8c6 = $(`<div id="html_4fb6c8d7a3fe5ef168b0092c6b0dd8c6" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 15.707217<br>Longitude: 75.379518</div>`)[0];
+                popup_9731286a737c51e614d69302af531bf9.setContent(html_4fb6c8d7a3fe5ef168b0092c6b0dd8c6);
+            
+        
+
+        marker_989b38bb0166be6274dd55f271752b0e.bindPopup(popup_9731286a737c51e614d69302af531bf9)
+        ;
+
+        
+    
+    
+            var marker_41414fbe960489398c9a327e8c03b846 = L.marker(
+                [15.693824, 75.725651],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_dd0174d5d8b6aa744ae5e38d71d165bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4602b89133c0abf4f1ccc80db8335908 = $(`<div id="html_4602b89133c0abf4f1ccc80db8335908" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 15.693824<br>Longitude: 75.725651</div>`)[0];
+                popup_dd0174d5d8b6aa744ae5e38d71d165bf.setContent(html_4602b89133c0abf4f1ccc80db8335908);
+            
+        
+
+        marker_41414fbe960489398c9a327e8c03b846.bindPopup(popup_dd0174d5d8b6aa744ae5e38d71d165bf)
+        ;
+
+        
+    
+    
+            var marker_c6bd382960abf920188ff51031323226 = L.marker(
+                [15.45214, 75.005109],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_2b0f7dbfb8920d8afb214ab0f9c06b35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_726a86d68ea2cf2334243c3cc84e414c = $(`<div id="html_726a86d68ea2cf2334243c3cc84e414c" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 15.45214<br>Longitude: 75.005109</div>`)[0];
+                popup_2b0f7dbfb8920d8afb214ab0f9c06b35.setContent(html_726a86d68ea2cf2334243c3cc84e414c);
+            
+        
+
+        marker_c6bd382960abf920188ff51031323226.bindPopup(popup_2b0f7dbfb8920d8afb214ab0f9c06b35)
+        ;
+
+        
+    
+    
+            var marker_75950bc4fb8f590f7cd32750bbb39e84 = L.marker(
+                [15.4527, 75.006289],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_9d5f3850d1420133394d780e003c55e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae3a052536fea46f88cb3dc2c98dbb71 = $(`<div id="html_ae3a052536fea46f88cb3dc2c98dbb71" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 15.4527<br>Longitude: 75.006289</div>`)[0];
+                popup_9d5f3850d1420133394d780e003c55e7.setContent(html_ae3a052536fea46f88cb3dc2c98dbb71);
+            
+        
+
+        marker_75950bc4fb8f590f7cd32750bbb39e84.bindPopup(popup_9d5f3850d1420133394d780e003c55e7)
+        ;
+
+        
+    
+    
+            var marker_ef377200eb6ac2354e1ebb084a4ae9a3 = L.marker(
+                [15.452839, 75.006408],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_ad94026c8df8fe10b9e55825cd29df38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1a8be060e9840ac7616cf7935780ae5 = $(`<div id="html_d1a8be060e9840ac7616cf7935780ae5" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 15.452839<br>Longitude: 75.006408</div>`)[0];
+                popup_ad94026c8df8fe10b9e55825cd29df38.setContent(html_d1a8be060e9840ac7616cf7935780ae5);
+            
+        
+
+        marker_ef377200eb6ac2354e1ebb084a4ae9a3.bindPopup(popup_ad94026c8df8fe10b9e55825cd29df38)
+        ;
+
+        
+    
+    
+            var marker_908634f5ccc47d90c81efa2eb76bb1c7 = L.marker(
+                [15.452609, 75.006373],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_f82c8aee6f394643bc905d03f824957f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee74033a21d070ee2a0e111c8d77577f = $(`<div id="html_ee74033a21d070ee2a0e111c8d77577f" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 15.452609<br>Longitude: 75.006373</div>`)[0];
+                popup_f82c8aee6f394643bc905d03f824957f.setContent(html_ee74033a21d070ee2a0e111c8d77577f);
+            
+        
+
+        marker_908634f5ccc47d90c81efa2eb76bb1c7.bindPopup(popup_f82c8aee6f394643bc905d03f824957f)
+        ;
+
+        
+    
+    
+            var marker_34aab972ef8d452a48ef20d20f41830e = L.marker(
+                [15.448325, 75.004614],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_3abc47320e4ec2e850e69de93724fb2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_930d7970ff2dea992b3951fe8b706c56 = $(`<div id="html_930d7970ff2dea992b3951fe8b706c56" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 15.448325<br>Longitude: 75.004614</div>`)[0];
+                popup_3abc47320e4ec2e850e69de93724fb2c.setContent(html_930d7970ff2dea992b3951fe8b706c56);
+            
+        
+
+        marker_34aab972ef8d452a48ef20d20f41830e.bindPopup(popup_3abc47320e4ec2e850e69de93724fb2c)
+        ;
+
+        
+    
+    
+            var marker_9c04a535b8ee2f269a452f2ffbed549e = L.marker(
+                [15.43949, 76.528626],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_74cc704c158ca92edbb7eeabf003f8f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ee6fc6254cfbfee5d23004eac087711 = $(`<div id="html_6ee6fc6254cfbfee5d23004eac087711" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 15.43949<br>Longitude: 76.528626</div>`)[0];
+                popup_74cc704c158ca92edbb7eeabf003f8f4.setContent(html_6ee6fc6254cfbfee5d23004eac087711);
+            
+        
+
+        marker_9c04a535b8ee2f269a452f2ffbed549e.bindPopup(popup_74cc704c158ca92edbb7eeabf003f8f4)
+        ;
+
+        
+    
+    
+            var marker_ce4659e6c51e2205788f1338162434e5 = L.marker(
+                [15.60148, 76.65883],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_1a2d692b0bc542ade16705e78fb189af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4558571a97909352a587a9ac84d8c449 = $(`<div id="html_4558571a97909352a587a9ac84d8c449" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Public Sector Undertaking Official<br>Latitude: 15.60148<br>Longitude: 76.65883</div>`)[0];
+                popup_1a2d692b0bc542ade16705e78fb189af.setContent(html_4558571a97909352a587a9ac84d8c449);
+            
+        
+
+        marker_ce4659e6c51e2205788f1338162434e5.bindPopup(popup_1a2d692b0bc542ade16705e78fb189af)
+        ;
+
+        
+    
+    
+            var marker_fc469243bb92796a07678aadef48d0d0 = L.marker(
+                [12.585583, 76.824088],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_57bce1d18a027da7ff6ce27872199183 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67d6b3de0fd447dfa2680c1e5aaa4dfe = $(`<div id="html_67d6b3de0fd447dfa2680c1e5aaa4dfe" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Police Personnel<br>Latitude: 12.585583<br>Longitude: 76.824088</div>`)[0];
+                popup_57bce1d18a027da7ff6ce27872199183.setContent(html_67d6b3de0fd447dfa2680c1e5aaa4dfe);
+            
+        
+
+        marker_fc469243bb92796a07678aadef48d0d0.bindPopup(popup_57bce1d18a027da7ff6ce27872199183)
+        ;
+
+        
+    
+    
+            var marker_0ec15a182fcf6acb50534de3c8e72e9e = L.marker(
+                [14.391001, 74.940679],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_31b0e6772724220e72641346b492c7b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d13a1f0bcedca567c8d3af0b356f7ac3 = $(`<div id="html_d13a1f0bcedca567c8d3af0b356f7ac3" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Other Govt Official<br>Latitude: 14.391001<br>Longitude: 74.940679</div>`)[0];
+                popup_31b0e6772724220e72641346b492c7b2.setContent(html_d13a1f0bcedca567c8d3af0b356f7ac3);
+            
+        
+
+        marker_0ec15a182fcf6acb50534de3c8e72e9e.bindPopup(popup_31b0e6772724220e72641346b492c7b2)
+        ;
+
+        
+    
+    
+            var marker_cedc9ea131c7ac82afa863b45c29699d = L.marker(
+                [14.69332, 75.788723],
+                {}
+            ).addTo(marker_cluster_9c484cbfc5fcea417b04cc7e53cf2475);
+        
+    
+        var popup_ca900758fb04db953d3cb0195aa8f154 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc5054d6461b6049acda9557aa7bd7c0 = $(`<div id="html_cc5054d6461b6049acda9557aa7bd7c0" style="width: 100.0%; height: 100.0%;">Crime Group: OFFENCES BY PUBLIC SERVANTS (EXCEPT CORRUPTION) (Public servant is accused)<br>Crime Head: Others<br>Latitude: 14.69332<br>Longitude: 75.788723</div>`)[0];
+                popup_ca900758fb04db953d3cb0195aa8f154.setContent(html_cc5054d6461b6049acda9557aa7bd7c0);
+            
+        
+
+        marker_cedc9ea131c7ac82afa863b45c29699d.bindPopup(popup_ca900758fb04db953d3cb0195aa8f154)
+        ;
+
+        
+    
+    
+            var layer_control_e6625198b629e371cc30975d82d3fa5b = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_8d0496afc9c6763c7f76185fe8d22d7c,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_e6625198b629e371cc30975d82d3fa5b.base_layers,
+                layer_control_e6625198b629e371cc30975d82d3fa5b.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2c5bfa14f7367315ed649af03612dd54);
+        
+</script>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5964074dd8d1f56e12c327128c3f13a9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5964074dd8d1f56e12c327128c3f13a9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5964074dd8d1f56e12c327128c3f13a9 = L.map(
+                "map_5964074dd8d1f56e12c327128c3f13a9",
+                {
+                    center: [13.149030000000002, 76.08681033333333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_608244fc34c791bcae84ee0b11e905f2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5964074dd8d1f56e12c327128c3f13a9);
+        
+    
+            var marker_cluster_f5629b7f956a04f54945c525a755896c = L.markerClusterGroup(
+                {}
+            );
+            map_5964074dd8d1f56e12c327128c3f13a9.addLayer(marker_cluster_f5629b7f956a04f54945c525a755896c);
+        
+    
+            var marker_5dab26d74585e47d0ac53638847b3a50 = L.marker(
+                [13.168488, 75.871049],
+                {}
+            ).addTo(marker_cluster_f5629b7f956a04f54945c525a755896c);
+        
+    
+        var popup_b37efbfc274d25435e9fda5691ca40e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6018c5e0ca0f902eca93f2301c4013a9 = $(`<div id="html_6018c5e0ca0f902eca93f2301c4013a9" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 13.168488<br>Longitude: 75.871049</div>`)[0];
+                popup_b37efbfc274d25435e9fda5691ca40e1.setContent(html_6018c5e0ca0f902eca93f2301c4013a9);
+            
+        
+
+        marker_5dab26d74585e47d0ac53638847b3a50.bindPopup(popup_b37efbfc274d25435e9fda5691ca40e1)
+        ;
+
+        
+    
+    
+            var marker_db80f9d3fce4befd13c62f1666e5ce29 = L.marker(
+                [13.265984, 76.326598],
+                {}
+            ).addTo(marker_cluster_f5629b7f956a04f54945c525a755896c);
+        
+    
+        var popup_c2adfcde1349a61c3e50885bccaa4a13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2fb49a4a6160e5d2e5376e6f9ec2d36 = $(`<div id="html_e2fb49a4a6160e5d2e5376e6f9ec2d36" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Cultivated/Processed<br>Latitude: 13.265984<br>Longitude: 76.326598</div>`)[0];
+                popup_c2adfcde1349a61c3e50885bccaa4a13.setContent(html_e2fb49a4a6160e5d2e5376e6f9ec2d36);
+            
+        
+
+        marker_db80f9d3fce4befd13c62f1666e5ce29.bindPopup(popup_c2adfcde1349a61c3e50885bccaa4a13)
+        ;
+
+        
+    
+    
+            var marker_d2f14512052fa589026ddc0feb977725 = L.marker(
+                [13.012618, 76.062784],
+                {}
+            ).addTo(marker_cluster_f5629b7f956a04f54945c525a755896c);
+        
+    
+        var popup_7bb3b5194b49d01a5fa3be11009f6b36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee04d1d6898adecdc6207fdc0fa4e022 = $(`<div id="html_ee04d1d6898adecdc6207fdc0fa4e022" style="width: 100.0%; height: 100.0%;">Crime Group: NARCOTIC DRUGS & PSHYCOTROPIC SUBSTANCES<br>Crime Head: Synthetic<br>Latitude: 13.012618<br>Longitude: 76.062784</div>`)[0];
+                popup_7bb3b5194b49d01a5fa3be11009f6b36.setContent(html_ee04d1d6898adecdc6207fdc0fa4e022);
+            
+        
+
+        marker_d2f14512052fa589026ddc0feb977725.bindPopup(popup_7bb3b5194b49d01a5fa3be11009f6b36)
+        ;
+
+        
+    
+    
+            var layer_control_0b87d4c3ea4dc3d3e688f46aff30d904 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_608244fc34c791bcae84ee0b11e905f2,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_0b87d4c3ea4dc3d3e688f46aff30d904.base_layers,
+                layer_control_0b87d4c3ea4dc3d3e688f46aff30d904.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5964074dd8d1f56e12c327128c3f13a9);
+        
+</script>
+</html>

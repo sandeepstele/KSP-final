@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_97f9b38877771966cb841c05d8acb53f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_97f9b38877771966cb841c05d8acb53f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_97f9b38877771966cb841c05d8acb53f = L.map(
+                "map_97f9b38877771966cb841c05d8acb53f",
+                {
+                    center: [13.391091, 78.21752950000001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bd86f6b53895cc924362b6e838d2e59f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_97f9b38877771966cb841c05d8acb53f);
+        
+    
+            var marker_cluster_41636018f375bd2284e38363bbd95efe = L.markerClusterGroup(
+                {}
+            );
+            map_97f9b38877771966cb841c05d8acb53f.addLayer(marker_cluster_41636018f375bd2284e38363bbd95efe);
+        
+    
+            var marker_36e089a55f9fe70b9ba92ed84a366949 = L.marker(
+                [13.270969, 78.209287],
+                {}
+            ).addTo(marker_cluster_41636018f375bd2284e38363bbd95efe);
+        
+    
+        var popup_a05fb34706785fb8b6b41d5e00b0d65b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30415a3c462752ab6af68119bbdda4b3 = $(`<div id="html_30415a3c462752ab6af68119bbdda4b3" style="width: 100.0%; height: 100.0%;">Crime Group: NEGLIGENT ACT<br>Crime Head: Explosive/Explosive Substances - Related<br>Latitude: 13.270969<br>Longitude: 78.209287</div>`)[0];
+                popup_a05fb34706785fb8b6b41d5e00b0d65b.setContent(html_30415a3c462752ab6af68119bbdda4b3);
+            
+        
+
+        marker_36e089a55f9fe70b9ba92ed84a366949.bindPopup(popup_a05fb34706785fb8b6b41d5e00b0d65b)
+        ;
+
+        
+    
+    
+            var marker_4da53f708b7e555b59c2c738c1ba5f81 = L.marker(
+                [13.511213, 78.225772],
+                {}
+            ).addTo(marker_cluster_41636018f375bd2284e38363bbd95efe);
+        
+    
+        var popup_4834617d86dfa7cc5e1bbf71667dfd29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24c63efb27a5199c393afe753c00586e = $(`<div id="html_24c63efb27a5199c393afe753c00586e" style="width: 100.0%; height: 100.0%;">Crime Group: NEGLIGENT ACT<br>Crime Head: Other - Related<br>Latitude: 13.511213<br>Longitude: 78.225772</div>`)[0];
+                popup_4834617d86dfa7cc5e1bbf71667dfd29.setContent(html_24c63efb27a5199c393afe753c00586e);
+            
+        
+
+        marker_4da53f708b7e555b59c2c738c1ba5f81.bindPopup(popup_4834617d86dfa7cc5e1bbf71667dfd29)
+        ;
+
+        
+    
+    
+            var layer_control_251916c14c941b6840e78f7eba690a03 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bd86f6b53895cc924362b6e838d2e59f,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_251916c14c941b6840e78f7eba690a03.base_layers,
+                layer_control_251916c14c941b6840e78f7eba690a03.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_97f9b38877771966cb841c05d8acb53f);
+        
+</script>
+</html>

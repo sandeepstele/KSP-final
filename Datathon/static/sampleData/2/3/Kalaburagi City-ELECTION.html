@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_826208dd7b94bd55355657153cfe1195 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_826208dd7b94bd55355657153cfe1195" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_826208dd7b94bd55355657153cfe1195 = L.map(
+                "map_826208dd7b94bd55355657153cfe1195",
+                {
+                    center: [17.327754, 76.848202],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_145e5d5329c8d557cd13ea0fc61d15bb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_826208dd7b94bd55355657153cfe1195);
+        
+    
+            var marker_cluster_bb2be2381d606d196b067f1aae527bbf = L.markerClusterGroup(
+                {}
+            );
+            map_826208dd7b94bd55355657153cfe1195.addLayer(marker_cluster_bb2be2381d606d196b067f1aae527bbf);
+        
+    
+            var marker_904b57b0c321eff5492d19f0a0fdb4b1 = L.marker(
+                [17.360665, 76.858062],
+                {}
+            ).addTo(marker_cluster_bb2be2381d606d196b067f1aae527bbf);
+        
+    
+        var popup_3df26fd3691f9e2d7c4254e7dae9b66b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e7b6a79c71d796571366649af2876f9 = $(`<div id="html_4e7b6a79c71d796571366649af2876f9" style="width: 100.0%; height: 100.0%;">Crime Group: ELECTION<br>Crime Head: Parliament<br>Latitude: 17.360665<br>Longitude: 76.858062</div>`)[0];
+                popup_3df26fd3691f9e2d7c4254e7dae9b66b.setContent(html_4e7b6a79c71d796571366649af2876f9);
+            
+        
+
+        marker_904b57b0c321eff5492d19f0a0fdb4b1.bindPopup(popup_3df26fd3691f9e2d7c4254e7dae9b66b)
+        ;
+
+        
+    
+    
+            var marker_636a3284a50684f4dca2e9893d07b9d0 = L.marker(
+                [17.294843, 76.838342],
+                {}
+            ).addTo(marker_cluster_bb2be2381d606d196b067f1aae527bbf);
+        
+    
+        var popup_10d3a496e98fd0a787ec0958f148d8d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22fbf2177bf5a898b9d9e0ed8be565eb = $(`<div id="html_22fbf2177bf5a898b9d9e0ed8be565eb" style="width: 100.0%; height: 100.0%;">Crime Group: ELECTION<br>Crime Head: Assembly<br>Latitude: 17.294843<br>Longitude: 76.838342</div>`)[0];
+                popup_10d3a496e98fd0a787ec0958f148d8d5.setContent(html_22fbf2177bf5a898b9d9e0ed8be565eb);
+            
+        
+
+        marker_636a3284a50684f4dca2e9893d07b9d0.bindPopup(popup_10d3a496e98fd0a787ec0958f148d8d5)
+        ;
+
+        
+    
+    
+            var layer_control_018af81cf09db7e141e8f4608c315bf8 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_145e5d5329c8d557cd13ea0fc61d15bb,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_018af81cf09db7e141e8f4608c315bf8.base_layers,
+                layer_control_018af81cf09db7e141e8f4608c315bf8.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_826208dd7b94bd55355657153cfe1195);
+        
+</script>
+</html>

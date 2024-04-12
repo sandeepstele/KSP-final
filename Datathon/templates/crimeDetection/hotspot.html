@@ -1,0 +1,106 @@
+{% extends 'crimeDetection/layout.html' %}
+{% load static %}
+
+{% block title %}
+Siren Squad | Hotspot
+{% endblock %}
+
+{% block header %}Hotspot{% endblock %}
+
+{% block page %} Hotspot {% endblock %}
+
+{% block page_name %} District-Wise Crime Classification {% endblock %}
+
+{% block body %}
+
+<style>
+  .maps{
+    border-radius:10px;
+    box-shadow:0 0 5px grey;
+    margin-top:2rem;
+    margin-bottom:1rem;
+    border:1px solid #5953b8;
+  }
+</style>
+
+<label class="mb-3  " style="color:#5953b8;margin-top:4%;">District-Wise Crime Classification</label>
+<form action="{% url 'hotspot_district_crime' %}" method="GET">
+<div class="input-group mb-3 mt-1">
+    <label class="input-group-text" for="inputGroupSelect01">District</label>
+    <select class="form-select" id="inputGroupSelect01" name="district">
+      <option selected value="">Choose...</option>
+    {% for districte in districts %}
+      <option value="{{districte}}" type="submit">{{districte}}</option>
+    {% endfor %}
+    </select>
+    <button class="btn btn-success" type="submit">Submit</button>
+  </div>
+<div id="crime" style="display:{{display}}">
+  <div class="input-group mb-3 mt-1">
+      <label class="input-group-text" for="inputGroupSelect01">Crime</label>
+      <input type="hidden" value="{{district_name}}" name="district_name">
+      <select class="form-select" id="inputGroupSelect01" name="crime">
+        <option selected value="">Choose...</option>
+      {% for crime in crimes %}
+        <option value="{{crime}}">{{crime}}</option>
+      {% endfor %}
+      </select>
+      <button class="btn btn-success" type="submit">Submit</button>
+    </div>
+</div>
+</form>
+
+
+<div class="container-fluid"  id="map"  style="display:{{display}} ;">
+  <!-- [ breadcrumb ] start -->
+  <div class="row">
+      <!-- [ basic-map ] start -->
+      <div class="col-lg-12 col-xl-8">
+          <div class="card maps">
+              <div class="card-header">
+                 <a href="{% static 'sampleData/2/duplicated_maps/' %}{{district_name_space}}{{ crime_space }}.html" target="_blank" ><h5 style="color:#5953b8;">{{crime}}</h5></a>
+                  <span class="d-block m-t-5">Map shows places around the {{district_name}}</span>
+              </div>
+              <div class="card-body">
+                <iframe id="map-iframe" src="{% static 'sampleData/2/duplicated_maps/' %}{{district_name_space}}{{ crime_space }}.html" class="set-map" style="height:650px;width:95%;margin-left:0.5rem;"></iframe>
+                  <div id="basic-map" ></div>
+              </div>
+          </div>
+      </div>
+    <div class="col-lg-12 col-xl-4">
+      <div class="card maps" style="height:650px;overflow:auto;">
+          <div class="card-header">
+              <h5 style="color:#5953b8;">District Name: {{district_name}}</h5>
+              <span class="d-block m-t-5">Crimes List:</span>
+              <ol type="1">
+              {% for crime in crimes %}
+              <li>{{crime}}</li>
+              {% endfor %}
+              </ol>
+          </div>
+          <div class="card-body">
+            <!--<iframe src="{% static 'sampleData/final/' %}{{ files }}" class="set-map" style="height:400px;;width:95%;margin-left:0.5rem;"></iframe>-->
+              <div id="basic-map" ></div>
+          </div>
+      </div>
+  </div>
+  </div>
+  <!-- [ Main Content ] end -->
+</div>
+
+<script>
+  // Get the iframe element
+  var iframe = document.getElementById("map-iframe");
+
+  // Add event listener for error event
+  iframe.onerror = function() {
+      // Hide the iframe
+      iframe.style.display = "none";
+      
+      // Create and append a custom message or content
+      var errorMessage = document.createElement("p");
+      errorMessage.textContent = "Custom message here";
+      iframe.parentNode.appendChild(errorMessage);
+  };
+</script>
+{% endblock %}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b22d98d47b8250cc758a0eca16134bb1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b22d98d47b8250cc758a0eca16134bb1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b22d98d47b8250cc758a0eca16134bb1 = L.map(
+                "map_b22d98d47b8250cc758a0eca16134bb1",
+                {
+                    center: [15.168801312500001, 76.217237375],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_681ac7e1e8b068e391cf82e5facaa58d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b22d98d47b8250cc758a0eca16134bb1);
+        
+    
+            var marker_cluster_0655f00722ac3d7502db2ea8fe509313 = L.markerClusterGroup(
+                {}
+            );
+            map_b22d98d47b8250cc758a0eca16134bb1.addLayer(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+            var marker_214340dca14bd40b95c728d8f26ce54c = L.marker(
+                [16.011294, 75.0632],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_7fc903f7028e83dd4797a57cc45b1562 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63094781607f3a0d8ed48c162658d35d = $(`<div id="html_63094781607f3a0d8ed48c162658d35d" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 16.011294<br>Longitude: 75.0632</div>`)[0];
+                popup_7fc903f7028e83dd4797a57cc45b1562.setContent(html_63094781607f3a0d8ed48c162658d35d);
+            
+        
+
+        marker_214340dca14bd40b95c728d8f26ce54c.bindPopup(popup_7fc903f7028e83dd4797a57cc45b1562)
+        ;
+
+        
+    
+    
+            var marker_0009d1a3e2b2910c6f087a93a08baa1a = L.marker(
+                [16.207061, 75.885673],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_a818a8632596d6170c7da081063ea952 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e11c8f32caf5d56effd7a291dd018093 = $(`<div id="html_e11c8f32caf5d56effd7a291dd018093" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 16.207061<br>Longitude: 75.885673</div>`)[0];
+                popup_a818a8632596d6170c7da081063ea952.setContent(html_e11c8f32caf5d56effd7a291dd018093);
+            
+        
+
+        marker_0009d1a3e2b2910c6f087a93a08baa1a.bindPopup(popup_a818a8632596d6170c7da081063ea952)
+        ;
+
+        
+    
+    
+            var marker_5dc3a15229b2fe5eab30012e110d3792 = L.marker(
+                [12.902038, 77.559345],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_197f252b95564db78a9a2c9d73ac907c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1af7049172d8fdc5a417644ea69dd079 = $(`<div id="html_1af7049172d8fdc5a417644ea69dd079" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Antiques  & Art Treasures Act 1972<br>Latitude: 12.902038<br>Longitude: 77.559345</div>`)[0];
+                popup_197f252b95564db78a9a2c9d73ac907c.setContent(html_1af7049172d8fdc5a417644ea69dd079);
+            
+        
+
+        marker_5dc3a15229b2fe5eab30012e110d3792.bindPopup(popup_197f252b95564db78a9a2c9d73ac907c)
+        ;
+
+        
+    
+    
+            var marker_c7fdfee1cbb1621933793d617321737e = L.marker(
+                [12.965906, 77.595297],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_2ca2376b9c005dea6566df221be601e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_094829de568395e789bffc6d2380e13b = $(`<div id="html_094829de568395e789bffc6d2380e13b" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Antiques  & Art Treasures Act 1972<br>Latitude: 12.965906<br>Longitude: 77.595297</div>`)[0];
+                popup_2ca2376b9c005dea6566df221be601e7.setContent(html_094829de568395e789bffc6d2380e13b);
+            
+        
+
+        marker_c7fdfee1cbb1621933793d617321737e.bindPopup(popup_2ca2376b9c005dea6566df221be601e7)
+        ;
+
+        
+    
+    
+            var marker_f1dbaa55617b1c07516c882677045f37 = L.marker(
+                [11.810912, 76.69221],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_b32a9f1e5f86d51b4eabccdb4ce95f33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c70432e098213551d5e9083c67662a9e = $(`<div id="html_c70432e098213551d5e9083c67662a9e" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 11.810912<br>Longitude: 76.69221</div>`)[0];
+                popup_b32a9f1e5f86d51b4eabccdb4ce95f33.setContent(html_c70432e098213551d5e9083c67662a9e);
+            
+        
+
+        marker_f1dbaa55617b1c07516c882677045f37.bindPopup(popup_b32a9f1e5f86d51b4eabccdb4ce95f33)
+        ;
+
+        
+    
+    
+            var marker_d2a35856c21889ba91020229e0558a20 = L.marker(
+                [13.940793, 75.868372],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_b4466e20b8d389f1c2edf6a1c09f8d68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd10ddd4f209f1e4e455f71d18dcb9d3 = $(`<div id="html_bd10ddd4f209f1e4e455f71d18dcb9d3" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 13.940793<br>Longitude: 75.868372</div>`)[0];
+                popup_b4466e20b8d389f1c2edf6a1c09f8d68.setContent(html_bd10ddd4f209f1e4e455f71d18dcb9d3);
+            
+        
+
+        marker_d2a35856c21889ba91020229e0558a20.bindPopup(popup_b4466e20b8d389f1c2edf6a1c09f8d68)
+        ;
+
+        
+    
+    
+            var marker_73a56aafee5b8e743ca60d9f43ab8069 = L.marker(
+                [15.426193, 76.363951],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_bd576ba9a00b83a1d491e594d1a49325 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37a738a131fbc473d471a4b1eefb24ad = $(`<div id="html_37a738a131fbc473d471a4b1eefb24ad" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 15.426193<br>Longitude: 76.363951</div>`)[0];
+                popup_bd576ba9a00b83a1d491e594d1a49325.setContent(html_37a738a131fbc473d471a4b1eefb24ad);
+            
+        
+
+        marker_73a56aafee5b8e743ca60d9f43ab8069.bindPopup(popup_bd576ba9a00b83a1d491e594d1a49325)
+        ;
+
+        
+    
+    
+            var marker_21e87df6acf5661392dcea300dfe6317 = L.marker(
+                [16.296084, 77.161956],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_bfca1d84a865c4ca69aa04f24352347c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a833e36796d8e4ea3032e0a0f307215 = $(`<div id="html_1a833e36796d8e4ea3032e0a0f307215" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 16.296084<br>Longitude: 77.161956</div>`)[0];
+                popup_bfca1d84a865c4ca69aa04f24352347c.setContent(html_1a833e36796d8e4ea3032e0a0f307215);
+            
+        
+
+        marker_21e87df6acf5661392dcea300dfe6317.bindPopup(popup_bfca1d84a865c4ca69aa04f24352347c)
+        ;
+
+        
+    
+    
+            var marker_8430432fbefa27095960f542d5a9cd64 = L.marker(
+                [13.831923, 75.018775],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_9359805080c0db504346636d4d26a6aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_673c1223b3d75ea5ab136b0e5e3a8749 = $(`<div id="html_673c1223b3d75ea5ab136b0e5e3a8749" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 13.831923<br>Longitude: 75.018775</div>`)[0];
+                popup_9359805080c0db504346636d4d26a6aa.setContent(html_673c1223b3d75ea5ab136b0e5e3a8749);
+            
+        
+
+        marker_8430432fbefa27095960f542d5a9cd64.bindPopup(popup_9359805080c0db504346636d4d26a6aa)
+        ;
+
+        
+    
+    
+            var marker_d6ea6382ac92405e6ffd5968b5fdcd91 = L.marker(
+                [15.342433, 76.475444],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_95b5a365087e24c90b4d3a1281eb4ad7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7db1d257db280bcf376808402c40ac3d = $(`<div id="html_7db1d257db280bcf376808402c40ac3d" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 15.342433<br>Longitude: 76.475444</div>`)[0];
+                popup_95b5a365087e24c90b4d3a1281eb4ad7.setContent(html_7db1d257db280bcf376808402c40ac3d);
+            
+        
+
+        marker_d6ea6382ac92405e6ffd5968b5fdcd91.bindPopup(popup_95b5a365087e24c90b4d3a1281eb4ad7)
+        ;
+
+        
+    
+    
+            var marker_908ff0ba15fc196aa467dde3f83333a8 = L.marker(
+                [15.316228, 76.470834],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_1767350562896403197ead0637556a1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cdc824bc2f0edcb21adce8550443506 = $(`<div id="html_6cdc824bc2f0edcb21adce8550443506" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 15.316228<br>Longitude: 76.470834</div>`)[0];
+                popup_1767350562896403197ead0637556a1c.setContent(html_6cdc824bc2f0edcb21adce8550443506);
+            
+        
+
+        marker_908ff0ba15fc196aa467dde3f83333a8.bindPopup(popup_1767350562896403197ead0637556a1c)
+        ;
+
+        
+    
+    
+            var marker_507d249ba14ae2b71bde09dd19a3d1f5 = L.marker(
+                [15.342455, 76.475242],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_057c65f95b1b4b1a5de2fde010379d4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31f2c9d23020f9bfad4068bc588a2e11 = $(`<div id="html_31f2c9d23020f9bfad4068bc588a2e11" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 15.342455<br>Longitude: 76.475242</div>`)[0];
+                popup_057c65f95b1b4b1a5de2fde010379d4a.setContent(html_31f2c9d23020f9bfad4068bc588a2e11);
+            
+        
+
+        marker_507d249ba14ae2b71bde09dd19a3d1f5.bindPopup(popup_057c65f95b1b4b1a5de2fde010379d4a)
+        ;
+
+        
+    
+    
+            var marker_37cd4f472af68f4d78f82e10f08616ed = L.marker(
+                [16.838766, 75.714144],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_99ee0b3620080ad5114914dd01808f84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acc561ed619cb653bef23f4ead413247 = $(`<div id="html_acc561ed619cb653bef23f4ead413247" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 16.838766<br>Longitude: 75.714144</div>`)[0];
+                popup_99ee0b3620080ad5114914dd01808f84.setContent(html_acc561ed619cb653bef23f4ead413247);
+            
+        
+
+        marker_37cd4f472af68f4d78f82e10f08616ed.bindPopup(popup_99ee0b3620080ad5114914dd01808f84)
+        ;
+
+        
+    
+    
+            var marker_aea475ad3233949af711d1faacb3c860 = L.marker(
+                [16.828644, 75.692613],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_f56698f045349d369537579353397c8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d15f596b653ad4929b94da8029281e6 = $(`<div id="html_8d15f596b653ad4929b94da8029281e6" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 16.828644<br>Longitude: 75.692613</div>`)[0];
+                popup_f56698f045349d369537579353397c8f.setContent(html_8d15f596b653ad4929b94da8029281e6);
+            
+        
+
+        marker_aea475ad3233949af711d1faacb3c860.bindPopup(popup_f56698f045349d369537579353397c8f)
+        ;
+
+        
+    
+    
+            var marker_07b7d0e39be68b9013e73fb3043fac75 = L.marker(
+                [16.826218, 75.72646],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_b9e76a1cf9ca74da31accd7807e71b6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f1ae373ea583e2db2687caba0321d23 = $(`<div id="html_1f1ae373ea583e2db2687caba0321d23" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 16.826218<br>Longitude: 75.72646</div>`)[0];
+                popup_b9e76a1cf9ca74da31accd7807e71b6e.setContent(html_1f1ae373ea583e2db2687caba0321d23);
+            
+        
+
+        marker_07b7d0e39be68b9013e73fb3043fac75.bindPopup(popup_b9e76a1cf9ca74da31accd7807e71b6e)
+        ;
+
+        
+    
+    
+            var marker_5386741226c44754d0c38bfbe2e1acde = L.marker(
+                [16.813873, 75.712282],
+                {}
+            ).addTo(marker_cluster_0655f00722ac3d7502db2ea8fe509313);
+        
+    
+        var popup_9e6432a1579e755e464aa5a95a21c401 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3c576e746ec5a62c709df3b992d5bb0 = $(`<div id="html_b3c576e746ec5a62c709df3b992d5bb0" style="width: 100.0%; height: 100.0%;">Crime Group: ANTIQUES (CULTURAL PROPERTY)<br>Crime Head: Ancient Monument & Archaelogical Sites And Remains Act 1958<br>Latitude: 16.813873<br>Longitude: 75.712282</div>`)[0];
+                popup_9e6432a1579e755e464aa5a95a21c401.setContent(html_b3c576e746ec5a62c709df3b992d5bb0);
+            
+        
+
+        marker_5386741226c44754d0c38bfbe2e1acde.bindPopup(popup_9e6432a1579e755e464aa5a95a21c401)
+        ;
+
+        
+    
+    
+            var layer_control_756bca566d725ae25cbbe0c5c970678a = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_681ac7e1e8b068e391cf82e5facaa58d,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_756bca566d725ae25cbbe0c5c970678a.base_layers,
+                layer_control_756bca566d725ae25cbbe0c5c970678a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b22d98d47b8250cc758a0eca16134bb1);
+        
+</script>
+</html>

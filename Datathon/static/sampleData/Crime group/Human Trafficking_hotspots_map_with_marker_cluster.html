@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_19ca72b383106a7b49e1afc6e1b82add {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_19ca72b383106a7b49e1afc6e1b82add" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_19ca72b383106a7b49e1afc6e1b82add = L.map(
+                "map_19ca72b383106a7b49e1afc6e1b82add",
+                {
+                    center: [13.98886916076923, 75.93185915807692],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8f766c406278c9b5f27236397567aab2 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_19ca72b383106a7b49e1afc6e1b82add);
+        
+    
+            var marker_cluster_31a2701f8116f16b3d44691f218e368f = L.markerClusterGroup(
+                {}
+            );
+            map_19ca72b383106a7b49e1afc6e1b82add.addLayer(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+            var marker_3f62161ffcc8148a9e691f0c39bcc78a = L.marker(
+                [15.138059, 76.918309],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_b05a06a17492981423f3d81b979a8f3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_944b5322e2ad354c73fd98cb9a87a26e = $(`<div id="html_944b5322e2ad354c73fd98cb9a87a26e" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 15.138059<br>Longitude: 76.918309</div>`)[0];
+                popup_b05a06a17492981423f3d81b979a8f3e.setContent(html_944b5322e2ad354c73fd98cb9a87a26e);
+            
+        
+
+        marker_3f62161ffcc8148a9e691f0c39bcc78a.bindPopup(popup_b05a06a17492981423f3d81b979a8f3e)
+        ;
+
+        
+    
+    
+            var marker_707b85b50873528d71fcce8775d2684d = L.marker(
+                [16.390588, 74.381926],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_7726a0823bcf30ebf53d01ed8940c90a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c67c91fabd3020cdd06cd8d86aa217fb = $(`<div id="html_c67c91fabd3020cdd06cd8d86aa217fb" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 16.390588<br>Longitude: 74.381926</div>`)[0];
+                popup_7726a0823bcf30ebf53d01ed8940c90a.setContent(html_c67c91fabd3020cdd06cd8d86aa217fb);
+            
+        
+
+        marker_707b85b50873528d71fcce8775d2684d.bindPopup(popup_7726a0823bcf30ebf53d01ed8940c90a)
+        ;
+
+        
+    
+    
+            var marker_71b31314f69d994485fefb42fe6c65b1 = L.marker(
+                [12.971078, 77.605541],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_ae008ccbed2e5269fed3015cb7038717 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27f5841c91b9e73c986c315c6b700c0e = $(`<div id="html_27f5841c91b9e73c986c315c6b700c0e" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 12.971078<br>Longitude: 77.605541</div>`)[0];
+                popup_ae008ccbed2e5269fed3015cb7038717.setContent(html_27f5841c91b9e73c986c315c6b700c0e);
+            
+        
+
+        marker_71b31314f69d994485fefb42fe6c65b1.bindPopup(popup_ae008ccbed2e5269fed3015cb7038717)
+        ;
+
+        
+    
+    
+            var marker_a421171cf6dc36fe895d8dd5c0a03d96 = L.marker(
+                [12.966402, 77.6070039],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_e6f98dc114efdd070cb340ccfc11dd73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96b207bcd464372298aa441a40c2badd = $(`<div id="html_96b207bcd464372298aa441a40c2badd" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 12.966402<br>Longitude: 77.6070039</div>`)[0];
+                popup_e6f98dc114efdd070cb340ccfc11dd73.setContent(html_96b207bcd464372298aa441a40c2badd);
+            
+        
+
+        marker_a421171cf6dc36fe895d8dd5c0a03d96.bindPopup(popup_e6f98dc114efdd070cb340ccfc11dd73)
+        ;
+
+        
+    
+    
+            var marker_a19940cb668a8fde98298e0293ce790d = L.marker(
+                [13.007537, 77.613443],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_3e3083f5aceee4854e0e06590bda740c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd65d5f19c0baa3985f3d94daf7797bf = $(`<div id="html_dd65d5f19c0baa3985f3d94daf7797bf" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 13.007537<br>Longitude: 77.613443</div>`)[0];
+                popup_3e3083f5aceee4854e0e06590bda740c.setContent(html_dd65d5f19c0baa3985f3d94daf7797bf);
+            
+        
+
+        marker_a19940cb668a8fde98298e0293ce790d.bindPopup(popup_3e3083f5aceee4854e0e06590bda740c)
+        ;
+
+        
+    
+    
+            var marker_e2701d5aa6255ab6088f2dc5cdc8e200 = L.marker(
+                [13.090066, 77.636425],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_4904cabd1a0ff1068b6eb723e3ac5137 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e826f8ba3d0d7d857eefc9123a751708 = $(`<div id="html_e826f8ba3d0d7d857eefc9123a751708" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 13.090066<br>Longitude: 77.636425</div>`)[0];
+                popup_4904cabd1a0ff1068b6eb723e3ac5137.setContent(html_e826f8ba3d0d7d857eefc9123a751708);
+            
+        
+
+        marker_e2701d5aa6255ab6088f2dc5cdc8e200.bindPopup(popup_4904cabd1a0ff1068b6eb723e3ac5137)
+        ;
+
+        
+    
+    
+            var marker_a1918c1b9e066ed74abe1088779548ec = L.marker(
+                [12.56537936, 77.42291132],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_3d72a8334672904dd90edf0e5a73fac1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1425e4de940fdd8cef75677d36eaaf55 = $(`<div id="html_1425e4de940fdd8cef75677d36eaaf55" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 12.56537936<br>Longitude: 77.42291132</div>`)[0];
+                popup_3d72a8334672904dd90edf0e5a73fac1.setContent(html_1425e4de940fdd8cef75677d36eaaf55);
+            
+        
+
+        marker_a1918c1b9e066ed74abe1088779548ec.bindPopup(popup_3d72a8334672904dd90edf0e5a73fac1)
+        ;
+
+        
+    
+    
+            var marker_b8edd7aeb1c157489f9523704f1ca528 = L.marker(
+                [12.085317, 77.303339],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_a9dd0412f9ccacc5587f89c4e3cf0df3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_419492b1f44a0dbe9941b4fd85d49706 = $(`<div id="html_419492b1f44a0dbe9941b4fd85d49706" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 12.085317<br>Longitude: 77.303339</div>`)[0];
+                popup_a9dd0412f9ccacc5587f89c4e3cf0df3.setContent(html_419492b1f44a0dbe9941b4fd85d49706);
+            
+        
+
+        marker_b8edd7aeb1c157489f9523704f1ca528.bindPopup(popup_a9dd0412f9ccacc5587f89c4e3cf0df3)
+        ;
+
+        
+    
+    
+            var marker_8ae96edc60f46349fa18969a2c967a71 = L.marker(
+                [14.448718, 75.903228],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_7333a65087ffe2f3abf7e76430c0ea94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88450d6c3fb7592fb4894e13001aaeed = $(`<div id="html_88450d6c3fb7592fb4894e13001aaeed" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 14.448718<br>Longitude: 75.903228</div>`)[0];
+                popup_7333a65087ffe2f3abf7e76430c0ea94.setContent(html_88450d6c3fb7592fb4894e13001aaeed);
+            
+        
+
+        marker_8ae96edc60f46349fa18969a2c967a71.bindPopup(popup_7333a65087ffe2f3abf7e76430c0ea94)
+        ;
+
+        
+    
+    
+            var marker_e738502eca86053219c8aef82ff80bdd = L.marker(
+                [14.420666, 75.939333],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_2ed4d00153844c5f51355f077a215ec9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3f32ab3d9f5921cce81c8ab77b6a5b5 = $(`<div id="html_f3f32ab3d9f5921cce81c8ab77b6a5b5" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 14.420666<br>Longitude: 75.939333</div>`)[0];
+                popup_2ed4d00153844c5f51355f077a215ec9.setContent(html_f3f32ab3d9f5921cce81c8ab77b6a5b5);
+            
+        
+
+        marker_e738502eca86053219c8aef82ff80bdd.bindPopup(popup_2ed4d00153844c5f51355f077a215ec9)
+        ;
+
+        
+    
+    
+            var marker_db6b0643463a65ea545fdcb3e5921c58 = L.marker(
+                [14.44796, 75.901853],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_5f1e0aaa5ac693e5c6ac43d7755225c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_952709c78481739a3acceeb4187537a7 = $(`<div id="html_952709c78481739a3acceeb4187537a7" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 14.44796<br>Longitude: 75.901853</div>`)[0];
+                popup_5f1e0aaa5ac693e5c6ac43d7755225c2.setContent(html_952709c78481739a3acceeb4187537a7);
+            
+        
+
+        marker_db6b0643463a65ea545fdcb3e5921c58.bindPopup(popup_5f1e0aaa5ac693e5c6ac43d7755225c2)
+        ;
+
+        
+    
+    
+            var marker_ad009cd727b672758edea6d8648fc75a = L.marker(
+                [14.464261, 75.917138],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_0c5911c5d962322f2d5e5fc7e547fed7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_709c13b0c60dc768278e22342cf39d3e = $(`<div id="html_709c13b0c60dc768278e22342cf39d3e" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 14.464261<br>Longitude: 75.917138</div>`)[0];
+                popup_0c5911c5d962322f2d5e5fc7e547fed7.setContent(html_709c13b0c60dc768278e22342cf39d3e);
+            
+        
+
+        marker_ad009cd727b672758edea6d8648fc75a.bindPopup(popup_0c5911c5d962322f2d5e5fc7e547fed7)
+        ;
+
+        
+    
+    
+            var marker_e533c245b20b957f918159273bcf214e = L.marker(
+                [14.469828, 75.922971],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_4a6e44c52359f8fd3fc0bb3549f57eaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d6e0c702b46d5faec1d03b8d07c2c6d = $(`<div id="html_5d6e0c702b46d5faec1d03b8d07c2c6d" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 14.469828<br>Longitude: 75.922971</div>`)[0];
+                popup_4a6e44c52359f8fd3fc0bb3549f57eaa.setContent(html_5d6e0c702b46d5faec1d03b8d07c2c6d);
+            
+        
+
+        marker_e533c245b20b957f918159273bcf214e.bindPopup(popup_4a6e44c52359f8fd3fc0bb3549f57eaa)
+        ;
+
+        
+    
+    
+            var marker_d7325a965271b33e3962890ec202202d = L.marker(
+                [14.457519, 75.915419],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_9e9b0f8c38b34a47b73b34253a8660a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f714e6c19bf3d7342e0151265558442 = $(`<div id="html_4f714e6c19bf3d7342e0151265558442" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 14.457519<br>Longitude: 75.915419</div>`)[0];
+                popup_9e9b0f8c38b34a47b73b34253a8660a6.setContent(html_4f714e6c19bf3d7342e0151265558442);
+            
+        
+
+        marker_d7325a965271b33e3962890ec202202d.bindPopup(popup_9e9b0f8c38b34a47b73b34253a8660a6)
+        ;
+
+        
+    
+    
+            var marker_e39fd23e43e964b99afbd3f183ff8a05 = L.marker(
+                [15.611216, 75.007933],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_bea84499617a6d8017f4781fd58d3935 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2cfc6740b47a15eb751036da306e33d = $(`<div id="html_f2cfc6740b47a15eb751036da306e33d" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 15.611216<br>Longitude: 75.007933</div>`)[0];
+                popup_bea84499617a6d8017f4781fd58d3935.setContent(html_f2cfc6740b47a15eb751036da306e33d);
+            
+        
+
+        marker_e39fd23e43e964b99afbd3f183ff8a05.bindPopup(popup_bea84499617a6d8017f4781fd58d3935)
+        ;
+
+        
+    
+    
+            var marker_2338a4096ff87c4f6d52b4f42a45dcb4 = L.marker(
+                [12.657845, 75.779795],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_2a3cb9d8d32bd469d605ab90e4f121be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcdc64a212c6c4fb59233f88e226ecca = $(`<div id="html_bcdc64a212c6c4fb59233f88e226ecca" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 12.657845<br>Longitude: 75.779795</div>`)[0];
+                popup_2a3cb9d8d32bd469d605ab90e4f121be.setContent(html_bcdc64a212c6c4fb59233f88e226ecca);
+            
+        
+
+        marker_2338a4096ff87c4f6d52b4f42a45dcb4.bindPopup(popup_2a3cb9d8d32bd469d605ab90e4f121be)
+        ;
+
+        
+    
+    
+            var marker_fc7852b629d29fb79959aeb5ae2fb590 = L.marker(
+                [15.392002, 75.078805],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_7075fc84eb6c99d05487f22c2c2b958b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_677defb7059aafc567ce29fcd00e763a = $(`<div id="html_677defb7059aafc567ce29fcd00e763a" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 15.392002<br>Longitude: 75.078805</div>`)[0];
+                popup_7075fc84eb6c99d05487f22c2c2b958b.setContent(html_677defb7059aafc567ce29fcd00e763a);
+            
+        
+
+        marker_fc7852b629d29fb79959aeb5ae2fb590.bindPopup(popup_7075fc84eb6c99d05487f22c2c2b958b)
+        ;
+
+        
+    
+    
+            var marker_38ab464a3e16c07ba2130130424a7b33 = L.marker(
+                [15.349756, 75.111364],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_b88d128701262e959c901eb530bf9193 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad9c9005f6704ce1cac1afda72adfd92 = $(`<div id="html_ad9c9005f6704ce1cac1afda72adfd92" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 15.349756<br>Longitude: 75.111364</div>`)[0];
+                popup_b88d128701262e959c901eb530bf9193.setContent(html_ad9c9005f6704ce1cac1afda72adfd92);
+            
+        
+
+        marker_38ab464a3e16c07ba2130130424a7b33.bindPopup(popup_b88d128701262e959c901eb530bf9193)
+        ;
+
+        
+    
+    
+            var marker_1d67efadb0a8c63bbdc3d28825349970 = L.marker(
+                [15.354167, 75.143734],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_b927af3909a50b3ed8fdd6092c4b66ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35f5b30170665962b6fddf96006040cd = $(`<div id="html_35f5b30170665962b6fddf96006040cd" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 15.354167<br>Longitude: 75.143734</div>`)[0];
+                popup_b927af3909a50b3ed8fdd6092c4b66ce.setContent(html_35f5b30170665962b6fddf96006040cd);
+            
+        
+
+        marker_1d67efadb0a8c63bbdc3d28825349970.bindPopup(popup_b927af3909a50b3ed8fdd6092c4b66ce)
+        ;
+
+        
+    
+    
+            var marker_c89d1922b1f8c5afc7b231df2c385dc2 = L.marker(
+                [15.352261, 75.135026],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_fc9f90892ce4dbf36b8f867fb2fabe06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c61c882025069de3bf9553c2fe6856f6 = $(`<div id="html_c61c882025069de3bf9553c2fe6856f6" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 15.352261<br>Longitude: 75.135026</div>`)[0];
+                popup_fc9f90892ce4dbf36b8f867fb2fabe06.setContent(html_c61c882025069de3bf9553c2fe6856f6);
+            
+        
+
+        marker_c89d1922b1f8c5afc7b231df2c385dc2.bindPopup(popup_fc9f90892ce4dbf36b8f867fb2fabe06)
+        ;
+
+        
+    
+    
+            var marker_3f4dc56d478ae20e7d821bb0084aab9d = L.marker(
+                [15.441792, 75.007028],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_b3f9ba47e5fa223d61b591445b0c18f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c75ef55e0f6366d9100b38df945e3ce = $(`<div id="html_3c75ef55e0f6366d9100b38df945e3ce" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 15.441792<br>Longitude: 75.007028</div>`)[0];
+                popup_b3f9ba47e5fa223d61b591445b0c18f4.setContent(html_3c75ef55e0f6366d9100b38df945e3ce);
+            
+        
+
+        marker_3f4dc56d478ae20e7d821bb0084aab9d.bindPopup(popup_b3f9ba47e5fa223d61b591445b0c18f4)
+        ;
+
+        
+    
+    
+            var marker_67019e7ab8b652c83417e06266b67c3c = L.marker(
+                [15.43608, 75.010723],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_cba9ff1c734e72e93953061c4feab5c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_891ccb413323dd48db04eaf78581d9b9 = $(`<div id="html_891ccb413323dd48db04eaf78581d9b9" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 15.43608<br>Longitude: 75.010723</div>`)[0];
+                popup_cba9ff1c734e72e93953061c4feab5c0.setContent(html_891ccb413323dd48db04eaf78581d9b9);
+            
+        
+
+        marker_67019e7ab8b652c83417e06266b67c3c.bindPopup(popup_cba9ff1c734e72e93953061c4feab5c0)
+        ;
+
+        
+    
+    
+            var marker_d73b1914f13d3ecd8ef27f63f27e653a = L.marker(
+                [15.427094, 75.039843],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_ade7da18e54f7e400c9c1a0b2c3b005c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b8f1e395602cb7787caea5ef597609c = $(`<div id="html_9b8f1e395602cb7787caea5ef597609c" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 15.427094<br>Longitude: 75.039843</div>`)[0];
+                popup_ade7da18e54f7e400c9c1a0b2c3b005c.setContent(html_9b8f1e395602cb7787caea5ef597609c);
+            
+        
+
+        marker_d73b1914f13d3ecd8ef27f63f27e653a.bindPopup(popup_ade7da18e54f7e400c9c1a0b2c3b005c)
+        ;
+
+        
+    
+    
+            var marker_78d3bde1ebf76283440a830911988b28 = L.marker(
+                [15.362055, 75.118452],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_8f93dc4f4fdf80562ab780986105f56f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_918529fac7dfcbcd277fdcb4397617a8 = $(`<div id="html_918529fac7dfcbcd277fdcb4397617a8" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 15.362055<br>Longitude: 75.118452</div>`)[0];
+                popup_8f93dc4f4fdf80562ab780986105f56f.setContent(html_918529fac7dfcbcd277fdcb4397617a8);
+            
+        
+
+        marker_78d3bde1ebf76283440a830911988b28.bindPopup(popup_8f93dc4f4fdf80562ab780986105f56f)
+        ;
+
+        
+    
+    
+            var marker_48402ba49bd593fe40c8283c1156660e = L.marker(
+                [15.363782, 75.116682],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_c427f789ee74bada19b07623e5e25283 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2a9e3466facf97b97a967e516aec652 = $(`<div id="html_b2a9e3466facf97b97a967e516aec652" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 15.363782<br>Longitude: 75.116682</div>`)[0];
+                popup_c427f789ee74bada19b07623e5e25283.setContent(html_b2a9e3466facf97b97a967e516aec652);
+            
+        
+
+        marker_48402ba49bd593fe40c8283c1156660e.bindPopup(popup_c427f789ee74bada19b07623e5e25283)
+        ;
+
+        
+    
+    
+            var marker_a2fe8f37ef6cb75d1754ccbc2d51cd08 = L.marker(
+                [15.3853, 75.115144],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_66c57a7f8d2177e203b196636ed6d7e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f9f3ffb70eb9a8a462906d9d9041ba9 = $(`<div id="html_7f9f3ffb70eb9a8a462906d9d9041ba9" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 15.3853<br>Longitude: 75.115144</div>`)[0];
+                popup_66c57a7f8d2177e203b196636ed6d7e1.setContent(html_7f9f3ffb70eb9a8a462906d9d9041ba9);
+            
+        
+
+        marker_a2fe8f37ef6cb75d1754ccbc2d51cd08.bindPopup(popup_66c57a7f8d2177e203b196636ed6d7e1)
+        ;
+
+        
+    
+    
+            var marker_8d1ed9db64b29f5c22c002c84983c8a4 = L.marker(
+                [12.952961, 78.200677],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_996f4b48fe4138da3965365b70e2f689 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abf04039862a36ee9ce31b84dc6291ea = $(`<div id="html_abf04039862a36ee9ce31b84dc6291ea" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 12.952961<br>Longitude: 78.200677</div>`)[0];
+                popup_996f4b48fe4138da3965365b70e2f689.setContent(html_abf04039862a36ee9ce31b84dc6291ea);
+            
+        
+
+        marker_8d1ed9db64b29f5c22c002c84983c8a4.bindPopup(popup_996f4b48fe4138da3965365b70e2f689)
+        ;
+
+        
+    
+    
+            var marker_6775d3a8b0e48bf5020186eb48fcae16 = L.marker(
+                [12.971146, 78.296807],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_58c4ca86cb76003ccba444daac058fc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f955da11ad7dc0dc6e3a0c3a61c2b4c8 = $(`<div id="html_f955da11ad7dc0dc6e3a0c3a61c2b4c8" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 12.971146<br>Longitude: 78.296807</div>`)[0];
+                popup_58c4ca86cb76003ccba444daac058fc6.setContent(html_f955da11ad7dc0dc6e3a0c3a61c2b4c8);
+            
+        
+
+        marker_6775d3a8b0e48bf5020186eb48fcae16.bindPopup(popup_58c4ca86cb76003ccba444daac058fc6)
+        ;
+
+        
+    
+    
+            var marker_6a708a7e1e90f478a2b5786a33064037 = L.marker(
+                [12.992885, 77.600267],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_ae01032d8ef5d14b75c4e4df289418b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22b58a26134f2cedb835870b412d3adc = $(`<div id="html_22b58a26134f2cedb835870b412d3adc" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 12.992885<br>Longitude: 77.600267</div>`)[0];
+                popup_ae01032d8ef5d14b75c4e4df289418b7.setContent(html_22b58a26134f2cedb835870b412d3adc);
+            
+        
+
+        marker_6a708a7e1e90f478a2b5786a33064037.bindPopup(popup_ae01032d8ef5d14b75c4e4df289418b7)
+        ;
+
+        
+    
+    
+            var marker_63e1a7f4cb82c674ffdbfe9adbc5c81f = L.marker(
+                [12.996793, 77.566113],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_78f7eb68b7ce8c09ece25ed165aaa59d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d6f9b34b4a256b09a43efb700fd65b2 = $(`<div id="html_1d6f9b34b4a256b09a43efb700fd65b2" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 12.996793<br>Longitude: 77.566113</div>`)[0];
+                popup_78f7eb68b7ce8c09ece25ed165aaa59d.setContent(html_1d6f9b34b4a256b09a43efb700fd65b2);
+            
+        
+
+        marker_63e1a7f4cb82c674ffdbfe9adbc5c81f.bindPopup(popup_78f7eb68b7ce8c09ece25ed165aaa59d)
+        ;
+
+        
+    
+    
+            var marker_66964769e1c0a34bc82aae4f15b6cf0b = L.marker(
+                [12.980179, 77.567272],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_16723acaccb1227995eef46982a657b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d3fccbac17fe69018d684ba889d2ebc = $(`<div id="html_1d3fccbac17fe69018d684ba889d2ebc" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 12.980179<br>Longitude: 77.567272</div>`)[0];
+                popup_16723acaccb1227995eef46982a657b6.setContent(html_1d3fccbac17fe69018d684ba889d2ebc);
+            
+        
+
+        marker_66964769e1c0a34bc82aae4f15b6cf0b.bindPopup(popup_16723acaccb1227995eef46982a657b6)
+        ;
+
+        
+    
+    
+            var marker_2e886aabb0d49f106706f436fb4f89ae = L.marker(
+                [12.906717, 77.468555],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_6b4694cd8cc9c04e7d5657c48309f886 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9bfda1ab29052691698a4a8940c2e21 = $(`<div id="html_b9bfda1ab29052691698a4a8940c2e21" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 12.906717<br>Longitude: 77.468555</div>`)[0];
+                popup_6b4694cd8cc9c04e7d5657c48309f886.setContent(html_b9bfda1ab29052691698a4a8940c2e21);
+            
+        
+
+        marker_2e886aabb0d49f106706f436fb4f89ae.bindPopup(popup_6b4694cd8cc9c04e7d5657c48309f886)
+        ;
+
+        
+    
+    
+            var marker_0b7ba1607a02e7fa1c1053acc0e0a669 = L.marker(
+                [16.207172, 77.343744],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_d54c4db1652883f958b863e047b8b082 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_365d582c3404899b56742d4a48dcd3ac = $(`<div id="html_365d582c3404899b56742d4a48dcd3ac" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Boy<br>Latitude: 16.207172<br>Longitude: 77.343744</div>`)[0];
+                popup_d54c4db1652883f958b863e047b8b082.setContent(html_365d582c3404899b56742d4a48dcd3ac);
+            
+        
+
+        marker_0b7ba1607a02e7fa1c1053acc0e0a669.bindPopup(popup_d54c4db1652883f958b863e047b8b082)
+        ;
+
+        
+    
+    
+            var marker_f012754cf9ad8c21cb95f202e7e78123 = L.marker(
+                [17.314725, 76.824566],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_141e01e68666642b6ea85863620484c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ffcf1f0200fdb19a306ae9a253ee7e9 = $(`<div id="html_6ffcf1f0200fdb19a306ae9a253ee7e9" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 17.314725<br>Longitude: 76.824566</div>`)[0];
+                popup_141e01e68666642b6ea85863620484c1.setContent(html_6ffcf1f0200fdb19a306ae9a253ee7e9);
+            
+        
+
+        marker_f012754cf9ad8c21cb95f202e7e78123.bindPopup(popup_141e01e68666642b6ea85863620484c1)
+        ;
+
+        
+    
+    
+            var marker_f4170a01a6e4f4a46fbfc81df8a57a62 = L.marker(
+                [15.350118, 76.165798],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_e844fcdff925f849d8bf6d970bcc6580 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3869463df946e20fd28a3188084c9855 = $(`<div id="html_3869463df946e20fd28a3188084c9855" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 15.350118<br>Longitude: 76.165798</div>`)[0];
+                popup_e844fcdff925f849d8bf6d970bcc6580.setContent(html_3869463df946e20fd28a3188084c9855);
+            
+        
+
+        marker_f4170a01a6e4f4a46fbfc81df8a57a62.bindPopup(popup_e844fcdff925f849d8bf6d970bcc6580)
+        ;
+
+        
+    
+    
+            var marker_35d2034b6710d0b0c1e6a42ef308d700 = L.marker(
+                [12.885739, 74.841851],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_b3db842c4daf28d9b2d81d7c276cb874 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14f320689abdad3acf07df3720f20343 = $(`<div id="html_14f320689abdad3acf07df3720f20343" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 12.885739<br>Longitude: 74.841851</div>`)[0];
+                popup_b3db842c4daf28d9b2d81d7c276cb874.setContent(html_14f320689abdad3acf07df3720f20343);
+            
+        
+
+        marker_35d2034b6710d0b0c1e6a42ef308d700.bindPopup(popup_b3db842c4daf28d9b2d81d7c276cb874)
+        ;
+
+        
+    
+    
+            var marker_86013d794f14ac370e06f046a8873dc4 = L.marker(
+                [12.881957, 74.862447],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_ec4271a004332726bfaca33e12c46465 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58ed71eed083a2845ef874d501f19561 = $(`<div id="html_58ed71eed083a2845ef874d501f19561" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 12.881957<br>Longitude: 74.862447</div>`)[0];
+                popup_ec4271a004332726bfaca33e12c46465.setContent(html_58ed71eed083a2845ef874d501f19561);
+            
+        
+
+        marker_86013d794f14ac370e06f046a8873dc4.bindPopup(popup_ec4271a004332726bfaca33e12c46465)
+        ;
+
+        
+    
+    
+            var marker_7f7df9ee7fc43369744cacd96eff2dac = L.marker(
+                [12.885042, 74.824739],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_97befaf5a76fb22b1bb692f70f586390 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e473c350fbc647c3ba3b2d51e9cff09 = $(`<div id="html_8e473c350fbc647c3ba3b2d51e9cff09" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 12.885042<br>Longitude: 74.824739</div>`)[0];
+                popup_97befaf5a76fb22b1bb692f70f586390.setContent(html_8e473c350fbc647c3ba3b2d51e9cff09);
+            
+        
+
+        marker_7f7df9ee7fc43369744cacd96eff2dac.bindPopup(popup_97befaf5a76fb22b1bb692f70f586390)
+        ;
+
+        
+    
+    
+            var marker_2047f60b8b1ee73eb6d61d7f32866311 = L.marker(
+                [12.925864, 74.858151],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_a5737ff7f88c008f546e2fe2708c63c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66f0fb4b184e21f3011a4668c8275e26 = $(`<div id="html_66f0fb4b184e21f3011a4668c8275e26" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 12.925864<br>Longitude: 74.858151</div>`)[0];
+                popup_a5737ff7f88c008f546e2fe2708c63c1.setContent(html_66f0fb4b184e21f3011a4668c8275e26);
+            
+        
+
+        marker_2047f60b8b1ee73eb6d61d7f32866311.bindPopup(popup_a5737ff7f88c008f546e2fe2708c63c1)
+        ;
+
+        
+    
+    
+            var marker_ce04b408376f165e7aea43a7045971a1 = L.marker(
+                [12.890508, 74.848286],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_df01e78fea2791cf4635c19f152c9cfe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30cbe2555a3eb2b974651afea349ae69 = $(`<div id="html_30cbe2555a3eb2b974651afea349ae69" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 12.890508<br>Longitude: 74.848286</div>`)[0];
+                popup_df01e78fea2791cf4635c19f152c9cfe.setContent(html_30cbe2555a3eb2b974651afea349ae69);
+            
+        
+
+        marker_ce04b408376f165e7aea43a7045971a1.bindPopup(popup_df01e78fea2791cf4635c19f152c9cfe)
+        ;
+
+        
+    
+    
+            var marker_9fba21b799528db362ff9feee3343428 = L.marker(
+                [12.808888, 74.910847],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_180c3335fc0ffc91d5aa4ded204d516f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfe509520753e4f0b413e3ced5672772 = $(`<div id="html_dfe509520753e4f0b413e3ced5672772" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 12.808888<br>Longitude: 74.910847</div>`)[0];
+                popup_180c3335fc0ffc91d5aa4ded204d516f.setContent(html_dfe509520753e4f0b413e3ced5672772);
+            
+        
+
+        marker_9fba21b799528db362ff9feee3343428.bindPopup(popup_180c3335fc0ffc91d5aa4ded204d516f)
+        ;
+
+        
+    
+    
+            var marker_7e8d3aa775c114faa1f934b7ae8b00e0 = L.marker(
+                [12.881481, 74.858237],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_37c4920a3ac547a0becdab70d45fac65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cde585c6440db984f347ed96d3cc414 = $(`<div id="html_1cde585c6440db984f347ed96d3cc414" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 12.881481<br>Longitude: 74.858237</div>`)[0];
+                popup_37c4920a3ac547a0becdab70d45fac65.setContent(html_1cde585c6440db984f347ed96d3cc414);
+            
+        
+
+        marker_7e8d3aa775c114faa1f934b7ae8b00e0.bindPopup(popup_37c4920a3ac547a0becdab70d45fac65)
+        ;
+
+        
+    
+    
+            var marker_eda374062391f977768d9544ed51b826 = L.marker(
+                [12.886752, 74.858043],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_d75c4968891215c556d803e013dfd07d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02227584336825e7f03c154be6109b20 = $(`<div id="html_02227584336825e7f03c154be6109b20" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 12.886752<br>Longitude: 74.858043</div>`)[0];
+                popup_d75c4968891215c556d803e013dfd07d.setContent(html_02227584336825e7f03c154be6109b20);
+            
+        
+
+        marker_eda374062391f977768d9544ed51b826.bindPopup(popup_d75c4968891215c556d803e013dfd07d)
+        ;
+
+        
+    
+    
+            var marker_8f0ba7eb2c6d8df67622a43f06eae185 = L.marker(
+                [12.857881, 74.841985],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_3847dd5bb8de7b219027ac438607b13f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1450848d67a55065a10d5cfe28326b42 = $(`<div id="html_1450848d67a55065a10d5cfe28326b42" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 12.857881<br>Longitude: 74.841985</div>`)[0];
+                popup_3847dd5bb8de7b219027ac438607b13f.setContent(html_1450848d67a55065a10d5cfe28326b42);
+            
+        
+
+        marker_8f0ba7eb2c6d8df67622a43f06eae185.bindPopup(popup_3847dd5bb8de7b219027ac438607b13f)
+        ;
+
+        
+    
+    
+            var marker_8c9f08ac12074aa29cba8bfaa8fe41c8 = L.marker(
+                [12.857983, 74.832149],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_45b61bb33293a8c17e1b47337a82abb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6a612c2fe20d1c318223091c8907165 = $(`<div id="html_b6a612c2fe20d1c318223091c8907165" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Men<br>Latitude: 12.857983<br>Longitude: 74.832149</div>`)[0];
+                popup_45b61bb33293a8c17e1b47337a82abb9.setContent(html_b6a612c2fe20d1c318223091c8907165);
+            
+        
+
+        marker_8c9f08ac12074aa29cba8bfaa8fe41c8.bindPopup(popup_45b61bb33293a8c17e1b47337a82abb9)
+        ;
+
+        
+    
+    
+            var marker_bae7204128107f597f51114e02873077 = L.marker(
+                [12.959276, 74.806889],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_71e3c5744f10312092833f95256501e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_245c22f96c7ec2df2f709a302fe54c1c = $(`<div id="html_245c22f96c7ec2df2f709a302fe54c1c" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 12.959276<br>Longitude: 74.806889</div>`)[0];
+                popup_71e3c5744f10312092833f95256501e4.setContent(html_245c22f96c7ec2df2f709a302fe54c1c);
+            
+        
+
+        marker_bae7204128107f597f51114e02873077.bindPopup(popup_71e3c5744f10312092833f95256501e4)
+        ;
+
+        
+    
+    
+            var marker_64c2543623f21231c71a632bb28f1af4 = L.marker(
+                [12.32052, 76.615723],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_de44517db189f6c375d757f10299aa55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0b2740f2b9f9553e5eade7472c6f52a = $(`<div id="html_f0b2740f2b9f9553e5eade7472c6f52a" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 12.32052<br>Longitude: 76.615723</div>`)[0];
+                popup_de44517db189f6c375d757f10299aa55.setContent(html_f0b2740f2b9f9553e5eade7472c6f52a);
+            
+        
+
+        marker_64c2543623f21231c71a632bb28f1af4.bindPopup(popup_de44517db189f6c375d757f10299aa55)
+        ;
+
+        
+    
+    
+            var marker_a9182438f4e75f75f7105ca7b7fad09c = L.marker(
+                [12.344359, 76.308051],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_0db5d0f8bc5f46efc483634e6fda45a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac14b88fdb13993ad75e4550f398dde1 = $(`<div id="html_ac14b88fdb13993ad75e4550f398dde1" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 12.344359<br>Longitude: 76.308051</div>`)[0];
+                popup_0db5d0f8bc5f46efc483634e6fda45a7.setContent(html_ac14b88fdb13993ad75e4550f398dde1);
+            
+        
+
+        marker_a9182438f4e75f75f7105ca7b7fad09c.bindPopup(popup_0db5d0f8bc5f46efc483634e6fda45a7)
+        ;
+
+        
+    
+    
+            var marker_102789b53af73ea58beb9f19b5ae9a70 = L.marker(
+                [13.691544, 75.248714],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_d38701accb6e18ad55fa64815b8077a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1ebc6466aa95395e4166d05d04fb923 = $(`<div id="html_e1ebc6466aa95395e4166d05d04fb923" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 13.691544<br>Longitude: 75.248714</div>`)[0];
+                popup_d38701accb6e18ad55fa64815b8077a2.setContent(html_e1ebc6466aa95395e4166d05d04fb923);
+            
+        
+
+        marker_102789b53af73ea58beb9f19b5ae9a70.bindPopup(popup_d38701accb6e18ad55fa64815b8077a2)
+        ;
+
+        
+    
+    
+            var marker_3cb28c8996e4ceabbf0d6230d50cb462 = L.marker(
+                [13.593993, 77.262841],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_bb0a24694296ce13f8f4c80f267f4dff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb8ad83c62c8572e28ead78e75e057e6 = $(`<div id="html_bb8ad83c62c8572e28ead78e75e057e6" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 13.593993<br>Longitude: 77.262841</div>`)[0];
+                popup_bb0a24694296ce13f8f4c80f267f4dff.setContent(html_bb8ad83c62c8572e28ead78e75e057e6);
+            
+        
+
+        marker_3cb28c8996e4ceabbf0d6230d50cb462.bindPopup(popup_bb0a24694296ce13f8f4c80f267f4dff)
+        ;
+
+        
+    
+    
+            var marker_29dc1cff3d5cbf46fb97120d2858bf51 = L.marker(
+                [14.708972, 74.265392],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_73d6bd4a2080b5f1122639797b57b20b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f67b40c803b5ef2751c0f158ff1b440 = $(`<div id="html_3f67b40c803b5ef2751c0f158ff1b440" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Girl<br>Latitude: 14.708972<br>Longitude: 74.265392</div>`)[0];
+                popup_73d6bd4a2080b5f1122639797b57b20b.setContent(html_3f67b40c803b5ef2751c0f158ff1b440);
+            
+        
+
+        marker_29dc1cff3d5cbf46fb97120d2858bf51.bindPopup(popup_73d6bd4a2080b5f1122639797b57b20b)
+        ;
+
+        
+    
+    
+            var marker_d84aaa2fd7405075465ee40c9e867c5b = L.marker(
+                [15.311013, 74.725163],
+                {}
+            ).addTo(marker_cluster_31a2701f8116f16b3d44691f218e368f);
+        
+    
+        var popup_5ef4f56a1b04daeeaac7e4bbcf23425f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4542a705db4aba29a106d735ca8b4c7f = $(`<div id="html_4542a705db4aba29a106d735ca8b4c7f" style="width: 100.0%; height: 100.0%;">Crime Group: Human Trafficking<br>Crime Head: Women<br>Latitude: 15.311013<br>Longitude: 74.725163</div>`)[0];
+                popup_5ef4f56a1b04daeeaac7e4bbcf23425f.setContent(html_4542a705db4aba29a106d735ca8b4c7f);
+            
+        
+
+        marker_d84aaa2fd7405075465ee40c9e867c5b.bindPopup(popup_5ef4f56a1b04daeeaac7e4bbcf23425f)
+        ;
+
+        
+    
+    
+            var layer_control_3f4c79004b19ad5379d818499ffea608 = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_8f766c406278c9b5f27236397567aab2,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_3f4c79004b19ad5379d818499ffea608.base_layers,
+                layer_control_3f4c79004b19ad5379d818499ffea608.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_19ca72b383106a7b49e1afc6e1b82add);
+        
+</script>
+</html>

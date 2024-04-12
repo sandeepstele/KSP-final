@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd4d96eca4cf5ff3aa3c177c1c4661bf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fd4d96eca4cf5ff3aa3c177c1c4661bf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd4d96eca4cf5ff3aa3c177c1c4661bf = L.map(
+                "map_fd4d96eca4cf5ff3aa3c177c1c4661bf",
+                {
+                    center: [12.97204251367685, 77.55665533339362],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_569c712f4fcf4c7faeca3b34245f94ec = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fd4d96eca4cf5ff3aa3c177c1c4661bf);
+        
+    
+            var marker_cluster_18130715a98fcf31010e96d5ce50077c = L.markerClusterGroup(
+                {}
+            );
+            map_fd4d96eca4cf5ff3aa3c177c1c4661bf.addLayer(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+            var marker_8498789640e825041ce037a19fe9a9c5 = L.marker(
+                [12.96396, 77.57603],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_7470aa1c5769b5908eb00f9714e4510c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d62157a87a91ef9b28cbe78a008d75e3 = $(`<div id="html_d62157a87a91ef9b28cbe78a008d75e3" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.96396<br>Longitude: 77.57603</div>`)[0];
+                popup_7470aa1c5769b5908eb00f9714e4510c.setContent(html_d62157a87a91ef9b28cbe78a008d75e3);
+            
+        
+
+        marker_8498789640e825041ce037a19fe9a9c5.bindPopup(popup_7470aa1c5769b5908eb00f9714e4510c)
+        ;
+
+        
+    
+    
+            var marker_f7074097049fc1284d29803494449f0f = L.marker(
+                [12.97371, 77.57591],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_40b9a0536c87498dfb1301c44d1b110d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df91edfdc603c1a7c8dd2d13d92d03ab = $(`<div id="html_df91edfdc603c1a7c8dd2d13d92d03ab" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 12.97371<br>Longitude: 77.57591</div>`)[0];
+                popup_40b9a0536c87498dfb1301c44d1b110d.setContent(html_df91edfdc603c1a7c8dd2d13d92d03ab);
+            
+        
+
+        marker_f7074097049fc1284d29803494449f0f.bindPopup(popup_40b9a0536c87498dfb1301c44d1b110d)
+        ;
+
+        
+    
+    
+            var marker_e0eaec36680ab4a02ebaecc3b9541f52 = L.marker(
+                [12.96372, 77.584146],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_c284d9eb26f681a84e7fb7cf8992fbc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f176d1c19476ac9b3d6f9d208c279687 = $(`<div id="html_f176d1c19476ac9b3d6f9d208c279687" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.96372<br>Longitude: 77.584146</div>`)[0];
+                popup_c284d9eb26f681a84e7fb7cf8992fbc9.setContent(html_f176d1c19476ac9b3d6f9d208c279687);
+            
+        
+
+        marker_e0eaec36680ab4a02ebaecc3b9541f52.bindPopup(popup_c284d9eb26f681a84e7fb7cf8992fbc9)
+        ;
+
+        
+    
+    
+            var marker_758ee4c236f05fbbf74bbd151ba77a87 = L.marker(
+                [13.0307984, 77.58086669],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_b8bc7e13c782d686a023e34913abce46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70cb1f780d4b4ea4051de016972c6c36 = $(`<div id="html_70cb1f780d4b4ea4051de016972c6c36" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 13.0307984<br>Longitude: 77.58086669</div>`)[0];
+                popup_b8bc7e13c782d686a023e34913abce46.setContent(html_70cb1f780d4b4ea4051de016972c6c36);
+            
+        
+
+        marker_758ee4c236f05fbbf74bbd151ba77a87.bindPopup(popup_b8bc7e13c782d686a023e34913abce46)
+        ;
+
+        
+    
+    
+            var marker_85eabb1576bf857461e8d698f1793357 = L.marker(
+                [12.968551, 77.580061],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_f10a6c92c94ffcddc1d4ff1cced3641d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82f7e398629cdb1d985f9771bb5f047b = $(`<div id="html_82f7e398629cdb1d985f9771bb5f047b" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.968551<br>Longitude: 77.580061</div>`)[0];
+                popup_f10a6c92c94ffcddc1d4ff1cced3641d.setContent(html_82f7e398629cdb1d985f9771bb5f047b);
+            
+        
+
+        marker_85eabb1576bf857461e8d698f1793357.bindPopup(popup_f10a6c92c94ffcddc1d4ff1cced3641d)
+        ;
+
+        
+    
+    
+            var marker_46952ec160c33ceea1380099dae35fb1 = L.marker(
+                [12.97085444, 77.57512333],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_2db5ac08e693c6eccfb235cd989b15c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba07099447e2196d425903fde52ae14d = $(`<div id="html_ba07099447e2196d425903fde52ae14d" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.97085444<br>Longitude: 77.57512333</div>`)[0];
+                popup_2db5ac08e693c6eccfb235cd989b15c3.setContent(html_ba07099447e2196d425903fde52ae14d);
+            
+        
+
+        marker_46952ec160c33ceea1380099dae35fb1.bindPopup(popup_2db5ac08e693c6eccfb235cd989b15c3)
+        ;
+
+        
+    
+    
+            var marker_90669132b9744f700dad5e7b75b6d459 = L.marker(
+                [12.848924, 77.654239],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_a3452c1b0893712f088eddb7fc56a9bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08d6b3b96f28ed97f7ae75b3c5a4b933 = $(`<div id="html_08d6b3b96f28ed97f7ae75b3c5a4b933" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 12.848924<br>Longitude: 77.654239</div>`)[0];
+                popup_a3452c1b0893712f088eddb7fc56a9bc.setContent(html_08d6b3b96f28ed97f7ae75b3c5a4b933);
+            
+        
+
+        marker_90669132b9744f700dad5e7b75b6d459.bindPopup(popup_a3452c1b0893712f088eddb7fc56a9bc)
+        ;
+
+        
+    
+    
+            var marker_cc8e7992ed7348a9709d9cc8e9855256 = L.marker(
+                [12.964859, 77.580636],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_74dd52b06905155cd3df3f0f44da605d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e30a453db284b501bc611e3cc1a3ebb8 = $(`<div id="html_e30a453db284b501bc611e3cc1a3ebb8" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 12.964859<br>Longitude: 77.580636</div>`)[0];
+                popup_74dd52b06905155cd3df3f0f44da605d.setContent(html_e30a453db284b501bc611e3cc1a3ebb8);
+            
+        
+
+        marker_cc8e7992ed7348a9709d9cc8e9855256.bindPopup(popup_74dd52b06905155cd3df3f0f44da605d)
+        ;
+
+        
+    
+    
+            var marker_edc46ab1dc020f47a3d40b62bba4cc07 = L.marker(
+                [13.454564, 77.454564],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_476b604394167d58cd9bb28b5c6c0f23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e76d812c66d4a6e4f83f1fda191c34f2 = $(`<div id="html_e76d812c66d4a6e4f83f1fda191c34f2" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 13.454564<br>Longitude: 77.454564</div>`)[0];
+                popup_476b604394167d58cd9bb28b5c6c0f23.setContent(html_e76d812c66d4a6e4f83f1fda191c34f2);
+            
+        
+
+        marker_edc46ab1dc020f47a3d40b62bba4cc07.bindPopup(popup_476b604394167d58cd9bb28b5c6c0f23)
+        ;
+
+        
+    
+    
+            var marker_2cf8133ccb169150f8f090d77b52f626 = L.marker(
+                [12.9723065855981, 77.50804202823421],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_95086cc6a0ed48787d42637323c0759c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b75b714eb30258c7225cd299005c9aeb = $(`<div id="html_b75b714eb30258c7225cd299005c9aeb" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 12.9723065855981<br>Longitude: 77.50804202823421</div>`)[0];
+                popup_95086cc6a0ed48787d42637323c0759c.setContent(html_b75b714eb30258c7225cd299005c9aeb);
+            
+        
+
+        marker_2cf8133ccb169150f8f090d77b52f626.bindPopup(popup_95086cc6a0ed48787d42637323c0759c)
+        ;
+
+        
+    
+    
+            var marker_31953a4af8dcb59fd24647c7f34ee0e2 = L.marker(
+                [12.97066507, 77.52489288],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_5a8fdf3f3acc6836f98bc0a15015bd8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04595ece12ca06c0d0a6b2f43cbba6dd = $(`<div id="html_04595ece12ca06c0d0a6b2f43cbba6dd" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 12.97066507<br>Longitude: 77.52489288</div>`)[0];
+                popup_5a8fdf3f3acc6836f98bc0a15015bd8a.setContent(html_04595ece12ca06c0d0a6b2f43cbba6dd);
+            
+        
+
+        marker_31953a4af8dcb59fd24647c7f34ee0e2.bindPopup(popup_5a8fdf3f3acc6836f98bc0a15015bd8a)
+        ;
+
+        
+    
+    
+            var marker_96ecac7ef6be91991b49e2869dd6b168 = L.marker(
+                [12.91732, 77.57783],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_a562922ceb996ea97c21cdcd09e68fc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_049d0f4dbf38d9d6419b2fd01152f533 = $(`<div id="html_049d0f4dbf38d9d6419b2fd01152f533" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.91732<br>Longitude: 77.57783</div>`)[0];
+                popup_a562922ceb996ea97c21cdcd09e68fc2.setContent(html_049d0f4dbf38d9d6419b2fd01152f533);
+            
+        
+
+        marker_96ecac7ef6be91991b49e2869dd6b168.bindPopup(popup_a562922ceb996ea97c21cdcd09e68fc2)
+        ;
+
+        
+    
+    
+            var marker_42d79cc65d5ee41fd0ead187441d5e54 = L.marker(
+                [12.9609, 77.5803],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_8e95cf1ebbe44ce88103b7be18e41b4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1926adeb55ff38bd1da211339b13b06 = $(`<div id="html_e1926adeb55ff38bd1da211339b13b06" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.9609<br>Longitude: 77.5803</div>`)[0];
+                popup_8e95cf1ebbe44ce88103b7be18e41b4c.setContent(html_e1926adeb55ff38bd1da211339b13b06);
+            
+        
+
+        marker_42d79cc65d5ee41fd0ead187441d5e54.bindPopup(popup_8e95cf1ebbe44ce88103b7be18e41b4c)
+        ;
+
+        
+    
+    
+            var marker_e1439eef27769e9287f777042aa4f88a = L.marker(
+                [12.97677046, 77.57741964],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_7a36df920d30f51b0d3f4188f2ec725c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2af78a0dc8846cad4c22d906d5b86023 = $(`<div id="html_2af78a0dc8846cad4c22d906d5b86023" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.97677046<br>Longitude: 77.57741964</div>`)[0];
+                popup_7a36df920d30f51b0d3f4188f2ec725c.setContent(html_2af78a0dc8846cad4c22d906d5b86023);
+            
+        
+
+        marker_e1439eef27769e9287f777042aa4f88a.bindPopup(popup_7a36df920d30f51b0d3f4188f2ec725c)
+        ;
+
+        
+    
+    
+            var marker_5b0482d5fbb8d971972c04dff77b830a = L.marker(
+                [12.95412, 77.545848],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_ade1a7f2acc29745b60ccc9502963f10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a5340eeaf1203a3a2cd9d07ccf428ee = $(`<div id="html_6a5340eeaf1203a3a2cd9d07ccf428ee" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.95412<br>Longitude: 77.545848</div>`)[0];
+                popup_ade1a7f2acc29745b60ccc9502963f10.setContent(html_6a5340eeaf1203a3a2cd9d07ccf428ee);
+            
+        
+
+        marker_5b0482d5fbb8d971972c04dff77b830a.bindPopup(popup_ade1a7f2acc29745b60ccc9502963f10)
+        ;
+
+        
+    
+    
+            var marker_1c54ea96dab4ac0dae5d5796625e293d = L.marker(
+                [12.965823, 77.592774],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_022179b7692d76e283d4c263dccf8e9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3c64102586a0515231e8a2c72d67083 = $(`<div id="html_a3c64102586a0515231e8a2c72d67083" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.965823<br>Longitude: 77.592774</div>`)[0];
+                popup_022179b7692d76e283d4c263dccf8e9c.setContent(html_a3c64102586a0515231e8a2c72d67083);
+            
+        
+
+        marker_1c54ea96dab4ac0dae5d5796625e293d.bindPopup(popup_022179b7692d76e283d4c263dccf8e9c)
+        ;
+
+        
+    
+    
+            var marker_8ed36009b44707a9c05042a3b6cd175c = L.marker(
+                [12.993781, 77.508244],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_634e0d61f459efa0a55078de22a18810 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8958406e2775bbcf78bd3cbe6b5f784 = $(`<div id="html_f8958406e2775bbcf78bd3cbe6b5f784" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 12.993781<br>Longitude: 77.508244</div>`)[0];
+                popup_634e0d61f459efa0a55078de22a18810.setContent(html_f8958406e2775bbcf78bd3cbe6b5f784);
+            
+        
+
+        marker_8ed36009b44707a9c05042a3b6cd175c.bindPopup(popup_634e0d61f459efa0a55078de22a18810)
+        ;
+
+        
+    
+    
+            var marker_cf8e4407092e7dcf90a252451753120c = L.marker(
+                [13.029582, 77.609696],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_4e26b753b4e4704d4710a526976ae483 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_837fac4de15da735d0114b23b0cdfd4e = $(`<div id="html_837fac4de15da735d0114b23b0cdfd4e" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 13.029582<br>Longitude: 77.609696</div>`)[0];
+                popup_4e26b753b4e4704d4710a526976ae483.setContent(html_837fac4de15da735d0114b23b0cdfd4e);
+            
+        
+
+        marker_cf8e4407092e7dcf90a252451753120c.bindPopup(popup_4e26b753b4e4704d4710a526976ae483)
+        ;
+
+        
+    
+    
+            var marker_6fe7a9374a84552b96cd32271d0c29f1 = L.marker(
+                [12.992009, 77.563966],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_78cfaaf0e7cbdd490f68df8d570cef63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_450dece1da3ad5eba9aa658ed7000697 = $(`<div id="html_450dece1da3ad5eba9aa658ed7000697" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 12.992009<br>Longitude: 77.563966</div>`)[0];
+                popup_78cfaaf0e7cbdd490f68df8d570cef63.setContent(html_450dece1da3ad5eba9aa658ed7000697);
+            
+        
+
+        marker_6fe7a9374a84552b96cd32271d0c29f1.bindPopup(popup_78cfaaf0e7cbdd490f68df8d570cef63)
+        ;
+
+        
+    
+    
+            var marker_5e6a5c259c17f50cc462d63b51e56aed = L.marker(
+                [13.042381, 77.614572],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_10a244d5bac854efcb3dc7027cb3ad67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fff74a7126592338fa40b6c030e0c8f6 = $(`<div id="html_fff74a7126592338fa40b6c030e0c8f6" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 13.042381<br>Longitude: 77.614572</div>`)[0];
+                popup_10a244d5bac854efcb3dc7027cb3ad67.setContent(html_fff74a7126592338fa40b6c030e0c8f6);
+            
+        
+
+        marker_5e6a5c259c17f50cc462d63b51e56aed.bindPopup(popup_10a244d5bac854efcb3dc7027cb3ad67)
+        ;
+
+        
+    
+    
+            var marker_72434b8d4878eb70899abe3d2ed3fd96 = L.marker(
+                [12.945816, 77.525315],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_f465d4c4d55c1fba50f0286d69a431c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c349d69c4729cfaf239e3ae6cbcf2aad = $(`<div id="html_c349d69c4729cfaf239e3ae6cbcf2aad" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.945816<br>Longitude: 77.525315</div>`)[0];
+                popup_f465d4c4d55c1fba50f0286d69a431c5.setContent(html_c349d69c4729cfaf239e3ae6cbcf2aad);
+            
+        
+
+        marker_72434b8d4878eb70899abe3d2ed3fd96.bindPopup(popup_f465d4c4d55c1fba50f0286d69a431c5)
+        ;
+
+        
+    
+    
+            var marker_f72779f36aa79e004b55a239ede9de13 = L.marker(
+                [12.965612, 77.581115],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_76b07e3914107a05ad616fe1dd87d0fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0c99d30138a3304d5f5b17634b915b3 = $(`<div id="html_d0c99d30138a3304d5f5b17634b915b3" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.965612<br>Longitude: 77.581115</div>`)[0];
+                popup_76b07e3914107a05ad616fe1dd87d0fa.setContent(html_d0c99d30138a3304d5f5b17634b915b3);
+            
+        
+
+        marker_f72779f36aa79e004b55a239ede9de13.bindPopup(popup_76b07e3914107a05ad616fe1dd87d0fa)
+        ;
+
+        
+    
+    
+            var marker_49c48e84a38329a96e3d9b6ddbab71c5 = L.marker(
+                [12.9792194, 77.5579901],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_cfbdbf429aaab7f78777392c0701a422 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8644d650efb50e3d99dfdd0dc92e26d = $(`<div id="html_d8644d650efb50e3d99dfdd0dc92e26d" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 12.9792194<br>Longitude: 77.5579901</div>`)[0];
+                popup_cfbdbf429aaab7f78777392c0701a422.setContent(html_d8644d650efb50e3d99dfdd0dc92e26d);
+            
+        
+
+        marker_49c48e84a38329a96e3d9b6ddbab71c5.bindPopup(popup_cfbdbf429aaab7f78777392c0701a422)
+        ;
+
+        
+    
+    
+            var marker_d4b4c5baf3eb54e836f7b58cc3c96df3 = L.marker(
+                [12.977196, 77.568145],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_4e757948fd73a6dd6c35257c2710dbb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_178732563807fbd7b5838d313bc679ef = $(`<div id="html_178732563807fbd7b5838d313bc679ef" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 12.977196<br>Longitude: 77.568145</div>`)[0];
+                popup_4e757948fd73a6dd6c35257c2710dbb9.setContent(html_178732563807fbd7b5838d313bc679ef);
+            
+        
+
+        marker_d4b4c5baf3eb54e836f7b58cc3c96df3.bindPopup(popup_4e757948fd73a6dd6c35257c2710dbb9)
+        ;
+
+        
+    
+    
+            var marker_f6e586bd8e99f8434532edaf476f776d = L.marker(
+                [12.532471, 77.373528],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_1371762472c069b44bda53f4f6ee4a39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1306ab51b64ff642c96f2bd767e3bc3f = $(`<div id="html_1306ab51b64ff642c96f2bd767e3bc3f" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Company<br>Latitude: 12.532471<br>Longitude: 77.373528</div>`)[0];
+                popup_1371762472c069b44bda53f4f6ee4a39.setContent(html_1306ab51b64ff642c96f2bd767e3bc3f);
+            
+        
+
+        marker_f6e586bd8e99f8434532edaf476f776d.bindPopup(popup_1371762472c069b44bda53f4f6ee4a39)
+        ;
+
+        
+    
+    
+            var marker_e656d7d89806b96bb28f3724324e885e = L.marker(
+                [12.957192, 77.501785],
+                {}
+            ).addTo(marker_cluster_18130715a98fcf31010e96d5ce50077c);
+        
+    
+        var popup_709fa6975baabf32bed724d6d7279a5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc00f7cdb3ecdb5b321229cdcd18f731 = $(`<div id="html_dc00f7cdb3ecdb5b321229cdcd18f731" style="width: 100.0%; height: 100.0%;">Crime Group: COPY RIGHT ACT 1957<br>Crime Head: By Individual<br>Latitude: 12.957192<br>Longitude: 77.501785</div>`)[0];
+                popup_709fa6975baabf32bed724d6d7279a5b.setContent(html_dc00f7cdb3ecdb5b321229cdcd18f731);
+            
+        
+
+        marker_e656d7d89806b96bb28f3724324e885e.bindPopup(popup_709fa6975baabf32bed724d6d7279a5b)
+        ;
+
+        
+    
+    
+            var layer_control_ca6124ad9dcb3fcf5b34b15fa7aa4265 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_569c712f4fcf4c7faeca3b34245f94ec,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_ca6124ad9dcb3fcf5b34b15fa7aa4265.base_layers,
+                layer_control_ca6124ad9dcb3fcf5b34b15fa7aa4265.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_fd4d96eca4cf5ff3aa3c177c1c4661bf);
+        
+</script>
+</html>

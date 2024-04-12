@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c0fa61fac37ae98d4a88a343ed71c523 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c0fa61fac37ae98d4a88a343ed71c523" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c0fa61fac37ae98d4a88a343ed71c523 = L.map(
+                "map_c0fa61fac37ae98d4a88a343ed71c523",
+                {
+                    center: [16.03703033333333, 76.77915437142858],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_df478774287a4da0de70c996be7ba06b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c0fa61fac37ae98d4a88a343ed71c523);
+        
+    
+            var marker_cluster_5a28f5c45dbedcddda4a126e24ee648a = L.markerClusterGroup(
+                {}
+            );
+            map_c0fa61fac37ae98d4a88a343ed71c523.addLayer(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+            var marker_af1bca5003ab6658b29729bb8f9672a0 = L.marker(
+                [15.77063, 76.74911],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_8b14cea58b098dc8214e1d770dd0eaf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fda052d52e7665af7e9c5809423b7026 = $(`<div id="html_fda052d52e7665af7e9c5809423b7026" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 15.77063<br>Longitude: 76.74911</div>`)[0];
+                popup_8b14cea58b098dc8214e1d770dd0eaf6.setContent(html_fda052d52e7665af7e9c5809423b7026);
+            
+        
+
+        marker_af1bca5003ab6658b29729bb8f9672a0.bindPopup(popup_8b14cea58b098dc8214e1d770dd0eaf6)
+        ;
+
+        
+    
+    
+            var marker_5b3b565cccdfb969836f29fc3db74a7d = L.marker(
+                [15.593911, 77.25211],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_834d0075c56fa67fcca7b86d795f1dd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4dc6468b3886c9b413c0bfab662e9434 = $(`<div id="html_4dc6468b3886c9b413c0bfab662e9434" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 15.593911<br>Longitude: 77.25211</div>`)[0];
+                popup_834d0075c56fa67fcca7b86d795f1dd6.setContent(html_4dc6468b3886c9b413c0bfab662e9434);
+            
+        
+
+        marker_5b3b565cccdfb969836f29fc3db74a7d.bindPopup(popup_834d0075c56fa67fcca7b86d795f1dd6)
+        ;
+
+        
+    
+    
+            var marker_b24447316b5de35018d1946ae471efd6 = L.marker(
+                [15.998079, 77.0369049],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_6516bee121c3d7694216417f7cc14637 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_035eb09d800984aba02d82b63e2235de = $(`<div id="html_035eb09d800984aba02d82b63e2235de" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 15.998079<br>Longitude: 77.0369049</div>`)[0];
+                popup_6516bee121c3d7694216417f7cc14637.setContent(html_035eb09d800984aba02d82b63e2235de);
+            
+        
+
+        marker_b24447316b5de35018d1946ae471efd6.bindPopup(popup_6516bee121c3d7694216417f7cc14637)
+        ;
+
+        
+    
+    
+            var marker_2a8712854f326e2043ffe86af4132711 = L.marker(
+                [16.183006, 76.598396],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_93b7bb5a5d768c8fc9098f9f69233a4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c1c002cb289d4c2a35a2c8f887de1eb = $(`<div id="html_1c1c002cb289d4c2a35a2c8f887de1eb" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 16.183006<br>Longitude: 76.598396</div>`)[0];
+                popup_93b7bb5a5d768c8fc9098f9f69233a4a.setContent(html_1c1c002cb289d4c2a35a2c8f887de1eb);
+            
+        
+
+        marker_2a8712854f326e2043ffe86af4132711.bindPopup(popup_93b7bb5a5d768c8fc9098f9f69233a4a)
+        ;
+
+        
+    
+    
+            var marker_1ffcf32887d8d3bdb5722e8839c3e935 = L.marker(
+                [16.156402, 76.527546],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_2c4125f71179483cd3f6e0e290fbe1e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b846cccafd8f7301c70db10ffd230c03 = $(`<div id="html_b846cccafd8f7301c70db10ffd230c03" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 16.156402<br>Longitude: 76.527546</div>`)[0];
+                popup_2c4125f71179483cd3f6e0e290fbe1e5.setContent(html_b846cccafd8f7301c70db10ffd230c03);
+            
+        
+
+        marker_1ffcf32887d8d3bdb5722e8839c3e935.bindPopup(popup_2c4125f71179483cd3f6e0e290fbe1e5)
+        ;
+
+        
+    
+    
+            var marker_e0f90141415af88fce84f689fb985386 = L.marker(
+                [15.961646, 76.654542],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_8dad0495a23bfdc06408d0e65b7c7d8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_000acfebe7b70e0df8b33777b9f7353a = $(`<div id="html_000acfebe7b70e0df8b33777b9f7353a" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 15.961646<br>Longitude: 76.654542</div>`)[0];
+                popup_8dad0495a23bfdc06408d0e65b7c7d8e.setContent(html_000acfebe7b70e0df8b33777b9f7353a);
+            
+        
+
+        marker_e0f90141415af88fce84f689fb985386.bindPopup(popup_8dad0495a23bfdc06408d0e65b7c7d8e)
+        ;
+
+        
+    
+    
+            var marker_a821d4cd552228d363904f1d86914876 = L.marker(
+                [16.33603, 76.93999],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_cdcd34e29fe91f812d387dd984d6fcd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0901f4c7062c8895a43f59725d89581 = $(`<div id="html_d0901f4c7062c8895a43f59725d89581" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.33603<br>Longitude: 76.93999</div>`)[0];
+                popup_cdcd34e29fe91f812d387dd984d6fcd4.setContent(html_d0901f4c7062c8895a43f59725d89581);
+            
+        
+
+        marker_a821d4cd552228d363904f1d86914876.bindPopup(popup_cdcd34e29fe91f812d387dd984d6fcd4)
+        ;
+
+        
+    
+    
+            var marker_9f6076f7bd4df530a08517e19e326845 = L.marker(
+                [15.767463, 76.759516],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_683e098d6e7b9dbd177a555de94f49af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3535400b98c13bb01445ced0e1facb3 = $(`<div id="html_f3535400b98c13bb01445ced0e1facb3" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 15.767463<br>Longitude: 76.759516</div>`)[0];
+                popup_683e098d6e7b9dbd177a555de94f49af.setContent(html_f3535400b98c13bb01445ced0e1facb3);
+            
+        
+
+        marker_9f6076f7bd4df530a08517e19e326845.bindPopup(popup_683e098d6e7b9dbd177a555de94f49af)
+        ;
+
+        
+    
+    
+            var marker_b73ba7e169690fe83e059965abd47b15 = L.marker(
+                [16.051783, 77.09233],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_d694cada9dd71e83623cc14f20b43205 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf7e9be314c49e8e1e6615afd687451c = $(`<div id="html_bf7e9be314c49e8e1e6615afd687451c" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 16.051783<br>Longitude: 77.09233</div>`)[0];
+                popup_d694cada9dd71e83623cc14f20b43205.setContent(html_bf7e9be314c49e8e1e6615afd687451c);
+            
+        
+
+        marker_b73ba7e169690fe83e059965abd47b15.bindPopup(popup_d694cada9dd71e83623cc14f20b43205)
+        ;
+
+        
+    
+    
+            var marker_c2a905e678c4dc594aad991a859319df = L.marker(
+                [16.201528, 77.346407],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_cbab203883ad439f4bd24f68f5cd0747 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b58705912754501e064479da9833dd5e = $(`<div id="html_b58705912754501e064479da9833dd5e" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.201528<br>Longitude: 77.346407</div>`)[0];
+                popup_cbab203883ad439f4bd24f68f5cd0747.setContent(html_b58705912754501e064479da9833dd5e);
+            
+        
+
+        marker_c2a905e678c4dc594aad991a859319df.bindPopup(popup_cbab203883ad439f4bd24f68f5cd0747)
+        ;
+
+        
+    
+    
+            var marker_38f5130ad5422e4a5b4730d36ceae944 = L.marker(
+                [16.175086, 77.02877],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_3baa01de18be80d666092fd7832121e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87331c22b623a5a1a65bf4bf5383ffd6 = $(`<div id="html_87331c22b623a5a1a65bf4bf5383ffd6" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 16.175086<br>Longitude: 77.02877</div>`)[0];
+                popup_3baa01de18be80d666092fd7832121e8.setContent(html_87331c22b623a5a1a65bf4bf5383ffd6);
+            
+        
+
+        marker_38f5130ad5422e4a5b4730d36ceae944.bindPopup(popup_3baa01de18be80d666092fd7832121e8)
+        ;
+
+        
+    
+    
+            var marker_ad933fb8d741d23a4f9ae6f14226983a = L.marker(
+                [15.692254, 76.72185],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_58f72f86e0520345721c226cb0730e19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b5a24b0c978d789d88ed5015c9d2c8d = $(`<div id="html_3b5a24b0c978d789d88ed5015c9d2c8d" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 15.692254<br>Longitude: 76.72185</div>`)[0];
+                popup_58f72f86e0520345721c226cb0730e19.setContent(html_3b5a24b0c978d789d88ed5015c9d2c8d);
+            
+        
+
+        marker_ad933fb8d741d23a4f9ae6f14226983a.bindPopup(popup_58f72f86e0520345721c226cb0730e19)
+        ;
+
+        
+    
+    
+            var marker_164db8a93d27a99cb8863513f3194780 = L.marker(
+                [16.224033, 77.361348],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_daf64daf021282f515f4b9b0d4f62dbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ee849c488610a0d5efba9a58be4526e = $(`<div id="html_7ee849c488610a0d5efba9a58be4526e" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.224033<br>Longitude: 77.361348</div>`)[0];
+                popup_daf64daf021282f515f4b9b0d4f62dbd.setContent(html_7ee849c488610a0d5efba9a58be4526e);
+            
+        
+
+        marker_164db8a93d27a99cb8863513f3194780.bindPopup(popup_daf64daf021282f515f4b9b0d4f62dbd)
+        ;
+
+        
+    
+    
+            var marker_dc39208cc4f320620b6a4f3f91e293bf = L.marker(
+                [16.021994, 77.252118],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_f1fc9c0a4f05eaeedc472f6f95ecf335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17ca2974a9c092290d1e16edda4eaeb0 = $(`<div id="html_17ca2974a9c092290d1e16edda4eaeb0" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.021994<br>Longitude: 77.252118</div>`)[0];
+                popup_f1fc9c0a4f05eaeedc472f6f95ecf335.setContent(html_17ca2974a9c092290d1e16edda4eaeb0);
+            
+        
+
+        marker_dc39208cc4f320620b6a4f3f91e293bf.bindPopup(popup_f1fc9c0a4f05eaeedc472f6f95ecf335)
+        ;
+
+        
+    
+    
+            var marker_aa3ca3a56d38a561a493e548e6f2d2d3 = L.marker(
+                [16.214051, 77.353896],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_2e073299b356a2c0864b4e6d0693111b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3816e3ae5611c48c03115772953a0fd2 = $(`<div id="html_3816e3ae5611c48c03115772953a0fd2" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.214051<br>Longitude: 77.353896</div>`)[0];
+                popup_2e073299b356a2c0864b4e6d0693111b.setContent(html_3816e3ae5611c48c03115772953a0fd2);
+            
+        
+
+        marker_aa3ca3a56d38a561a493e548e6f2d2d3.bindPopup(popup_2e073299b356a2c0864b4e6d0693111b)
+        ;
+
+        
+    
+    
+            var marker_388cc20085ad148061e819666e93c281 = L.marker(
+                [16.019462, 76.065565],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_d841d18c61c8ca7c7942b2ca5f14a7fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3faa8ddb676b60086004d1f3cd252924 = $(`<div id="html_3faa8ddb676b60086004d1f3cd252924" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.019462<br>Longitude: 76.065565</div>`)[0];
+                popup_d841d18c61c8ca7c7942b2ca5f14a7fd.setContent(html_3faa8ddb676b60086004d1f3cd252924);
+            
+        
+
+        marker_388cc20085ad148061e819666e93c281.bindPopup(popup_d841d18c61c8ca7c7942b2ca5f14a7fd)
+        ;
+
+        
+    
+    
+            var marker_06efc51c5da1eab1558738da6fdb125d = L.marker(
+                [16.129553, 76.43007],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_e424d735b2903ba31115cd2a4340a910 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f53766209cd82305d9567d09f83c6079 = $(`<div id="html_f53766209cd82305d9567d09f83c6079" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.129553<br>Longitude: 76.43007</div>`)[0];
+                popup_e424d735b2903ba31115cd2a4340a910.setContent(html_f53766209cd82305d9567d09f83c6079);
+            
+        
+
+        marker_06efc51c5da1eab1558738da6fdb125d.bindPopup(popup_e424d735b2903ba31115cd2a4340a910)
+        ;
+
+        
+    
+    
+            var marker_1d9e778fe219d476a81a174bd3d43b2f = L.marker(
+                [15.845266, 76.704812],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_9e745b72b177a0a96c8e0ee44dab913d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7825a2f555b27c00cdf9492b66e432ff = $(`<div id="html_7825a2f555b27c00cdf9492b66e432ff" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 15.845266<br>Longitude: 76.704812</div>`)[0];
+                popup_9e745b72b177a0a96c8e0ee44dab913d.setContent(html_7825a2f555b27c00cdf9492b66e432ff);
+            
+        
+
+        marker_1d9e778fe219d476a81a174bd3d43b2f.bindPopup(popup_9e745b72b177a0a96c8e0ee44dab913d)
+        ;
+
+        
+    
+    
+            var marker_32c3b13b9cda63a705813521d8003943 = L.marker(
+                [15.732597, 76.477641],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_00d8689b0786ce39c308fd71769c7173 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f51147e2b866cd1084e27ac8c13ec15c = $(`<div id="html_f51147e2b866cd1084e27ac8c13ec15c" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 15.732597<br>Longitude: 76.477641</div>`)[0];
+                popup_00d8689b0786ce39c308fd71769c7173.setContent(html_f51147e2b866cd1084e27ac8c13ec15c);
+            
+        
+
+        marker_32c3b13b9cda63a705813521d8003943.bindPopup(popup_00d8689b0786ce39c308fd71769c7173)
+        ;
+
+        
+    
+    
+            var marker_8a92407ae119d503a602a52d3d689960 = L.marker(
+                [16.396597, 76.725866],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_a97ce2f44727e646206fad7a309cd2e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f60aa884b565dfa48b4eca8c9ef8e683 = $(`<div id="html_f60aa884b565dfa48b4eca8c9ef8e683" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 16.396597<br>Longitude: 76.725866</div>`)[0];
+                popup_a97ce2f44727e646206fad7a309cd2e7.setContent(html_f60aa884b565dfa48b4eca8c9ef8e683);
+            
+        
+
+        marker_8a92407ae119d503a602a52d3d689960.bindPopup(popup_a97ce2f44727e646206fad7a309cd2e7)
+        ;
+
+        
+    
+    
+            var marker_3d4b493c3506a37a444046e9cb5fb744 = L.marker(
+                [15.97851, 76.56138],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_ec00bda0654d141380e261aac19607db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea60af7bdfbc7b29294e53a9b9559290 = $(`<div id="html_ea60af7bdfbc7b29294e53a9b9559290" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 15.97851<br>Longitude: 76.56138</div>`)[0];
+                popup_ec00bda0654d141380e261aac19607db.setContent(html_ea60af7bdfbc7b29294e53a9b9559290);
+            
+        
+
+        marker_3d4b493c3506a37a444046e9cb5fb744.bindPopup(popup_ec00bda0654d141380e261aac19607db)
+        ;
+
+        
+    
+    
+            var marker_a601a19d635750ded4890854e12c6959 = L.marker(
+                [15.93131, 76.427854],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_2864eb4eb46f2a58faa9469e8c444a33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b052c28462052d073d101463c016c684 = $(`<div id="html_b052c28462052d073d101463c016c684" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 15.93131<br>Longitude: 76.427854</div>`)[0];
+                popup_2864eb4eb46f2a58faa9469e8c444a33.setContent(html_b052c28462052d073d101463c016c684);
+            
+        
+
+        marker_a601a19d635750ded4890854e12c6959.bindPopup(popup_2864eb4eb46f2a58faa9469e8c444a33)
+        ;
+
+        
+    
+    
+            var marker_9e4be5848b3d858b6ea8602bbe4631bf = L.marker(
+                [16.200577, 76.6614829],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_fa8394971cd1056e9a52de70c7d53fc1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7f7ed86dafec950a6d4af3a412a1119 = $(`<div id="html_d7f7ed86dafec950a6d4af3a412a1119" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.200577<br>Longitude: 76.6614829</div>`)[0];
+                popup_fa8394971cd1056e9a52de70c7d53fc1.setContent(html_d7f7ed86dafec950a6d4af3a412a1119);
+            
+        
+
+        marker_9e4be5848b3d858b6ea8602bbe4631bf.bindPopup(popup_fa8394971cd1056e9a52de70c7d53fc1)
+        ;
+
+        
+    
+    
+            var marker_4546a6aa86003e82c9135ebfa9c3547b = L.marker(
+                [16.251779, 76.823509],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_961db2d0fbf76f6657bcdbb046ee8a06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19f174deb93ccf6a5362413c6cead59b = $(`<div id="html_19f174deb93ccf6a5362413c6cead59b" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.251779<br>Longitude: 76.823509</div>`)[0];
+                popup_961db2d0fbf76f6657bcdbb046ee8a06.setContent(html_19f174deb93ccf6a5362413c6cead59b);
+            
+        
+
+        marker_4546a6aa86003e82c9135ebfa9c3547b.bindPopup(popup_961db2d0fbf76f6657bcdbb046ee8a06)
+        ;
+
+        
+    
+    
+            var marker_b0b9350175ae7c6957301a469a0cd87d = L.marker(
+                [16.209359, 77.350494],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_b6515e729d426de2a0cd2131a88d260d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53e158794a0b90f03756cc6ff0940670 = $(`<div id="html_53e158794a0b90f03756cc6ff0940670" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.209359<br>Longitude: 77.350494</div>`)[0];
+                popup_b6515e729d426de2a0cd2131a88d260d.setContent(html_53e158794a0b90f03756cc6ff0940670);
+            
+        
+
+        marker_b0b9350175ae7c6957301a469a0cd87d.bindPopup(popup_b6515e729d426de2a0cd2131a88d260d)
+        ;
+
+        
+    
+    
+            var marker_6d0d26333e89b5460bf396c0e05dcdd4 = L.marker(
+                [16.100392, 76.315601],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_bde282bace3d263cdf2b8b1a3e0569c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_143e3fffc20e07715e5b1efe9ce2714a = $(`<div id="html_143e3fffc20e07715e5b1efe9ce2714a" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.100392<br>Longitude: 76.315601</div>`)[0];
+                popup_bde282bace3d263cdf2b8b1a3e0569c3.setContent(html_143e3fffc20e07715e5b1efe9ce2714a);
+            
+        
+
+        marker_6d0d26333e89b5460bf396c0e05dcdd4.bindPopup(popup_bde282bace3d263cdf2b8b1a3e0569c3)
+        ;
+
+        
+    
+    
+            var marker_66b70dc9c475af42196b46e123d8efbc = L.marker(
+                [15.844714, 76.691672],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_d29e6f1046f78231c45c17da044ac8f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0089dd09198b37810b15bca3aa571a41 = $(`<div id="html_0089dd09198b37810b15bca3aa571a41" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 15.844714<br>Longitude: 76.691672</div>`)[0];
+                popup_d29e6f1046f78231c45c17da044ac8f1.setContent(html_0089dd09198b37810b15bca3aa571a41);
+            
+        
+
+        marker_66b70dc9c475af42196b46e123d8efbc.bindPopup(popup_d29e6f1046f78231c45c17da044ac8f1)
+        ;
+
+        
+    
+    
+            var marker_fc83b7297e9751bc9590549eeacc9137 = L.marker(
+                [15.593911, 74.25211],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_2d42e6f7bc9f5c8a4374354456353295 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2aee7dad2ff07dbab439103e1cb4fc4 = $(`<div id="html_d2aee7dad2ff07dbab439103e1cb4fc4" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 15.593911<br>Longitude: 74.25211</div>`)[0];
+                popup_2d42e6f7bc9f5c8a4374354456353295.setContent(html_d2aee7dad2ff07dbab439103e1cb4fc4);
+            
+        
+
+        marker_fc83b7297e9751bc9590549eeacc9137.bindPopup(popup_2d42e6f7bc9f5c8a4374354456353295)
+        ;
+
+        
+    
+    
+            var marker_c7086b26ff9def2ab445845179aff547 = L.marker(
+                [16.200829, 77.362289],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_05b972d34fce56515dd32d426bfdb769 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2c7602525062ec89fd05d6353ecd3f8 = $(`<div id="html_e2c7602525062ec89fd05d6353ecd3f8" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 16.200829<br>Longitude: 77.362289</div>`)[0];
+                popup_05b972d34fce56515dd32d426bfdb769.setContent(html_e2c7602525062ec89fd05d6353ecd3f8);
+            
+        
+
+        marker_c7086b26ff9def2ab445845179aff547.bindPopup(popup_05b972d34fce56515dd32d426bfdb769)
+        ;
+
+        
+    
+    
+            var marker_4304db06b3a7f79911c7ecbf2c9f707a = L.marker(
+                [15.897732, 76.520704],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_153a48c4974280d107b34376e05fb299 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0e672f1344add1697b41f89a127a3aa = $(`<div id="html_f0e672f1344add1697b41f89a127a3aa" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 15.897732<br>Longitude: 76.520704</div>`)[0];
+                popup_153a48c4974280d107b34376e05fb299.setContent(html_f0e672f1344add1697b41f89a127a3aa);
+            
+        
+
+        marker_4304db06b3a7f79911c7ecbf2c9f707a.bindPopup(popup_153a48c4974280d107b34376e05fb299)
+        ;
+
+        
+    
+    
+            var marker_2f65d77cbceb557bdca5de8f48ee3b78 = L.marker(
+                [15.96443, 76.621282],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_9428da01bd47a35b16287f95ae145719 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_026fb4944cc2832e13821c962edbef36 = $(`<div id="html_026fb4944cc2832e13821c962edbef36" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 15.96443<br>Longitude: 76.621282</div>`)[0];
+                popup_9428da01bd47a35b16287f95ae145719.setContent(html_026fb4944cc2832e13821c962edbef36);
+            
+        
+
+        marker_2f65d77cbceb557bdca5de8f48ee3b78.bindPopup(popup_9428da01bd47a35b16287f95ae145719)
+        ;
+
+        
+    
+    
+            var marker_059afcc85efb6a21ff0070a04d956da6 = L.marker(
+                [16.346911, 77.3515399],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_72c3059d0266d45f1bfd1d4deed1b9ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4684ed70fa8d4af4a1c49113f54cb929 = $(`<div id="html_4684ed70fa8d4af4a1c49113f54cb929" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.346911<br>Longitude: 77.3515399</div>`)[0];
+                popup_72c3059d0266d45f1bfd1d4deed1b9ce.setContent(html_4684ed70fa8d4af4a1c49113f54cb929);
+            
+        
+
+        marker_059afcc85efb6a21ff0070a04d956da6.bindPopup(popup_72c3059d0266d45f1bfd1d4deed1b9ce)
+        ;
+
+        
+    
+    
+            var marker_77bf94ec0403115096c0e0b979262d6e = L.marker(
+                [16.044905, 77.382908],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_06384cb80fbe3e506afcd6344b4e695c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ec1a5d8a8d740f5450778d5d237955c = $(`<div id="html_3ec1a5d8a8d740f5450778d5d237955c" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.044905<br>Longitude: 77.382908</div>`)[0];
+                popup_06384cb80fbe3e506afcd6344b4e695c.setContent(html_3ec1a5d8a8d740f5450778d5d237955c);
+            
+        
+
+        marker_77bf94ec0403115096c0e0b979262d6e.bindPopup(popup_06384cb80fbe3e506afcd6344b4e695c)
+        ;
+
+        
+    
+    
+            var marker_407ed50880a0204afd58ba19a5dabfa1 = L.marker(
+                [15.958392, 76.651966],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_649875b88ce5fcbe1a063be55730e11c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44affbbb5b2a553f885612c2b21786ee = $(`<div id="html_44affbbb5b2a553f885612c2b21786ee" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 15.958392<br>Longitude: 76.651966</div>`)[0];
+                popup_649875b88ce5fcbe1a063be55730e11c.setContent(html_44affbbb5b2a553f885612c2b21786ee);
+            
+        
+
+        marker_407ed50880a0204afd58ba19a5dabfa1.bindPopup(popup_649875b88ce5fcbe1a063be55730e11c)
+        ;
+
+        
+    
+    
+            var marker_89b873f072b62fe1b3a648a37bddc917 = L.marker(
+                [16.396395, 76.915657],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_c0d034cce1f261f4a207f1d2cc63ee5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e79ae95fd21fad7d735c7e5a7490c4db = $(`<div id="html_e79ae95fd21fad7d735c7e5a7490c4db" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.396395<br>Longitude: 76.915657</div>`)[0];
+                popup_c0d034cce1f261f4a207f1d2cc63ee5d.setContent(html_e79ae95fd21fad7d735c7e5a7490c4db);
+            
+        
+
+        marker_89b873f072b62fe1b3a648a37bddc917.bindPopup(popup_c0d034cce1f261f4a207f1d2cc63ee5d)
+        ;
+
+        
+    
+    
+            var marker_44e94d8c606b24024bee5de3641d036b = L.marker(
+                [15.723997, 76.532462],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_8747954beb5485d43d990e452bdec236 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ee49358e2bccd2d4b7f67d6f10e86ad = $(`<div id="html_5ee49358e2bccd2d4b7f67d6f10e86ad" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 15.723997<br>Longitude: 76.532462</div>`)[0];
+                popup_8747954beb5485d43d990e452bdec236.setContent(html_5ee49358e2bccd2d4b7f67d6f10e86ad);
+            
+        
+
+        marker_44e94d8c606b24024bee5de3641d036b.bindPopup(popup_8747954beb5485d43d990e452bdec236)
+        ;
+
+        
+    
+    
+            var marker_35ea4cf2ce705e89be1a8a700e9d7f69 = L.marker(
+                [16.209706, 77.318975],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_07e884a74d82488263789e71f03405ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d101537b6602b78b79f22fa49e87969 = $(`<div id="html_0d101537b6602b78b79f22fa49e87969" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 16.209706<br>Longitude: 77.318975</div>`)[0];
+                popup_07e884a74d82488263789e71f03405ba.setContent(html_0d101537b6602b78b79f22fa49e87969);
+            
+        
+
+        marker_35ea4cf2ce705e89be1a8a700e9d7f69.bindPopup(popup_07e884a74d82488263789e71f03405ba)
+        ;
+
+        
+    
+    
+            var marker_1bd08934c13469e39075189b3927baae = L.marker(
+                [15.679811, 76.872808],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_fd5ad6f61a7f508e3b258626d13c7058 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f457f7d784d6a1e3e4c673d11aeaa259 = $(`<div id="html_f457f7d784d6a1e3e4c673d11aeaa259" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 15.679811<br>Longitude: 76.872808</div>`)[0];
+                popup_fd5ad6f61a7f508e3b258626d13c7058.setContent(html_f457f7d784d6a1e3e4c673d11aeaa259);
+            
+        
+
+        marker_1bd08934c13469e39075189b3927baae.bindPopup(popup_fd5ad6f61a7f508e3b258626d13c7058)
+        ;
+
+        
+    
+    
+            var marker_bf1bde72d4e1f768d3d41e1904c6655b = L.marker(
+                [16.153916, 76.522686],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_0e948c4a6a3fea90c6122103cf448ed2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1dcf8500864b4daad63eda82f170af1 = $(`<div id="html_c1dcf8500864b4daad63eda82f170af1" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Man<br>Latitude: 16.153916<br>Longitude: 76.522686</div>`)[0];
+                popup_0e948c4a6a3fea90c6122103cf448ed2.setContent(html_c1dcf8500864b4daad63eda82f170af1);
+            
+        
+
+        marker_bf1bde72d4e1f768d3d41e1904c6655b.bindPopup(popup_0e948c4a6a3fea90c6122103cf448ed2)
+        ;
+
+        
+    
+    
+            var marker_49aa648fc26635bd726ef5ccd9f5ce8c = L.marker(
+                [16.012876, 76.436404],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_8838c1d8929458abafec055805f72a3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d8e671b83a5ab0131c40a4994a30713 = $(`<div id="html_4d8e671b83a5ab0131c40a4994a30713" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.012876<br>Longitude: 76.436404</div>`)[0];
+                popup_8838c1d8929458abafec055805f72a3d.setContent(html_4d8e671b83a5ab0131c40a4994a30713);
+            
+        
+
+        marker_49aa648fc26635bd726ef5ccd9f5ce8c.bindPopup(popup_8838c1d8929458abafec055805f72a3d)
+        ;
+
+        
+    
+    
+            var marker_5af50fc343ced7ca2a84e35b88d092d1 = L.marker(
+                [16.178652, 76.753615],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_0db4ee03bb2c5147f4e78eea3e532f7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ba3e522bbdabc8776401428b6e7a79d = $(`<div id="html_0ba3e522bbdabc8776401428b6e7a79d" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.178652<br>Longitude: 76.753615</div>`)[0];
+                popup_0db4ee03bb2c5147f4e78eea3e532f7e.setContent(html_0ba3e522bbdabc8776401428b6e7a79d);
+            
+        
+
+        marker_5af50fc343ced7ca2a84e35b88d092d1.bindPopup(popup_0db4ee03bb2c5147f4e78eea3e532f7e)
+        ;
+
+        
+    
+    
+            var marker_1fda2597c17bbf637d21e2d7f09e9cad = L.marker(
+                [16.204799, 77.3182969],
+                {}
+            ).addTo(marker_cluster_5a28f5c45dbedcddda4a126e24ee648a);
+        
+    
+        var popup_18e52b7f8fe6601b2071d5ad9c07d722 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc15b508e85ad8b18fc1d25e50d6cc00 = $(`<div id="html_bc15b508e85ad8b18fc1d25e50d6cc00" style="width: 100.0%; height: 100.0%;">Crime Group: MISSING PERSON<br>Crime Head: Women<br>Latitude: 16.204799<br>Longitude: 77.3182969</div>`)[0];
+                popup_18e52b7f8fe6601b2071d5ad9c07d722.setContent(html_bc15b508e85ad8b18fc1d25e50d6cc00);
+            
+        
+
+        marker_1fda2597c17bbf637d21e2d7f09e9cad.bindPopup(popup_18e52b7f8fe6601b2071d5ad9c07d722)
+        ;
+
+        
+    
+    
+            var layer_control_e8975c2303ccb793f2d4b76fe908201b = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_df478774287a4da0de70c996be7ba06b,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_e8975c2303ccb793f2d4b76fe908201b.base_layers,
+                layer_control_e8975c2303ccb793f2d4b76fe908201b.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c0fa61fac37ae98d4a88a343ed71c523);
+        
+</script>
+</html>

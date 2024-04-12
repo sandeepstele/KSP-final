@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b8d45768de8bbeefb84c9970ccd593a7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b8d45768de8bbeefb84c9970ccd593a7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b8d45768de8bbeefb84c9970ccd593a7 = L.map(
+                "map_b8d45768de8bbeefb84c9970ccd593a7",
+                {
+                    center: [16.145964363636363, 77.02714053636363],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08e0365bd670b0808dbd73fca530e63c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b8d45768de8bbeefb84c9970ccd593a7);
+        
+    
+            var marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e = L.markerClusterGroup(
+                {}
+            );
+            map_b8d45768de8bbeefb84c9970ccd593a7.addLayer(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+            var marker_4a0dc57344f5a0dd7c60e854376f1a37 = L.marker(
+                [16.211132, 76.563646],
+                {}
+            ).addTo(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+        var popup_06c8aa56c2b552b27a3e3944934dbd66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7396606200e73dc69b1493083f0df2a6 = $(`<div id="html_7396606200e73dc69b1493083f0df2a6" style="width: 100.0%; height: 100.0%;">Crime Group: ATTEMPT TO MURDER<br>Crime Head: Due To Other Causes  <br>Latitude: 16.211132<br>Longitude: 76.563646</div>`)[0];
+                popup_06c8aa56c2b552b27a3e3944934dbd66.setContent(html_7396606200e73dc69b1493083f0df2a6);
+            
+        
+
+        marker_4a0dc57344f5a0dd7c60e854376f1a37.bindPopup(popup_06c8aa56c2b552b27a3e3944934dbd66)
+        ;
+
+        
+    
+    
+            var marker_2489e287e533262aaeaa94ad18bd6ff8 = L.marker(
+                [16.256105, 77.3539659],
+                {}
+            ).addTo(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+        var popup_8e11ac065ae7569c73a72178ed24c1ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9c87ed3115f18e80e0e8123642c35d0 = $(`<div id="html_a9c87ed3115f18e80e0e8123642c35d0" style="width: 100.0%; height: 100.0%;">Crime Group: ATTEMPT TO MURDER<br>Crime Head: Due To Other Causes  <br>Latitude: 16.256105<br>Longitude: 77.3539659</div>`)[0];
+                popup_8e11ac065ae7569c73a72178ed24c1ab.setContent(html_a9c87ed3115f18e80e0e8123642c35d0);
+            
+        
+
+        marker_2489e287e533262aaeaa94ad18bd6ff8.bindPopup(popup_8e11ac065ae7569c73a72178ed24c1ab)
+        ;
+
+        
+    
+    
+            var marker_68be411afc99ada564984da948629dec = L.marker(
+                [16.372541, 77.36061],
+                {}
+            ).addTo(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+        var popup_cc5b7d1e6dae57201beab1f39c3bccda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_608f7b0f2b04f8cdb558afbcf48e81be = $(`<div id="html_608f7b0f2b04f8cdb558afbcf48e81be" style="width: 100.0%; height: 100.0%;">Crime Group: ATTEMPT TO MURDER<br>Crime Head: Due To Other Causes  <br>Latitude: 16.372541<br>Longitude: 77.36061</div>`)[0];
+                popup_cc5b7d1e6dae57201beab1f39c3bccda.setContent(html_608f7b0f2b04f8cdb558afbcf48e81be);
+            
+        
+
+        marker_68be411afc99ada564984da948629dec.bindPopup(popup_cc5b7d1e6dae57201beab1f39c3bccda)
+        ;
+
+        
+    
+    
+            var marker_ed8f77d349fcc30112c0d0b165e1706c = L.marker(
+                [16.270303, 76.681394],
+                {}
+            ).addTo(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+        var popup_ebafc9a46e78192880e7858f80925efe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7af4e8491ae2e34809f152ef2c94c55a = $(`<div id="html_7af4e8491ae2e34809f152ef2c94c55a" style="width: 100.0%; height: 100.0%;">Crime Group: ATTEMPT TO MURDER<br>Crime Head: Due To Other Causes  <br>Latitude: 16.270303<br>Longitude: 76.681394</div>`)[0];
+                popup_ebafc9a46e78192880e7858f80925efe.setContent(html_7af4e8491ae2e34809f152ef2c94c55a);
+            
+        
+
+        marker_ed8f77d349fcc30112c0d0b165e1706c.bindPopup(popup_ebafc9a46e78192880e7858f80925efe)
+        ;
+
+        
+    
+    
+            var marker_a3fc6b125c436cccf85a0071b1699181 = L.marker(
+                [16.19308, 77.359324],
+                {}
+            ).addTo(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+        var popup_023c55d0e5bd6bda5c00e677999f5b0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd9f8b08eaaa641329d9441aab4136fa = $(`<div id="html_cd9f8b08eaaa641329d9441aab4136fa" style="width: 100.0%; height: 100.0%;">Crime Group: ATTEMPT TO MURDER<br>Crime Head: Due To Other Causes  <br>Latitude: 16.19308<br>Longitude: 77.359324</div>`)[0];
+                popup_023c55d0e5bd6bda5c00e677999f5b0f.setContent(html_cd9f8b08eaaa641329d9441aab4136fa);
+            
+        
+
+        marker_a3fc6b125c436cccf85a0071b1699181.bindPopup(popup_023c55d0e5bd6bda5c00e677999f5b0f)
+        ;
+
+        
+    
+    
+            var marker_bbcde03e1b1daa1e34088b2ff45e7a1a = L.marker(
+                [15.99523, 77.051041],
+                {}
+            ).addTo(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+        var popup_82252dfbd03ad03e22350ff5f04a2c88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f31886f7348a68916405077e02752170 = $(`<div id="html_f31886f7348a68916405077e02752170" style="width: 100.0%; height: 100.0%;">Crime Group: ATTEMPT TO MURDER<br>Crime Head: Due To Other Causes  <br>Latitude: 15.99523<br>Longitude: 77.051041</div>`)[0];
+                popup_82252dfbd03ad03e22350ff5f04a2c88.setContent(html_f31886f7348a68916405077e02752170);
+            
+        
+
+        marker_bbcde03e1b1daa1e34088b2ff45e7a1a.bindPopup(popup_82252dfbd03ad03e22350ff5f04a2c88)
+        ;
+
+        
+    
+    
+            var marker_56bc1ec3f9a2382e279a1bc9f1baff05 = L.marker(
+                [15.829072, 76.609938],
+                {}
+            ).addTo(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+        var popup_9d14fe3140cfcb9f2174969e1d164d2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10591c3711ff0f13f360bdf8a557e8fb = $(`<div id="html_10591c3711ff0f13f360bdf8a557e8fb" style="width: 100.0%; height: 100.0%;">Crime Group: ATTEMPT TO MURDER<br>Crime Head: Over Property Dispute  <br>Latitude: 15.829072<br>Longitude: 76.609938</div>`)[0];
+                popup_9d14fe3140cfcb9f2174969e1d164d2b.setContent(html_10591c3711ff0f13f360bdf8a557e8fb);
+            
+        
+
+        marker_56bc1ec3f9a2382e279a1bc9f1baff05.bindPopup(popup_9d14fe3140cfcb9f2174969e1d164d2b)
+        ;
+
+        
+    
+    
+            var marker_4132c59f01621bba03c7b277ae50f297 = L.marker(
+                [16.169172, 77.012954],
+                {}
+            ).addTo(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+        var popup_e980a999607bea57cf9b7bfaab7e98c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69bf4220725227aee7e1902788bd1533 = $(`<div id="html_69bf4220725227aee7e1902788bd1533" style="width: 100.0%; height: 100.0%;">Crime Group: ATTEMPT TO MURDER<br>Crime Head: Due To Other Causes  <br>Latitude: 16.169172<br>Longitude: 77.012954</div>`)[0];
+                popup_e980a999607bea57cf9b7bfaab7e98c2.setContent(html_69bf4220725227aee7e1902788bd1533);
+            
+        
+
+        marker_4132c59f01621bba03c7b277ae50f297.bindPopup(popup_e980a999607bea57cf9b7bfaab7e98c2)
+        ;
+
+        
+    
+    
+            var marker_7b513b4a68b261a60976b0106dedab87 = L.marker(
+                [16.072641, 77.414591],
+                {}
+            ).addTo(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+        var popup_5ec10308ec1ef9c2a095a648957697e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6638cb22191cfee19306234339d3e239 = $(`<div id="html_6638cb22191cfee19306234339d3e239" style="width: 100.0%; height: 100.0%;">Crime Group: ATTEMPT TO MURDER<br>Crime Head: Civil Disputes<br>Latitude: 16.072641<br>Longitude: 77.414591</div>`)[0];
+                popup_5ec10308ec1ef9c2a095a648957697e9.setContent(html_6638cb22191cfee19306234339d3e239);
+            
+        
+
+        marker_7b513b4a68b261a60976b0106dedab87.bindPopup(popup_5ec10308ec1ef9c2a095a648957697e9)
+        ;
+
+        
+    
+    
+            var marker_79cdcb5aa9c132b4edb706d03063714a = L.marker(
+                [16.139061, 76.813138],
+                {}
+            ).addTo(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+        var popup_9f5adbbe833270d072650abd85ac0a4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6efe0aad5592cb8ee55672757455d75 = $(`<div id="html_c6efe0aad5592cb8ee55672757455d75" style="width: 100.0%; height: 100.0%;">Crime Group: ATTEMPT TO MURDER<br>Crime Head: Sudden Quarrel<br>Latitude: 16.139061<br>Longitude: 76.813138</div>`)[0];
+                popup_9f5adbbe833270d072650abd85ac0a4c.setContent(html_c6efe0aad5592cb8ee55672757455d75);
+            
+        
+
+        marker_79cdcb5aa9c132b4edb706d03063714a.bindPopup(popup_9f5adbbe833270d072650abd85ac0a4c)
+        ;
+
+        
+    
+    
+            var marker_6d785ab48d337705ed9d8e23f7598200 = L.marker(
+                [16.097271, 77.077944],
+                {}
+            ).addTo(marker_cluster_4ad6f7dcce78013ea17c80e4ac7f6e2e);
+        
+    
+        var popup_f2c05c62ad6c05510b8518956373dca9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_304495cbddce5c7a97d596e888fdbdee = $(`<div id="html_304495cbddce5c7a97d596e888fdbdee" style="width: 100.0%; height: 100.0%;">Crime Group: ATTEMPT TO MURDER<br>Crime Head: Sudden Quarrel<br>Latitude: 16.097271<br>Longitude: 77.077944</div>`)[0];
+                popup_f2c05c62ad6c05510b8518956373dca9.setContent(html_304495cbddce5c7a97d596e888fdbdee);
+            
+        
+
+        marker_6d785ab48d337705ed9d8e23f7598200.bindPopup(popup_f2c05c62ad6c05510b8518956373dca9)
+        ;
+
+        
+    
+    
+            var layer_control_27d9886cc879166ce051fe11218e6908 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_08e0365bd670b0808dbd73fca530e63c,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_27d9886cc879166ce051fe11218e6908.base_layers,
+                layer_control_27d9886cc879166ce051fe11218e6908.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b8d45768de8bbeefb84c9970ccd593a7);
+        
+</script>
+</html>

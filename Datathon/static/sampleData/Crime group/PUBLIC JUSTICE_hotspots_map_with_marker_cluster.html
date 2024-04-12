@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e4f664229c202433122bcadcc3abc7d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e4f664229c202433122bcadcc3abc7d6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e4f664229c202433122bcadcc3abc7d6 = L.map(
+                "map_e4f664229c202433122bcadcc3abc7d6",
+                {
+                    center: [13.715727833333332, 77.05019165833333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ec21b480e5fa63ef070c022c8c5603cf = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e4f664229c202433122bcadcc3abc7d6);
+        
+    
+            var marker_cluster_652adf03e9140fdb6177be34e92ea731 = L.markerClusterGroup(
+                {}
+            );
+            map_e4f664229c202433122bcadcc3abc7d6.addLayer(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+            var marker_1ca9d3ad22680d868497a154d1996cb3 = L.marker(
+                [16.338081, 75.638868],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_b9449ce793f3484d91b80953e228f48d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e11ea69d82ca2ca12611ed6030c342d = $(`<div id="html_8e11ea69d82ca2ca12611ed6030c342d" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 16.338081<br>Longitude: 75.638868</div>`)[0];
+                popup_b9449ce793f3484d91b80953e228f48d.setContent(html_8e11ea69d82ca2ca12611ed6030c342d);
+            
+        
+
+        marker_1ca9d3ad22680d868497a154d1996cb3.bindPopup(popup_b9449ce793f3484d91b80953e228f48d)
+        ;
+
+        
+    
+    
+            var marker_af7c7059e07b9cbb2d6d362551430630 = L.marker(
+                [13.263546, 77.324683],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_7dc7f5dad886215b76903ddbbc9490b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4271752b147e829d28c269239d8323ef = $(`<div id="html_4271752b147e829d28c269239d8323ef" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 13.263546<br>Longitude: 77.324683</div>`)[0];
+                popup_7dc7f5dad886215b76903ddbbc9490b8.setContent(html_4271752b147e829d28c269239d8323ef);
+            
+        
+
+        marker_af7c7059e07b9cbb2d6d362551430630.bindPopup(popup_7dc7f5dad886215b76903ddbbc9490b8)
+        ;
+
+        
+    
+    
+            var marker_5ac258573dd2c51e0cbaadb0b30abfcb = L.marker(
+                [12.903229, 77.662093],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_47a6db844a0a7efed2fb2811946b881c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d0fb40b8df2eeb1c9deb780f83f0fc3 = $(`<div id="html_6d0fb40b8df2eeb1c9deb780f83f0fc3" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 12.903229<br>Longitude: 77.662093</div>`)[0];
+                popup_47a6db844a0a7efed2fb2811946b881c.setContent(html_6d0fb40b8df2eeb1c9deb780f83f0fc3);
+            
+        
+
+        marker_5ac258573dd2c51e0cbaadb0b30abfcb.bindPopup(popup_47a6db844a0a7efed2fb2811946b881c)
+        ;
+
+        
+    
+    
+            var marker_1ffb970bf190fa6d75adba5b1263614b = L.marker(
+                [12.973444, 77.583392],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_8e3a1295b1b8fe236f93857e7d83103f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9329d0ef17f56531e24b69020f626487 = $(`<div id="html_9329d0ef17f56531e24b69020f626487" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 12.973444<br>Longitude: 77.583392</div>`)[0];
+                popup_8e3a1295b1b8fe236f93857e7d83103f.setContent(html_9329d0ef17f56531e24b69020f626487);
+            
+        
+
+        marker_1ffb970bf190fa6d75adba5b1263614b.bindPopup(popup_8e3a1295b1b8fe236f93857e7d83103f)
+        ;
+
+        
+    
+    
+            var marker_26953d925e6dc6c0ebab7a5aae2620ea = L.marker(
+                [12.955174, 77.567121],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_16d1ca47cb227b9b9ecaf1dafecdf2d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9481ea597b97c522c86eac6aa4bb34ee = $(`<div id="html_9481ea597b97c522c86eac6aa4bb34ee" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 12.955174<br>Longitude: 77.567121</div>`)[0];
+                popup_16d1ca47cb227b9b9ecaf1dafecdf2d2.setContent(html_9481ea597b97c522c86eac6aa4bb34ee);
+            
+        
+
+        marker_26953d925e6dc6c0ebab7a5aae2620ea.bindPopup(popup_16d1ca47cb227b9b9ecaf1dafecdf2d2)
+        ;
+
+        
+    
+    
+            var marker_af85a07956c4620c78e10071c9bec12d = L.marker(
+                [12.908034, 77.608913],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_62bbabf5e0cfa39ea9871a149a5adbb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76fecad4c3b90a22ab397ccb49d35fdd = $(`<div id="html_76fecad4c3b90a22ab397ccb49d35fdd" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 12.908034<br>Longitude: 77.608913</div>`)[0];
+                popup_62bbabf5e0cfa39ea9871a149a5adbb8.setContent(html_76fecad4c3b90a22ab397ccb49d35fdd);
+            
+        
+
+        marker_af85a07956c4620c78e10071c9bec12d.bindPopup(popup_62bbabf5e0cfa39ea9871a149a5adbb8)
+        ;
+
+        
+    
+    
+            var marker_50ccc6c4904bbea1712cbb24e6a41c47 = L.marker(
+                [12.820412, 77.609128],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_bcf9f18de3bc5406bff68f1e5edc4d0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0e99cda1826762b1789b0368dd4bbab = $(`<div id="html_d0e99cda1826762b1789b0368dd4bbab" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 12.820412<br>Longitude: 77.609128</div>`)[0];
+                popup_bcf9f18de3bc5406bff68f1e5edc4d0c.setContent(html_d0e99cda1826762b1789b0368dd4bbab);
+            
+        
+
+        marker_50ccc6c4904bbea1712cbb24e6a41c47.bindPopup(popup_bcf9f18de3bc5406bff68f1e5edc4d0c)
+        ;
+
+        
+    
+    
+            var marker_b70f53e0c03b17d426634205e195e1dd = L.marker(
+                [13.32649, 77.596592],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_d9f86e9a07402d0222076fead5604d5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_757878aa025db20b351943f6ba0ed38b = $(`<div id="html_757878aa025db20b351943f6ba0ed38b" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 13.32649<br>Longitude: 77.596592</div>`)[0];
+                popup_d9f86e9a07402d0222076fead5604d5c.setContent(html_757878aa025db20b351943f6ba0ed38b);
+            
+        
+
+        marker_b70f53e0c03b17d426634205e195e1dd.bindPopup(popup_d9f86e9a07402d0222076fead5604d5c)
+        ;
+
+        
+    
+    
+            var marker_36f0b17e6ffb46585cd51a972a1d1252 = L.marker(
+                [12.981407, 76.735681],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_04c435c0acb506cfbcddf17ff0b9266d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61e62cf5a197fb39900787d00a6b9d4e = $(`<div id="html_61e62cf5a197fb39900787d00a6b9d4e" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 12.981407<br>Longitude: 76.735681</div>`)[0];
+                popup_04c435c0acb506cfbcddf17ff0b9266d.setContent(html_61e62cf5a197fb39900787d00a6b9d4e);
+            
+        
+
+        marker_36f0b17e6ffb46585cd51a972a1d1252.bindPopup(popup_04c435c0acb506cfbcddf17ff0b9266d)
+        ;
+
+        
+    
+    
+            var marker_293addc2296a879ffd94e90242f36a37 = L.marker(
+                [16.175886, 77.3375599],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_d321b3c18f1d4918447501b23027afb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64870688c59b6903e7d0a530bfe8fde2 = $(`<div id="html_64870688c59b6903e7d0a530bfe8fde2" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 16.175886<br>Longitude: 77.3375599</div>`)[0];
+                popup_d321b3c18f1d4918447501b23027afb7.setContent(html_64870688c59b6903e7d0a530bfe8fde2);
+            
+        
+
+        marker_293addc2296a879ffd94e90242f36a37.bindPopup(popup_d321b3c18f1d4918447501b23027afb7)
+        ;
+
+        
+    
+    
+            var marker_545607202224998b68b4d73603a2c4a1 = L.marker(
+                [13.327872, 77.103427],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_77985a6c17a196c95a2c2e5f2071fdb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98a849ab4902c3c7dad03db92f58e0ba = $(`<div id="html_98a849ab4902c3c7dad03db92f58e0ba" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 13.327872<br>Longitude: 77.103427</div>`)[0];
+                popup_77985a6c17a196c95a2c2e5f2071fdb9.setContent(html_98a849ab4902c3c7dad03db92f58e0ba);
+            
+        
+
+        marker_545607202224998b68b4d73603a2c4a1.bindPopup(popup_77985a6c17a196c95a2c2e5f2071fdb9)
+        ;
+
+        
+    
+    
+            var marker_ac538da9477365a112270e6f1db78bc5 = L.marker(
+                [14.615159, 74.834842],
+                {}
+            ).addTo(marker_cluster_652adf03e9140fdb6177be34e92ea731);
+        
+    
+        var popup_d3a9464b50898af99d4eacda3c61859d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58c569d59d2793aa7c5a49ec3b6f75b0 = $(`<div id="html_58c569d59d2793aa7c5a49ec3b6f75b0" style="width: 100.0%; height: 100.0%;">Crime Group: PUBLIC JUSTICE<br>Crime Head: Public Justice<br>Latitude: 14.615159<br>Longitude: 74.834842</div>`)[0];
+                popup_d3a9464b50898af99d4eacda3c61859d.setContent(html_58c569d59d2793aa7c5a49ec3b6f75b0);
+            
+        
+
+        marker_ac538da9477365a112270e6f1db78bc5.bindPopup(popup_d3a9464b50898af99d4eacda3c61859d)
+        ;
+
+        
+    
+    
+            var layer_control_db2a22ad052fdd478dc55ef58ad59bae = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_ec21b480e5fa63ef070c022c8c5603cf,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_db2a22ad052fdd478dc55ef58ad59bae.base_layers,
+                layer_control_db2a22ad052fdd478dc55ef58ad59bae.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_e4f664229c202433122bcadcc3abc7d6);
+        
+</script>
+</html>

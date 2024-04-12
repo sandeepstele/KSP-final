@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0a8fb7e6e6e00a70dade52505c24af5f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0a8fb7e6e6e00a70dade52505c24af5f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0a8fb7e6e6e00a70dade52505c24af5f = L.map(
+                "map_0a8fb7e6e6e00a70dade52505c24af5f",
+                {
+                    center: [14.0826870625, 76.691390875],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_95c9c375ad9debbfc315cb2d15491688 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0a8fb7e6e6e00a70dade52505c24af5f);
+        
+    
+            var marker_cluster_9d7b633fb61e34346a8d24c49abf91f0 = L.markerClusterGroup(
+                {}
+            );
+            map_0a8fb7e6e6e00a70dade52505c24af5f.addLayer(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+            var marker_1c57318fc8eb3c81e039ab45bf4a934f = L.marker(
+                [15.146314, 76.924079],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_d790b816bbfd6c00dcaa0db76796eb2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75e1350209a166763a8a14bec6d5cef1 = $(`<div id="html_75e1350209a166763a8a14bec6d5cef1" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 15.146314<br>Longitude: 76.924079</div>`)[0];
+                popup_d790b816bbfd6c00dcaa0db76796eb2f.setContent(html_75e1350209a166763a8a14bec6d5cef1);
+            
+        
+
+        marker_1c57318fc8eb3c81e039ab45bf4a934f.bindPopup(popup_d790b816bbfd6c00dcaa0db76796eb2f)
+        ;
+
+        
+    
+    
+            var marker_a219d09c7dc3b7ec7440bf9cd24ccdc0 = L.marker(
+                [16.249171, 74.756577],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_c0abf8173f4cb85e21ee2441e9a90c7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_859f13ffde3ba381caa63e7344f2bd01 = $(`<div id="html_859f13ffde3ba381caa63e7344f2bd01" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 16.249171<br>Longitude: 74.756577</div>`)[0];
+                popup_c0abf8173f4cb85e21ee2441e9a90c7c.setContent(html_859f13ffde3ba381caa63e7344f2bd01);
+            
+        
+
+        marker_a219d09c7dc3b7ec7440bf9cd24ccdc0.bindPopup(popup_c0abf8173f4cb85e21ee2441e9a90c7c)
+        ;
+
+        
+    
+    
+            var marker_6c172876560fd637754d91eb1deae2a0 = L.marker(
+                [15.62964, 74.503137],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_2b1f71732714147c029af86f5f048514 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c60aa2d05fd8bfc0e2018a57444d7e7 = $(`<div id="html_2c60aa2d05fd8bfc0e2018a57444d7e7" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 15.62964<br>Longitude: 74.503137</div>`)[0];
+                popup_2b1f71732714147c029af86f5f048514.setContent(html_2c60aa2d05fd8bfc0e2018a57444d7e7);
+            
+        
+
+        marker_6c172876560fd637754d91eb1deae2a0.bindPopup(popup_2b1f71732714147c029af86f5f048514)
+        ;
+
+        
+    
+    
+            var marker_070462ecbec1dc105843d80998f2fb23 = L.marker(
+                [12.997923, 77.74084],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_23a2bad9244adc648da6661db16c5b55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec6d6ed2603a5c5fcd16fbff5c4ac076 = $(`<div id="html_ec6d6ed2603a5c5fcd16fbff5c4ac076" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 12.997923<br>Longitude: 77.74084</div>`)[0];
+                popup_23a2bad9244adc648da6661db16c5b55.setContent(html_ec6d6ed2603a5c5fcd16fbff5c4ac076);
+            
+        
+
+        marker_070462ecbec1dc105843d80998f2fb23.bindPopup(popup_23a2bad9244adc648da6661db16c5b55)
+        ;
+
+        
+    
+    
+            var marker_f43383e71ae899a6c358ee1a217bdb50 = L.marker(
+                [12.989037, 77.816239],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_d33836ddb37db2ac3c7edf56a7ef2b0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fc9fec9e59c714b3ce02e2a2fc0749b = $(`<div id="html_8fc9fec9e59c714b3ce02e2a2fc0749b" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 12.989037<br>Longitude: 77.816239</div>`)[0];
+                popup_d33836ddb37db2ac3c7edf56a7ef2b0c.setContent(html_8fc9fec9e59c714b3ce02e2a2fc0749b);
+            
+        
+
+        marker_f43383e71ae899a6c358ee1a217bdb50.bindPopup(popup_d33836ddb37db2ac3c7edf56a7ef2b0c)
+        ;
+
+        
+    
+    
+            var marker_0abeb4fd4a17e5eda94930cb2058db84 = L.marker(
+                [12.940763, 77.51947],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_9c3b7abcaab44e6efb988e7579181703 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1020160c91dc12a88afb282d1b99b310 = $(`<div id="html_1020160c91dc12a88afb282d1b99b310" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Railway Property (Unlawful Posession) Act 1966<br>Latitude: 12.940763<br>Longitude: 77.51947</div>`)[0];
+                popup_9c3b7abcaab44e6efb988e7579181703.setContent(html_1020160c91dc12a88afb282d1b99b310);
+            
+        
+
+        marker_0abeb4fd4a17e5eda94930cb2058db84.bindPopup(popup_9c3b7abcaab44e6efb988e7579181703)
+        ;
+
+        
+    
+    
+            var marker_19523530f30af9cdff9f20cc6dc13a67 = L.marker(
+                [12.905401, 77.465532],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_86254da72236c6dfbb052c53a73b5c9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64602fdc4d325260da7b6f1a5e401dab = $(`<div id="html_64602fdc4d325260da7b6f1a5e401dab" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 12.905401<br>Longitude: 77.465532</div>`)[0];
+                popup_86254da72236c6dfbb052c53a73b5c9b.setContent(html_64602fdc4d325260da7b6f1a5e401dab);
+            
+        
+
+        marker_19523530f30af9cdff9f20cc6dc13a67.bindPopup(popup_86254da72236c6dfbb052c53a73b5c9b)
+        ;
+
+        
+    
+    
+            var marker_3972f4dd0d75956af608a66e5bb54f80 = L.marker(
+                [12.977574, 77.5702],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_72c1fd8ee01e9f840a171e022be136fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f42d88de6ae07f433072632d434fa0c2 = $(`<div id="html_f42d88de6ae07f433072632d434fa0c2" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 12.977574<br>Longitude: 77.5702</div>`)[0];
+                popup_72c1fd8ee01e9f840a171e022be136fa.setContent(html_f42d88de6ae07f433072632d434fa0c2);
+            
+        
+
+        marker_3972f4dd0d75956af608a66e5bb54f80.bindPopup(popup_72c1fd8ee01e9f840a171e022be136fa)
+        ;
+
+        
+    
+    
+            var marker_84a83a2b1aa83ed0b1130e46bec63806 = L.marker(
+                [13.06488, 77.52267],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_7fd5405e605f2a19cd893f916623661a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cd896a1a626695a7796c0f47167f04d = $(`<div id="html_1cd896a1a626695a7796c0f47167f04d" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 13.06488<br>Longitude: 77.52267</div>`)[0];
+                popup_7fd5405e605f2a19cd893f916623661a.setContent(html_1cd896a1a626695a7796c0f47167f04d);
+            
+        
+
+        marker_84a83a2b1aa83ed0b1130e46bec63806.bindPopup(popup_7fd5405e605f2a19cd893f916623661a)
+        ;
+
+        
+    
+    
+            var marker_de77155ad1677c85b8e51b7793dc7a6a = L.marker(
+                [13.041548, 77.590243],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_8f10124529424c14acd21e90a539ac71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd03923c70384509f1ca1a773a5a8567 = $(`<div id="html_cd03923c70384509f1ca1a773a5a8567" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 13.041548<br>Longitude: 77.590243</div>`)[0];
+                popup_8f10124529424c14acd21e90a539ac71.setContent(html_cd03923c70384509f1ca1a773a5a8567);
+            
+        
+
+        marker_de77155ad1677c85b8e51b7793dc7a6a.bindPopup(popup_8f10124529424c14acd21e90a539ac71)
+        ;
+
+        
+    
+    
+            var marker_d7cffef859d824b01befcbb8b5d4f0c2 = L.marker(
+                [14.19296, 76.119692],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_71cc2414f5861a5dfcaa5fcd6471ea10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f72d13dae44647fecf3eaa08b70647e = $(`<div id="html_7f72d13dae44647fecf3eaa08b70647e" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 14.19296<br>Longitude: 76.119692</div>`)[0];
+                popup_71cc2414f5861a5dfcaa5fcd6471ea10.setContent(html_7f72d13dae44647fecf3eaa08b70647e);
+            
+        
+
+        marker_d7cffef859d824b01befcbb8b5d4f0c2.bindPopup(popup_71cc2414f5861a5dfcaa5fcd6471ea10)
+        ;
+
+        
+    
+    
+            var marker_64c5c12ced95543afb821f13831685e7 = L.marker(
+                [15.437245, 75.599819],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_7d3960890dc8f960fb981ac123901b86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_121c648ae67459aebe39dbc860338e31 = $(`<div id="html_121c648ae67459aebe39dbc860338e31" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 15.437245<br>Longitude: 75.599819</div>`)[0];
+                popup_7d3960890dc8f960fb981ac123901b86.setContent(html_121c648ae67459aebe39dbc860338e31);
+            
+        
+
+        marker_64c5c12ced95543afb821f13831685e7.bindPopup(popup_7d3960890dc8f960fb981ac123901b86)
+        ;
+
+        
+    
+    
+            var marker_0fa3270a9a75939b1c4036fd8725a47a = L.marker(
+                [12.088249, 76.728488],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_2bba8e4901a535970e4f6fc0b80b34ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af88deeef03a956653bf7ad39d62c631 = $(`<div id="html_af88deeef03a956653bf7ad39d62c631" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 12.088249<br>Longitude: 76.728488</div>`)[0];
+                popup_2bba8e4901a535970e4f6fc0b80b34ea.setContent(html_af88deeef03a956653bf7ad39d62c631);
+            
+        
+
+        marker_0fa3270a9a75939b1c4036fd8725a47a.bindPopup(popup_2bba8e4901a535970e4f6fc0b80b34ea)
+        ;
+
+        
+    
+    
+            var marker_b9240cd4d96a6e2eb037b26416e83304 = L.marker(
+                [12.168862, 76.677964],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_704154297e188ed049c96a59dad48917 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91b02f903dfb173b3efc7c9b30474b43 = $(`<div id="html_91b02f903dfb173b3efc7c9b30474b43" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 12.168862<br>Longitude: 76.677964</div>`)[0];
+                popup_704154297e188ed049c96a59dad48917.setContent(html_91b02f903dfb173b3efc7c9b30474b43);
+            
+        
+
+        marker_b9240cd4d96a6e2eb037b26416e83304.bindPopup(popup_704154297e188ed049c96a59dad48917)
+        ;
+
+        
+    
+    
+            var marker_6c04f9162e61f81ffa33610f542fe1e6 = L.marker(
+                [16.179066, 75.699958],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_6ed36defa93fb27545e4a7a8fd7785e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c799c81e4ea5581a048ea0fea5c9dfe = $(`<div id="html_5c799c81e4ea5581a048ea0fea5c9dfe" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 16.179066<br>Longitude: 75.699958</div>`)[0];
+                popup_6ed36defa93fb27545e4a7a8fd7785e2.setContent(html_5c799c81e4ea5581a048ea0fea5c9dfe);
+            
+        
+
+        marker_6c04f9162e61f81ffa33610f542fe1e6.bindPopup(popup_6ed36defa93fb27545e4a7a8fd7785e2)
+        ;
+
+        
+    
+    
+            var marker_fa7b14a01a79a7e8f591c1635451b181 = L.marker(
+                [17.31436, 76.827346],
+                {}
+            ).addTo(marker_cluster_9d7b633fb61e34346a8d24c49abf91f0);
+        
+    
+        var popup_abc8c6a02fdc5883ca4f5e7f353a89ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94029402142c39d0deea33a293f756d7 = $(`<div id="html_94029402142c39d0deea33a293f756d7" style="width: 100.0%; height: 100.0%;">Crime Group: RAILWAYS ACT<br>Crime Head: Indian Railways Act 1989<br>Latitude: 17.31436<br>Longitude: 76.827346</div>`)[0];
+                popup_abc8c6a02fdc5883ca4f5e7f353a89ce.setContent(html_94029402142c39d0deea33a293f756d7);
+            
+        
+
+        marker_fa7b14a01a79a7e8f591c1635451b181.bindPopup(popup_abc8c6a02fdc5883ca4f5e7f353a89ce)
+        ;
+
+        
+    
+    
+            var layer_control_8703deca1af3c402cd1e4073fc53f38b = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_95c9c375ad9debbfc315cb2d15491688,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_8703deca1af3c402cd1e4073fc53f38b.base_layers,
+                layer_control_8703deca1af3c402cd1e4073fc53f38b.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_0a8fb7e6e6e00a70dade52505c24af5f);
+        
+</script>
+</html>

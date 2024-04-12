@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_509d232664213d52fbcd58da41cb8691 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_509d232664213d52fbcd58da41cb8691" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_509d232664213d52fbcd58da41cb8691 = L.map(
+                "map_509d232664213d52fbcd58da41cb8691",
+                {
+                    center: [13.815923759259258, 76.66704869814814],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ab83ed24c8eaefe67c7cefc8887c8694 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_509d232664213d52fbcd58da41cb8691);
+        
+    
+            var marker_cluster_0a9b3b920d978512991c06b09a273640 = L.markerClusterGroup(
+                {}
+            );
+            map_509d232664213d52fbcd58da41cb8691.addLayer(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+            var marker_1eba9470f18484355ea3854bedd23231 = L.marker(
+                [16.349364, 75.612269],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_9dcf0da2bcb99e5b127300a98b293993 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac9769256ce9c14fead716509bdca003 = $(`<div id="html_ac9769256ce9c14fead716509bdca003" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 16.349364<br>Longitude: 75.612269</div>`)[0];
+                popup_9dcf0da2bcb99e5b127300a98b293993.setContent(html_ac9769256ce9c14fead716509bdca003);
+            
+        
+
+        marker_1eba9470f18484355ea3854bedd23231.bindPopup(popup_9dcf0da2bcb99e5b127300a98b293993)
+        ;
+
+        
+    
+    
+            var marker_780714a012800e1fc943e82ca8e3f7c3 = L.marker(
+                [16.547045, 75.097711],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_2b5f326d22ea1bf22eb6fb2e095b9917 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06fd3f0f753b2aa769a1d3c2300e9ff4 = $(`<div id="html_06fd3f0f753b2aa769a1d3c2300e9ff4" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 16.547045<br>Longitude: 75.097711</div>`)[0];
+                popup_2b5f326d22ea1bf22eb6fb2e095b9917.setContent(html_06fd3f0f753b2aa769a1d3c2300e9ff4);
+            
+        
+
+        marker_780714a012800e1fc943e82ca8e3f7c3.bindPopup(popup_2b5f326d22ea1bf22eb6fb2e095b9917)
+        ;
+
+        
+    
+    
+            var marker_77515a2d96ea6f606b5f7ff6623148df = L.marker(
+                [16.728585, 75.060071],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_6baecb971903e8369565ecb9a97f69c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a8ac4391eac0e4417ad8fcee05c27d3 = $(`<div id="html_2a8ac4391eac0e4417ad8fcee05c27d3" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 16.728585<br>Longitude: 75.060071</div>`)[0];
+                popup_6baecb971903e8369565ecb9a97f69c8.setContent(html_2a8ac4391eac0e4417ad8fcee05c27d3);
+            
+        
+
+        marker_77515a2d96ea6f606b5f7ff6623148df.bindPopup(popup_6baecb971903e8369565ecb9a97f69c8)
+        ;
+
+        
+    
+    
+            var marker_a537d46af29d5e52d36cf69c8c1a6070 = L.marker(
+                [12.982803, 77.597073],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_47a03615c246f3254ae3425078e5625e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e12b1358816d3bb7304b369f54fbe5e = $(`<div id="html_8e12b1358816d3bb7304b369f54fbe5e" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.982803<br>Longitude: 77.597073</div>`)[0];
+                popup_47a03615c246f3254ae3425078e5625e.setContent(html_8e12b1358816d3bb7304b369f54fbe5e);
+            
+        
+
+        marker_a537d46af29d5e52d36cf69c8c1a6070.bindPopup(popup_47a03615c246f3254ae3425078e5625e)
+        ;
+
+        
+    
+    
+            var marker_1a46b82c1877d5b0c56c30fd68cee461 = L.marker(
+                [12.709502, 77.6964259],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_f961437d3ffbc178b00527339eb24d79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13df7382b77eb213d3b3c25c954ea9be = $(`<div id="html_13df7382b77eb213d3b3c25c954ea9be" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.709502<br>Longitude: 77.6964259</div>`)[0];
+                popup_f961437d3ffbc178b00527339eb24d79.setContent(html_13df7382b77eb213d3b3c25c954ea9be);
+            
+        
+
+        marker_1a46b82c1877d5b0c56c30fd68cee461.bindPopup(popup_f961437d3ffbc178b00527339eb24d79)
+        ;
+
+        
+    
+    
+            var marker_c703a7e74b9337c325f59356dce940b7 = L.marker(
+                [12.769951, 77.770569],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_d41e2a6395e933c787b25ecd35faf856 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24c067705953373d7206aa1e80cc8359 = $(`<div id="html_24c067705953373d7206aa1e80cc8359" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.769951<br>Longitude: 77.770569</div>`)[0];
+                popup_d41e2a6395e933c787b25ecd35faf856.setContent(html_24c067705953373d7206aa1e80cc8359);
+            
+        
+
+        marker_c703a7e74b9337c325f59356dce940b7.bindPopup(popup_d41e2a6395e933c787b25ecd35faf856)
+        ;
+
+        
+    
+    
+            var marker_52df2fe32af0d3dfe747a51dd9aefd04 = L.marker(
+                [12.812284, 77.783141],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_cd626ccaf752f86b2c59c25f9fefdbc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eea2a58fd6472e9e2e8fd2ca55da871e = $(`<div id="html_eea2a58fd6472e9e2e8fd2ca55da871e" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.812284<br>Longitude: 77.783141</div>`)[0];
+                popup_cd626ccaf752f86b2c59c25f9fefdbc0.setContent(html_eea2a58fd6472e9e2e8fd2ca55da871e);
+            
+        
+
+        marker_52df2fe32af0d3dfe747a51dd9aefd04.bindPopup(popup_cd626ccaf752f86b2c59c25f9fefdbc0)
+        ;
+
+        
+    
+    
+            var marker_519c59007457a95ed103bb0b5131d39a = L.marker(
+                [13.042624, 77.746925],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_a8303b69d1994bbb111f3895023b940f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25ddb1ea8c68f615d24b02b9a7f1945f = $(`<div id="html_25ddb1ea8c68f615d24b02b9a7f1945f" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.042624<br>Longitude: 77.746925</div>`)[0];
+                popup_a8303b69d1994bbb111f3895023b940f.setContent(html_25ddb1ea8c68f615d24b02b9a7f1945f);
+            
+        
+
+        marker_519c59007457a95ed103bb0b5131d39a.bindPopup(popup_a8303b69d1994bbb111f3895023b940f)
+        ;
+
+        
+    
+    
+            var marker_ff5662e27b26daca91f6f37b27d92aa4 = L.marker(
+                [12.825139, 77.586045],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_83962b30cd45d2624c35c749e88c796b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8109185fc4136fa0524d18b054c3dd90 = $(`<div id="html_8109185fc4136fa0524d18b054c3dd90" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.825139<br>Longitude: 77.586045</div>`)[0];
+                popup_83962b30cd45d2624c35c749e88c796b.setContent(html_8109185fc4136fa0524d18b054c3dd90);
+            
+        
+
+        marker_ff5662e27b26daca91f6f37b27d92aa4.bindPopup(popup_83962b30cd45d2624c35c749e88c796b)
+        ;
+
+        
+    
+    
+            var marker_d6f049e857a5b54f796619472da87c6c = L.marker(
+                [13.295583, 77.539723],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_87e1a0fceb5e02934c553993ab543d9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e1138960dbb808997a64120c6c7af65 = $(`<div id="html_3e1138960dbb808997a64120c6c7af65" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.295583<br>Longitude: 77.539723</div>`)[0];
+                popup_87e1a0fceb5e02934c553993ab543d9f.setContent(html_3e1138960dbb808997a64120c6c7af65);
+            
+        
+
+        marker_d6f049e857a5b54f796619472da87c6c.bindPopup(popup_87e1a0fceb5e02934c553993ab543d9f)
+        ;
+
+        
+    
+    
+            var marker_dbf65d130e3f2699bfec21499bd1d5d5 = L.marker(
+                [12.825055, 77.674094],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_86b4f17477cb75f01780f8438d685920 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a69384eb2a6f9c6a3534a90960bba2b = $(`<div id="html_4a69384eb2a6f9c6a3534a90960bba2b" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.825055<br>Longitude: 77.674094</div>`)[0];
+                popup_86b4f17477cb75f01780f8438d685920.setContent(html_4a69384eb2a6f9c6a3534a90960bba2b);
+            
+        
+
+        marker_dbf65d130e3f2699bfec21499bd1d5d5.bindPopup(popup_86b4f17477cb75f01780f8438d685920)
+        ;
+
+        
+    
+    
+            var marker_dfe74d8fc033342af4bcb66045a10f40 = L.marker(
+                [12.774659, 77.6431869],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_44bc68abf24169dbf642800eb3229a25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90a4d7640ba88e52b1a5598c219b7e18 = $(`<div id="html_90a4d7640ba88e52b1a5598c219b7e18" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.774659<br>Longitude: 77.6431869</div>`)[0];
+                popup_44bc68abf24169dbf642800eb3229a25.setContent(html_90a4d7640ba88e52b1a5598c219b7e18);
+            
+        
+
+        marker_dfe74d8fc033342af4bcb66045a10f40.bindPopup(popup_44bc68abf24169dbf642800eb3229a25)
+        ;
+
+        
+    
+    
+            var marker_6de5343527a5763bfc8c5f263a0ac037 = L.marker(
+                [12.806177, 77.627062],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_5f21f6544758cf2146d9f22820d0fbc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8e0d8d5e398c4d362d1d81e6409f186 = $(`<div id="html_b8e0d8d5e398c4d362d1d81e6409f186" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.806177<br>Longitude: 77.627062</div>`)[0];
+                popup_5f21f6544758cf2146d9f22820d0fbc2.setContent(html_b8e0d8d5e398c4d362d1d81e6409f186);
+            
+        
+
+        marker_6de5343527a5763bfc8c5f263a0ac037.bindPopup(popup_5f21f6544758cf2146d9f22820d0fbc2)
+        ;
+
+        
+    
+    
+            var marker_263555de54fd270479264eb9ed2326a3 = L.marker(
+                [13.071229, 77.429015],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_3b39e3794d899de405830850e1417b72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aebeec3c7422b5c894b7b1658922f68 = $(`<div id="html_0aebeec3c7422b5c894b7b1658922f68" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.071229<br>Longitude: 77.429015</div>`)[0];
+                popup_3b39e3794d899de405830850e1417b72.setContent(html_0aebeec3c7422b5c894b7b1658922f68);
+            
+        
+
+        marker_263555de54fd270479264eb9ed2326a3.bindPopup(popup_3b39e3794d899de405830850e1417b72)
+        ;
+
+        
+    
+    
+            var marker_88a83f35741176ed129a0683bd8838a6 = L.marker(
+                [12.769803, 77.701448],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_69bd5a49a324ed2da09e597576adad9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecaccf93b45aa78eec77d3b389505f85 = $(`<div id="html_ecaccf93b45aa78eec77d3b389505f85" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.769803<br>Longitude: 77.701448</div>`)[0];
+                popup_69bd5a49a324ed2da09e597576adad9f.setContent(html_ecaccf93b45aa78eec77d3b389505f85);
+            
+        
+
+        marker_88a83f35741176ed129a0683bd8838a6.bindPopup(popup_69bd5a49a324ed2da09e597576adad9f)
+        ;
+
+        
+    
+    
+            var marker_72ba381004c169d0a22ecd8df163462c = L.marker(
+                [17.762397, 77.167887],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_260ebeeadf121c492b1969154ab0d8d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ab049b3f4eb6313b6a418151cecc873 = $(`<div id="html_9ab049b3f4eb6313b6a418151cecc873" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 17.762397<br>Longitude: 77.167887</div>`)[0];
+                popup_260ebeeadf121c492b1969154ab0d8d5.setContent(html_9ab049b3f4eb6313b6a418151cecc873);
+            
+        
+
+        marker_72ba381004c169d0a22ecd8df163462c.bindPopup(popup_260ebeeadf121c492b1969154ab0d8d5)
+        ;
+
+        
+    
+    
+            var marker_450b33b1f17b3abae2470f540ea084ab = L.marker(
+                [17.767997, 77.098791],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_1535a4481c4b3af2d28f7bef4967faa4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_544f486a1cc2b716163cb9f4268745a3 = $(`<div id="html_544f486a1cc2b716163cb9f4268745a3" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 17.767997<br>Longitude: 77.098791</div>`)[0];
+                popup_1535a4481c4b3af2d28f7bef4967faa4.setContent(html_544f486a1cc2b716163cb9f4268745a3);
+            
+        
+
+        marker_450b33b1f17b3abae2470f540ea084ab.bindPopup(popup_1535a4481c4b3af2d28f7bef4967faa4)
+        ;
+
+        
+    
+    
+            var marker_ba677c3d85d9b538ecc61066079b50cb = L.marker(
+                [18.028224, 77.0633789],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_550a964b1c29bf451e14d76d44a01f5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2ac1e3a3573b920d9b3d5911c4c42ad = $(`<div id="html_a2ac1e3a3573b920d9b3d5911c4c42ad" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 18.028224<br>Longitude: 77.0633789</div>`)[0];
+                popup_550a964b1c29bf451e14d76d44a01f5a.setContent(html_a2ac1e3a3573b920d9b3d5911c4c42ad);
+            
+        
+
+        marker_ba677c3d85d9b538ecc61066079b50cb.bindPopup(popup_550a964b1c29bf451e14d76d44a01f5a)
+        ;
+
+        
+    
+    
+            var marker_e7dfec2f7d92a4f00ee4850d34ddbeb5 = L.marker(
+                [13.426247, 77.73015],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_2f58ff084641e9fb46bddb5dda39b1c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e65bb5f043dc950fcdc7cb0dca8ab55 = $(`<div id="html_7e65bb5f043dc950fcdc7cb0dca8ab55" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.426247<br>Longitude: 77.73015</div>`)[0];
+                popup_2f58ff084641e9fb46bddb5dda39b1c4.setContent(html_7e65bb5f043dc950fcdc7cb0dca8ab55);
+            
+        
+
+        marker_e7dfec2f7d92a4f00ee4850d34ddbeb5.bindPopup(popup_2f58ff084641e9fb46bddb5dda39b1c4)
+        ;
+
+        
+    
+    
+            var marker_49687cbde91e84184bfb6af84b5d7861 = L.marker(
+                [13.383096, 77.699869],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_8aaee4a3aea50bb629284b5d3635e0a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da87e74cf50bde7e00d96c5e7e575cba = $(`<div id="html_da87e74cf50bde7e00d96c5e7e575cba" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.383096<br>Longitude: 77.699869</div>`)[0];
+                popup_8aaee4a3aea50bb629284b5d3635e0a6.setContent(html_da87e74cf50bde7e00d96c5e7e575cba);
+            
+        
+
+        marker_49687cbde91e84184bfb6af84b5d7861.bindPopup(popup_8aaee4a3aea50bb629284b5d3635e0a6)
+        ;
+
+        
+    
+    
+            var marker_e7d9067b857a057182ecaf47d15ee889 = L.marker(
+                [13.363684, 77.653848],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_fd453eb8266a39a4b792252d412e7945 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24c42da86f80ebd979e6044db6e679f9 = $(`<div id="html_24c42da86f80ebd979e6044db6e679f9" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.363684<br>Longitude: 77.653848</div>`)[0];
+                popup_fd453eb8266a39a4b792252d412e7945.setContent(html_24c42da86f80ebd979e6044db6e679f9);
+            
+        
+
+        marker_e7d9067b857a057182ecaf47d15ee889.bindPopup(popup_fd453eb8266a39a4b792252d412e7945)
+        ;
+
+        
+    
+    
+            var marker_37a6674408b6183648daea99350caccd = L.marker(
+                [13.144855, 75.510171],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_1097ba04dbf7db2a3db7bf3e26c1ccb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a933c7bbdd7c4e781d659d760ce2742f = $(`<div id="html_a933c7bbdd7c4e781d659d760ce2742f" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.144855<br>Longitude: 75.510171</div>`)[0];
+                popup_1097ba04dbf7db2a3db7bf3e26c1ccb4.setContent(html_a933c7bbdd7c4e781d659d760ce2742f);
+            
+        
+
+        marker_37a6674408b6183648daea99350caccd.bindPopup(popup_1097ba04dbf7db2a3db7bf3e26c1ccb4)
+        ;
+
+        
+    
+    
+            var marker_fef37e988c9e468a0a6cb36318cacd92 = L.marker(
+                [13.599321, 75.97256],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_c12eda2ecfcd07fb71084449de2dc17d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_327e0be132a34284109d5b71a288caf1 = $(`<div id="html_327e0be132a34284109d5b71a288caf1" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.599321<br>Longitude: 75.97256</div>`)[0];
+                popup_c12eda2ecfcd07fb71084449de2dc17d.setContent(html_327e0be132a34284109d5b71a288caf1);
+            
+        
+
+        marker_fef37e988c9e468a0a6cb36318cacd92.bindPopup(popup_c12eda2ecfcd07fb71084449de2dc17d)
+        ;
+
+        
+    
+    
+            var marker_b892de7400b4125ae4ff2450ef505331 = L.marker(
+                [14.374665, 76.371147],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_2932a1485792941449d3b72f7938e431 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddfd63fb305812faaff67b5f891139cf = $(`<div id="html_ddfd63fb305812faaff67b5f891139cf" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 14.374665<br>Longitude: 76.371147</div>`)[0];
+                popup_2932a1485792941449d3b72f7938e431.setContent(html_ddfd63fb305812faaff67b5f891139cf);
+            
+        
+
+        marker_b892de7400b4125ae4ff2450ef505331.bindPopup(popup_2932a1485792941449d3b72f7938e431)
+        ;
+
+        
+    
+    
+            var marker_821d1cbb2e1522102e02bbc73488aae7 = L.marker(
+                [12.836368, 75.530321],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_e9616ba833ec530e8f86188d5eee5124 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9975ebe8204226c5637ad30a25deed5d = $(`<div id="html_9975ebe8204226c5637ad30a25deed5d" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.836368<br>Longitude: 75.530321</div>`)[0];
+                popup_e9616ba833ec530e8f86188d5eee5124.setContent(html_9975ebe8204226c5637ad30a25deed5d);
+            
+        
+
+        marker_821d1cbb2e1522102e02bbc73488aae7.bindPopup(popup_e9616ba833ec530e8f86188d5eee5124)
+        ;
+
+        
+    
+    
+            var marker_76685ea68d05f3d33834b4d8a35fe8f2 = L.marker(
+                [14.517897, 75.80224],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_cf5206432ee30f2ba3f6b8d76b453c23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d258c0e84cf7c0221ac6a83f4a509eef = $(`<div id="html_d258c0e84cf7c0221ac6a83f4a509eef" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 14.517897<br>Longitude: 75.80224</div>`)[0];
+                popup_cf5206432ee30f2ba3f6b8d76b453c23.setContent(html_d258c0e84cf7c0221ac6a83f4a509eef);
+            
+        
+
+        marker_76685ea68d05f3d33834b4d8a35fe8f2.bindPopup(popup_cf5206432ee30f2ba3f6b8d76b453c23)
+        ;
+
+        
+    
+    
+            var marker_8342ff377cdef8da41321d800fccf1ff = L.marker(
+                [15.5468, 75.125469],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_9c57e25ec51b6e31fce28cb4a1b32776 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a72bd0af1347530ad1ae14f4ac4b8cc6 = $(`<div id="html_a72bd0af1347530ad1ae14f4ac4b8cc6" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 15.5468<br>Longitude: 75.125469</div>`)[0];
+                popup_9c57e25ec51b6e31fce28cb4a1b32776.setContent(html_a72bd0af1347530ad1ae14f4ac4b8cc6);
+            
+        
+
+        marker_8342ff377cdef8da41321d800fccf1ff.bindPopup(popup_9c57e25ec51b6e31fce28cb4a1b32776)
+        ;
+
+        
+    
+    
+            var marker_06e5d9bd4c02f40fc06bbd4f57aaedbf = L.marker(
+                [12.91138, 76.38301],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_d3e8c74215a6a23a187c4de3a1b2d100 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5170ae5ea69c799952a2b3f11c8e897d = $(`<div id="html_5170ae5ea69c799952a2b3f11c8e897d" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.91138<br>Longitude: 76.38301</div>`)[0];
+                popup_d3e8c74215a6a23a187c4de3a1b2d100.setContent(html_5170ae5ea69c799952a2b3f11c8e897d);
+            
+        
+
+        marker_06e5d9bd4c02f40fc06bbd4f57aaedbf.bindPopup(popup_d3e8c74215a6a23a187c4de3a1b2d100)
+        ;
+
+        
+    
+    
+            var marker_172bfa922d85bf9e39b9939be815be9b = L.marker(
+                [12.91138, 76.38301],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_cf67812911132f5ef1f44d3f302eaf1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96b886c1de7ac94233ba631aacf3698f = $(`<div id="html_96b886c1de7ac94233ba631aacf3698f" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.91138<br>Longitude: 76.38301</div>`)[0];
+                popup_cf67812911132f5ef1f44d3f302eaf1e.setContent(html_96b886c1de7ac94233ba631aacf3698f);
+            
+        
+
+        marker_172bfa922d85bf9e39b9939be815be9b.bindPopup(popup_cf67812911132f5ef1f44d3f302eaf1e)
+        ;
+
+        
+    
+    
+            var marker_a6f74a03d355f23a063c4a999531395b = L.marker(
+                [12.325463, 76.063166],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_c5590729d44d7578f0febf85b83b43d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4542bee6ec96baf72f2f483978d85af = $(`<div id="html_c4542bee6ec96baf72f2f483978d85af" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.325463<br>Longitude: 76.063166</div>`)[0];
+                popup_c5590729d44d7578f0febf85b83b43d4.setContent(html_c4542bee6ec96baf72f2f483978d85af);
+            
+        
+
+        marker_a6f74a03d355f23a063c4a999531395b.bindPopup(popup_c5590729d44d7578f0febf85b83b43d4)
+        ;
+
+        
+    
+    
+            var marker_e31ab08160cc917f07a7861f7ae57d98 = L.marker(
+                [12.471364, 76.17887],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_9f6d6f9e2390588b994b0cd1bfc0a61f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19bb8a4eea2c29ba653f5d0eed44b61e = $(`<div id="html_19bb8a4eea2c29ba653f5d0eed44b61e" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.471364<br>Longitude: 76.17887</div>`)[0];
+                popup_9f6d6f9e2390588b994b0cd1bfc0a61f.setContent(html_19bb8a4eea2c29ba653f5d0eed44b61e);
+            
+        
+
+        marker_e31ab08160cc917f07a7861f7ae57d98.bindPopup(popup_9f6d6f9e2390588b994b0cd1bfc0a61f)
+        ;
+
+        
+    
+    
+            var marker_3ba32addebcbd5d0545d204f1b43730c = L.marker(
+                [12.548955, 76.17887],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_af979ef0e6befda6ce1da1bc25e908f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baada3f101e57d8bbe18d36e19c4a2ad = $(`<div id="html_baada3f101e57d8bbe18d36e19c4a2ad" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.548955<br>Longitude: 76.17887</div>`)[0];
+                popup_af979ef0e6befda6ce1da1bc25e908f9.setContent(html_baada3f101e57d8bbe18d36e19c4a2ad);
+            
+        
+
+        marker_3ba32addebcbd5d0545d204f1b43730c.bindPopup(popup_af979ef0e6befda6ce1da1bc25e908f9)
+        ;
+
+        
+    
+    
+            var marker_f644bbfae3e4b7a0485059065e212482 = L.marker(
+                [13.011455, 76.08832],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_a7a67fe1827daf9a29ed8388ab834441 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc79a213f76da26f3d4fa5d7d940e3ac = $(`<div id="html_cc79a213f76da26f3d4fa5d7d940e3ac" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.011455<br>Longitude: 76.08832</div>`)[0];
+                popup_a7a67fe1827daf9a29ed8388ab834441.setContent(html_cc79a213f76da26f3d4fa5d7d940e3ac);
+            
+        
+
+        marker_f644bbfae3e4b7a0485059065e212482.bindPopup(popup_a7a67fe1827daf9a29ed8388ab834441)
+        ;
+
+        
+    
+    
+            var marker_3da183afccde90fdb637d31c3b76b3ff = L.marker(
+                [13.008777, 76.095614],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_b08efb434e99b08d47afc11d79f644e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_781d6271e81e3d69faba8f8484d65ac5 = $(`<div id="html_781d6271e81e3d69faba8f8484d65ac5" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.008777<br>Longitude: 76.095614</div>`)[0];
+                popup_b08efb434e99b08d47afc11d79f644e3.setContent(html_781d6271e81e3d69faba8f8484d65ac5);
+            
+        
+
+        marker_3da183afccde90fdb637d31c3b76b3ff.bindPopup(popup_b08efb434e99b08d47afc11d79f644e3)
+        ;
+
+        
+    
+    
+            var marker_fe2b39326070f6cc34ee0aabe1f70f0e = L.marker(
+                [13.008777, 76.095614],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_d6e1ce9695dc7eda330e5d54c62164f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ee1f50061879e2f6f0693466754fcd9 = $(`<div id="html_7ee1f50061879e2f6f0693466754fcd9" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.008777<br>Longitude: 76.095614</div>`)[0];
+                popup_d6e1ce9695dc7eda330e5d54c62164f7.setContent(html_7ee1f50061879e2f6f0693466754fcd9);
+            
+        
+
+        marker_fe2b39326070f6cc34ee0aabe1f70f0e.bindPopup(popup_d6e1ce9695dc7eda330e5d54c62164f7)
+        ;
+
+        
+    
+    
+            var marker_3f074c58820d88623daff7b0a2660d15 = L.marker(
+                [12.911909, 75.815835],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_5916dea94170cc9d8c6e89cc1869cb61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_685b0002c00aee593399aaa494edf160 = $(`<div id="html_685b0002c00aee593399aaa494edf160" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.911909<br>Longitude: 75.815835</div>`)[0];
+                popup_5916dea94170cc9d8c6e89cc1869cb61.setContent(html_685b0002c00aee593399aaa494edf160);
+            
+        
+
+        marker_3f074c58820d88623daff7b0a2660d15.bindPopup(popup_5916dea94170cc9d8c6e89cc1869cb61)
+        ;
+
+        
+    
+    
+            var marker_8cbaf6aab62488dcb818cda723a8e217 = L.marker(
+                [12.186188, 75.939337],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_832c940ba3b2bbb5f5ef006642e36c5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e72f36e4eb8d155bd59b1cc03e7fded = $(`<div id="html_6e72f36e4eb8d155bd59b1cc03e7fded" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.186188<br>Longitude: 75.939337</div>`)[0];
+                popup_832c940ba3b2bbb5f5ef006642e36c5d.setContent(html_6e72f36e4eb8d155bd59b1cc03e7fded);
+            
+        
+
+        marker_8cbaf6aab62488dcb818cda723a8e217.bindPopup(popup_832c940ba3b2bbb5f5ef006642e36c5d)
+        ;
+
+        
+    
+    
+            var marker_7f442adb7b7c6947c12f93125c99317f = L.marker(
+                [13.197853, 78.00315],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_fc65f8d8b89570cedaa6dc2ec3ef26da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc3a258c9867b5eac14522bcfa8c7804 = $(`<div id="html_bc3a258c9867b5eac14522bcfa8c7804" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.197853<br>Longitude: 78.00315</div>`)[0];
+                popup_fc65f8d8b89570cedaa6dc2ec3ef26da.setContent(html_bc3a258c9867b5eac14522bcfa8c7804);
+            
+        
+
+        marker_7f442adb7b7c6947c12f93125c99317f.bindPopup(popup_fc65f8d8b89570cedaa6dc2ec3ef26da)
+        ;
+
+        
+    
+    
+            var marker_9e7a1b519278ab5ea55bd903068a2767 = L.marker(
+                [13.161699, 78.01744],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_f83fdc66301b1a907aa743b81b898059 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_442eecedbfb599465f9214f8c7ac9ef1 = $(`<div id="html_442eecedbfb599465f9214f8c7ac9ef1" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.161699<br>Longitude: 78.01744</div>`)[0];
+                popup_f83fdc66301b1a907aa743b81b898059.setContent(html_442eecedbfb599465f9214f8c7ac9ef1);
+            
+        
+
+        marker_9e7a1b519278ab5ea55bd903068a2767.bindPopup(popup_f83fdc66301b1a907aa743b81b898059)
+        ;
+
+        
+    
+    
+            var marker_c92e2229cf2126a2b65bf9d7546bc5d3 = L.marker(
+                [12.52043, 77.033706],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_370fb3b9f7fc6c73126c03373e45696b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4348025a69d0d6a08589b84461bd3305 = $(`<div id="html_4348025a69d0d6a08589b84461bd3305" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.52043<br>Longitude: 77.033706</div>`)[0];
+                popup_370fb3b9f7fc6c73126c03373e45696b.setContent(html_4348025a69d0d6a08589b84461bd3305);
+            
+        
+
+        marker_c92e2229cf2126a2b65bf9d7546bc5d3.bindPopup(popup_370fb3b9f7fc6c73126c03373e45696b)
+        ;
+
+        
+    
+    
+            var marker_e800e69aec438de415cf89dc3d95b59f = L.marker(
+                [12.659358, 76.488323],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_b5e14624e79517af3d18600811fddba2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fc09c6d24f74f0ad81c979145a486ea = $(`<div id="html_7fc09c6d24f74f0ad81c979145a486ea" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.659358<br>Longitude: 76.488323</div>`)[0];
+                popup_b5e14624e79517af3d18600811fddba2.setContent(html_7fc09c6d24f74f0ad81c979145a486ea);
+            
+        
+
+        marker_e800e69aec438de415cf89dc3d95b59f.bindPopup(popup_b5e14624e79517af3d18600811fddba2)
+        ;
+
+        
+    
+    
+            var marker_27d499e3097ef5de745f070fb61afdc4 = L.marker(
+                [12.748148, 76.430858],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_4e9b16ec1dcc942ee98c8e5e293fe5cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30fe300acdec26f9d04738183a7bc77d = $(`<div id="html_30fe300acdec26f9d04738183a7bc77d" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.748148<br>Longitude: 76.430858</div>`)[0];
+                popup_4e9b16ec1dcc942ee98c8e5e293fe5cc.setContent(html_30fe300acdec26f9d04738183a7bc77d);
+            
+        
+
+        marker_27d499e3097ef5de745f070fb61afdc4.bindPopup(popup_4e9b16ec1dcc942ee98c8e5e293fe5cc)
+        ;
+
+        
+    
+    
+            var marker_0d49070015b53cec0eb8ec58b77bf9b1 = L.marker(
+                [12.122944, 76.535399],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_f3f58ad4104d020f5c1776afe79af4f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbe7bed7fb225ef4872ca8d67726932d = $(`<div id="html_fbe7bed7fb225ef4872ca8d67726932d" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.122944<br>Longitude: 76.535399</div>`)[0];
+                popup_f3f58ad4104d020f5c1776afe79af4f7.setContent(html_fbe7bed7fb225ef4872ca8d67726932d);
+            
+        
+
+        marker_0d49070015b53cec0eb8ec58b77bf9b1.bindPopup(popup_f3f58ad4104d020f5c1776afe79af4f7)
+        ;
+
+        
+    
+    
+            var marker_01fdba244d46d0659e916856fe87b99c = L.marker(
+                [16.112733, 76.79476],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_2a82cdb8aebce6f1c7552c5913db3661 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f88c29dd46cba6e59e88b285a765b334 = $(`<div id="html_f88c29dd46cba6e59e88b285a765b334" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 16.112733<br>Longitude: 76.79476</div>`)[0];
+                popup_2a82cdb8aebce6f1c7552c5913db3661.setContent(html_f88c29dd46cba6e59e88b285a765b334);
+            
+        
+
+        marker_01fdba244d46d0659e916856fe87b99c.bindPopup(popup_2a82cdb8aebce6f1c7552c5913db3661)
+        ;
+
+        
+    
+    
+            var marker_7beecb8e1b23dd9af416b8559c600e33 = L.marker(
+                [16.053957, 76.886035],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_0032830424ca086f806eadee3758e2c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46aff7041ab9d8e0e00fee44ea1829cf = $(`<div id="html_46aff7041ab9d8e0e00fee44ea1829cf" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 16.053957<br>Longitude: 76.886035</div>`)[0];
+                popup_0032830424ca086f806eadee3758e2c9.setContent(html_46aff7041ab9d8e0e00fee44ea1829cf);
+            
+        
+
+        marker_7beecb8e1b23dd9af416b8559c600e33.bindPopup(popup_0032830424ca086f806eadee3758e2c9)
+        ;
+
+        
+    
+    
+            var marker_1dc7ae70195a821160ba7a245de5bcea = L.marker(
+                [12.814125, 77.406305],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_4317d4811ec8a15b4557d829b5b9910f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7d084a5aa0c45a0d13b351c3c4a01ce = $(`<div id="html_c7d084a5aa0c45a0d13b351c3c4a01ce" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 12.814125<br>Longitude: 77.406305</div>`)[0];
+                popup_4317d4811ec8a15b4557d829b5b9910f.setContent(html_c7d084a5aa0c45a0d13b351c3c4a01ce);
+            
+        
+
+        marker_1dc7ae70195a821160ba7a245de5bcea.bindPopup(popup_4317d4811ec8a15b4557d829b5b9910f)
+        ;
+
+        
+    
+    
+            var marker_c45db11df1f4e2b022e6b67acc941f31 = L.marker(
+                [13.723699, 77.198033],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_64b6b1e217e0732c3e49069f1648ff85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_105d64c3e452d46ae2bced15e326eabb = $(`<div id="html_105d64c3e452d46ae2bced15e326eabb" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.723699<br>Longitude: 77.198033</div>`)[0];
+                popup_64b6b1e217e0732c3e49069f1648ff85.setContent(html_105d64c3e452d46ae2bced15e326eabb);
+            
+        
+
+        marker_c45db11df1f4e2b022e6b67acc941f31.bindPopup(popup_64b6b1e217e0732c3e49069f1648ff85)
+        ;
+
+        
+    
+    
+            var marker_d0d55adaab381acc27f1213205dd1da4 = L.marker(
+                [13.342823, 77.106122],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_b4232f870eab627fd2281a5c8e3bf85a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4354c6abe74bd5f71bd50a9754e7dcf = $(`<div id="html_a4354c6abe74bd5f71bd50a9754e7dcf" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.342823<br>Longitude: 77.106122</div>`)[0];
+                popup_b4232f870eab627fd2281a5c8e3bf85a.setContent(html_a4354c6abe74bd5f71bd50a9754e7dcf);
+            
+        
+
+        marker_d0d55adaab381acc27f1213205dd1da4.bindPopup(popup_b4232f870eab627fd2281a5c8e3bf85a)
+        ;
+
+        
+    
+    
+            var marker_afa2dbf6c345cff48e0b58123adb4a52 = L.marker(
+                [13.342823, 77.106122],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_d29e8f1b6bbdf958351a7b4a9b7f42f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bc7072f4fd4bc4b544f884c23287947 = $(`<div id="html_5bc7072f4fd4bc4b544f884c23287947" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.342823<br>Longitude: 77.106122</div>`)[0];
+                popup_d29e8f1b6bbdf958351a7b4a9b7f42f5.setContent(html_5bc7072f4fd4bc4b544f884c23287947);
+            
+        
+
+        marker_afa2dbf6c345cff48e0b58123adb4a52.bindPopup(popup_d29e8f1b6bbdf958351a7b4a9b7f42f5)
+        ;
+
+        
+    
+    
+            var marker_62b34798834dc49cf32776d576d78982 = L.marker(
+                [13.360495, 74.70405],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_ad1869a1e8a1ab11f1d0a52bee72729f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6247c96ff885095422c8a043a88f32fa = $(`<div id="html_6247c96ff885095422c8a043a88f32fa" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.360495<br>Longitude: 74.70405</div>`)[0];
+                popup_ad1869a1e8a1ab11f1d0a52bee72729f.setContent(html_6247c96ff885095422c8a043a88f32fa);
+            
+        
+
+        marker_62b34798834dc49cf32776d576d78982.bindPopup(popup_ad1869a1e8a1ab11f1d0a52bee72729f)
+        ;
+
+        
+    
+    
+            var marker_b6b86d837fe83eb8b3967ca6201c7608 = L.marker(
+                [13.186126, 74.756163],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_6baf7a00c224c67e96c99ea05dc5713a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfe5f7e2a25b692061d29d5dab22b1a6 = $(`<div id="html_bfe5f7e2a25b692061d29d5dab22b1a6" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 13.186126<br>Longitude: 74.756163</div>`)[0];
+                popup_6baf7a00c224c67e96c99ea05dc5713a.setContent(html_bfe5f7e2a25b692061d29d5dab22b1a6);
+            
+        
+
+        marker_b6b86d837fe83eb8b3967ca6201c7608.bindPopup(popup_6baf7a00c224c67e96c99ea05dc5713a)
+        ;
+
+        
+    
+    
+            var marker_e60ed16af8c9ca7e69ab38cbf15afbc2 = L.marker(
+                [14.634209, 75.987159],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_678fa65bb424f567d30a07aad7715ac5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fd44a23d6cfd0621a9be68f603d918e = $(`<div id="html_0fd44a23d6cfd0621a9be68f603d918e" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 14.634209<br>Longitude: 75.987159</div>`)[0];
+                popup_678fa65bb424f567d30a07aad7715ac5.setContent(html_0fd44a23d6cfd0621a9be68f603d918e);
+            
+        
+
+        marker_e60ed16af8c9ca7e69ab38cbf15afbc2.bindPopup(popup_678fa65bb424f567d30a07aad7715ac5)
+        ;
+
+        
+    
+    
+            var marker_1ea702af780cb57f6fb37f7e360adc5d = L.marker(
+                [16.892729, 76.215822],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_34383260858ed955a509419a823fa801 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d561dffb2073d8527fa3be86d9e41b70 = $(`<div id="html_d561dffb2073d8527fa3be86d9e41b70" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 16.892729<br>Longitude: 76.215822</div>`)[0];
+                popup_34383260858ed955a509419a823fa801.setContent(html_d561dffb2073d8527fa3be86d9e41b70);
+            
+        
+
+        marker_1ea702af780cb57f6fb37f7e360adc5d.bindPopup(popup_34383260858ed955a509419a823fa801)
+        ;
+
+        
+    
+    
+            var marker_69f11c0287b92680facbff7ea1fbba8c = L.marker(
+                [16.82873, 75.838946],
+                {}
+            ).addTo(marker_cluster_0a9b3b920d978512991c06b09a273640);
+        
+    
+        var popup_96f28df17a971319e943933210573e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0debf303e68c24bb13c300b026b1754 = $(`<div id="html_f0debf303e68c24bb13c300b026b1754" style="width: 100.0%; height: 100.0%;">Crime Group: INDIAN MOTOR VEHICLE<br>Crime Head: INDIAN MOTOR VEHICLE (IMV)<br>Latitude: 16.82873<br>Longitude: 75.838946</div>`)[0];
+                popup_96f28df17a971319e943933210573e88.setContent(html_f0debf303e68c24bb13c300b026b1754);
+            
+        
+
+        marker_69f11c0287b92680facbff7ea1fbba8c.bindPopup(popup_96f28df17a971319e943933210573e88)
+        ;
+
+        
+    
+    
+            var layer_control_23368efaa0c782a22f548fec5148964f = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_ab83ed24c8eaefe67c7cefc8887c8694,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_23368efaa0c782a22f548fec5148964f.base_layers,
+                layer_control_23368efaa0c782a22f548fec5148964f.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_509d232664213d52fbcd58da41cb8691);
+        
+</script>
+</html>

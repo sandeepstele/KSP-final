@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d9acd41a80f97f737bfb597fa9c55aae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d9acd41a80f97f737bfb597fa9c55aae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d9acd41a80f97f737bfb597fa9c55aae = L.map(
+                "map_d9acd41a80f97f737bfb597fa9c55aae",
+                {
+                    center: [15.474710333333334, 76.58095933333333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_45f8d1b9dd4dae60a8d609dbc1d3ab1c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d9acd41a80f97f737bfb597fa9c55aae);
+        
+    
+            var marker_cluster_b128110a02f4c3fe70e58d2acdc984f7 = L.markerClusterGroup(
+                {}
+            );
+            map_d9acd41a80f97f737bfb597fa9c55aae.addLayer(marker_cluster_b128110a02f4c3fe70e58d2acdc984f7);
+        
+    
+            var marker_bc9390ee19d8bf54973f1c1dfff87ca3 = L.marker(
+                [16.192411, 77.33949],
+                {}
+            ).addTo(marker_cluster_b128110a02f4c3fe70e58d2acdc984f7);
+        
+    
+        var popup_135b12b5e58e12876f2b5299d1b0659a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fbffecc02a325fe6b655330aa86ea2c = $(`<div id="html_7fbffecc02a325fe6b655330aa86ea2c" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 16.192411<br>Longitude: 77.33949</div>`)[0];
+                popup_135b12b5e58e12876f2b5299d1b0659a.setContent(html_7fbffecc02a325fe6b655330aa86ea2c);
+            
+        
+
+        marker_bc9390ee19d8bf54973f1c1dfff87ca3.bindPopup(popup_135b12b5e58e12876f2b5299d1b0659a)
+        ;
+
+        
+    
+    
+            var marker_7322818810a3b9714bbac67191c1a6a5 = L.marker(
+                [13.996023, 77.642693],
+                {}
+            ).addTo(marker_cluster_b128110a02f4c3fe70e58d2acdc984f7);
+        
+    
+        var popup_08b9d235805af85a4b22d98a7bccee75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b1fc8e6b81d461b947eccb22ff6db1a = $(`<div id="html_4b1fc8e6b81d461b947eccb22ff6db1a" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 13.996023<br>Longitude: 77.642693</div>`)[0];
+                popup_08b9d235805af85a4b22d98a7bccee75.setContent(html_4b1fc8e6b81d461b947eccb22ff6db1a);
+            
+        
+
+        marker_7322818810a3b9714bbac67191c1a6a5.bindPopup(popup_08b9d235805af85a4b22d98a7bccee75)
+        ;
+
+        
+    
+    
+            var marker_c43b8bb4ba8d1d2aff82e2efd33bd8f8 = L.marker(
+                [16.235697, 74.760695],
+                {}
+            ).addTo(marker_cluster_b128110a02f4c3fe70e58d2acdc984f7);
+        
+    
+        var popup_4fdccd8d826bc8a742f365064b15f27f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4806859aaf0d6918fc2efb0bcd6c441b = $(`<div id="html_4806859aaf0d6918fc2efb0bcd6c441b" style="width: 100.0%; height: 100.0%;">Crime Group: Karnataka State Local Act<br>Crime Head: Karnataka Excise Act 1965<br>Latitude: 16.235697<br>Longitude: 74.760695</div>`)[0];
+                popup_4fdccd8d826bc8a742f365064b15f27f.setContent(html_4806859aaf0d6918fc2efb0bcd6c441b);
+            
+        
+
+        marker_c43b8bb4ba8d1d2aff82e2efd33bd8f8.bindPopup(popup_4fdccd8d826bc8a742f365064b15f27f)
+        ;
+
+        
+    
+    
+            var layer_control_51357dfa33261761dad303fc23154b50 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_45f8d1b9dd4dae60a8d609dbc1d3ab1c,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_51357dfa33261761dad303fc23154b50.base_layers,
+                layer_control_51357dfa33261761dad303fc23154b50.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d9acd41a80f97f737bfb597fa9c55aae);
+        
+</script>
+</html>

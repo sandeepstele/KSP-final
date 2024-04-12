@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6e6d8120e8566798c25cf76d0d16f0d4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6e6d8120e8566798c25cf76d0d16f0d4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6e6d8120e8566798c25cf76d0d16f0d4 = L.map(
+                "map_6e6d8120e8566798c25cf76d0d16f0d4",
+                {
+                    center: [17.589432923076924, 77.34634591538462],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_73e32684aeca741aada9f5292867b6e2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6e6d8120e8566798c25cf76d0d16f0d4);
+        
+    
+            var marker_cluster_2b25a81aa939f7c0b7af90624bb67d59 = L.markerClusterGroup(
+                {}
+            );
+            map_6e6d8120e8566798c25cf76d0d16f0d4.addLayer(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+            var marker_a5085cd55f269a2189c3d8d910b970c2 = L.marker(
+                [17.87845, 77.55352],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_56a06a3ce77c1014b863e6cca335f7fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41f0eb80b1790a0be1e499e6200fe770 = $(`<div id="html_41f0eb80b1790a0be1e499e6200fe770" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.87845<br>Longitude: 77.55352</div>`)[0];
+                popup_56a06a3ce77c1014b863e6cca335f7fa.setContent(html_41f0eb80b1790a0be1e499e6200fe770);
+            
+        
+
+        marker_a5085cd55f269a2189c3d8d910b970c2.bindPopup(popup_56a06a3ce77c1014b863e6cca335f7fa)
+        ;
+
+        
+    
+    
+            var marker_3d3e9131924b799716a6864d059a42e8 = L.marker(
+                [17.890654, 77.232575],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_0a29daa46fbd0945a58fad79278122db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f71b11099ea8f927744e5a2954b45143 = $(`<div id="html_f71b11099ea8f927744e5a2954b45143" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.890654<br>Longitude: 77.232575</div>`)[0];
+                popup_0a29daa46fbd0945a58fad79278122db.setContent(html_f71b11099ea8f927744e5a2954b45143);
+            
+        
+
+        marker_3d3e9131924b799716a6864d059a42e8.bindPopup(popup_0a29daa46fbd0945a58fad79278122db)
+        ;
+
+        
+    
+    
+            var marker_4808adfeab5b7d231102370a33c7f5d8 = L.marker(
+                [17.947963, 77.321237],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_aeff5819581c73b9f6e01052b3db9292 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f80f2806caeca1d93260eab468cdcc6a = $(`<div id="html_f80f2806caeca1d93260eab468cdcc6a" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.947963<br>Longitude: 77.321237</div>`)[0];
+                popup_aeff5819581c73b9f6e01052b3db9292.setContent(html_f80f2806caeca1d93260eab468cdcc6a);
+            
+        
+
+        marker_4808adfeab5b7d231102370a33c7f5d8.bindPopup(popup_aeff5819581c73b9f6e01052b3db9292)
+        ;
+
+        
+    
+    
+            var marker_1034dd40266693de069393b5a492504b = L.marker(
+                [17.756489, 77.512301],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_cefa12fdd3d02f739b5a0468eb0dfb36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99b35846fe45fad176f24702c69db222 = $(`<div id="html_99b35846fe45fad176f24702c69db222" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.756489<br>Longitude: 77.512301</div>`)[0];
+                popup_cefa12fdd3d02f739b5a0468eb0dfb36.setContent(html_99b35846fe45fad176f24702c69db222);
+            
+        
+
+        marker_1034dd40266693de069393b5a492504b.bindPopup(popup_cefa12fdd3d02f739b5a0468eb0dfb36)
+        ;
+
+        
+    
+    
+            var marker_7ad2044ecb1cde5439dd28004a1e1dac = L.marker(
+                [17.516648, 77.155573],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_e4f018f16b71067b486875cf39de809b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cba02d80f883d9773fbc368d00463ff7 = $(`<div id="html_cba02d80f883d9773fbc368d00463ff7" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.516648<br>Longitude: 77.155573</div>`)[0];
+                popup_e4f018f16b71067b486875cf39de809b.setContent(html_cba02d80f883d9773fbc368d00463ff7);
+            
+        
+
+        marker_7ad2044ecb1cde5439dd28004a1e1dac.bindPopup(popup_e4f018f16b71067b486875cf39de809b)
+        ;
+
+        
+    
+    
+            var marker_ba654e3111a543bb6a53784607507c12 = L.marker(
+                [17.769422, 77.1395529],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_d87c4801b8e7072a0a868c430cc90b51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3af589a9457e44c9b4c6118e3888898 = $(`<div id="html_e3af589a9457e44c9b4c6118e3888898" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.769422<br>Longitude: 77.1395529</div>`)[0];
+                popup_d87c4801b8e7072a0a868c430cc90b51.setContent(html_e3af589a9457e44c9b4c6118e3888898);
+            
+        
+
+        marker_ba654e3111a543bb6a53784607507c12.bindPopup(popup_d87c4801b8e7072a0a868c430cc90b51)
+        ;
+
+        
+    
+    
+            var marker_519b201cf484119961a43f57626eb320 = L.marker(
+                [17.715464, 77.202342],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_f1519aa48b69ffa3a25733e9dc888f98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96dcf8d0ed0904d1d5bae92e4ad0c6f8 = $(`<div id="html_96dcf8d0ed0904d1d5bae92e4ad0c6f8" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.715464<br>Longitude: 77.202342</div>`)[0];
+                popup_f1519aa48b69ffa3a25733e9dc888f98.setContent(html_96dcf8d0ed0904d1d5bae92e4ad0c6f8);
+            
+        
+
+        marker_519b201cf484119961a43f57626eb320.bindPopup(popup_f1519aa48b69ffa3a25733e9dc888f98)
+        ;
+
+        
+    
+    
+            var marker_b2737a7edd30329969bf7f2c6056913f = L.marker(
+                [17.727963, 77.365724],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_a497bf1097576072d411aad8ef36eb18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2ac2cf5e453523e585fd4e993cb5ae8 = $(`<div id="html_a2ac2cf5e453523e585fd4e993cb5ae8" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.727963<br>Longitude: 77.365724</div>`)[0];
+                popup_a497bf1097576072d411aad8ef36eb18.setContent(html_a2ac2cf5e453523e585fd4e993cb5ae8);
+            
+        
+
+        marker_b2737a7edd30329969bf7f2c6056913f.bindPopup(popup_a497bf1097576072d411aad8ef36eb18)
+        ;
+
+        
+    
+    
+            var marker_8162ec8669da4537c035246eaa97fdd0 = L.marker(
+                [15.250643, 77.428073],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_7047ce5dd6c3e0e1de84ec5513564f02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4867f5896489de88afdc8e1bd346d673 = $(`<div id="html_4867f5896489de88afdc8e1bd346d673" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 15.250643<br>Longitude: 77.428073</div>`)[0];
+                popup_7047ce5dd6c3e0e1de84ec5513564f02.setContent(html_4867f5896489de88afdc8e1bd346d673);
+            
+        
+
+        marker_8162ec8669da4537c035246eaa97fdd0.bindPopup(popup_7047ce5dd6c3e0e1de84ec5513564f02)
+        ;
+
+        
+    
+    
+            var marker_83075546eb4d59e52833495c89955813 = L.marker(
+                [17.934815, 77.475375],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_da4ca8d8c9b3fee24a36e3696cc4218b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ced62ac7e6f4b5d4aa7db9b48ea7b940 = $(`<div id="html_ced62ac7e6f4b5d4aa7db9b48ea7b940" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.934815<br>Longitude: 77.475375</div>`)[0];
+                popup_da4ca8d8c9b3fee24a36e3696cc4218b.setContent(html_ced62ac7e6f4b5d4aa7db9b48ea7b940);
+            
+        
+
+        marker_83075546eb4d59e52833495c89955813.bindPopup(popup_da4ca8d8c9b3fee24a36e3696cc4218b)
+        ;
+
+        
+    
+    
+            var marker_2373a20ea6c57a199c2de9771e411e33 = L.marker(
+                [17.661393, 77.373032],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_d227ef1d3c66ccdc928145525d5e1098 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b4ba104be38a66398986819f7705017 = $(`<div id="html_6b4ba104be38a66398986819f7705017" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.661393<br>Longitude: 77.373032</div>`)[0];
+                popup_d227ef1d3c66ccdc928145525d5e1098.setContent(html_6b4ba104be38a66398986819f7705017);
+            
+        
+
+        marker_2373a20ea6c57a199c2de9771e411e33.bindPopup(popup_d227ef1d3c66ccdc928145525d5e1098)
+        ;
+
+        
+    
+    
+            var marker_f81975a53a860eb7957101bc201b0034 = L.marker(
+                [17.699825, 77.212835],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_e249f07a3c7db7575a28e6e2d8000f64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4976f84d8894061a62f4768d944427de = $(`<div id="html_4976f84d8894061a62f4768d944427de" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.699825<br>Longitude: 77.212835</div>`)[0];
+                popup_e249f07a3c7db7575a28e6e2d8000f64.setContent(html_4976f84d8894061a62f4768d944427de);
+            
+        
+
+        marker_f81975a53a860eb7957101bc201b0034.bindPopup(popup_e249f07a3c7db7575a28e6e2d8000f64)
+        ;
+
+        
+    
+    
+            var marker_567479c38b80e620aab0194298fdddac = L.marker(
+                [17.912899, 77.530357],
+                {}
+            ).addTo(marker_cluster_2b25a81aa939f7c0b7af90624bb67d59);
+        
+    
+        var popup_a481472fa01aa03f82543b5a1a51f762 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9fc77e39a03f2e2afb43d9530643d0e = $(`<div id="html_d9fc77e39a03f2e2afb43d9530643d0e" style="width: 100.0%; height: 100.0%;">Crime Group: CONSUMER<br>Crime Head: Essential Commodites Act 1955<br>Latitude: 17.912899<br>Longitude: 77.530357</div>`)[0];
+                popup_a481472fa01aa03f82543b5a1a51f762.setContent(html_d9fc77e39a03f2e2afb43d9530643d0e);
+            
+        
+
+        marker_567479c38b80e620aab0194298fdddac.bindPopup(popup_a481472fa01aa03f82543b5a1a51f762)
+        ;
+
+        
+    
+    
+            var layer_control_8b4ec6677ec9df38ccfe534bd4171031 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_73e32684aeca741aada9f5292867b6e2,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_8b4ec6677ec9df38ccfe534bd4171031.base_layers,
+                layer_control_8b4ec6677ec9df38ccfe534bd4171031.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6e6d8120e8566798c25cf76d0d16f0d4);
+        
+</script>
+</html>

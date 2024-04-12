@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cf9a3f557a6d07ec8c9694eda49e5a51 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cf9a3f557a6d07ec8c9694eda49e5a51" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cf9a3f557a6d07ec8c9694eda49e5a51 = L.map(
+                "map_cf9a3f557a6d07ec8c9694eda49e5a51",
+                {
+                    center: [12.956479059134823, 77.59084987785789],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_de8f8322a5490a16536c445ea299734a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cf9a3f557a6d07ec8c9694eda49e5a51);
+        
+    
+            var marker_cluster_4048d859156d6c33edad5eaa4e852359 = L.markerClusterGroup(
+                {}
+            );
+            map_cf9a3f557a6d07ec8c9694eda49e5a51.addLayer(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+            var marker_bed199d2eb4424a24ad86961d0b086f4 = L.marker(
+                [13.020563, 77.594542],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_5e684abeec51fb9e5b7dd5197aba665b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9eaaafd195b88fda16a8b67d5a33a2b9 = $(`<div id="html_9eaaafd195b88fda16a8b67d5a33a2b9" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 13.020563<br>Longitude: 77.594542</div>`)[0];
+                popup_5e684abeec51fb9e5b7dd5197aba665b.setContent(html_9eaaafd195b88fda16a8b67d5a33a2b9);
+            
+        
+
+        marker_bed199d2eb4424a24ad86961d0b086f4.bindPopup(popup_5e684abeec51fb9e5b7dd5197aba665b)
+        ;
+
+        
+    
+    
+            var marker_06f16e7e833586a0157d369e9e82cb20 = L.marker(
+                [13.199144, 77.705746],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_fe9b4920313371df8c1a423d331cdb90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cf9040440b668bef347b44b0ee66e3c = $(`<div id="html_6cf9040440b668bef347b44b0ee66e3c" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 13.199144<br>Longitude: 77.705746</div>`)[0];
+                popup_fe9b4920313371df8c1a423d331cdb90.setContent(html_6cf9040440b668bef347b44b0ee66e3c);
+            
+        
+
+        marker_06f16e7e833586a0157d369e9e82cb20.bindPopup(popup_fe9b4920313371df8c1a423d331cdb90)
+        ;
+
+        
+    
+    
+            var marker_66d54f7dbe86ac808ffe3941070021fd = L.marker(
+                [12.591982, 77.344433],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_95e9a7a390d4fd32c598a09f2614341b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ab5373ae16f69e6418e62746a5ee244 = $(`<div id="html_0ab5373ae16f69e6418e62746a5ee244" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.591982<br>Longitude: 77.344433</div>`)[0];
+                popup_95e9a7a390d4fd32c598a09f2614341b.setContent(html_0ab5373ae16f69e6418e62746a5ee244);
+            
+        
+
+        marker_66d54f7dbe86ac808ffe3941070021fd.bindPopup(popup_95e9a7a390d4fd32c598a09f2614341b)
+        ;
+
+        
+    
+    
+            var marker_6fd22a7907e0c7f4646fab82cc087681 = L.marker(
+                [12.959, 77.5811],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_295fe8928d06a5c892f9fd627be57b15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ebe12113cc83d84ec28e584daa1a684 = $(`<div id="html_3ebe12113cc83d84ec28e584daa1a684" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Other Forgery<br>Latitude: 12.959<br>Longitude: 77.5811</div>`)[0];
+                popup_295fe8928d06a5c892f9fd627be57b15.setContent(html_3ebe12113cc83d84ec28e584daa1a684);
+            
+        
+
+        marker_6fd22a7907e0c7f4646fab82cc087681.bindPopup(popup_295fe8928d06a5c892f9fd627be57b15)
+        ;
+
+        
+    
+    
+            var marker_690cd183aa93e2d00b536436d6bd7375 = L.marker(
+                [13.004241, 77.578157],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_d838aefc6b0ccde88d774012545cf628 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18866ce52d43c93fb48c466782861741 = $(`<div id="html_18866ce52d43c93fb48c466782861741" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 13.004241<br>Longitude: 77.578157</div>`)[0];
+                popup_d838aefc6b0ccde88d774012545cf628.setContent(html_18866ce52d43c93fb48c466782861741);
+            
+        
+
+        marker_690cd183aa93e2d00b536436d6bd7375.bindPopup(popup_d838aefc6b0ccde88d774012545cf628)
+        ;
+
+        
+    
+    
+            var marker_b7a8cab91dab80b47785150babfcbe51 = L.marker(
+                [12.546845, 77.658478],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_52daddbb89821519370d8ed99ad49b36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bca0e987a3602ad3d1dcb084d7c22b0 = $(`<div id="html_3bca0e987a3602ad3d1dcb084d7c22b0" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.546845<br>Longitude: 77.658478</div>`)[0];
+                popup_52daddbb89821519370d8ed99ad49b36.setContent(html_3bca0e987a3602ad3d1dcb084d7c22b0);
+            
+        
+
+        marker_b7a8cab91dab80b47785150babfcbe51.bindPopup(popup_52daddbb89821519370d8ed99ad49b36)
+        ;
+
+        
+    
+    
+            var marker_97597a6829c141975a789fa5d9348af3 = L.marker(
+                [12.978546, 77.58781],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_8e1d512c4a13bac877ade3bbaf0ceace = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_362116c08214dc370c892813e7d9fe26 = $(`<div id="html_362116c08214dc370c892813e7d9fe26" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.978546<br>Longitude: 77.58781</div>`)[0];
+                popup_8e1d512c4a13bac877ade3bbaf0ceace.setContent(html_362116c08214dc370c892813e7d9fe26);
+            
+        
+
+        marker_97597a6829c141975a789fa5d9348af3.bindPopup(popup_8e1d512c4a13bac877ade3bbaf0ceace)
+        ;
+
+        
+    
+    
+            var marker_1b9c512fd7bad43d887b74a67bde3747 = L.marker(
+                [13.097769, 77.591417],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_5c17634c6459128b4ea4a9bfffc5b42f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1aa1f8fdf996e7186907534be3df757 = $(`<div id="html_a1aa1f8fdf996e7186907534be3df757" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Other Forgery<br>Latitude: 13.097769<br>Longitude: 77.591417</div>`)[0];
+                popup_5c17634c6459128b4ea4a9bfffc5b42f.setContent(html_a1aa1f8fdf996e7186907534be3df757);
+            
+        
+
+        marker_1b9c512fd7bad43d887b74a67bde3747.bindPopup(popup_5c17634c6459128b4ea4a9bfffc5b42f)
+        ;
+
+        
+    
+    
+            var marker_e1daa2ca33018b92dea577e5791b0976 = L.marker(
+                [13.199017, 77.7062339],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_bb7f2dc1c9e89ec82c2e25ffa1503d94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d97626f6d96a7bf752d24bf2135be01 = $(`<div id="html_6d97626f6d96a7bf752d24bf2135be01" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 13.199017<br>Longitude: 77.7062339</div>`)[0];
+                popup_bb7f2dc1c9e89ec82c2e25ffa1503d94.setContent(html_6d97626f6d96a7bf752d24bf2135be01);
+            
+        
+
+        marker_e1daa2ca33018b92dea577e5791b0976.bindPopup(popup_bb7f2dc1c9e89ec82c2e25ffa1503d94)
+        ;
+
+        
+    
+    
+            var marker_54603d49c709bfc7d5b336950df91894 = L.marker(
+                [13.004302, 77.619647],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_420bc8283aafdb0179541f7483ffdff8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb99dd0e524cf2d1542eca146a45c589 = $(`<div id="html_bb99dd0e524cf2d1542eca146a45c589" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Other Forgery<br>Latitude: 13.004302<br>Longitude: 77.619647</div>`)[0];
+                popup_420bc8283aafdb0179541f7483ffdff8.setContent(html_bb99dd0e524cf2d1542eca146a45c589);
+            
+        
+
+        marker_54603d49c709bfc7d5b336950df91894.bindPopup(popup_420bc8283aafdb0179541f7483ffdff8)
+        ;
+
+        
+    
+    
+            var marker_2b9f1c8d28c2591f34d31c8b35029457 = L.marker(
+                [13.01037, 77.70276],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_12f51e925fd0b8cef38f8dd7759a9a66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8b6a12f17c0e636beab9e7720047bd7 = $(`<div id="html_f8b6a12f17c0e636beab9e7720047bd7" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 13.01037<br>Longitude: 77.70276</div>`)[0];
+                popup_12f51e925fd0b8cef38f8dd7759a9a66.setContent(html_f8b6a12f17c0e636beab9e7720047bd7);
+            
+        
+
+        marker_2b9f1c8d28c2591f34d31c8b35029457.bindPopup(popup_12f51e925fd0b8cef38f8dd7759a9a66)
+        ;
+
+        
+    
+    
+            var marker_23c24278f6805a28b2317d718752da4c = L.marker(
+                [12.852476, 77.65583],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_782be543cd0e74d627493b19bb43be41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd1329411ec2f96b5c3f1a5127d493bc = $(`<div id="html_cd1329411ec2f96b5c3f1a5127d493bc" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.852476<br>Longitude: 77.65583</div>`)[0];
+                popup_782be543cd0e74d627493b19bb43be41.setContent(html_cd1329411ec2f96b5c3f1a5127d493bc);
+            
+        
+
+        marker_23c24278f6805a28b2317d718752da4c.bindPopup(popup_782be543cd0e74d627493b19bb43be41)
+        ;
+
+        
+    
+    
+            var marker_223ed310e85d7205aeed257cd433a3fc = L.marker(
+                [13.0112, 77.3412],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_5e6206668be865a06e89f8f6f648c0d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f17f72d010647b691474b3243fac8a6f = $(`<div id="html_f17f72d010647b691474b3243fac8a6f" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 13.0112<br>Longitude: 77.3412</div>`)[0];
+                popup_5e6206668be865a06e89f8f6f648c0d5.setContent(html_f17f72d010647b691474b3243fac8a6f);
+            
+        
+
+        marker_223ed310e85d7205aeed257cd433a3fc.bindPopup(popup_5e6206668be865a06e89f8f6f648c0d5)
+        ;
+
+        
+    
+    
+            var marker_8e158278ae93513ba935da02b56aad29 = L.marker(
+                [12.955764, 77.588562],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_055ef8e05600e0cad98b5cf6d9588851 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94430b23d39eaa9db7efa4d784ae82a8 = $(`<div id="html_94430b23d39eaa9db7efa4d784ae82a8" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.955764<br>Longitude: 77.588562</div>`)[0];
+                popup_055ef8e05600e0cad98b5cf6d9588851.setContent(html_94430b23d39eaa9db7efa4d784ae82a8);
+            
+        
+
+        marker_8e158278ae93513ba935da02b56aad29.bindPopup(popup_055ef8e05600e0cad98b5cf6d9588851)
+        ;
+
+        
+    
+    
+            var marker_e3417e9726fa1ba13672b3e2d3328807 = L.marker(
+                [12.966357, 77.598608],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_a1833cc81e557fb21c8478577f3290f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5545fb57ea5c281380239376d177011b = $(`<div id="html_5545fb57ea5c281380239376d177011b" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.966357<br>Longitude: 77.598608</div>`)[0];
+                popup_a1833cc81e557fb21c8478577f3290f2.setContent(html_5545fb57ea5c281380239376d177011b);
+            
+        
+
+        marker_e3417e9726fa1ba13672b3e2d3328807.bindPopup(popup_a1833cc81e557fb21c8478577f3290f2)
+        ;
+
+        
+    
+    
+            var marker_1d6a6c2a2095b2787cdc665cbf36b29f = L.marker(
+                [12.565701, 77.567126],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_302bb10a21d6574381d931160fe681e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e087869cf081baf7f5909a15d1271b41 = $(`<div id="html_e087869cf081baf7f5909a15d1271b41" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Other Forgery<br>Latitude: 12.565701<br>Longitude: 77.567126</div>`)[0];
+                popup_302bb10a21d6574381d931160fe681e6.setContent(html_e087869cf081baf7f5909a15d1271b41);
+            
+        
+
+        marker_1d6a6c2a2095b2787cdc665cbf36b29f.bindPopup(popup_302bb10a21d6574381d931160fe681e6)
+        ;
+
+        
+    
+    
+            var marker_952fd925fabe4182ed650f61d068e8a0 = L.marker(
+                [12.971496, 77.584342],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_4b46f854f2863e453e3d63f3b35d894d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7834302b1866c8e2e41297811c364442 = $(`<div id="html_7834302b1866c8e2e41297811c364442" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.971496<br>Longitude: 77.584342</div>`)[0];
+                popup_4b46f854f2863e453e3d63f3b35d894d.setContent(html_7834302b1866c8e2e41297811c364442);
+            
+        
+
+        marker_952fd925fabe4182ed650f61d068e8a0.bindPopup(popup_4b46f854f2863e453e3d63f3b35d894d)
+        ;
+
+        
+    
+    
+            var marker_cd46e9534fc50c8b6e14970124b88b05 = L.marker(
+                [13.08833, 77.559182],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_b1c868e5731f6630460ea32848adef80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6a58a7d54ff02d9535b588933a1eb77 = $(`<div id="html_e6a58a7d54ff02d9535b588933a1eb77" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 13.08833<br>Longitude: 77.559182</div>`)[0];
+                popup_b1c868e5731f6630460ea32848adef80.setContent(html_e6a58a7d54ff02d9535b588933a1eb77);
+            
+        
+
+        marker_cd46e9534fc50c8b6e14970124b88b05.bindPopup(popup_b1c868e5731f6630460ea32848adef80)
+        ;
+
+        
+    
+    
+            var marker_4a704dfac11fa9bb7295eb2a2c60fdbf = L.marker(
+                [13.0289258263912, 77.61067003231501],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_e484922cd20b7069f2ebf8f7d4ed1d49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4654494d6ae1aa082e45f67b015f0c4d = $(`<div id="html_4654494d6ae1aa082e45f67b015f0c4d" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 13.0289258263912<br>Longitude: 77.61067003231501</div>`)[0];
+                popup_e484922cd20b7069f2ebf8f7d4ed1d49.setContent(html_4654494d6ae1aa082e45f67b015f0c4d);
+            
+        
+
+        marker_4a704dfac11fa9bb7295eb2a2c60fdbf.bindPopup(popup_e484922cd20b7069f2ebf8f7d4ed1d49)
+        ;
+
+        
+    
+    
+            var marker_04b7397a6d768a1423a22cadc27f3aa9 = L.marker(
+                [12.94613, 77.525768],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_92178254dc63b0435cc3a2a62060647d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf541e47f81cd04f707b40b15aa1c7a6 = $(`<div id="html_cf541e47f81cd04f707b40b15aa1c7a6" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Other Forgery<br>Latitude: 12.94613<br>Longitude: 77.525768</div>`)[0];
+                popup_92178254dc63b0435cc3a2a62060647d.setContent(html_cf541e47f81cd04f707b40b15aa1c7a6);
+            
+        
+
+        marker_04b7397a6d768a1423a22cadc27f3aa9.bindPopup(popup_92178254dc63b0435cc3a2a62060647d)
+        ;
+
+        
+    
+    
+            var marker_22ffaa6e47aa9db35e6eb55d658c1b5a = L.marker(
+                [12.984002, 77.5827879],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_d808fd2f08c69fdc135ac195c0bd5f4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1803ec96000f9b172090059ffef87c1e = $(`<div id="html_1803ec96000f9b172090059ffef87c1e" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.984002<br>Longitude: 77.5827879</div>`)[0];
+                popup_d808fd2f08c69fdc135ac195c0bd5f4c.setContent(html_1803ec96000f9b172090059ffef87c1e);
+            
+        
+
+        marker_22ffaa6e47aa9db35e6eb55d658c1b5a.bindPopup(popup_d808fd2f08c69fdc135ac195c0bd5f4c)
+        ;
+
+        
+    
+    
+            var marker_689f101414b321524f3d047a6a994c58 = L.marker(
+                [12.591936, 77.35385],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_3ccec17cf0a5d4855702bcf149324ea7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdd1d740ef68fe08a96984444bf630a0 = $(`<div id="html_fdd1d740ef68fe08a96984444bf630a0" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.591936<br>Longitude: 77.35385</div>`)[0];
+                popup_3ccec17cf0a5d4855702bcf149324ea7.setContent(html_fdd1d740ef68fe08a96984444bf630a0);
+            
+        
+
+        marker_689f101414b321524f3d047a6a994c58.bindPopup(popup_3ccec17cf0a5d4855702bcf149324ea7)
+        ;
+
+        
+    
+    
+            var marker_509e5acd36662dcf056dccb861defbea = L.marker(
+                [12.98763388, 77.60353544],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_81f0777483e8eca719d45eee7b0e5b6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3165dbf7f8184def628cc124591962e = $(`<div id="html_e3165dbf7f8184def628cc124591962e" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.98763388<br>Longitude: 77.60353544</div>`)[0];
+                popup_81f0777483e8eca719d45eee7b0e5b6b.setContent(html_e3165dbf7f8184def628cc124591962e);
+            
+        
+
+        marker_509e5acd36662dcf056dccb861defbea.bindPopup(popup_81f0777483e8eca719d45eee7b0e5b6b)
+        ;
+
+        
+    
+    
+            var marker_50f219bed05e16e0dc4784b676d5eb8d = L.marker(
+                [13.19917, 77.705742],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_5d7fd737e487e7f9a1c7f3d4d8ceb490 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4aa6e76f84f3167d82cbbfd7384d5eef = $(`<div id="html_4aa6e76f84f3167d82cbbfd7384d5eef" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Other Forgery<br>Latitude: 13.19917<br>Longitude: 77.705742</div>`)[0];
+                popup_5d7fd737e487e7f9a1c7f3d4d8ceb490.setContent(html_4aa6e76f84f3167d82cbbfd7384d5eef);
+            
+        
+
+        marker_50f219bed05e16e0dc4784b676d5eb8d.bindPopup(popup_5d7fd737e487e7f9a1c7f3d4d8ceb490)
+        ;
+
+        
+    
+    
+            var marker_7a9a5e53f22573fd4763c06817201f2e = L.marker(
+                [13.03685, 77.593987],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_ed4e76acb1decfd7f3658efa38ae6d75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d221f2faa4757891dc67250901241858 = $(`<div id="html_d221f2faa4757891dc67250901241858" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Other Forgery<br>Latitude: 13.03685<br>Longitude: 77.593987</div>`)[0];
+                popup_ed4e76acb1decfd7f3658efa38ae6d75.setContent(html_d221f2faa4757891dc67250901241858);
+            
+        
+
+        marker_7a9a5e53f22573fd4763c06817201f2e.bindPopup(popup_ed4e76acb1decfd7f3658efa38ae6d75)
+        ;
+
+        
+    
+    
+            var marker_5da3ee1eff5e1aa1ffa3af896f209a61 = L.marker(
+                [12.919831, 77.66721],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_42483b6c77da0fb1fc2538fc7f90454a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6f0245a3e54779dacf5a613f5593a78 = $(`<div id="html_d6f0245a3e54779dacf5a613f5593a78" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.919831<br>Longitude: 77.66721</div>`)[0];
+                popup_42483b6c77da0fb1fc2538fc7f90454a.setContent(html_d6f0245a3e54779dacf5a613f5593a78);
+            
+        
+
+        marker_5da3ee1eff5e1aa1ffa3af896f209a61.bindPopup(popup_42483b6c77da0fb1fc2538fc7f90454a)
+        ;
+
+        
+    
+    
+            var marker_41d3197e2c8ab943208cfd3472db0d4b = L.marker(
+                [12.98291, 77.675994],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_2f67d8a3909f0a9247948bfe1710919e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_880848f3c723d3bf26ad9b86e87a5fbe = $(`<div id="html_880848f3c723d3bf26ad9b86e87a5fbe" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.98291<br>Longitude: 77.675994</div>`)[0];
+                popup_2f67d8a3909f0a9247948bfe1710919e.setContent(html_880848f3c723d3bf26ad9b86e87a5fbe);
+            
+        
+
+        marker_41d3197e2c8ab943208cfd3472db0d4b.bindPopup(popup_2f67d8a3909f0a9247948bfe1710919e)
+        ;
+
+        
+    
+    
+            var marker_21b8a875546966914e3d630902447506 = L.marker(
+                [13.01136544, 77.53679701],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_10fe7804a270f858637033118200c641 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_184b5a7a180644fd244f294b3d18d4c5 = $(`<div id="html_184b5a7a180644fd244f294b3d18d4c5" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 13.01136544<br>Longitude: 77.53679701</div>`)[0];
+                popup_10fe7804a270f858637033118200c641.setContent(html_184b5a7a180644fd244f294b3d18d4c5);
+            
+        
+
+        marker_21b8a875546966914e3d630902447506.bindPopup(popup_10fe7804a270f858637033118200c641)
+        ;
+
+        
+    
+    
+            var marker_99dd1696176b8de80fa4bd07bca87a09 = L.marker(
+                [12.988313, 77.759729],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_5f4fafaf021a3e4ce85c7d6ee5b8b84d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81ee7923fc665456ba54f4d831cf49c2 = $(`<div id="html_81ee7923fc665456ba54f4d831cf49c2" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Forgery <br>Latitude: 12.988313<br>Longitude: 77.759729</div>`)[0];
+                popup_5f4fafaf021a3e4ce85c7d6ee5b8b84d.setContent(html_81ee7923fc665456ba54f4d831cf49c2);
+            
+        
+
+        marker_99dd1696176b8de80fa4bd07bca87a09.bindPopup(popup_5f4fafaf021a3e4ce85c7d6ee5b8b84d)
+        ;
+
+        
+    
+    
+            var marker_cb494efa05ede3b62a28f9dcde5d5327 = L.marker(
+                [12.9942016276534, 77.5442520534215],
+                {}
+            ).addTo(marker_cluster_4048d859156d6c33edad5eaa4e852359);
+        
+    
+        var popup_0dd11892ed84406d7fff2a985f558fa7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6238f6ba15368697aaa2bcc50e9685d = $(`<div id="html_c6238f6ba15368697aaa2bcc50e9685d" style="width: 100.0%; height: 100.0%;">Crime Group: FORGERY<br>Crime Head: Other Forgery<br>Latitude: 12.9942016276534<br>Longitude: 77.5442520534215</div>`)[0];
+                popup_0dd11892ed84406d7fff2a985f558fa7.setContent(html_c6238f6ba15368697aaa2bcc50e9685d);
+            
+        
+
+        marker_cb494efa05ede3b62a28f9dcde5d5327.bindPopup(popup_0dd11892ed84406d7fff2a985f558fa7)
+        ;
+
+        
+    
+    
+            var layer_control_fd751ecbb95e9f93ae790c4a0f112d19 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_de8f8322a5490a16536c445ea299734a,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_fd751ecbb95e9f93ae790c4a0f112d19.base_layers,
+                layer_control_fd751ecbb95e9f93ae790c4a0f112d19.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_cf9a3f557a6d07ec8c9694eda49e5a51);
+        
+</script>
+</html>
