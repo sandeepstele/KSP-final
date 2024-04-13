@@ -5,226 +5,87 @@
 Siren Squad | Crime Correlation
 {% endblock %}
 
-{% block header %}Crime Correlation{% endblock %}
+{% block header %}
+Crime Correlation
+{% endblock %}
 
-{% block page %} Crime Correlation {% endblock %}
+{% block page %}
+Crime Correlation
+{% endblock %}
 
-{% block page_name %} Crime Correlation {% endblock %}
+{% block page_name %}
+Crime Correlation
+{% endblock %}
 
 {% block body %}
 <style>
     .maps{
-      border-radius:10px;
-      box-shadow:0 0 5px grey;
-      margin-top:2rem;
-      margin-bottom:1rem;
-      border:1px solid #5953b8;
-      height:500px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px grey;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border: 1px solid #5953b8;
+        height: 600px;
     }
-  </style>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {  
-      var options = {
-        legend: {
-          show: true
-        },
-        chart: {
-          height: 350,
-          type: 'treemap',
-          toolbar: {
-            show: true,
-            offsetX: 0,
-            offsetY: 0,
-            tools: {
-              download: true,
-              selection: true,
-              zoom: true,
-              zoomin: true,
-              zoomout: true,
-              pan: true,
-              reset: true | '<img src="/static/icons/reset.png" width="20">',
-            },
-            export: {
-              csv: {
-                filename: '{{crime}}',
-                columnDelimiter: ',',
-                headerCategory: 'category',
-                headerValue: 'value',
-                dateFormatter(timestamp) {
-                  return new Date(timestamp).toDateString()
-                }
-              },
-              svg: {
-                filename: '{{crime}}',
-              },
-              png: {
-                filename: '{{crime}}',
-              }
-            },
-            autoSelected: 'zoom' 
-          },
-          zoom: {
-            enabled: true,
-            type: 'x',  
-            autoScaleYaxis: false,  
-            zoomedArea: {
-              fill: {
-                color: '#90CAF9',
-                opacity: 0.4
-              },
-              stroke: {
-                color: '#0D47A1',
-                opacity: 0.4,
-                width: 1
-              }
-            }
-        },
-        },
-        title: {
-          text: 'VICTIM PROFESSION ANALYSIS'
-        },
-        series: [
-        {
-          data: [
-          {% for count in criminal_profession_count %}
-                {
-                  x: '{{count.profession}}',
-                  y: {{count.count}},
-                },
-          {% endfor %}
-              ],
-        },
-      ],
-      };
-  
-      var opt = {
-        chart: {
-            height: 400,
-            type: 'pie',
-        },
-        labels: [
-        {% for district in District_count %}
-        '{{district.district}}',
-        {% endfor %}
-        ],
-        series: [
-        {%  for district in District_count %}
-        {{district.count}},
-        {% endfor %}
-        ],
-        colors: ["#7267EF", "#0e9e4a", "#3ec9d6", "#ffa21d", "#EA4D4D","#16E2C9", "#F7A648", "#6F52ED", "#36B1F0", "#FBBF24","#2D9CDB", "#F7931E", "#0F9D58", "#E74C3C", "#3498DB","#FF6B6B", "#833471", "#A3CB38", "#8E44AD", "#FD7272","#5DADE2", "#F5B041", "#7D3C98", "#1ABC9C", "#F39C12","#28B463", "#E74C3C", "#D35400", "#52BE80", "#F1C40F"],
-        legend: {
-            show: true,
-            position: 'bottom',
-        },
-        dataLabels: {
-            enabled: true,
-            dropShadow: {
-                enabled: false,
-            }
-        },
-        responsive: [{
-            breakpoint: 480,
-            options: {
-                legend: {
-                    position: 'bottom'
-                }
-            }
-        }]
-    };
-  
-    var optio = {
-      chart: {
-          height: 400,
-          type: 'pie',
-      },
-      labels: [
-      {% for caste in caste_count %}
-      '{{caste.caste}}',
-      {% endfor %}
-      ],
-      series: [
-      {%  for caste in caste_count %}
-      {{caste.count}},
-      {% endfor %}
-      ],
-      colors: ["#7267EF", "#0e9e4a", "#3ec9d6", "#ffa21d", "#EA4D4D","#16E2C9", "#F7A648", "#6F52ED", "#36B1F0", "#FBBF24","#2D9CDB", "#F7931E", "#0F9D58", "#E74C3C", "#3498DB","#FF6B6B", "#833471", "#A3CB38", "#8E44AD", "#FD7272","#5DADE2", "#F5B041", "#7D3C98", "#1ABC9C", "#F39C12","#28B463", "#E74C3C", "#D35400", "#52BE80", "#F1C40F"],
-      legend: {
-          show: true,
-          position: 'bottom',
-      },
-      dataLabels: {
-          enabled: true,
-          dropShadow: {
-              enabled: false,
-          }
-      },
-      responsive: [{
-          breakpoint: 480,
-          options: {
-              legend: {
-                  position: 'bottom'
-              }
-          }
-      }]
-  };
-      var chart1 = new ApexCharts(document.querySelector("#tree-map1"), options);
-      var chart2 = new ApexCharts(document.querySelector("#tree-map2"), option);
-      var chart3 = new ApexCharts(document.querySelector("#pie-chart1"),opt);
-      var chart4 = new ApexCharts(document.querySelector("#pie-chart2"),optio);
-      chart1.render();
-      chart2.render();
-      chart3.render();
-      
-    });
-  </script>
-  
-  <label class="mb-3  " style="color:#5953b8;margin-top:4%;">Crime-Wise behavioral Analysis</label>
-  <form action="{% url 'behavioral' %}"  method="GET">
-  <div class="input-group mb-3 mt-1">
-      <label class="input-group-text" for="inputGroupSelect01">Crime</label>
-      <select class="form-select" id="inputGroupSelect01" name="crime">
-        <option selected value="">Choose...</option>
-      {% for crime in crime_group %}
-        <option value="{{crime}}" type="submit">{{crime}}</option>
-      {% endfor %}
-      </select>
-      <button class="btn btn-success" type="submit">Submit</button>
-    </div>
-  </form>
-  </div>
-  
-  <div class="container-fluid"  id="map"  style="display:{{display}};">
+    .filter{
+        border-radius: 10px;
+        box-shadow: 0 0 5px grey;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border: 1px solid #5953b8;
+        height:auto;
+    }
+    .chart-body {
+        overflow: auto; 
+        margin-top:-3rem;
+        margin-left:-1.5rem;
+    }
+    .chart-container {
+        width: 100%;
+        height: 100%;
+        overflow:true;
+    }
+</style>
+<div class="container-fluid mt-3" id="map" style="display:{{display}};">
     <!-- [ breadcrumb ] start -->
     <div class="row">
         <!-- [ basic-map ] start -->
-        <div class="col-lg-12 col-xl-8">
+        <div class="col-lg-12 col-xl-9">
             <div class="card maps">
                 <div class="card-header">
-                  <h5 style="color:#5953b8;">{{crime}}</h5>
-                  <span class="d-block m-t-5">Average Victim Age: <span style="font-weight:bold;color:#5953b8;" >{{avg_age_victim}}</span></span>
+                    <h5 style="color:#5953b8;">{{crime}}</h5>
                 </div>
-                <div class="card-body">
-                  <div id=""></div>
-                  {{chart|safe}}
-                  <!--<iframe id="map-iframe" src="{% static 'sampleData/2/duplicated_maps/' %}{{district_name_space}}{{ crime_space }}.html" class="set-map" style="height:650px;width:95%;margin-left:0.5rem;"></iframe>
-                    <div id="basic-map" ></div>-->
+                <div class="card-body chart-body">
+                    <div class="chart-container">
+                        {{chart|safe}}
+                    </div>
                 </div>
             </div>
         </div>
-      <div class="col-lg-12 col-xl-4">
-        <div class="card maps">
-            <div class="card-header">
-                <h5 style="color:#5953b8;">{{crime}}</h5>
-                <span class="d-block m-t-5">Pie Chart Shows the <span style="font-weight:bold;">District</span> wise <span style="font-weight:bold;color:#5953b8;"> {{crime}}</span> Analysis</span>
-            </div>
-            <div class="card-body">
-              <div id=""></div>
-              <!--<iframe src="{% static 'sampleData/final/' %}{{ files }}" class="set-map" style="height:400px;;width:95%;margin-left:0.5rem;"></iframe>-->
-                <div id="basic-map" ></div>
+    <div class="col-lg-12 col-xl-3">
+            <div class="card filter">
+                <div class="card-header">
+                    <h4 style="color:#5953b8;"><i class="bi bi-funnel-fill mr-2"></i>Filter</h4>
+                </div>
+                <div class="card-body">
+                    <form action="{% url 'crime_correlation' %}" method="GET">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Month</span>
+                            <input type="number" name="month" class="form-control" placeholder="Month" aria-label="month" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Crime</label>
+                            <select class="form-select" id="inputGroupSelect01" name="crime">
+                              <option selected value="">Choose...</option>
+                            {% for crime in crimes %}
+                              <option value="{{crime}}" type="submit">{{crime}}</option>
+                            {% endfor %}
+                            </select>   
+                        </div>
+                        <input type="submit" value="Filter" class="btn btn-primary"/>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-    </div>  
-{% endblock %}
+    {% endblock %}

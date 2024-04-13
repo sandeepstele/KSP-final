@@ -13,7 +13,8 @@ import os
 from django.db.models import Count, Avg
 from .models import *
 import plotly.express as px
-from .crime_forecast import *
+from .crime_forecast_prophet import *
+from .temporal_analysis_ksp import *
 
 # Create your views here.
 def index(request):
@@ -186,12 +187,55 @@ def crime_correlation(request):
     else:
         username = "Quest"    
         
-    chart = forecast_prophet_plot(34)
+    crime_group = Victim_Crime.objects.all()
+    chart = forecast_prophet_plot(24)
+    crime = request.GET.get('crime')
+    month = request.GET.get('month')
+    if (month != "" and month != None) and (crime == "" or crime == None):
+        month = int(month)
+        print(month)
+        chart = forecast_prophet_plot(month)
+        context = {
+            'username':username,
+            'chart':chart,
+            'crimes':crime_group,
+        }
+        return render(request,'crimeDetection/crime_correlation.html',context)
+    if month is not None and crime is not None and month != "" and crime != "":
+        print(month,crime)
+        pass
+    
+    print("hi")
+    context={
+        'username':username,
+        'chart':chart,
+        'crimes':crime_group,
+    }
+    return render(request,"crimeDetection/crime_correlation.html" ,context )
+
+def crime_group_distribution(request):
+    if request.user.is_authenticated:
+        username = request.user.username
+    else:
+        username = "Quest"    
+        
+    chart = plot_crime_group_distribution(2024)
+    year = request.GET.get('year')
+    if (year != "" and year != None):
+        year = int(year)
+        print(year)
+        chart = plot_crime_group_distribution(year)
+        context = {
+            'username':username,
+            'chart':chart,
+        }
+        return render(request,'crimeDetection/crime_group_distribution.html',context)
+    print("hi")
     context={
         'username':username,
         'chart':chart,
     }
-    return render(request,"crimeDetection/crime_correlation.html" ,context )
+    return render(request,"crimeDetection/crime_group_distribution.html" ,context )
 
 def login_view(request):
     if request.method == "POST":
