@@ -15,4 +15,5 @@ urlpatterns = [
     path('beat_duty/',views.beat_duty,name="beat_duty"),
     path('rowdy_sheeters/',views.rowdy_sheeters,name="rowdy_sheeters"),
     path('crime_correlation/',views.crime_correlation,name="crime_correlation"),
+    path('crime_group_distribution/',views.crime_group_distribution,name="crime_group_distribution"),
 ]
