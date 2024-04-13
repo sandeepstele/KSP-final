@@ -24,7 +24,6 @@ def forecast_prophet_plot(x):
   figure = m1.plot(forecast, xlabel='Date', ylabel='Crime Rate')
   px.line(forecast, x='ds', y='yhat', title='Forecasted Crime Rate')
   px.scatter(df, x="ds", y="y", title="Original Crime Rate Data")  # Plot original data points
-  figure.to_html()
   figure.show()
 
 forecast_prophet_plot(34)
