@@ -1,40 +1,31 @@
-# KSP-final
-KSP-FInal
+# KSP-final - Prototype
 
-# Hi, I'm Shyam K S! 👋
 
-# Quiz Time
+# Hi, We are Siren Squad! 👋
 
-QuizMaster is a dynamic web application built on Django, designed to provide users with an engaging quiz-taking experience. Whether you're a trivia enthusiast or looking to test your knowledge in a specific domain, QuizMaster has something for everyone.
+# Predictive Crime Analytics
+Predictive Crime Analytics is a web-based application developed using Django that offers advanced crime analysis and prediction capabilities. Leveraging machine learning algorithms and historical crime data, the platform provides insights into crime hotspots, trends, and patterns. Users can explore crime statistics, conduct behavioral analysis of criminals and victims, and predict future crime occurrences based on past data. The application also offers month-wise crime group analysis, empowering law enforcement agencies and policymakers with valuable information for proactive crime prevention strategies. With its user-friendly interface and powerful analytics features, Predictive Crime Analytics aims to enhance public safety and support decision-making in combating crime.
 
-# Key Features:
-- User Authentication: Create a personalized account to track your quiz progress and scores.
 
-- Quiz Categories: Choose from a diverse range of categories spanning sports, science, pop culture, and more.
+# Technology Used:
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- Django
 
-- Leaderboard: Compete with other users and see where you stand in the global rankings.
+# Libraries Used:
+- Seaborn
+- Plotly
+- numpy
+- pandas
 
-- Profile Customization: Personalize your profile with a unique avatar and background image.
+# API Used:
+- ApexCarts.js
 
-- Interactive UI: Intuitive and user-friendly interface for seamless quiz navigation.
-
-- Responsive Design: Enjoy the same great experience on both desktop and mobile devices.
 
 # ScreenShots 
-- Home page:
-![image](https://github.com/SHYAM-001/QUIZ-TIME/assets/103324177/700766fd-177f-45d4-a579-8d2c649bec3b)
 
-- Quiz Play
-![image](https://github.com/SHYAM-001/QUIZ-TIME/assets/103324177/aa8d86db-95c6-4e95-8bf5-7e865f114420)
-
-- Quiz Creation
-  ![image](https://github.com/SHYAM-001/QUIZ-TIME/assets/103324177/684a51ea-3a19-453c-a87b-5a2681cbfa53)
-
-- My Quizz (Dashboard)
-  ![image](https://github.com/SHYAM-001/QUIZ-TIME/assets/103324177/389c92d2-5a1d-4282-870c-2358d6df2fb0)
-  
-- User Profile
-  ![image](https://github.com/SHYAM-001/QUIZ-TIME/assets/103324177/b719bdae-4acf-43ee-94ac-0b8515eb979f)
 
 ## Installation
 
@@ -66,7 +57,7 @@ If your system doesn't have the virtual Environment then,
 ## To Run the project
 
 ### After cloning and running `myVenv` 
-To run the `myVenv`
+To run the `myVenv` in the `Git Bash` Terminal
 ```bash
 source myVenv/Scripts/activate
 ```
@@ -75,11 +66,6 @@ Install django in the virtual environment
 
 ```bash
   pip install django
-```
-To add profile image in the project,first install `pillow`
-
-```bash
-  pip install pillow
 ```
 
 start the database to run
@@ -100,7 +86,7 @@ After migration to manage the database create a superuser
 Go to the project directory
 
 ```bash
-  cd capstone
+  cd Datathon
 ```
 
 Start the server
@@ -115,25 +101,6 @@ Visit http://localhost:8000 to start exploring the QuizMaster!
 # Contributing:
 We welcome contributions from the community! If you have ideas for new features, improvements, or find any bugs, please open an issue or submit a pull request.
 
-# Setting the Settings.py file for saving the `Profile Image`
-Setting the static file 
-```bash
-STATIC_URL = 'static/'
-```
-
-### Base directory for media files
-
-```bash
-MEDIA_URL = '/images/'
-```
-```bash
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
-```
-```bash
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
-```
 
 ## Authors
 
