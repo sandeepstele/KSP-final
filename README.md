@@ -8,17 +8,25 @@ Predictive Crime Analytics is a web-based application developed using Django tha
 
 
 # Technology Used:
+- Python
 - HTML
 - CSS
 - JavaScript
 - Bootstrap
 - Django
-
+-
 # Libraries Used:
 - Seaborn
 - Plotly
 - numpy
 - pandas
+- fb prophet
+- Scikit-learn
+- folium
+- geocoder
+-matplotlib
+
+
 
 # API Used:
 - ApexCarts.js
@@ -37,7 +45,7 @@ Install my-project with `git clone `
    create a folder in the name you needed `your folder name`
 ```
 ```bash
-  git clone https://github.com/SHYAM-001/QUIZ-TIME.git
+  git clone https://github.com/sandeepstele/KSP-final
 ```
     
 ## Environment Variables
@@ -52,6 +60,12 @@ If your system doesn't have the virtual Environment then,
 ```bash
    pip install venv
 ```
+```bash
+   python3 -m venv .venv
+
+   source .venv/bin/activate
+```
+For Unix/MacOS
 
 
 ## To Run the project
@@ -96,13 +110,22 @@ Start the server
 ```
 
 # Open Your Browser:
-Visit http://localhost:8000 to start exploring the QuizMaster!
+Visit http://localhost:8000 to start exploring Predictive Crime Analytics!
 
-# Contributing:
-We welcome contributions from the community! If you have ideas for new features, improvements, or find any bugs, please open an issue or submit a pull request.
+Features:
 
+Geospatial Analysis using K-means and hotspot is visualised on Map
+- District Based 
+- Crime Based
+- District and Crime inter-connected 
 
-## Authors
+Socio-Economic Analysis of Data:
+- Plotting heatmaps for understand the occupational distrobution among victims and criminals.
+- Pie chart for understand the district distribution based on crime occurences.
 
-- [@SHYAM-001](https://www.github.com/SHYAM-001)
+Identify correlated crimes occurring together within the same timeline and visualise their distribution among beat duties:
+
+- Correlated Crimes: Analyze most occurring time groups to find correlated crimes that frequently co-occur.
+- Visualization: Create a bar graph showing counts of correlated crime pairs for quick insights.
+- Beat Duty Distribution: Generate pie charts illustrating how occurrences are distributed among beat duties for each correlated crime pair.
 
