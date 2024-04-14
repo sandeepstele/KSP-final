@@ -112,4 +112,20 @@ Start the server
 # Open Your Browser:
 Visit http://localhost:8000 to start exploring Predictive Crime Analytics!
 
+Features:
+
+Geospatial Analysis using K-means and hotspot is visualised on Map
+- District Based 
+- Crime Based
+- District and Crime inter-connected 
+
+Socio-Economic Analysis of Data:
+- Plotting heatmaps for understand the occupational distrobution among victims and criminals.
+- Pie chart for understand the district distribution based on crime occurences.
+
+Identify correlated crimes occurring together within the same timeline and visualise their distribution among beat duties:
+
+- Correlated Crimes: Analyze most occurring time groups to find correlated crimes that frequently co-occur.
+- Visualization: Create a bar graph showing counts of correlated crime pairs for quick insights.
+- Beat Duty Distribution: Generate pie charts illustrating how occurrences are distributed among beat duties for each correlated crime pair.
 
