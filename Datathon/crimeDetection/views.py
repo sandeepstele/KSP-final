@@ -24,7 +24,32 @@ def index(request):
         username = request.user.username
     else:
         username = "Quest"
-    return render(request,"crimeDetection/index.html",{'username':username})
+    
+    crime = "ROBBERY"
+    criminal = Criminal.objects.filter(crime=crime)
+    criminal_profession_count = criminal.values('crime', 'profession').annotate(count=Count('id'))
+    avg_age_criminal = criminal.aggregate(avg_age_criminal=Avg('age'))
+    District_count = criminal.values('crime','district').annotate(count=Count('id'))
+    
+    df_Fir = pd.read_csv("crimeDetection\ML_models\Preprocessed_FIR_Data1.csv")   
+    top_crime = Crime_correlation.objects.all()
+    top_10_crime = ['MOTOR VEHICLE ACCIDENTS NON-FATAL', 'KARNATAKA POLICE ACT 1963', 'THEFT', 'MOTOR VEHICLE ACCIDENTS FATAL', 'MISSING PERSON', 'CASES OF HURT', 'Karnataka State Local Act', 'MOLESTATION', 'RIOTS', 'BURGLARY-NIGHT']
+    crime1 = "MOTOR VEHICLE ACCIDENTS NON-FATAL"
+    chart1 = find_correlated_crimes(crime1, df, top_10_crime)
+    
+    chart = forecast_prophet_plot(24)
+    
+    context={
+        'username':username,
+        'crime':crime,
+        'criminal_profession_count':criminal_profession_count,
+        'display':"block",
+        'avg_age_criminal':round(avg_age_criminal['avg_age_criminal'],2),
+        'District_count':District_count,
+        'chart1':chart1,
+        'chart':chart,
+    }
+    return render(request,"crimeDetection/index.html",context)
 
 def district(request):
     if request.user.is_authenticated:
@@ -278,7 +303,6 @@ def crime_correlation(request):
     df_Fir = pd.read_csv("crimeDetection\ML_models\Preprocessed_FIR_Data1.csv")   
     top_crime = Crime_correlation.objects.all()
     top_10_crime = ['MOTOR VEHICLE ACCIDENTS NON-FATAL', 'KARNATAKA POLICE ACT 1963', 'THEFT', 'MOTOR VEHICLE ACCIDENTS FATAL', 'MISSING PERSON', 'CASES OF HURT', 'Karnataka State Local Act', 'MOLESTATION', 'RIOTS', 'BURGLARY-NIGHT']
-    
     
     crime = request.GET.get("crime")
     
