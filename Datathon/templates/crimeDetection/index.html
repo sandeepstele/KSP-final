@@ -6,424 +6,278 @@ Siren Squad | Dashboard
 {% endblock %}
 
 {% block body %}
-<!-- [ Main Content ] start -->
+
+<style>
+    .maps{
+        border-radius: 10px;
+        box-shadow: 0 0 5px grey;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border: 1px solid #5953b8;
+        height: auto;
+    }
+    .filter{
+        border-radius: 10px;
+        box-shadow: 0 0 5px grey;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border: 1px solid #5953b8;
+        height:auto;
+    }
+    .chart-body {
+        overflow: auto; 
+        margin-top:-3rem;
+        margin-left:-1.5rem;
+    }
+    .chart-container {
+        width: 100%;
+        height: 100%;
+        overflow:true;
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+    var options = {
+        legend: {
+          show: true
+        },
+        chart: {
+          height: 350,
+          type: 'treemap',
+          toolbar: {
+            show: true,
+            offsetX: 0,
+            offsetY: 0,
+            tools: {
+              download: true,
+              selection: true,
+              zoom: true,
+              zoomin: true,
+              zoomout: true,
+              pan: true,
+              reset: true | '<img src="/static/icons/reset.png" width="20">',
+            },
+            export: {
+              csv: {
+                filename: '{{crime}}',
+                columnDelimiter: ',',
+                headerCategory: 'category',
+                headerValue: 'value',
+                dateFormatter(timestamp) {
+                  return new Date(timestamp).toDateString()
+                }
+              },
+              svg: {
+                filename: '{{crime}}',
+              },
+              png: {
+                filename: '{{crime}}',
+              }
+            },
+            autoSelected: 'zoom' 
+          },
+          zoom: {
+            enabled: true,
+            type: 'x',  
+            autoScaleYaxis: false,  
+            zoomedArea: {
+              fill: {
+                color: '#90CAF9',
+                opacity: 0.4
+              },
+              stroke: {
+                color: '#0D47A1',
+                opacity: 0.4,
+                width: 1
+              }
+            }
+        },
+        },
+        title: {
+          text: 'CRIMINAL PROFESSION ANALYSIS'
+        },
+        series: [
+        {
+          data: [
+          {% for count in criminal_profession_count %}
+                {
+                  x: '{{count.profession}}',
+                  y: {{count.count}},
+                },
+          {% endfor %}
+              ],
+        },
+      ],
+      };
+  
+
+    var opt = {
+        chart: {
+            height: 400,
+            type: 'pie',
+        },
+        labels: [
+        {% for district in District_count %}
+        '{{district.district}}',
+        {% endfor %}
+        ],
+        series: [
+        {%  for district in District_count %}
+        {{district.count}},
+        {% endfor %}
+        ],
+        colors: ["#7267EF", "#0e9e4a", "#3ec9d6", "#ffa21d", "#EA4D4D","#16E2C9", "#F7A648", "#6F52ED", "#36B1F0", "#FBBF24","#2D9CDB", "#F7931E", "#0F9D58", "#E74C3C", "#3498DB","#FF6B6B", "#833471", "#A3CB38", "#8E44AD", "#FD7272","#5DADE2", "#F5B041", "#7D3C98", "#1ABC9C", "#F39C12","#28B463", "#E74C3C", "#D35400", "#52BE80", "#F1C40F"],
+        legend: {
+            show: true,
+            position: 'bottom',
+        },
+        dataLabels: {
+            enabled: true,
+            dropShadow: {
+                enabled: false,
+            }
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }]
+    };
+
+    var chart1 = new ApexCharts(document.querySelector("#tree-map1"), options);
+    var chart3 = new ApexCharts(document.querySelector("#pie-chart1"),opt);
+    chart1.render();
+    chart3.render();
+
+});
+</script>
+
 {% if user.is_authenticated %}
 <div class="row">
     <!-- support-section start -->
-    <div class="col-xl-6 col-md-12">
-        <div class="card flat-card">
-            <div class="row-table">
-                <div class="col-sm-6 card-body br">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <i class="material-icons-two-tone text-primary mb-1">group</i>
-                        </div>
-                        <div class="col-sm-8 text-md-center">
-                            <h5>1000</h5>
-                            <span>Customers</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 d-none d-md-table-cell d-lg-table-cell d-xl-table-cell card-body br">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <i class="material-icons-two-tone text-primary mb-1">language</i>
-                        </div>
-                        <div class="col-sm-8 text-md-center">
-                            <h5>$1252</h5>
-                            <span>Revenue</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 card-body">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <i class="material-icons-two-tone text-primary mb-1">unarchive</i>
-                        </div>
-                        <div class="col-sm-8 text-md-center">
-                            <h5>600</h5>
-                            <span>Growth</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row-table">
-                <div class="col-sm-6 card-body br">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <i class="material-icons-two-tone text-primary mb-1">swap_horizontal_circle</i>
-                        </div>
-                        <div class="col-sm-8 text-md-center">
-                            <h5>3550</h5>
-                            <span>Returns</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 d-none d-md-table-cell d-lg-table-cell d-xl-table-cell card-body br">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <i class="material-icons-two-tone text-primary mb-1">cloud_download</i>
-                        </div>
-                        <div class="col-sm-8 text-md-center">
-                            <h5>3550</h5>
-                            <span>Downloads</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 card-body">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <i class="material-icons-two-tone text-primary mb-1">shopping_cart</i>
-                        </div>
-                        <div class="col-sm-8 text-md-center">
-                            <h5>100%</h5>
-                            <span>Order</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card support-bar overflow-hidden">
-                    <div class="card-body pb-0">
-                        <h2 class="m-0">53.94%</h2>
-                        <span class="text-primary">Conversion Rate</span>
-                        <p class="mb-3 mt-3">Number of conversions divided by the total visitors. </p>
-                    </div>
-                    <div id="support-chart"></div>
-                    <div class="card-footer border-0 bg-primary text-white background-pattern-white">
-                        <div class="row text-center">
-                            <div class="col">
-                                <h4 class="m-0 text-white">10</h4>
-                                <span>2018</span>
-                            </div>
-                            <div class="col">
-                                <h4 class="m-0 text-white">15</h4>
-                                <span>2017</span>
-                            </div>
-                            <div class="col">
-                                <h4 class="m-0 text-white">13</h4>
-                                <span>2016</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card support-bar overflow-hidden">
-                    <div class="card-body pb-0">
-                        <h2 class="m-0">1432</h2>
-                        <span class="text-primary">Order delivered</span>
-                        <p class="mb-3 mt-3">Total number of order delivered in this month.</p>
-                    </div>
-                    <div class="card-footer border-0">
-                        <div class="row text-center">
-                            <div class="col">
-                                <h4 class="m-0">130</h4>
-                                <span>May</span>
-                            </div>
-                            <div class="col">
-                                <h4 class="m-0">251</h4>
-                                <span>June</span>
-                            </div>
-                            <div class="col">
-                                <h4 class="m-0 ">235</h4>
-                                <span>July</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="support-chart1"></div>
-                </div>
-            </div>
-        </div>
+<div class="row">
+    <div class="card-header">
+        <h5 class="text-primary text-bold" style="margin-left:-1rem;margin-top:1rem;margin-bottom:-2rem;">
+            <a href="{% url 'hotspot_district' %}">Hotspot
+            </a>
+            </h5>
     </div>
-    <div class="col-xl-6 col-md-12">
-        <div class="card">
-            <div class="card-header">
-                <h5>Department wise monthly sales report</h5>
-            </div>
-            <div class="card-body">
-                <div class="row pb-2">
-                    <div class="col-auto m-b-10">
-                        <h3 class="mb-1">$21,356.46</h3>
-                        <span>Total Sales</span>
-                    </div>
-                    <div class="col-auto m-b-10">
-                        <h3 class="mb-1">$1935.6</h3>
-                        <span>Average</span>
-                    </div>
+    <div class="row">
+        <div class="col-lg-12 col-xl-6">
+            <div class="card maps">
+                <div class="card-header">
+                    
+                    <a href="{% static 'sampleData/2/' %}District/Hassan.html" target="_blank" ><h5 style="color:#5953b8;">Hassan</h5></a>
+                    <span class="d-block m-t-5">Map shows places around the Hassan</span>
                 </div>
-                <div id="account-chart"></div>
-            </div>
-        </div>
-    </div>
-    <!-- support-section end -->
-    <!-- customer-section start -->
-    <div class="col-xl-6 col-md-12">
-        <div class="card">
-            <div class="card-body">
-                <h6>Customer Satisfaction</h6>
-                <span>It takes continuous effort to maintain high customer satisfaction levels Internal and external.</span>
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col">
-                        <div id="satisfaction-chart"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card table-card">
-            <div class="card-header">
-                <h5>New Products</h5>
-            </div>
-            <div class="pro-scroll" style="height:255px;position:relative;">
-                <div class="card-body p-0">
-                    <div class="table-responsive">
-                        <table class="table table-hover m-b-0">
-                            <thead>
-                                <tr>
-                                    <th>Product Name</th>
-                                    <th>Image</th>
-                                    <th>Status</th>
-                                    <th>Price</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>HeadPhone</td>
-                                    <td><img src="{% static 'images/widget/p1.jpg' %}" alt="" class="img-20"></td>
-                                    <td>
-                                        <div><label class="badge bg-light-warning">Pending</label></div>
-                                    </td>
-                                    <td>$10</td>
-                                    <td><a href="#!"><i class="icon feather icon-edit f-16  text-success"></i></a><a href="#!"><i class="feather icon-trash-2 ml-3 f-16 text-danger"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>Iphone 6</td>
-                                    <td><img src="{% static 'images/widget/p2.jpg' %}" alt="" class="img-20"></td>
-                                    <td>
-                                        <div><label class="badge bg-light-danger">Cancel</label></div>
-                                    </td>
-                                    <td>$20</td>
-                                    <td><a href="#!"><i class="icon feather icon-edit f-16  text-success"></i></a><a href="#!"><i class="feather icon-trash-2 ml-3 f-16 text-danger"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>Jacket</td>
-                                    <td><img src="{% static 'images/widget/p3.jpg' %}" alt="" class="img-20"></td>
-                                    <td>
-                                        <div><label class="badge bg-light-success">Success</label></div>
-                                    </td>
-                                    <td>$35</td>
-                                    <td><a href="#!"><i class="icon feather icon-edit f-16 text-success"></i></a><a href="#!"><i class="feather icon-trash-2 ml-3 f-16 text-danger"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>Sofa</td>
-                                    <td><img src="{% static 'images/widget/p4.jpg' %}" alt="" class="img-20"></td>
-                                    <td>
-                                        <div><label class="badge bg-light-danger">Cancel</label></div>
-                                    </td>
-                                    <td>$85</td>
-                                    <td><a href="#!"><i class="icon feather icon-edit f-16 text-success"></i></a><a href="#!"><i class="feather icon-trash-2 ml-3 f-16 text-danger"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>Iphone 6</td>
-                                    <td><img src="{% static 'images/widget/p2.jpg' %}" alt="" class="img-20"></td>
-                                    <td>
-                                        <div><label class="badge bg-light-success">Success</label></div>
-                                    </td>
-                                    <td>$20</td>
-                                    <td><a href="#!"><i class="icon feather icon-edit f-16 text-success"></i></a><a href="#!"><i class="feather icon-trash-2 ml-3 f-16 text-danger"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>HeadPhone</td>
-                                    <td><img src="{% static 'images/widget/p1.jpg' %}" alt="" class="img-20"></td>
-                                    <td>
-                                        <div><label class="badge bg-light-warning">Pending</label></div>
-                                    </td>
-                                    <td>$50</td>
-                                    <td><a href="#!"><i class="icon feather icon-edit f-16 text-success"></i></a><a href="#!"><i class="feather icon-trash-2 ml-3 f-16 text-danger"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>Iphone 6</td>
-                                    <td><img src="{% static 'images/widget/p2.jpg' %}" alt="" class="img-20"></td>
-                                    <td>
-                                        <div><label class="badge bg-light-danger">Cancel</label></div>
-                                    </td>
-                                    <td>$30</td>
-                                    <td><a href="#!"><i class="icon feather icon-edit f-16 text-success"></i></a><a href="#!"><i class="feather icon-trash-2 ml-3 f-16 text-danger"></i></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-6 col-md-12">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card prod-p-card background-pattern">
-                    <div class="card-body">
-                        <div class="row align-items-center m-b-0">
-                            <div class="col">
-                                <h6 class="m-b-5">Total Profit</h6>
-                                <h3 class="m-b-0">$1,783</h3>
-                            </div>
-                            <div class="col-auto">
-                                <i class="material-icons-two-tone text-primary">card_giftcard</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card prod-p-card bg-primary background-pattern-white">
-                    <div class="card-body">
-                        <div class="row align-items-center m-b-0">
-                            <div class="col">
-                                <h6 class="m-b-5 text-white">Total Orders</h6>
-                                <h3 class="m-b-0 text-white">15,830</h3>
-                            </div>
-                            <div class="col-auto">
-                                <i class="material-icons-two-tone text-white">local_mall</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card prod-p-card bg-primary background-pattern-white">
-                    <div class="card-body">
-                        <div class="row align-items-center m-b-0">
-                            <div class="col">
-                                <h6 class="m-b-5 text-white">Average Price</h6>
-                                <h3 class="m-b-0 text-white">$6,780</h3>
-                            </div>
-                            <div class="col-auto">
-                                <i class="material-icons-two-tone text-white">monetization_on</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card prod-p-card background-pattern">
-                    <div class="card-body">
-                        <div class="row align-items-center m-b-0">
-                            <div class="col">
-                                <h6 class="m-b-5">Product Sold</h6>
-                                <h3 class="m-b-0">6,784</h3>
-                            </div>
-                            <div class="col-auto">
-                                <i class="material-icons-two-tone text-primary">local_offer</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card feed-card">
-            <div class="card-header">
-                <h5>Feeds</h5>
-            </div>
-            <div class="feed-scroll" style="height:385px;position:relative;">
                 <div class="card-body">
-                    <div class="row m-b-25 align-items-center">
-                        <div class="col-auto p-r-0">
-                            <i data-feather="bell" class="bg-light-primary feed-icon p-2 wid-30 hei-30"></i>
-                        </div>
-                        <div class="col">
-                            <a href="#!">
-                                <h6 class="m-b-5">You have 3 pending tasks. <span class="text-muted float-right f-14">Just Now</span></h6>
-                            </a>
-                        </div>
+                  <iframe id="map-iframe" src="{% static 'sampleData/2/' %}District/Hassan.html" class="set-map" style="height:95%;width:95%;margin-left:0.5rem;"></iframe>
+                    <div id="basic-map" ></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-xl-6">
+                <div class="card maps">
+                    <div class="card-header">  
+                        <a href="{% static 'sampleData/2/' %}Crime_group/ARMS%20ACT%20%201959.html" target="_blank" ><h5 style="color:#5953b8;">ARM ACT 1959</h5></a>
+                        <span class="d-block m-t-5">Map shows places around the Karnataka</span>
                     </div>
-                    <div class="row m-b-25 align-items-center">
-                        <div class="col-auto p-r-0">
-                            <i data-feather="shopping-cart" class="bg-light-danger feed-icon p-2 wid-30 hei-30"></i>
-                        </div>
-                        <div class="col">
-                            <a href="#!">
-                                <h6 class="m-b-5">New order received <span class="text-muted float-right f-14">30 min ago</span></h6>
-                            </a>
-                        </div>
+                    <div class="card-body">
+                      <iframe id="map-iframe" src="{% static 'sampleData/2/' %}Crime_group/ARMS%20ACT%20%201959.html" class="set-map" style="height:95%;width:95%;margin-left:0.5rem;"></iframe>
+                        <div id="basic-map" ></div>
                     </div>
-                    <div class="row m-b-25 align-items-center">
-                        <div class="col-auto p-r-0">
-                            <i data-feather="file-text" class="bg-light-success feed-icon p-2 wid-30 hei-30"></i>
-                        </div>
-                        <div class="col">
-                            <a href="#!">
-                                <h6 class="m-b-5">You have 3 pending tasks. <span class="text-muted float-right f-14">Just Now</span></h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row m-b-25 align-items-center">
-                        <div class="col-auto p-r-0">
-                            <i data-feather="bell" class="bg-light-primary feed-icon p-2 wid-30 hei-30"></i>
-                        </div>
-                        <div class="col">
-                            <a href="#!">
-                                <h6 class="m-b-5">You have 4 tasks Done. <span class="text-muted float-right f-14">1 hours ago</span></h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row m-b-25 align-items-center">
-                        <div class="col-auto p-r-0">
-                            <i data-feather="file-text" class="bg-light-success feed-icon p-2 wid-30 hei-30"></i>
-                        </div>
-                        <div class="col">
-                            <a href="#!">
-                                <h6 class="m-b-5">You have 2 pending tasks. <span class="text-muted float-right f-14">Just Now</span></h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row m-b-25 align-items-center">
-                        <div class="col-auto p-r-0">
-                            <i data-feather="shopping-cart" class="bg-light-danger feed-icon p-2 wid-30 hei-30"></i>
-                        </div>
-                        <div class="col">
-                            <a href="#!">
-                                <h6 class="m-b-5">New order received <span class="text-muted float-right f-14">4 hours ago</span></h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row m-b-25 align-items-center">
-                        <div class="col-auto p-r-0">
-                            <i data-feather="shopping-cart" class="bg-light-danger feed-icon p-2 wid-30 hei-30"></i>
-                        </div>
-                        <div class="col">
-                            <a href="#!">
-                                <h6 class="m-b-5">New order Done <span class="text-muted float-right f-14">Just Now</span></h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row m-b-25 align-items-center">
-                        <div class="col-auto p-r-0">
-                            <i data-feather="file-text" class="bg-light-success feed-icon p-2 wid-30 hei-30"></i>
-                        </div>
-                        <div class="col">
-                            <a href="#!">
-                                <h6 class="m-b-5">You have 5 pending tasks. <span class="text-muted float-right f-14">5 hours ago</span></h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row m-b-0 align-items-center">
-                        <div class="col-auto p-r-0">
-                            <i data-feather="bell" class="bg-light-primary feed-icon p-2 wid-30 hei-30"></i>
-                        </div>
-                        <div class="col">
-                            <a href="#!">
-                                <h6 class="m-b-5">You have 4 tasks Done. <span class="text-muted float-right f-14">2 hours ago</span></h6>
-                            </a>
-                        </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="row">
+    <div class="card-header">
+        <h5 class="text-primary text-bold" style="margin-left:-1rem;margin-top:1rem;margin-bottom:-2rem;">
+            <a href="{% url 'behavioral' %}">SOCIA ECONOMIC ANALYSIS
+            </a>
+            </h5>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-xl-8">
+            <div class="card maps">
+                <div class="card-header">
+                  <h5 style="color:#5953b8;">{{crime}}</h5>
+                  <span class="d-block m-t-5">Average Victim Age: <span style="font-weight:bold;color:#5953b8;" >{{avg_age_victim}}</span></span>
+                </div>
+                <div class="card-body">
+                  <div id="tree-map1"></div>
+                  <!--<iframe id="map-iframe" src="{% static 'sampleData/2/duplicated_maps/' %}{{district_name_space}}{{ crime_space }}.html" class="set-map" style="height:650px;width:95%;margin-left:0.5rem;"></iframe>
+                    <div id="basic-map" ></div>-->
+                </div>
+            </div>
+        </div>
+      <div class="col-lg-12 col-xl-4">
+        <div class="card maps">
+            <div class="card-header">
+                <h5 style="color:#5953b8;">{{crime}}</h5>
+                <span class="d-block m-t-5">Pie Chart Shows the <span style="font-weight:bold;">District</span> wise <span style="font-weight:bold;color:#5953b8;"> {{crime}}</span> Analysis</span>
+            </div>
+            <div class="card-body">
+              <div id="pie-chart1"></div>
+              <!--<iframe src="{% static 'sampleData/final/' %}{{ files }}" class="set-map" style="height:400px;;width:95%;margin-left:0.5rem;"></iframe>-->
+                <div id="basic-map" ></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="card-header">
+        <h5 class="text-primary text-bold" style="margin-left:-1rem;margin-top:1rem;margin-bottom:-2rem;">
+            <a href="{% url 'crime_correlation' %}">TEMPORAL ANALYSIS
+            </a>
+            </h5>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card maps">
+                <div class="card-header">
+                    <h5 style="color:#5953b8;">{{crime1}}</h5>
+                </div>
+                <div class="card-body chart-body">
+                    <div class="chart-container">
+                        {{chart1|safe}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- customer-section end -->
+</div>
+
+<div class="row">
+    <div class="card-header">
+        <h5 class="text-primary text-bold" style="margin-left:-1rem;margin-top:1rem;margin-bottom:-2rem;">
+            <a href="{% url 'crime_forecasting' %}">TEMPORAL ANALYSIS
+            </a>
+            </h5>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card maps">
+                <div class="card-body chart-body">
+                    <div class="chart-container">
+                        {{chart|safe}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
 {% endif %}
 <!-- [ Main Content ] end -->
