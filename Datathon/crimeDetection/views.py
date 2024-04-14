@@ -15,6 +15,8 @@ from .models import *
 import plotly.express as px
 from .crime_forecast_prophet import *
 from .temporal_analysis_ksp import *
+from .sarima_function import *
+from .crime_correlation_final import *
 
 # Create your views here.
 def index(request):
@@ -96,6 +98,8 @@ def district_crime(request):
                    'districts':districts,
                    'district_name':district.name,
                    'crimes':crimes,
+                   'input':"block",
+                   'display':"none",
                 }
         return render(request,"crimeDetection/hotspot.html" ,context)  
     
@@ -114,6 +118,7 @@ def district_crime(request):
                    'crime_space':option2.replace(" ",""),
                    'crimes':crimes,
                    'display':"block",
+                   "input":"block",
                 }
         return render(request,"crimeDetection/hotspot.html",context)
     
@@ -179,9 +184,34 @@ def rowdy_sheeters(request):
         username = request.user.username
     else:
         username = "Quest"
-    return render(request,"crimeDetection/rowdy_sheeters.html" ,{'username':username})
+    
+    category = request.GET.get('category')
+    
+    if(category):
+        rowdy = Rowdy_sheeters.objects.filter(category = category)
+        rowdy_district_count = rowdy.values('category', 'district').annotate(count=Count('id'))
+        avg_age_victim = rowdy.aggregate(avg_age_victim=Avg('age'))
+        context = {
+        'username':username,    
+        'category':category,
+        'rowdy_district_count':rowdy_district_count,
+        'avg_age_victim':round(avg_age_victim['avg_age_victim'],2),
+        }
+        return render(request,"crimeDetection/rowdy_sheeters.html" ,context)
+        
+        
+    rowdy = Rowdy_sheeters.objects.filter(category = "one")
+    rowdy_district_count = rowdy.values('category', 'district').annotate(count=Count('id'))
+    avg_age_victim = rowdy.aggregate(avg_age_victim=Avg('age'))
+    context = {
+        'username':username,    
+        'category':category,
+        'rowdy_district_count':rowdy_district_count,
+        'avg_age_victim':round(avg_age_victim['avg_age_victim'],2),
+    }
+    return render(request,"crimeDetection/rowdy_sheeters.html" ,context)
 
-def crime_correlation(request):
+def crime_forecasting(request):
     if request.user.is_authenticated:
         username = request.user.username
     else:
@@ -191,6 +221,7 @@ def crime_correlation(request):
     chart = forecast_prophet_plot(24)
     crime = request.GET.get('crime')
     month = request.GET.get('month')
+    
     if (month != "" and month != None) and (crime == "" or crime == None):
         month = int(month)
         print(month)
@@ -200,10 +231,35 @@ def crime_correlation(request):
             'chart':chart,
             'crimes':crime_group,
         }
-        return render(request,'crimeDetection/crime_correlation.html',context)
+        return render(request,'crimeDetection/crime_forecasting.html',context)
+    
     if month is not None and crime is not None and month != "" and crime != "":
         print(month,crime)
-        pass
+        if(crime == "THEFT"):
+            print(crime)
+            model_file = "crimeDetection\ML_models\sarima_model_theft.pkl"
+            dataset = "crimeDetection\ML_models\\theft.csv"
+            no_of_months = int(month)
+        elif(crime == "MISSING PERSON"):
+            print(crime)
+            model_file = "crimeDetection\ML_models\sarima_model_missing_person.pkl"
+            dataset = "crimeDetection\ML_models\missing_person.csv"
+            no_of_months = int(month)
+        elif(crime == "MOTOR VEHICLE ACCIDENTS NON-FATAL"):
+            print(crime)
+            model_file = "crimeDetection\ML_models\sarima_model_vehicle_accidents_non_fatal.pkl"
+            dataset = "crimeDetection\ML_models\motor_vehicle.csv"
+            no_of_months = int(month)
+        
+        chart = plot_sarima_forecast(model_file, dataset,no_of_months,crime)
+        context = {
+            'username':username,
+            'chart':chart,
+            'crimes':crime_group,
+        }
+        return render(request,'crimeDetection/crime_forecasting.html',context)
+            
+        
     
     print("hi")
     context={
@@ -211,7 +267,44 @@ def crime_correlation(request):
         'chart':chart,
         'crimes':crime_group,
     }
+    return render(request,"crimeDetection/crime_forecasting.html" ,context )
+
+def crime_correlation(request):
+    if request.user.is_authenticated:
+        username = request.user.username
+    else:
+        username = "Quest" 
+     
+    df_Fir = pd.read_csv("crimeDetection\ML_models\Preprocessed_FIR_Data1.csv")   
+    top_crime = Crime_correlation.objects.all()
+    top_10_crime = ['MOTOR VEHICLE ACCIDENTS NON-FATAL', 'KARNATAKA POLICE ACT 1963', 'THEFT', 'MOTOR VEHICLE ACCIDENTS FATAL', 'MISSING PERSON', 'CASES OF HURT', 'Karnataka State Local Act', 'MOLESTATION', 'RIOTS', 'BURGLARY-NIGHT']
+    
+    
+    crime = request.GET.get("crime")
+    
+    if(crime):
+        
+        chart1 = find_correlated_crimes(crime, df, top_10_crime)
+        chart2 = correlated_crimes_beat_distribution(crime, df, top_10_crime)
+        
+        context = {
+            'username':username,
+            'chart1':chart1,
+            'chart2':chart2,
+            'crimes':top_crime,
+        }
+        return render(request,'crimeDetection/crime_correlation.html',context)
+    
+    chart1 = find_correlated_crimes("MOTOR VEHICLE ACCIDENTS NON-FATAL", df, top_10_crime)
+    chart2 = correlated_crimes_beat_distribution("MOTOR VEHICLE ACCIDENTS NON-FATAL", df, top_10_crime)
+    context={
+        'username':username,
+        'chart1':chart1,
+        'chart2':chart2,
+        'crimes':top_crime,
+    }
     return render(request,"crimeDetection/crime_correlation.html" ,context )
+    
 
 def crime_group_distribution(request):
     if request.user.is_authenticated:

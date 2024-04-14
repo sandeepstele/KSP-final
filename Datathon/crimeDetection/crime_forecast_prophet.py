@@ -24,13 +24,17 @@ def forecast_prophet_plot(x):
     # Create line plot
     fig = plot_plotly(m1, forecast)
     
+    title = f"Crime Forecast for {x} Month"
     # Add scatter plot
     scatter_trace = go.Scatter(x=df['ds'], y=df['y'], mode='markers', name="Original Crime Rate Data")
     fig.add_trace(scatter_trace)
     fig.update_layout(
-        autosize=True,
+        autosize=True,  # Allow autosizing based on div size
+        width=None,
         height=590,
-    )
+        title_text=title,
+        )
+
     
-    return fig.to_html()
+    return fig.to_html(full_html=False,config={'displaylogo':False})
     # Show the plot
