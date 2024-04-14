@@ -24,6 +24,12 @@ class Victim_Crime(models.Model):
     def __str__(self):
         return f"{self.name}"
 
+class Crime_correlation(models.Model):
+    name = models.CharField(max_length=100,unique=True)
+    
+    def __str__(self):
+        return f"{self.name}"
+
 class Criminal(models.Model):
     crime = models.CharField(max_length=100)
     district = models.CharField(max_length=100)
@@ -33,6 +39,16 @@ class Criminal(models.Model):
     
     def __str__(self):
         return f"{self.crime}-{self.district}-{self.profession}"
+
+class Rowdy_sheeters(models.Model):
+    district = models.CharField(max_length=100)
+    category = models.CharField(max_length=100)
+    rowdy_no = models.IntegerField(null=True)
+    age = models.IntegerField(null=True)
+    
+    def __str__(self):
+        return f"{self.category}-{self.district}-{self.rowdy_no}"
+    
 
 class Criminal_Crime(models.Model):
     name = models.CharField(max_length=100,unique=True)

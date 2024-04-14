@@ -1,0 +1,94 @@
+{% extends 'crimeDetection/layout.html' %}
+{% load static %}
+
+{% block title %}
+Siren Squad | Crime Forecast
+{% endblock %}
+
+{% block header %}
+Crime Forecast
+{% endblock %}
+
+{% block page %}
+Crime Forecast
+{% endblock %}
+
+{% block page_name %}
+Crime Forecast
+{% endblock %}
+
+{% block body %}
+<style>
+    .maps{
+        border-radius: 10px;
+        box-shadow: 0 0 5px grey;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border: 1px solid #5953b8;
+        height: auto;
+    }
+    .filter{
+        border-radius: 10px;
+        box-shadow: 0 0 5px grey;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border: 1px solid #5953b8;
+        height:auto;
+    }
+    .chart-body {
+        overflow: auto; 
+        margin-top:-3rem;
+        margin-left:-1.5rem;
+    }
+    .chart-container {
+        width: 100%;
+        height: 100%;
+        overflow:true;
+    }
+</style>
+<div class="container-fluid mt-3" id="map" style="display:{{display}};">
+    <!-- [ breadcrumb ] start -->
+    <div class="row">
+        <!-- [ basic-map ] start -->
+        <div class="col-lg-12 col-xl-9">
+            <div class="card maps">
+                <div class="card-header">
+                    <h5 style="color:#5953b8;">{{crime}}</h5>
+                </div>
+                <div class="card-body chart-body">
+                    <div class="chart-container">
+                        {{chart|safe}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="col-lg-12 col-xl-3">
+            <div class="card filter">
+                <div class="card-header">
+                    <h4 style="color:#5953b8;"><i class="bi bi-funnel-fill mr-2"></i>Filter</h4>
+                </div>
+                <div class="card-body">
+                    <form action="{% url 'crime_forecasting' %}" method="GET">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Month</span>
+                            <input type="number" name="month" class="form-control" placeholder="Month" aria-label="month" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Crime</label>
+                            <select class="form-select" id="inputGroupSelect01" name="crime">
+                              <option selected value="">Choose...</option>
+                              <option value="THEFT" type="submit">THEFT</option>
+                              <option value="MISSING PERSON" type="submit">MISSING PERSON</option>
+                              <option value="MOTOR VEHICLE ACCIDENTS NON-FATAL" type="submit">MOTOR VEHICLE ACCIDENTS NON-FATAL</option>
+                            <!--{% for crime in crimes %}
+                              <option value="{{crime}}" type="submit">{{crime}}</option>
+                            {% endfor %}-->
+                            </select> 
+                        </div>
+                        <input type="submit" value="Filter" class="btn btn-primary"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

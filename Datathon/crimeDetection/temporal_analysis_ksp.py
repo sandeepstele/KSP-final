@@ -36,4 +36,4 @@ def plot_crime_group_distribution(year):
         xaxis_title='CrimeGroup_Name',
         yaxis_title='Count'
     )
-    return fig.to_html()
+    return fig.to_html(config={'displaylogo':False})
