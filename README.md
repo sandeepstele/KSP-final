@@ -8,17 +8,25 @@ Predictive Crime Analytics is a web-based application developed using Django tha
 
 
 # Technology Used:
+- Python
 - HTML
 - CSS
 - JavaScript
 - Bootstrap
 - Django
-
+-
 # Libraries Used:
 - Seaborn
 - Plotly
 - numpy
 - pandas
+- fb prophet
+- Scikit-learn
+- folium
+- geocoder
+-matplotlib
+
+
 
 # API Used:
 - ApexCarts.js
@@ -103,9 +111,5 @@ Start the server
 
 # Open Your Browser:
 Visit http://localhost:8000 to start exploring Predictive Crime Analytics!
-
-# Contributing:
-We welcome contributions from the community! If you have ideas for new features, improvements, or find any bugs, please open an issue or submit a pull request.
-
 
 
