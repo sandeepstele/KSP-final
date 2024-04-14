@@ -96,7 +96,7 @@ Start the server
 ```
 
 # Open Your Browser:
-Visit http://localhost:8000 to start exploring the QuizMaster!
+Visit http://localhost:8000 to start exploring Predictive Crime Analytics!
 
 # Contributing:
 We welcome contributions from the community! If you have ideas for new features, improvements, or find any bugs, please open an issue or submit a pull request.
