@@ -37,7 +37,7 @@ Install my-project with `git clone `
    create a folder in the name you needed `your folder name`
 ```
 ```bash
-  git clone https://github.com/SHYAM-001/QUIZ-TIME.git
+  git clone https://github.com/sandeepstele/KSP-final
 ```
     
 ## Environment Variables
@@ -52,6 +52,12 @@ If your system doesn't have the virtual Environment then,
 ```bash
    pip install venv
 ```
+```bash
+   python3 -m venv .venv
+
+   source .venv/bin/activate
+```
+For Unix/MacOS
 
 
 ## To Run the project
@@ -102,7 +108,4 @@ Visit http://localhost:8000 to start exploring Predictive Crime Analytics!
 We welcome contributions from the community! If you have ideas for new features, improvements, or find any bugs, please open an issue or submit a pull request.
 
 
-## Authors
-
-- [@SHYAM-001](https://www.github.com/SHYAM-001)
 
